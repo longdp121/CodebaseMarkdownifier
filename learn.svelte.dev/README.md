@@ -32,7 +32,7 @@ Bump the dependency (for example Svelte) in both the root and the `content/commo
 
 
 ########## Project Structure ##########
-
+```
 .
 ├── content
 │   └── tutorial
@@ -1992,7 +1992,7 @@ Bump the dependency (for example Svelte) in both the root and the `content/commo
 └── vite.config.js
 
 1067 directories, 889 files
-
+```
 ########## File List ##########
 
 1     	content/tutorial/01-svelte/01-introduction/01-welcome-to-svelte/app-a/src/lib/App.svelte
