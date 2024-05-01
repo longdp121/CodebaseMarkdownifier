@@ -32,7 +32,9 @@ Bump the dependency (for example Svelte) in both the root and the `content/commo
 
 
 ########## Project Structure ##########
+
 ```
+
 .
 ├── content
 │   └── tutorial
@@ -1895,6 +1897,7 @@ Bump the dependency (for example Svelte) in both the root and the `content/commo
 │   └── create-common-bundle
 │       ├── index.js
 │       └── unzip.js
+├── script.sh
 ├── src
 │   ├── app.css
 │   ├── app.d.ts
@@ -1991,8 +1994,11 @@ Bump the dependency (for example Svelte) in both the root and the `content/commo
 ├── vercel.json
 └── vite.config.js
 
-1067 directories, 889 files
+1067 directories, 890 files
+
 ```
+
+
 ########## File List ##########
 
 1     	content/tutorial/01-svelte/01-introduction/01-welcome-to-svelte/app-a/src/lib/App.svelte
@@ -2772,56 +2778,57 @@ Bump the dependency (for example Svelte) in both the root and the `content/commo
 775   	README.md
 776   	scripts/create-common-bundle/index.js
 777   	scripts/create-common-bundle/unzip.js
-778   	src/app.css
-779   	src/app.d.ts
-780   	src/app.html
-781   	src/hooks.server.js
-782   	src/lib/client/adapters/common/index.js
-783   	src/lib/client/adapters/webcontainer/index.js
-784   	src/lib/components/Modal.svelte
-785   	src/lib/server/content.js
-786   	src/lib/server/markdown.js
-787   	src/lib/types/index.d.ts
-788   	src/lib/utils.js
-789   	src/routes/assets/media/[...path]/+server.js
-790   	src/routes/content.json/+server.js
-791   	src/routes/+error.svelte
-792   	src/routes/+layout.server.js
-793   	src/routes/+layout.svelte
-794   	src/routes/nav.json/+server.js
-795   	src/routes/+page.server.js
-796   	src/routes/tutorial/+page.js
-797   	src/routes/tutorial/[slug]/adapter.js
-798   	src/routes/tutorial/[slug]/autocompletionDataProvider.js
-799   	src/routes/tutorial/[slug]/autocompletion.js
-800   	src/routes/tutorial/[slug]/Chrome.svelte
-801   	src/routes/tutorial/[slug]/codemirror.css
-802   	src/routes/tutorial/[slug]/Editor.svelte
-803   	src/routes/tutorial/[slug]/filetree/context.js
-804   	src/routes/tutorial/[slug]/filetree/ContextMenu.svelte
-805   	src/routes/tutorial/[slug]/filetree/File.svelte
-806   	src/routes/tutorial/[slug]/filetree/Filetree.svelte
-807   	src/routes/tutorial/[slug]/filetree/Folder.svelte
-808   	src/routes/tutorial/[slug]/filetree/Item.svelte
-809   	src/routes/tutorial/[slug]/ImageViewer.svelte
-810   	src/routes/tutorial/[slug]/+layout.server.js
-811   	src/routes/tutorial/[slug]/Loading.svelte
-812   	src/routes/tutorial/[slug]/Menu.svelte
-813   	src/routes/tutorial/[slug]/Output.svelte
-814   	src/routes/tutorial/[slug]/+page.server.js
-815   	src/routes/tutorial/[slug]/+page.svelte
-816   	src/routes/tutorial/[slug]/ScreenToggle.svelte
-817   	src/routes/tutorial/[slug]/Sidebar.svelte
-818   	src/routes/tutorial/[slug]/state.js
-819   	src/routes/tutorial/[slug]/ToggleButton.svelte
-820   	static/manifest.json
-821   	static/robots.txt
-822   	static/tutorial/dark-theme.css
-823   	svelte.config.js
-824   	tests/env_file.spec.ts
-825   	tests/focus_management.spec.ts
-826   	vercel.json
-827   	vite.config.js
+778   	script.sh
+779   	src/app.css
+780   	src/app.d.ts
+781   	src/app.html
+782   	src/hooks.server.js
+783   	src/lib/client/adapters/common/index.js
+784   	src/lib/client/adapters/webcontainer/index.js
+785   	src/lib/components/Modal.svelte
+786   	src/lib/server/content.js
+787   	src/lib/server/markdown.js
+788   	src/lib/types/index.d.ts
+789   	src/lib/utils.js
+790   	src/routes/assets/media/[...path]/+server.js
+791   	src/routes/content.json/+server.js
+792   	src/routes/+error.svelte
+793   	src/routes/+layout.server.js
+794   	src/routes/+layout.svelte
+795   	src/routes/nav.json/+server.js
+796   	src/routes/+page.server.js
+797   	src/routes/tutorial/+page.js
+798   	src/routes/tutorial/[slug]/adapter.js
+799   	src/routes/tutorial/[slug]/autocompletionDataProvider.js
+800   	src/routes/tutorial/[slug]/autocompletion.js
+801   	src/routes/tutorial/[slug]/Chrome.svelte
+802   	src/routes/tutorial/[slug]/codemirror.css
+803   	src/routes/tutorial/[slug]/Editor.svelte
+804   	src/routes/tutorial/[slug]/filetree/context.js
+805   	src/routes/tutorial/[slug]/filetree/ContextMenu.svelte
+806   	src/routes/tutorial/[slug]/filetree/File.svelte
+807   	src/routes/tutorial/[slug]/filetree/Filetree.svelte
+808   	src/routes/tutorial/[slug]/filetree/Folder.svelte
+809   	src/routes/tutorial/[slug]/filetree/Item.svelte
+810   	src/routes/tutorial/[slug]/ImageViewer.svelte
+811   	src/routes/tutorial/[slug]/+layout.server.js
+812   	src/routes/tutorial/[slug]/Loading.svelte
+813   	src/routes/tutorial/[slug]/Menu.svelte
+814   	src/routes/tutorial/[slug]/Output.svelte
+815   	src/routes/tutorial/[slug]/+page.server.js
+816   	src/routes/tutorial/[slug]/+page.svelte
+817   	src/routes/tutorial/[slug]/ScreenToggle.svelte
+818   	src/routes/tutorial/[slug]/Sidebar.svelte
+819   	src/routes/tutorial/[slug]/state.js
+820   	src/routes/tutorial/[slug]/ToggleButton.svelte
+821   	static/manifest.json
+822   	static/robots.txt
+823   	static/tutorial/dark-theme.css
+824   	svelte.config.js
+825   	tests/env_file.spec.ts
+826   	tests/focus_management.spec.ts
+827   	vercel.json
+828   	vite.config.js
 
 ####### content/tutorial/01-svelte/01-introduction/01-welcome-to-svelte/app-a/src/lib/App.svelte #######
 
@@ -46165,6 +46172,41 @@ fs.chmodSync('node_modules/.bin/svelte-kit', 0o777);
 fs.symlinkSync('../esbuild/bin/esbuild', 'node_modules/.bin/esbuild');
 fs.chmodSync('node_modules/.bin/esbuild', 0o777);
 
+```
+
+
+####### script.sh #######
+
+```
+
+#!/bin/bash
+
+# Append the output of the tree command to the end of README.md
+echo -e "\n" >> README.md
+echo -e "\n########## Project Structure ##########\n" >> README.md
+echo -e '```\n' >> README.md
+tree >> README.md
+echo -e '\n```\n' >> README.md
+
+# Append the output of the find command to the end of README.md
+echo -e "\n########## File List ##########\n" >> README.md
+file_list=$(find . -not -path '*/\.*' -type f ! -name "*.jpg" ! -name "*.jpeg" ! -name "*.png" ! -name "*.gif" ! -name "*.bmp" ! -name "*.tif" ! -name "*.tiff" ! -name "*.ico" ! -name "*.svg" ! -name "*.webp" ! -name "*.raw" ! -name "*.indd" ! -name "*.ai" ! -name "*.eps" ! -name "*.pdf" ! -name "*.mp4" ! -name "*.mkv" ! -name "*.flv" ! -name "*.avi" ! -name "*.mov" ! -name "*.wmv" ! -name "*.rm" ! -name "*.rmvb" ! -name "*.m4v" ! -name "*.mpg" ! -name "*.mpeg" ! -name "*.vob" ! -name "*.3gp" ! -name "*.mp3" ! -name "*.wav" ! -name "*.ogg" ! -name "*.flac" ! -name "*.aac" ! -name "*.wma" ! -name "*.m4a" ! -name "*.amr" ! -name "*.aiff" ! -name "*.caf" ! -name "*.midi" ! -name "*.mid" ! -name "*.ttf" ! -name "*.otf" ! -name "*.woff" ! -name "*.woff2" ! -name "*.eot" ! -name "*.pfa" ! -name "*.pfb" ! -name "*.sfd" ! -name "*.fon" ! -name "*.dfont" ! -name "*.pt3" ! -name "*.cff" ! -name "*.std" ! -name "*.pro" ! -name "*.gai" -print | sed 's|./||' | sort)
+
+echo "$file_list" | nl -n ln >> README.md
+
+# Loop through each file and append its content to README.md
+while IFS= read -r file
+do
+    echo "Processing $file"
+    echo -e "\n####### $file #######\n" >> README.md
+    if [[ $file == *.md || $file == *.txt ]]; then
+        cat "$file" >> README.md
+    else
+        echo -e '```\n' >> README.md
+        cat "$file" >> README.md
+        echo -e '\n```\n' >> README.md
+    fi
+done <<< "$file_list"
 ```
 
 

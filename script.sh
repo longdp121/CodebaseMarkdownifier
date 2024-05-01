@@ -3,7 +3,9 @@
 # Append the output of the tree command to the end of README.md
 echo -e "\n" >> README.md
 echo -e "\n########## Project Structure ##########\n" >> README.md
+echo -e '```\n' >> README.md
 tree >> README.md
+echo -e '\n```\n' >> README.md
 
 # Append the output of the find command to the end of README.md
 echo -e "\n########## File List ##########\n" >> README.md
