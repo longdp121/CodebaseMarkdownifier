@@ -47,7 +47,10 @@ Funds donated via Open Collective will be used for compensating expenses related
 [MIT](https://github.com/sveltejs/kit/blob/main/LICENSE)
 
 
+
 ########## Project Structure ##########
+
+```
 
 .
 ├── CONTRIBUTING.md
@@ -3149,6 +3152,7 @@ Funds donated via Open Collective will be used for compensating expenses related
 ├── scripts
 │   ├── check-dependencies.js
 │   └── sync-all.js
+├── script.sh
 └── sites
     └── kit.svelte.dev
         ├── package.json
@@ -3256,1979 +3260,1985 @@ Funds donated via Open Collective will be used for compensating expenses related
         ├── vercel.json
         └── vite.config.js
 
-1163 directories, 2042 files
+1163 directories, 2043 files
+
+```
+
 
 ########## File List ##########
 
-1     	CONTRIBUTING.md
-2     	documentation/docs/10-getting-started/10-introduction.md
-3     	documentation/docs/10-getting-started/20-creating-a-project.md
-4     	documentation/docs/10-getting-started/30-project-structure.md
-5     	documentation/docs/10-getting-started/40-web-standards.md
-6     	documentation/docs/10-getting-started/meta.json
-7     	documentation/docs/20-core-concepts/10-routing.md
-8     	documentation/docs/20-core-concepts/20-load.md
-9     	documentation/docs/20-core-concepts/30-form-actions.md
-10    	documentation/docs/20-core-concepts/40-page-options.md
-11    	documentation/docs/20-core-concepts/50-state-management.md
-12    	documentation/docs/20-core-concepts/meta.json
-13    	documentation/docs/25-build-and-deploy/10-building-your-app.md
-14    	documentation/docs/25-build-and-deploy/20-adapters.md
-15    	documentation/docs/25-build-and-deploy/30-adapter-auto.md
-16    	documentation/docs/25-build-and-deploy/40-adapter-node.md
-17    	documentation/docs/25-build-and-deploy/50-adapter-static.md
-18    	documentation/docs/25-build-and-deploy/55-single-page-apps.md
-19    	documentation/docs/25-build-and-deploy/60-adapter-cloudflare.md
-20    	documentation/docs/25-build-and-deploy/70-adapter-cloudflare-workers.md
-21    	documentation/docs/25-build-and-deploy/80-adapter-netlify.md
-22    	documentation/docs/25-build-and-deploy/90-adapter-vercel.md
-23    	documentation/docs/25-build-and-deploy/99-writing-adapters.md
-24    	documentation/docs/25-build-and-deploy/meta.json
-25    	documentation/docs/30-advanced/10-advanced-routing.md
-26    	documentation/docs/30-advanced/20-hooks.md
-27    	documentation/docs/30-advanced/25-errors.md
-28    	documentation/docs/30-advanced/30-link-options.md
-29    	documentation/docs/30-advanced/40-service-workers.md
-30    	documentation/docs/30-advanced/50-server-only-modules.md
-31    	documentation/docs/30-advanced/65-snapshots.md
-32    	documentation/docs/30-advanced/67-shallow-routing.md
-33    	documentation/docs/30-advanced/70-packaging.md
-34    	documentation/docs/30-advanced/meta.json
-35    	documentation/docs/40-best-practices/05-performance.md
-36    	documentation/docs/40-best-practices/07-images.md
-37    	documentation/docs/40-best-practices/10-accessibility.md
-38    	documentation/docs/40-best-practices/20-seo.md
-39    	documentation/docs/40-best-practices/meta.json
-40    	documentation/docs/50-reference/10-configuration.md
-41    	documentation/docs/50-reference/20-cli.md
-42    	documentation/docs/50-reference/30-modules.md
-43    	documentation/docs/50-reference/40-types.md
-44    	documentation/docs/50-reference/meta.json
-45    	documentation/docs/60-appendix/10-faq.md
-46    	documentation/docs/60-appendix/20-integrations.md
-47    	documentation/docs/60-appendix/30-migrating-to-sveltekit-2.md
-48    	documentation/docs/60-appendix/40-migrating.md
-49    	documentation/docs/60-appendix/50-additional-resources.md
-50    	documentation/docs/60-appendix/60-glossary.md
-51    	documentation/docs/60-appendix/meta.json
-52    	FUNDING.json
-53    	LICENSE
-54    	package.json
-55    	packages/adapter-auto/adapters.js
-56    	packages/adapter-auto/CHANGELOG.md
-57    	packages/adapter-auto/index.d.ts
-58    	packages/adapter-auto/index.js
-59    	packages/adapter-auto/package.json
-60    	packages/adapter-auto/README.md
-61    	packages/adapter-auto/tsconfig.json
-62    	packages/adapter-cloudflare/ambient.d.ts
-63    	packages/adapter-cloudflare/CHANGELOG.md
-64    	packages/adapter-cloudflare/index.d.ts
-65    	packages/adapter-cloudflare/index.js
-66    	packages/adapter-cloudflare/package.json
-67    	packages/adapter-cloudflare/placeholders.d.ts
-68    	packages/adapter-cloudflare/README.md
-69    	packages/adapter-cloudflare/src/worker.js
-70    	packages/adapter-cloudflare/tsconfig.json
-71    	packages/adapter-cloudflare-workers/ambient.d.ts
-72    	packages/adapter-cloudflare-workers/CHANGELOG.md
-73    	packages/adapter-cloudflare-workers/files/entry.js
-74    	packages/adapter-cloudflare-workers/files/_package.json
-75    	packages/adapter-cloudflare-workers/index.d.ts
-76    	packages/adapter-cloudflare-workers/index.js
-77    	packages/adapter-cloudflare-workers/package.json
-78    	packages/adapter-cloudflare-workers/placeholders.d.ts
-79    	packages/adapter-cloudflare-workers/README.md
-80    	packages/adapter-cloudflare-workers/tsconfig.json
-81    	packages/adapter-netlify/ambient.d.ts
-82    	packages/adapter-netlify/CHANGELOG.md
-83    	packages/adapter-netlify/index.d.ts
-84    	packages/adapter-netlify/index.js
-85    	packages/adapter-netlify/package.json
-86    	packages/adapter-netlify/README.md
-87    	packages/adapter-netlify/rollup.config.js
-88    	packages/adapter-netlify/src/edge.js
-89    	packages/adapter-netlify/src/headers.js
-90    	packages/adapter-netlify/src/headers.spec.js
-91    	packages/adapter-netlify/src/serverless.js
-92    	packages/adapter-netlify/src/shims.js
-93    	packages/adapter-netlify/tsconfig.json
-94    	packages/adapter-node/ambient.d.ts
-95    	packages/adapter-node/CHANGELOG.md
-96    	packages/adapter-node/index.d.ts
-97    	packages/adapter-node/index.js
-98    	packages/adapter-node/LICENSE
-99    	packages/adapter-node/package.json
-100   	packages/adapter-node/README.md
-101   	packages/adapter-node/rollup.config.js
-102   	packages/adapter-node/src/env.js
-103   	packages/adapter-node/src/handler.js
-104   	packages/adapter-node/src/index.js
-105   	packages/adapter-node/src/shims.js
-106   	packages/adapter-node/tests/smoke.spec.js
-107   	packages/adapter-node/tsconfig.json
-108   	packages/adapter-static/CHANGELOG.md
-109   	packages/adapter-static/index.d.ts
-110   	packages/adapter-static/index.js
-111   	packages/adapter-static/LICENSE
-112   	packages/adapter-static/package.json
-113   	packages/adapter-static/platforms.js
-114   	packages/adapter-static/README.md
-115   	packages/adapter-static/test/apps/prerendered/package.json
-116   	packages/adapter-static/test/apps/prerendered/playwright.config.js
-117   	packages/adapter-static/test/apps/prerendered/src/app.html
-118   	packages/adapter-static/test/apps/prerendered/src/global.d.ts
-119   	packages/adapter-static/test/apps/prerendered/src/routes/endpoint/explicit.json/+server.js
-120   	packages/adapter-static/test/apps/prerendered/src/routes/endpoint/implicit.json/+server.js
-121   	packages/adapter-static/test/apps/prerendered/src/routes/+layout.js
-122   	packages/adapter-static/test/apps/prerendered/src/routes/+layout.svelte
-123   	packages/adapter-static/test/apps/prerendered/src/routes/+page.js
-124   	packages/adapter-static/test/apps/prerendered/src/routes/+page.svelte
-125   	packages/adapter-static/test/apps/prerendered/src/routes/public-env/+page.svelte
-126   	packages/adapter-static/test/apps/prerendered/src/routes/server-emitted-asset/+page.server.js
-127   	packages/adapter-static/test/apps/prerendered/src/routes/server-emitted-asset/+page.svelte
-128   	packages/adapter-static/test/apps/prerendered/svelte.config.js
-129   	packages/adapter-static/test/apps/prerendered/test/test.js
-130   	packages/adapter-static/test/apps/prerendered/vite.config.js
-131   	packages/adapter-static/test/apps/spa/jsconfig.json
-132   	packages/adapter-static/test/apps/spa/package.json
-133   	packages/adapter-static/test/apps/spa/playwright.config.js
-134   	packages/adapter-static/test/apps/spa/README.md
-135   	packages/adapter-static/test/apps/spa/src/app.html
-136   	packages/adapter-static/test/apps/spa/src/routes/about/+page.js
-137   	packages/adapter-static/test/apps/spa/src/routes/about/+page.svelte
-138   	packages/adapter-static/test/apps/spa/src/routes/+error.svelte
-139   	packages/adapter-static/test/apps/spa/src/routes/fallback/[...rest]/+page.svelte
-140   	packages/adapter-static/test/apps/spa/src/routes/+layout.svelte
-141   	packages/adapter-static/test/apps/spa/src/routes/+page.svelte
-142   	packages/adapter-static/test/apps/spa/svelte.config.js
-143   	packages/adapter-static/test/apps/spa/test/test.js
-144   	packages/adapter-static/test/apps/spa/vite.config.js
-145   	packages/adapter-static/test/utils.js
-146   	packages/adapter-static/tsconfig.json
-147   	packages/adapter-vercel/ambient.d.ts
-148   	packages/adapter-vercel/CHANGELOG.md
-149   	packages/adapter-vercel/files/edge.js
-150   	packages/adapter-vercel/files/serverless.js
-151   	packages/adapter-vercel/index.d.ts
-152   	packages/adapter-vercel/index.js
-153   	packages/adapter-vercel/internal.d.ts
-154   	packages/adapter-vercel/package.json
-155   	packages/adapter-vercel/README.md
-156   	packages/adapter-vercel/test/utils.spec.js
-157   	packages/adapter-vercel/tsconfig.json
-158   	packages/adapter-vercel/utils.js
-159   	packages/amp/CHANGELOG.md
-160   	packages/amp/index.d.ts
-161   	packages/amp/index.js
-162   	packages/amp/package.json
-163   	packages/create-svelte/bin.js
-164   	packages/create-svelte/CHANGELOG.md
-165   	packages/create-svelte/index.js
-166   	packages/create-svelte/package.json
-167   	packages/create-svelte/README.md
-168   	packages/create-svelte/scripts/build-templates.js
-169   	packages/create-svelte/scripts/update-template-repo-contents.js
-170   	packages/create-svelte/scripts/update-template-repo.sh
-171   	packages/create-svelte/shared/+checkjs/jsconfig.json
-172   	packages/create-svelte/shared/+checkjs/package.json
-173   	packages/create-svelte/shared/+default+checkjs/svelte.config.js
-174   	packages/create-svelte/shared/+default+typescript/svelte.config.js
-175   	packages/create-svelte/shared/+default-typescript/svelte.config.js
-176   	packages/create-svelte/shared/+default+vitest/src/routes/sverdle/game.test.ts
-177   	packages/create-svelte/shared/+eslint/package.json
-178   	packages/create-svelte/shared/+eslint+prettier/package.json
-179   	packages/create-svelte/shared/+eslint-prettier/package.json
-180   	packages/create-svelte/shared/-eslint+prettier/package.json
-181   	packages/create-svelte/shared/+eslint+svelte5/package.json
-182   	packages/create-svelte/shared/+eslint+typescript/package.json
-183   	packages/create-svelte/shared/+playwright+default/tests/test.ts
-184   	packages/create-svelte/shared/+playwright/package.json
-185   	packages/create-svelte/shared/+playwright+skeletonlib/tests/test.ts
-186   	packages/create-svelte/shared/+playwright+skeleton/tests/test.ts
-187   	packages/create-svelte/shared/+playwright-typescript/playwright.config.js
-188   	packages/create-svelte/shared/+playwright+typescript/playwright.config.ts
-189   	packages/create-svelte/shared/+playwright+vitest/package.json
-190   	packages/create-svelte/shared/+prettier/package.json
-191   	packages/create-svelte/shared/README.md
-192   	packages/create-svelte/shared/+skeletonlib+checkjs/jsconfig.json
-193   	packages/create-svelte/shared/+skeletonlib/README.md
-194   	packages/create-svelte/shared/+skeletonlib+svelte5/package.json
-195   	packages/create-svelte/shared/+skeletonlib-typescript/jsconfig.json
-196   	packages/create-svelte/shared/+skeletonlib+typescript/tsconfig.json
-197   	packages/create-svelte/shared/+svelte5/package.json
-198   	packages/create-svelte/shared/+typescript/package.json
-199   	packages/create-svelte/shared/+typescript/svelte.config.js
-200   	packages/create-svelte/shared/-typescript/svelte.config.js
-201   	packages/create-svelte/shared/+typescript/tsconfig.json
-202   	packages/create-svelte/shared/vite.config.ts
-203   	packages/create-svelte/shared/+vitest/package.json
-204   	packages/create-svelte/shared/+vitest+skeletonlib/src/index.test.ts
-205   	packages/create-svelte/shared/+vitest+skeleton/src/index.test.ts
-206   	packages/create-svelte/shared/+vitest/vite.config.ts
-207   	packages/create-svelte/templates/default/netlify.toml
-208   	packages/create-svelte/templates/default/package.json
-209   	packages/create-svelte/templates/default/package.template.json
-210   	packages/create-svelte/templates/default/README.md
-211   	packages/create-svelte/templates/default/src/app.d.ts
-212   	packages/create-svelte/templates/default/src/app.html
-213   	packages/create-svelte/templates/default/src/routes/about/+page.svelte
-214   	packages/create-svelte/templates/default/src/routes/about/+page.ts
-215   	packages/create-svelte/templates/default/src/routes/Counter.svelte
-216   	packages/create-svelte/templates/default/src/routes/Header.svelte
-217   	packages/create-svelte/templates/default/src/routes/+layout.svelte
-218   	packages/create-svelte/templates/default/src/routes/+page.svelte
-219   	packages/create-svelte/templates/default/src/routes/+page.ts
-220   	packages/create-svelte/templates/default/src/routes/styles.css
-221   	packages/create-svelte/templates/default/src/routes/sverdle/game.ts
-222   	packages/create-svelte/templates/default/src/routes/sverdle/how-to-play/+page.svelte
-223   	packages/create-svelte/templates/default/src/routes/sverdle/how-to-play/+page.ts
-224   	packages/create-svelte/templates/default/src/routes/sverdle/+page.server.ts
-225   	packages/create-svelte/templates/default/src/routes/sverdle/+page.svelte
-226   	packages/create-svelte/templates/default/src/routes/sverdle/reduced-motion.ts
-227   	packages/create-svelte/templates/default/src/routes/sverdle/words.server.ts
-228   	packages/create-svelte/templates/default/static/robots.txt
-229   	packages/create-svelte/templates/default/svelte.config.js
-230   	packages/create-svelte/templates/default/tsconfig.json
-231   	packages/create-svelte/templates/default/vercel.json
-232   	packages/create-svelte/templates/default/vite.config.js
-233   	packages/create-svelte/templates/default/wrangler.toml
-234   	packages/create-svelte/templates/skeletonlib/package.template.json
-235   	packages/create-svelte/templates/skeletonlib/src/app.d.ts
-236   	packages/create-svelte/templates/skeletonlib/src/app.html
-237   	packages/create-svelte/templates/skeletonlib/src/lib/index.ts
-238   	packages/create-svelte/templates/skeletonlib/src/routes/+page.svelte
-239   	packages/create-svelte/templates/skeletonlib/svelte.config.js
-240   	packages/create-svelte/templates/skeletonlib/vite.config.js
-241   	packages/create-svelte/templates/skeleton/package.json
-242   	packages/create-svelte/templates/skeleton/package.template.json
-243   	packages/create-svelte/templates/skeleton/src/app.d.ts
-244   	packages/create-svelte/templates/skeleton/src/app.html
-245   	packages/create-svelte/templates/skeleton/src/lib/index.ts
-246   	packages/create-svelte/templates/skeleton/src/routes/+page.svelte
-247   	packages/create-svelte/templates/skeleton/svelte.config.js
-248   	packages/create-svelte/templates/skeleton/vite.config.js
-249   	packages/create-svelte/test/check.js
-250   	packages/create-svelte/tsconfig.json
-251   	packages/create-svelte/types/index.d.ts
-252   	packages/create-svelte/types/internal.d.ts
-253   	packages/create-svelte/utils.js
-254   	packages/create-svelte/vitest.config.js
-255   	packages/enhanced-img/CHANGELOG.md
-256   	packages/enhanced-img/package.json
-257   	packages/enhanced-img/README.md
-258   	packages/enhanced-img/src/index.js
-259   	packages/enhanced-img/src/preprocessor.js
-260   	packages/enhanced-img/test/Input.svelte
-261   	packages/enhanced-img/test/Output.svelte
-262   	packages/enhanced-img/test/preprocessor.spec.js
-263   	packages/enhanced-img/tsconfig.json
-264   	packages/enhanced-img/types/ambient.d.ts
-265   	packages/enhanced-img/types/index.d.ts
-266   	packages/kit/CHANGELOG.md
-267   	packages/kit/kit.vitest.config.js
-268   	packages/kit/package.json
-269   	packages/kit/postinstall.js
-270   	packages/kit/README.md
-271   	packages/kit/scripts/cp.js
-272   	packages/kit/scripts/generate-dts.js
-273   	packages/kit/scripts/generate-version.js
-274   	packages/kit/src/cli.js
-275   	packages/kit/src/constants.js
-276   	packages/kit/src/core/adapt/builder.js
-277   	packages/kit/src/core/adapt/builder.spec.js
-278   	packages/kit/src/core/adapt/fixtures/basic/static/answer.md
-279   	packages/kit/src/core/adapt/fixtures/compress/foo.css
-280   	packages/kit/src/core/adapt/index.js
-281   	packages/kit/src/core/config/default-error.html
-282   	packages/kit/src/core/config/fixtures/default/svelte.config.js
-283   	packages/kit/src/core/config/fixtures/export-string/svelte.config.js
-284   	packages/kit/src/core/config/index.js
-285   	packages/kit/src/core/config/index.spec.js
-286   	packages/kit/src/core/config/options.js
-287   	packages/kit/src/core/config/types.d.ts
-288   	packages/kit/src/core/env.js
-289   	packages/kit/src/core/generate_manifest/find_server_assets.js
-290   	packages/kit/src/core/generate_manifest/index.js
-291   	packages/kit/src/core/postbuild/analyse.js
-292   	packages/kit/src/core/postbuild/crawl.js
-293   	packages/kit/src/core/postbuild/crawl.spec.js
-294   	packages/kit/src/core/postbuild/entities.js
-295   	packages/kit/src/core/postbuild/entities.spec.js
-296   	packages/kit/src/core/postbuild/fallback.js
-297   	packages/kit/src/core/postbuild/fixtures/base/input.html
-298   	packages/kit/src/core/postbuild/fixtures/base/output.json
-299   	packages/kit/src/core/postbuild/fixtures/basic-href/input.html
-300   	packages/kit/src/core/postbuild/fixtures/basic-href/output.json
-301   	packages/kit/src/core/postbuild/fixtures/basic-src/input.html
-302   	packages/kit/src/core/postbuild/fixtures/basic-src/output.json
-303   	packages/kit/src/core/postbuild/fixtures/basic-srcset/input.html
-304   	packages/kit/src/core/postbuild/fixtures/basic-srcset/output.json
-305   	packages/kit/src/core/postbuild/fixtures/href-with-character-reference/input.html
-306   	packages/kit/src/core/postbuild/fixtures/href-with-character-reference/output.json
-307   	packages/kit/src/core/postbuild/fixtures/ids/input.html
-308   	packages/kit/src/core/postbuild/fixtures/ids/output.json
-309   	packages/kit/src/core/postbuild/fixtures/include-rel-external/input.html
-310   	packages/kit/src/core/postbuild/fixtures/include-rel-external/output.json
-311   	packages/kit/src/core/postbuild/fixtures/meta/input.html
-312   	packages/kit/src/core/postbuild/fixtures/meta/output.json
-313   	packages/kit/src/core/postbuild/fixtures/unquoted-attributes/input.html
-314   	packages/kit/src/core/postbuild/fixtures/unquoted-attributes/output.json
-315   	packages/kit/src/core/postbuild/prerender.js
-316   	packages/kit/src/core/postbuild/queue.js
-317   	packages/kit/src/core/postbuild/queue.spec.js
-318   	packages/kit/src/core/sync/create_manifest_data/conflict.js
-319   	packages/kit/src/core/sync/create_manifest_data/index.js
-320   	packages/kit/src/core/sync/create_manifest_data/index.spec.js
-321   	packages/kit/src/core/sync/create_manifest_data/sort.js
-322   	packages/kit/src/core/sync/create_manifest_data/test/params/bar.js
-323   	packages/kit/src/core/sync/create_manifest_data/test/params/foo.js
-324   	packages/kit/src/core/sync/create_manifest_data/test/samples/basic/about/+page.svelte
-325   	packages/kit/src/core/sync/create_manifest_data/test/samples/basic/blog/default.svelte
-326   	packages/kit/src/core/sync/create_manifest_data/test/samples/basic/blog.json/+server.js
-327   	packages/kit/src/core/sync/create_manifest_data/test/samples/basic/blog/+page.svelte
-328   	packages/kit/src/core/sync/create_manifest_data/test/samples/basic/blog/[slug].json/+server.ts
-329   	packages/kit/src/core/sync/create_manifest_data/test/samples/basic/blog/[slug]/+page.svelte
-330   	packages/kit/src/core/sync/create_manifest_data/test/samples/basic-layout/foo/+layout.svelte
-331   	packages/kit/src/core/sync/create_manifest_data/test/samples/basic-layout/foo/+page.svelte
-332   	packages/kit/src/core/sync/create_manifest_data/test/samples/basic-layout/+layout.svelte
-333   	packages/kit/src/core/sync/create_manifest_data/test/samples/basic-layout/+page.svelte
-334   	packages/kit/src/core/sync/create_manifest_data/test/samples/basic/+page.d.ts
-335   	packages/kit/src/core/sync/create_manifest_data/test/samples/basic/+page.svelte
-336   	packages/kit/src/core/sync/create_manifest_data/test/samples/conflicting-groups/(x)/a/+page.svelte
-337   	packages/kit/src/core/sync/create_manifest_data/test/samples/conflicting-groups/(y)/a/+page.svelte
-338   	packages/kit/src/core/sync/create_manifest_data/test/samples/conflicting-params/[slug1]/+page.svelte
-339   	packages/kit/src/core/sync/create_manifest_data/test/samples/conflicting-params/[slug2]/+page.svelte
-340   	packages/kit/src/core/sync/create_manifest_data/test/samples/conflicting-ts-js-handlers-layout/+layout.server.js
-341   	packages/kit/src/core/sync/create_manifest_data/test/samples/conflicting-ts-js-handlers-layout/+layout.server.ts
-342   	packages/kit/src/core/sync/create_manifest_data/test/samples/conflicting-ts-js-handlers-page/+page.js
-343   	packages/kit/src/core/sync/create_manifest_data/test/samples/conflicting-ts-js-handlers-page/+page.ts
-344   	packages/kit/src/core/sync/create_manifest_data/test/samples/conflicting-ts-js-handlers-server/+server.js
-345   	packages/kit/src/core/sync/create_manifest_data/test/samples/conflicting-ts-js-handlers-server/+server.ts
-346   	packages/kit/src/core/sync/create_manifest_data/test/samples/custom-extension/about/+page.jazz
-347   	packages/kit/src/core/sync/create_manifest_data/test/samples/custom-extension/blog/_default.svelte
-348   	packages/kit/src/core/sync/create_manifest_data/test/samples/custom-extension/blog.json/+server.js
-349   	packages/kit/src/core/sync/create_manifest_data/test/samples/custom-extension/blog/+page.svelte
-350   	packages/kit/src/core/sync/create_manifest_data/test/samples/custom-extension/blog/[slug].json/+server.js
-351   	packages/kit/src/core/sync/create_manifest_data/test/samples/custom-extension/blog/[slug]/+page.beebop
-352   	packages/kit/src/core/sync/create_manifest_data/test/samples/custom-extension/+page.funk
-353   	packages/kit/src/core/sync/create_manifest_data/test/samples/declared-layout/+layout-foo.svelte
-354   	packages/kit/src/core/sync/create_manifest_data/test/samples/encoding/[x+22]/+page.svelte
-355   	packages/kit/src/core/sync/create_manifest_data/test/samples/encoding/[x+23]/+page.svelte
-356   	packages/kit/src/core/sync/create_manifest_data/test/samples/encoding/[x+3f]/+page.svelte
-357   	packages/kit/src/core/sync/create_manifest_data/test/samples/hidden-underscore/a/_b/c/d.js
-358   	packages/kit/src/core/sync/create_manifest_data/test/samples/hidden-underscore/e/f/g/h/+server.js
-359   	packages/kit/src/core/sync/create_manifest_data/test/samples/hidden-underscore/_foo.js
-360   	packages/kit/src/core/sync/create_manifest_data/test/samples/hidden-underscore/i/_j.js
-361   	packages/kit/src/core/sync/create_manifest_data/test/samples/hidden-underscore/+page.svelte
-362   	packages/kit/src/core/sync/create_manifest_data/test/samples/invalid-named-layout-reference/x/+page@.js
-363   	packages/kit/src/core/sync/create_manifest_data/test/samples/invalid-named-layout-reference/x/+page@.svelte
-364   	packages/kit/src/core/sync/create_manifest_data/test/samples/invalid-params/[foo][bar]/+server.js
-365   	packages/kit/src/core/sync/create_manifest_data/test/samples/lockfiles/foo/+server.js
-366   	packages/kit/src/core/sync/create_manifest_data/test/samples/lockfiles/foo/+server.js_tmp
-367   	packages/kit/src/core/sync/create_manifest_data/test/samples/multiple-layouts/+layout.svelte
-368   	packages/kit/src/core/sync/create_manifest_data/test/samples/multiple-layouts/+layout@.svelte
-369   	packages/kit/src/core/sync/create_manifest_data/test/samples/multiple-pages/+page.svelte
-370   	packages/kit/src/core/sync/create_manifest_data/test/samples/multiple-pages/+page@.svelte
-371   	packages/kit/src/core/sync/create_manifest_data/test/samples/multiple-slugs/[file].[ext]/+server.js
-372   	packages/kit/src/core/sync/create_manifest_data/test/samples/named-layout-missing/+page@missing.svelte
-373   	packages/kit/src/core/sync/create_manifest_data/test/samples/named-layouts/a/a1/+page.svelte
-374   	packages/kit/src/core/sync/create_manifest_data/test/samples/named-layouts/a/+layout.svelte
-375   	packages/kit/src/core/sync/create_manifest_data/test/samples/named-layouts/b/c/c2/+page@.svelte
-376   	packages/kit/src/core/sync/create_manifest_data/test/samples/named-layouts/b/c/+layout.svelte
-377   	packages/kit/src/core/sync/create_manifest_data/test/samples/named-layouts/b/d/d1/+page.svelte
-378   	packages/kit/src/core/sync/create_manifest_data/test/samples/named-layouts/b/d/(special)/(extraspecial)/d2/+page.svelte
-379   	packages/kit/src/core/sync/create_manifest_data/test/samples/named-layouts/b/d/(special)/(extraspecial)/d3/+page@(special).svelte
-380   	packages/kit/src/core/sync/create_manifest_data/test/samples/named-layouts/b/d/(special)/(extraspecial)/+layout.svelte
-381   	packages/kit/src/core/sync/create_manifest_data/test/samples/named-layouts/b/d/(special)/+layout.svelte
-382   	packages/kit/src/core/sync/create_manifest_data/test/samples/named-layouts/b/d/(special)/+page.svelte
-383   	packages/kit/src/core/sync/create_manifest_data/test/samples/named-layouts/+layout.svelte
-384   	packages/kit/src/core/sync/create_manifest_data/test/samples/named-layouts/(special)/a/a2/+page.svelte
-385   	packages/kit/src/core/sync/create_manifest_data/test/samples/named-layouts/(special)/(alsospecial)/b/c/c1/+page.svelte
-386   	packages/kit/src/core/sync/create_manifest_data/test/samples/named-layouts/(special)/(alsospecial)/+layout.svelte
-387   	packages/kit/src/core/sync/create_manifest_data/test/samples/named-layouts/(special)/+layout.js
-388   	packages/kit/src/core/sync/create_manifest_data/test/samples/named-layouts/(special)/+layout.server.js
-389   	packages/kit/src/core/sync/create_manifest_data/test/samples/named-layouts/(special)/+layout.svelte
-390   	packages/kit/src/core/sync/create_manifest_data/test/samples/nested-errors/foo/bar/baz/+error.svelte
-391   	packages/kit/src/core/sync/create_manifest_data/test/samples/nested-errors/foo/bar/baz/+layout.svelte
-392   	packages/kit/src/core/sync/create_manifest_data/test/samples/nested-errors/foo/bar/baz/+page.svelte
-393   	packages/kit/src/core/sync/create_manifest_data/test/samples/nested-errors/foo/bar/+error.svelte
-394   	packages/kit/src/core/sync/create_manifest_data/test/samples/nested-errors/foo/+layout.svelte
-395   	packages/kit/src/core/sync/create_manifest_data/test/samples/nested-optionals/[[a]]/[[b]]/+page.svelte
-396   	packages/kit/src/core/sync/create_manifest_data/test/samples/optional/[[foo]]bar/+server.js
-397   	packages/kit/src/core/sync/create_manifest_data/test/samples/optional/nested/[[optional]]/sub/+page.svelte
-398   	packages/kit/src/core/sync/create_manifest_data/test/samples/optional/[[optional]]/+page.svelte
-399   	packages/kit/src/core/sync/create_manifest_data/test/samples/optional/prefix[[suffix]]/+page.svelte
-400   	packages/kit/src/core/sync/create_manifest_data/test/samples/page-without-svelte-file/error/+error.svelte
-401   	packages/kit/src/core/sync/create_manifest_data/test/samples/page-without-svelte-file/error/[...path]/+page.js
-402   	packages/kit/src/core/sync/create_manifest_data/test/samples/page-without-svelte-file/layout/exists/+layout.js
-403   	packages/kit/src/core/sync/create_manifest_data/test/samples/page-without-svelte-file/layout/exists/+page.svelte
-404   	packages/kit/src/core/sync/create_manifest_data/test/samples/page-without-svelte-file/layout/+layout.svelte
-405   	packages/kit/src/core/sync/create_manifest_data/test/samples/page-without-svelte-file/layout/redirect/+page.server.js
-406   	packages/kit/src/core/sync/create_manifest_data/test/samples/page-without-svelte-file/+page.svelte
-407   	packages/kit/src/core/sync/create_manifest_data/test/samples/rest/a/[...rest]/+page.server.js
-408   	packages/kit/src/core/sync/create_manifest_data/test/samples/rest/a/[...rest]/+page.svelte
-409   	packages/kit/src/core/sync/create_manifest_data/test/samples/rest/b/[...rest]/+page.server.ts
-410   	packages/kit/src/core/sync/create_manifest_data/test/samples/rest/b/[...rest]/+page.svelte
-411   	packages/kit/src/core/sync/create_manifest_data/test/samples/rest-prefix-suffix/prefix-[...rest]/+page.svelte
-412   	packages/kit/src/core/sync/create_manifest_data/test/samples/rest-prefix-suffix/[...rest].json/+server.js
-413   	packages/kit/src/core/sync/create_manifest_data/test/samples/symlinks/bar/+page.svelte
-414   	packages/kit/src/core/sync/create_manifest_data/test/samples/symlinks/routes/+page.svelte
-415   	packages/kit/src/core/sync/create_manifest_data/test/static/bar/baz.txt
-416   	packages/kit/src/core/sync/create_manifest_data/test/static/foo.txt
-417   	packages/kit/src/core/sync/create_manifest_data/types.d.ts
-418   	packages/kit/src/core/sync/sync.js
-419   	packages/kit/src/core/sync/ts.js
-420   	packages/kit/src/core/sync/utils.js
-421   	packages/kit/src/core/sync/write_ambient.js
-422   	packages/kit/src/core/sync/write_client_manifest.js
-423   	packages/kit/src/core/sync/write_non_ambient.js
-424   	packages/kit/src/core/sync/write_root.js
-425   	packages/kit/src/core/sync/write_server.js
-426   	packages/kit/src/core/sync/write_tsconfig.js
-427   	packages/kit/src/core/sync/write_tsconfig.spec.js
-428   	packages/kit/src/core/sync/write_types/index.js
-429   	packages/kit/src/core/sync/write_types/index.spec.js
-430   	packages/kit/src/core/sync/write_types/test/actions/+page.server.js
-431   	packages/kit/src/core/sync/write_types/test/layout-advanced/+layout.js
-432   	packages/kit/src/core/sync/write_types/test/layout-advanced/+layout.svelte
-433   	packages/kit/src/core/sync/write_types/test/layout-advanced/(main)/+layout.server.js
-434   	packages/kit/src/core/sync/write_types/test/layout-advanced/(main)/+layout.svelte
-435   	packages/kit/src/core/sync/write_types/test/layout-advanced/(main)/+page.js
-436   	packages/kit/src/core/sync/write_types/test/layout-advanced/(main)/+page@.svelte
-437   	packages/kit/src/core/sync/write_types/test/layout-advanced/(main)/sub/+page.js
-438   	packages/kit/src/core/sync/write_types/test/layout-advanced/(main)/sub/+page.svelte
-439   	packages/kit/src/core/sync/write_types/test/layout/+layout.js
-440   	packages/kit/src/core/sync/write_types/test/layout/+layout.server.js
-441   	packages/kit/src/core/sync/write_types/test/layout/+layout.svelte
-442   	packages/kit/src/core/sync/write_types/test/layout/+page.js
-443   	packages/kit/src/core/sync/write_types/test/layout/+page.server.js
-444   	packages/kit/src/core/sync/write_types/test/layout/+page.svelte
-445   	packages/kit/src/core/sync/write_types/test/package.json
-446   	packages/kit/src/core/sync/write_types/test/param-type-inference/optional/[[optionalNarrowedParam=narrowed]]/+page.js
-447   	packages/kit/src/core/sync/write_types/test/param-type-inference/params/narrowed.js
-448   	packages/kit/src/core/sync/write_types/test/param-type-inference/params/not_narrowed.js
-449   	packages/kit/src/core/sync/write_types/test/param-type-inference/required/+layout.js
-450   	packages/kit/src/core/sync/write_types/test/param-type-inference/required/[narrowedParam=narrowed]/+page.js
-451   	packages/kit/src/core/sync/write_types/test/param-type-inference/required/[regularParam=not_narrowed]/+page.js
-452   	packages/kit/src/core/sync/write_types/test/param-type-inference/spread/[...spread=narrowed]/+page.js
-453   	packages/kit/src/core/sync/write_types/test/simple-page-server-and-shared/+page.js
-454   	packages/kit/src/core/sync/write_types/test/simple-page-server-and-shared/+page.server.js
-455   	packages/kit/src/core/sync/write_types/test/simple-page-server-and-shared/+page.svelte
-456   	packages/kit/src/core/sync/write_types/test/simple-page-server-only/+page.server.js
-457   	packages/kit/src/core/sync/write_types/test/simple-page-server-only/+page.svelte
-458   	packages/kit/src/core/sync/write_types/test/simple-page-server-only/sub/+page.server.js
-459   	packages/kit/src/core/sync/write_types/test/simple-page-server-only/sub/+page.svelte
-460   	packages/kit/src/core/sync/write_types/test/simple-page-shared-only/+page.js
-461   	packages/kit/src/core/sync/write_types/test/simple-page-shared-only/+page.svelte
-462   	packages/kit/src/core/sync/write_types/test/simple-page-shared-only/sub/+page.js
-463   	packages/kit/src/core/sync/write_types/test/simple-page-shared-only/sub/+page.svelte
-464   	packages/kit/src/core/sync/write_types/test/slugs/+layout.js
-465   	packages/kit/src/core/sync/write_types/test/slugs-layout-not-all-pages-have-load/+layout.js
-466   	packages/kit/src/core/sync/write_types/test/slugs-layout-not-all-pages-have-load/+layout.svelte
-467   	packages/kit/src/core/sync/write_types/test/slugs-layout-not-all-pages-have-load/nested/+layout.js
-468   	packages/kit/src/core/sync/write_types/test/slugs-layout-not-all-pages-have-load/nested/+layout.svelte
-469   	packages/kit/src/core/sync/write_types/test/slugs-layout-not-all-pages-have-load/nested/[...rest]/+page.js
-470   	packages/kit/src/core/sync/write_types/test/slugs-layout-not-all-pages-have-load/nested/[...rest]/+page.svelte
-471   	packages/kit/src/core/sync/write_types/test/slugs-layout-not-all-pages-have-load/nested/[slug]/+page@.svelte
-472   	packages/kit/src/core/sync/write_types/test/slugs/+layout.svelte
-473   	packages/kit/src/core/sync/write_types/test/slugs/[...rest]/+page.js
-474   	packages/kit/src/core/sync/write_types/test/slugs/[...rest]/+page.svelte
-475   	packages/kit/src/core/sync/write_types/test/slugs/[slug]/+page.js
-476   	packages/kit/src/core/sync/write_types/test/slugs/[slug]/+page.svelte
-477   	packages/kit/src/core/sync/write_types/test/slugs/x/[[optional]]/+page.js
-478   	packages/kit/src/core/sync/write_types/test/slugs/x/[[optional]]/+page.svelte
-479   	packages/kit/src/core/sync/write_types/test/tsconfig.json
-480   	packages/kit/src/core/utils.js
-481   	packages/kit/src/exports/hooks/index.js
-482   	packages/kit/src/exports/hooks/sequence.js
-483   	packages/kit/src/exports/hooks/sequence.spec.js
-484   	packages/kit/src/exports/index.js
-485   	packages/kit/src/exports/node/index.js
-486   	packages/kit/src/exports/node/polyfills.js
-487   	packages/kit/src/exports/public.d.ts
-488   	packages/kit/src/exports/vite/build/build_server.js
-489   	packages/kit/src/exports/vite/build/build_service_worker.js
-490   	packages/kit/src/exports/vite/build/utils.js
-491   	packages/kit/src/exports/vite/dev/index.js
-492   	packages/kit/src/exports/vite/graph_analysis/index.js
-493   	packages/kit/src/exports/vite/graph_analysis/index.spec.js
-494   	packages/kit/src/exports/vite/graph_analysis/types.d.ts
-495   	packages/kit/src/exports/vite/graph_analysis/utils.js
-496   	packages/kit/src/exports/vite/graph_analysis/utils.spec.js
-497   	packages/kit/src/exports/vite/index.js
-498   	packages/kit/src/exports/vite/module_ids.js
-499   	packages/kit/src/exports/vite/preview/index.js
-500   	packages/kit/src/exports/vite/types.d.ts
-501   	packages/kit/src/exports/vite/utils.js
-502   	packages/kit/src/exports/vite/utils.spec.js
-503   	packages/kit/src/runtime/app/environment/index.js
-504   	packages/kit/src/runtime/app/environment/types.d.ts
-505   	packages/kit/src/runtime/app/forms.js
-506   	packages/kit/src/runtime/app/navigation.js
-507   	packages/kit/src/runtime/app/paths/index.js
-508   	packages/kit/src/runtime/app/paths/types.d.ts
-509   	packages/kit/src/runtime/app/server/index.js
-510   	packages/kit/src/runtime/app/stores.js
-511   	packages/kit/src/runtime/client/client.js
-512   	packages/kit/src/runtime/client/constants.js
-513   	packages/kit/src/runtime/client/entry.js
-514   	packages/kit/src/runtime/client/fetcher.js
-515   	packages/kit/src/runtime/client/parse.js
-516   	packages/kit/src/runtime/client/session-storage.js
-517   	packages/kit/src/runtime/client/types.d.ts
-518   	packages/kit/src/runtime/client/utils.js
-519   	packages/kit/src/runtime/components/error.svelte
-520   	packages/kit/src/runtime/components/layout.svelte
-521   	packages/kit/src/runtime/control.js
-522   	packages/kit/src/runtime/env/dynamic/private.js
-523   	packages/kit/src/runtime/env/dynamic/public.js
-524   	packages/kit/src/runtime/hash.js
-525   	packages/kit/src/runtime/server/ambient.d.ts
-526   	packages/kit/src/runtime/server/cookie.js
-527   	packages/kit/src/runtime/server/cookie.spec.js
-528   	packages/kit/src/runtime/server/data/index.js
-529   	packages/kit/src/runtime/server/endpoint.js
-530   	packages/kit/src/runtime/server/env_module.js
-531   	packages/kit/src/runtime/server/fetch.js
-532   	packages/kit/src/runtime/server/index.js
-533   	packages/kit/src/runtime/server/page/actions.js
-534   	packages/kit/src/runtime/server/page/crypto.js
-535   	packages/kit/src/runtime/server/page/crypto.spec.js
-536   	packages/kit/src/runtime/server/page/csp.js
-537   	packages/kit/src/runtime/server/page/csp.spec.js
-538   	packages/kit/src/runtime/server/page/index.js
-539   	packages/kit/src/runtime/server/page/load_data.js
-540   	packages/kit/src/runtime/server/page/load_data.spec.js
-541   	packages/kit/src/runtime/server/page/load_page_nodes.js
-542   	packages/kit/src/runtime/server/page/render.js
-543   	packages/kit/src/runtime/server/page/respond_with_error.js
-544   	packages/kit/src/runtime/server/page/serialize_data.js
-545   	packages/kit/src/runtime/server/page/serialize_data.spec.js
-546   	packages/kit/src/runtime/server/page/types.d.ts
-547   	packages/kit/src/runtime/server/respond.js
-548   	packages/kit/src/runtime/server/utils.js
-549   	packages/kit/src/runtime/shared.js
-550   	packages/kit/src/runtime/shared-server.js
-551   	packages/kit/src/runtime/utils.js
-552   	packages/kit/src/types/ambient.d.ts
-553   	packages/kit/src/types/ambient-private.d.ts
-554   	packages/kit/src/types/global-private.d.ts
-555   	packages/kit/src/types/internal.d.ts
-556   	packages/kit/src/types/private.d.ts
-557   	packages/kit/src/types/synthetic/$env+dynamic+private.md
-558   	packages/kit/src/types/synthetic/$env+dynamic+public.md
-559   	packages/kit/src/types/synthetic/$env+static+private.md
-560   	packages/kit/src/types/synthetic/$env+static+public.md
-561   	packages/kit/src/types/synthetic/$lib.md
-562   	packages/kit/src/utils/array.js
-563   	packages/kit/src/utils/env.js
-564   	packages/kit/src/utils/error.js
-565   	packages/kit/src/utils/escape.js
-566   	packages/kit/src/utils/escape.spec.js
-567   	packages/kit/src/utils/exports.js
-568   	packages/kit/src/utils/exports.spec.js
-569   	packages/kit/src/utils/features.js
-570   	packages/kit/src/utils/filesystem.js
-571   	packages/kit/src/utils/filesystem.spec.js
-572   	packages/kit/src/utils/fork.js
-573   	packages/kit/src/utils/functions.js
-574   	packages/kit/src/utils/http.js
-575   	packages/kit/src/utils/http.spec.js
-576   	packages/kit/src/utils/misc.js
-577   	packages/kit/src/utils/options.js
-578   	packages/kit/src/utils/route_config.js
-579   	packages/kit/src/utils/routing.js
-580   	packages/kit/src/utils/routing.spec.js
-581   	packages/kit/src/utils/streaming.js
-582   	packages/kit/src/utils/streaming.spec.js
-583   	packages/kit/src/utils/url.js
-584   	packages/kit/src/utils/url.spec.js
-585   	packages/kit/src/version.js
-586   	packages/kit/src/version.spec.js
-587   	packages/kit/svelte-kit.js
-588   	packages/kit/test/ambient.d.ts
-589   	packages/kit/test/apps/amp/package.json
-590   	packages/kit/test/apps/amp/playwright.config.js
-591   	packages/kit/test/apps/amp/src/app.d.ts
-592   	packages/kit/test/apps/amp/src/app.html
-593   	packages/kit/test/apps/amp/src/hooks.server.js
-594   	packages/kit/test/apps/amp/src/routes/http-equiv/cache-control/+page.js
-595   	packages/kit/test/apps/amp/src/routes/http-equiv/cache-control/+page.svelte
-596   	packages/kit/test/apps/amp/src/routes/invalid/has-stylesheet/+page.svelte
-597   	packages/kit/test/apps/amp/src/routes/invalid/+page.svelte
-598   	packages/kit/test/apps/amp/src/routes/+layout.js
-599   	packages/kit/test/apps/amp/src/routes/+layout.svelte
-600   	packages/kit/test/apps/amp/src/routes/origin.json/+server.js
-601   	packages/kit/test/apps/amp/src/routes/origin/+page.js
-602   	packages/kit/test/apps/amp/src/routes/origin/+page.svelte
-603   	packages/kit/test/apps/amp/src/routes/styles/imported.css
-604   	packages/kit/test/apps/amp/src/routes/styles/+page.svelte
-605   	packages/kit/test/apps/amp/src/routes/styles/Unused.svelte
-606   	packages/kit/test/apps/amp/src/routes/valid.json/+server.js
-607   	packages/kit/test/apps/amp/src/routes/valid/+page.js
-608   	packages/kit/test/apps/amp/src/routes/valid/+page.svelte
-609   	packages/kit/test/apps/amp/svelte.config.js
-610   	packages/kit/test/apps/amp/test/test.js
-611   	packages/kit/test/apps/amp/tsconfig.json
-612   	packages/kit/test/apps/amp/vite.config.js
-613   	packages/kit/test/apps/basics/package.json
-614   	packages/kit/test/apps/basics/playwright.config.js
-615   	packages/kit/test/apps/basics/src/app.d.ts
-616   	packages/kit/test/apps/basics/src/app.html
-617   	packages/kit/test/apps/basics/src/error.html
-618   	packages/kit/test/apps/basics/src/global.d.ts
-619   	packages/kit/test/apps/basics/src/hooks.client.js
-620   	packages/kit/test/apps/basics/src/hooks.js
-621   	packages/kit/test/apps/basics/src/hooks.server.js
-622   	packages/kit/test/apps/basics/src/params/lowercase.js
-623   	packages/kit/test/apps/basics/src/params/numeric.js
-624   	packages/kit/test/apps/basics/src/params/uppercase.js
-625   	packages/kit/test/apps/basics/src/routes/accessibility/a/+page.svelte
-626   	packages/kit/test/apps/basics/src/routes/accessibility/autofocus/a/+page.svelte
-627   	packages/kit/test/apps/basics/src/routes/accessibility/autofocus/b/+page.server.js
-628   	packages/kit/test/apps/basics/src/routes/accessibility/autofocus/b/+page.svelte
-629   	packages/kit/test/apps/basics/src/routes/accessibility/autofocus/+layout.svelte
-630   	packages/kit/test/apps/basics/src/routes/accessibility/b/+page.svelte
-631   	packages/kit/test/apps/basics/src/routes/accessibility/c/+page.server.js
-632   	packages/kit/test/apps/basics/src/routes/accessibility/c/+page.svelte
-633   	packages/kit/test/apps/basics/src/routes/accessibility/+layout.svelte
-634   	packages/kit/test/apps/basics/src/routes/actions/enhance/+page.server.js
-635   	packages/kit/test/apps/basics/src/routes/actions/enhance/+page.svelte
-636   	packages/kit/test/apps/basics/src/routes/actions/file-without-enctype/+page.server.js
-637   	packages/kit/test/apps/basics/src/routes/actions/file-without-enctype/+page.svelte
-638   	packages/kit/test/apps/basics/src/routes/actions/form-errors/adjacent-error-boundary/+error.svelte
-639   	packages/kit/test/apps/basics/src/routes/actions/form-errors/adjacent-error-boundary/+page.server.js
-640   	packages/kit/test/apps/basics/src/routes/actions/form-errors/adjacent-error-boundary/+page.svelte
-641   	packages/kit/test/apps/basics/src/routes/actions/form-errors/+page.server.js
-642   	packages/kit/test/apps/basics/src/routes/actions/form-errors/+page.svelte
-643   	packages/kit/test/apps/basics/src/routes/actions/form-errors-persist-fields/+page.server.js
-644   	packages/kit/test/apps/basics/src/routes/actions/form-errors-persist-fields/+page.svelte
-645   	packages/kit/test/apps/basics/src/routes/actions/invalidate-all/+layout.js
-646   	packages/kit/test/apps/basics/src/routes/actions/invalidate-all/+page.server.js
-647   	packages/kit/test/apps/basics/src/routes/actions/invalidate-all/+page.svelte
-648   	packages/kit/test/apps/basics/src/routes/actions/redirect-in-handle/+page.server.js
-649   	packages/kit/test/apps/basics/src/routes/actions/redirect-in-handle/+page.svelte
-650   	packages/kit/test/apps/basics/src/routes/actions/redirect/+page.server.js
-651   	packages/kit/test/apps/basics/src/routes/actions/redirect/+page.svelte
-652   	packages/kit/test/apps/basics/src/routes/actions/success-data/+page.server.js
-653   	packages/kit/test/apps/basics/src/routes/actions/success-data/+page.svelte
-654   	packages/kit/test/apps/basics/src/routes/actions/update-form/+page.svelte
-655   	packages/kit/test/apps/basics/src/routes/adapter/dynamic/+page.server.js
-656   	packages/kit/test/apps/basics/src/routes/adapter/dynamic/+page.svelte
-657   	packages/kit/test/apps/basics/src/routes/adapter/prerendered/+page.server.js
-658   	packages/kit/test/apps/basics/src/routes/adapter/prerendered/+page.svelte
-659   	packages/kit/test/apps/basics/src/routes/anchor/anchor/+page.svelte
-660   	packages/kit/test/apps/basics/src/routes/anchor/+page.svelte
-661   	packages/kit/test/apps/basics/src/routes/anchor-with-manual-scroll/anchor-afternavigate/+page.svelte
-662   	packages/kit/test/apps/basics/src/routes/anchor-with-manual-scroll/anchor-onmount/+page.svelte
-663   	packages/kit/test/apps/basics/src/routes/anchor-with-manual-scroll/+page.svelte
-664   	packages/kit/test/apps/basics/src/routes/answer.json/+server.js
-665   	packages/kit/test/apps/basics/src/routes/app-environment/+page.svelte
-666   	packages/kit/test/apps/basics/src/routes/asset-import/+page.svelte
-667   	packages/kit/test/apps/basics/src/routes/caching/+page.js
-668   	packages/kit/test/apps/basics/src/routes/caching/+page.svelte
-669   	packages/kit/test/apps/basics/src/routes/caching/server-data/+page.server.js
-670   	packages/kit/test/apps/basics/src/routes/caching/server-data/+page.svelte
-671   	packages/kit/test/apps/basics/src/routes/content-length-header/+page.svelte
-672   	packages/kit/test/apps/basics/src/routes/content-type-header/+page.svelte
-673   	packages/kit/test/apps/basics/src/routes/cookies/collect-without-re-escaping/+page.js
-674   	packages/kit/test/apps/basics/src/routes/cookies/collect-without-re-escaping/+page.svelte
-675   	packages/kit/test/apps/basics/src/routes/cookies/collect-without-re-escaping/set-cookie/+server.js
-676   	packages/kit/test/apps/basics/src/routes/cookies/delete/+server.js
-677   	packages/kit/test/apps/basics/src/routes/cookies/encoding/not-decoded-twice/+server.js
-678   	packages/kit/test/apps/basics/src/routes/cookies/encoding/+page.server.js
-679   	packages/kit/test/apps/basics/src/routes/cookies/encoding/+page.svelte
-680   	packages/kit/test/apps/basics/src/routes/cookies/encoding/set/+server.js
-681   	packages/kit/test/apps/basics/src/routes/cookies/enhanced/basic/+page.server.ts
-682   	packages/kit/test/apps/basics/src/routes/cookies/enhanced/basic/+page.svelte
-683   	packages/kit/test/apps/basics/src/routes/cookies/forwarded-in-etag/+page.server.js
-684   	packages/kit/test/apps/basics/src/routes/cookies/forwarded-in-etag/+page.svelte
-685   	packages/kit/test/apps/basics/src/routes/cookies/nested/a/+page.server.js
-686   	packages/kit/test/apps/basics/src/routes/cookies/nested/a/+page.svelte
-687   	packages/kit/test/apps/basics/src/routes/cookies/nested/b/+page.server.js
-688   	packages/kit/test/apps/basics/src/routes/cookies/nested/b/+page.svelte
-689   	packages/kit/test/apps/basics/src/routes/cookies/+page.server.js
-690   	packages/kit/test/apps/basics/src/routes/cookies/+page.svelte
-691   	packages/kit/test/apps/basics/src/routes/cookies/serialize/+server.js
-692   	packages/kit/test/apps/basics/src/routes/cookies/set-in-layout/+layout.server.js
-693   	packages/kit/test/apps/basics/src/routes/cookies/set-in-layout/+layout.svelte
-694   	packages/kit/test/apps/basics/src/routes/cookies/set-in-layout/+page.server.js
-695   	packages/kit/test/apps/basics/src/routes/cookies/set-in-layout/+page.svelte
-696   	packages/kit/test/apps/basics/src/routes/cookies/set-more-than-one/+page.server.js
-697   	packages/kit/test/apps/basics/src/routes/cookies/set-more-than-one/+page.svelte
-698   	packages/kit/test/apps/basics/src/routes/cookies/set/+server.js
-699   	packages/kit/test/apps/basics/src/routes/cookies/shared.js
-700   	packages/kit/test/apps/basics/src/routes/csrf/+server.js
-701   	packages/kit/test/apps/basics/src/routes/css/_base.css
-702   	packages/kit/test/apps/basics/src/routes/css/encöded/+page.svelte
-703   	packages/kit/test/apps/basics/src/routes/css/_manual.css
-704   	packages/kit/test/apps/basics/src/routes/css/other/+page.svelte
-705   	packages/kit/test/apps/basics/src/routes/css/+page.svelte
-706   	packages/kit/test/apps/basics/src/routes/css/_styles.css
-707   	packages/kit/test/apps/basics/src/routes/cyclical-dynamic-import/_is_even.js
-708   	packages/kit/test/apps/basics/src/routes/cyclical-dynamic-import/_is_odd.js
-709   	packages/kit/test/apps/basics/src/routes/cyclical-dynamic-import/+page.svelte
-710   	packages/kit/test/apps/basics/src/routes/data-sveltekit/noscroll/+page.svelte
-711   	packages/kit/test/apps/basics/src/routes/data-sveltekit/noscroll/target/+page.svelte
-712   	packages/kit/test/apps/basics/src/routes/data-sveltekit/preload-data/offline/+layout.server.js
-713   	packages/kit/test/apps/basics/src/routes/data-sveltekit/preload-data/offline/+page.svelte
-714   	packages/kit/test/apps/basics/src/routes/data-sveltekit/preload-data/offline/slow-navigation/+page.server.js
-715   	packages/kit/test/apps/basics/src/routes/data-sveltekit/preload-data/offline/slow-navigation/+page.svelte
-716   	packages/kit/test/apps/basics/src/routes/data-sveltekit/preload-data/offline/target/+page.svelte
-717   	packages/kit/test/apps/basics/src/routes/data-sveltekit/preload-data/+page.svelte
-718   	packages/kit/test/apps/basics/src/routes/data-sveltekit/preload-data/target/+page.svelte
-719   	packages/kit/test/apps/basics/src/routes/data-sveltekit/reload/+page.svelte
-720   	packages/kit/test/apps/basics/src/routes/data-sveltekit/reload/target/+page.svelte
-721   	packages/kit/test/apps/basics/src/routes/data-sveltekit/replacestate/+page.svelte
-722   	packages/kit/test/apps/basics/src/routes/data-sveltekit/replacestate/target/+page.svelte
-723   	packages/kit/test/apps/basics/src/routes/delete-route/[id].json/+server.js
-724   	packages/kit/test/apps/basics/src/routes/delete-route/+page.svelte
-725   	packages/kit/test/apps/basics/src/routes/encoded/endpoint/+server.js
-726   	packages/kit/test/apps/basics/src/routes/encoded/escape-sequences/+layout.svelte
-727   	packages/kit/test/apps/basics/src/routes/encoded/escape-sequences/+page.svelte
-728   	packages/kit/test/apps/basics/src/routes/encoded/escape-sequences/[u+82d7]/+page.svelte
-729   	packages/kit/test/apps/basics/src/routes/encoded/escape-sequences/[u+d83e][u+dd2a]/+page.svelte
-730   	packages/kit/test/apps/basics/src/routes/encoded/escape-sequences/[x+23]/+page.svelte
-731   	packages/kit/test/apps/basics/src/routes/encoded/escape-sequences/[x+25]/+page.svelte
-732   	packages/kit/test/apps/basics/src/routes/encoded/escape-sequences/[x+2f]/+page.svelte
-733   	packages/kit/test/apps/basics/src/routes/encoded/escape-sequences/[x+3a]-[x+29]/+page.svelte
-734   	packages/kit/test/apps/basics/src/routes/encoded/escape-sequences/[x+3c]/+page.svelte
-735   	packages/kit/test/apps/basics/src/routes/encoded/escape-sequences/[x+3f]/+page.svelte
-736   	packages/kit/test/apps/basics/src/routes/encoded/escape-sequences/[x][x+3c][y]/+page.svelte
-737   	packages/kit/test/apps/basics/src/routes/encoded/+page.svelte
-738   	packages/kit/test/apps/basics/src/routes/encoded/redirected/+page.js
-739   	packages/kit/test/apps/basics/src/routes/encoded/redirected/+page.svelte
-740   	packages/kit/test/apps/basics/src/routes/encoded/redirect/+page.js
-741   	packages/kit/test/apps/basics/src/routes/encoded/redirect/+page.svelte
-742   	packages/kit/test/apps/basics/src/routes/encoded/[slug]/+page.js
-743   	packages/kit/test/apps/basics/src/routes/encoded/[slug]/+page.svelte
-744   	packages/kit/test/apps/basics/src/routes/encoded/@[username]/+page.svelte
-745   	packages/kit/test/apps/basics/src/routes/encoded/反应/+page.js
-746   	packages/kit/test/apps/basics/src/routes/encoded/反应/+page.svelte
-747   	packages/kit/test/apps/basics/src/routes/encoded/苗条/+page.js
-748   	packages/kit/test/apps/basics/src/routes/encoded/苗条/+page.svelte
-749   	packages/kit/test/apps/basics/src/routes/endpoint-input/sha256/+server.js
-750   	packages/kit/test/apps/basics/src/routes/endpoint-output/body/+server.js
-751   	packages/kit/test/apps/basics/src/routes/endpoint-output/fallback/+server.js
-752   	packages/kit/test/apps/basics/src/routes/endpoint-output/head-handler/+page.svelte
-753   	packages/kit/test/apps/basics/src/routes/endpoint-output/head-handler/+server.js
-754   	packages/kit/test/apps/basics/src/routes/endpoint-output/head-write-error/+server.js
-755   	packages/kit/test/apps/basics/src/routes/endpoint-output/+server.js
-756   	packages/kit/test/apps/basics/src/routes/endpoint-output/stream/+server.js
-757   	packages/kit/test/apps/basics/src/routes/endpoint-output/stream-throw-error/+server.js
-758   	packages/kit/test/apps/basics/src/routes/endpoint-output/stream-typeerror/+server.js
-759   	packages/kit/test/apps/basics/src/routes/env/includes/+page.server.js
-760   	packages/kit/test/apps/basics/src/routes/env/includes/+page.svelte
-761   	packages/kit/test/apps/basics/src/routes/env/+page.svelte
-762   	packages/kit/test/apps/basics/src/routes/errors/clientside/+page.svelte
-763   	packages/kit/test/apps/basics/src/routes/errors/endpoint.json/+server.js
-764   	packages/kit/test/apps/basics/src/routes/errors/endpoint/+page.js
-765   	packages/kit/test/apps/basics/src/routes/errors/endpoint/+page.svelte
-766   	packages/kit/test/apps/basics/src/routes/errors/endpoint-shadow-not-ok/+page.server.js
-767   	packages/kit/test/apps/basics/src/routes/errors/endpoint-shadow-not-ok/+page.svelte
-768   	packages/kit/test/apps/basics/src/routes/errors/endpoint-shadow/+page.server.js
-769   	packages/kit/test/apps/basics/src/routes/errors/endpoint-shadow/+page.svelte
-770   	packages/kit/test/apps/basics/src/routes/errors/endpoint-throw-error/+server.js
-771   	packages/kit/test/apps/basics/src/routes/errors/endpoint-throw-redirect/+server.js
-772   	packages/kit/test/apps/basics/src/routes/errors/error-html/make-root-fail/+server.js
-773   	packages/kit/test/apps/basics/src/routes/errors/error-html/+page.svelte
-774   	packages/kit/test/apps/basics/src/routes/errors/error-in-handle/+page.svelte
-775   	packages/kit/test/apps/basics/src/routes/errors/error-in-layout/+page.svelte
-776   	packages/kit/test/apps/basics/src/routes/errors/init-error-endpoint/+server.js
-777   	packages/kit/test/apps/basics/src/routes/errors/invalid-load-response/+page.js
-778   	packages/kit/test/apps/basics/src/routes/errors/invalid-load-response/+page.svelte
-779   	packages/kit/test/apps/basics/src/routes/errors/invalid-route-response/+server.js
-780   	packages/kit/test/apps/basics/src/routes/errors/invalid-server-load-response/+page.server.js
-781   	packages/kit/test/apps/basics/src/routes/errors/invalid-server-load-response/+page.svelte
-782   	packages/kit/test/apps/basics/src/routes/errors/+layout.js
-783   	packages/kit/test/apps/basics/src/routes/errors/+layout.svelte
-784   	packages/kit/test/apps/basics/src/routes/errors/load-client/+page.js
-785   	packages/kit/test/apps/basics/src/routes/errors/load-client/+page.svelte
-786   	packages/kit/test/apps/basics/src/routes/errors/load-error-client/+page.js
-787   	packages/kit/test/apps/basics/src/routes/errors/load-error-client/+page.svelte
-788   	packages/kit/test/apps/basics/src/routes/errors/load-error-server/+page.js
-789   	packages/kit/test/apps/basics/src/routes/errors/load-error-server/+page.svelte
-790   	packages/kit/test/apps/basics/src/routes/errors/load-error-string-server/+page.js
-791   	packages/kit/test/apps/basics/src/routes/errors/load-error-string-server/+page.svelte
-792   	packages/kit/test/apps/basics/src/routes/errors/load-server/+page.js
-793   	packages/kit/test/apps/basics/src/routes/errors/load-server/+page.svelte
-794   	packages/kit/test/apps/basics/src/routes/errors/load-status-without-error-client/+page.js
-795   	packages/kit/test/apps/basics/src/routes/errors/load-status-without-error-client/+page.svelte
-796   	packages/kit/test/apps/basics/src/routes/errors/missing-actions/+page.svelte
-797   	packages/kit/test/apps/basics/src/routes/errors/module-scope-client/+page.svelte
-798   	packages/kit/test/apps/basics/src/routes/errors/module-scope-server/+page.svelte
-799   	packages/kit/test/apps/basics/src/routes/errors/nested-error-page/+error.svelte
-800   	packages/kit/test/apps/basics/src/routes/errors/nested-error-page/nope/+page.js
-801   	packages/kit/test/apps/basics/src/routes/errors/nested-error-page/nope/+page.svelte
-802   	packages/kit/test/apps/basics/src/routes/errors/nested-error-page/+page.svelte
-803   	packages/kit/test/apps/basics/src/routes/errors/page-endpoint/+error.svelte
-804   	packages/kit/test/apps/basics/src/routes/errors/page-endpoint/get-explicit/+page.server.js
-805   	packages/kit/test/apps/basics/src/routes/errors/page-endpoint/get-explicit/+page.svelte
-806   	packages/kit/test/apps/basics/src/routes/errors/page-endpoint/get-implicit/+page.server.js
-807   	packages/kit/test/apps/basics/src/routes/errors/page-endpoint/get-implicit/+page.svelte
-808   	packages/kit/test/apps/basics/src/routes/errors/page-endpoint/+page.svelte
-809   	packages/kit/test/apps/basics/src/routes/errors/page-endpoint/post-explicit/+page.server.js
-810   	packages/kit/test/apps/basics/src/routes/errors/page-endpoint/post-explicit/+page.svelte
-811   	packages/kit/test/apps/basics/src/routes/errors/page-endpoint/post-implicit/+page.server.js
-812   	packages/kit/test/apps/basics/src/routes/errors/page-endpoint/post-implicit/+page.svelte
-813   	packages/kit/test/apps/basics/src/routes/errors/page-endpoint/_shared.js
-814   	packages/kit/test/apps/basics/src/routes/errors/serverside/+page.svelte
-815   	packages/kit/test/apps/basics/src/routes/errors/stack-trace/_bad.js
-816   	packages/kit/test/apps/basics/src/routes/errors/stack-trace/+page.svelte
-817   	packages/kit/test/apps/basics/src/routes/+error.svelte
-818   	packages/kit/test/apps/basics/src/routes/favicon.ico/+server.js
-819   	packages/kit/test/apps/basics/src/routes/goto/+page.svelte
-820   	packages/kit/test/apps/basics/src/routes/headers/class/+page.js
-821   	packages/kit/test/apps/basics/src/routes/headers/class/+page.svelte
-822   	packages/kit/test/apps/basics/src/routes/headers/echo/+server.js
-823   	packages/kit/test/apps/basics/src/routes/headers/+page.svelte
-824   	packages/kit/test/apps/basics/src/routes/headers/set-cookie/+layout.server.js
-825   	packages/kit/test/apps/basics/src/routes/headers/set-cookie/+layout.svelte
-826   	packages/kit/test/apps/basics/src/routes/headers/set-cookie/sub/+page.server.js
-827   	packages/kit/test/apps/basics/src/routes/headers/set-cookie/sub/+page.svelte
-828   	packages/kit/test/apps/basics/src/routes/iframes/nested/child/+page.svelte
-829   	packages/kit/test/apps/basics/src/routes/iframes/nested/parent/+page.svelte
-830   	packages/kit/test/apps/basics/src/routes/iframes/+page.svelte
-831   	packages/kit/test/apps/basics/src/routes/immutable-headers/+page.js
-832   	packages/kit/test/apps/basics/src/routes/immutable-headers/+server.js
-833   	packages/kit/test/apps/basics/src/routes/imports/markdown/+page.svelte
-834   	packages/kit/test/apps/basics/src/routes/imports/+page.svelte
-835   	packages/kit/test/apps/basics/src/routes/index.css
-836   	packages/kit/test/apps/basics/src/routes/interactivity/toggle-element/+page.svelte
-837   	packages/kit/test/apps/basics/src/routes/keepfocus/+page.svelte
-838   	packages/kit/test/apps/basics/src/routes/+layout.js
-839   	packages/kit/test/apps/basics/src/routes/+layout.server.js
-840   	packages/kit/test/apps/basics/src/routes/+layout.svelte
-841   	packages/kit/test/apps/basics/src/routes/load/accumulated/+page.svelte
-842   	packages/kit/test/apps/basics/src/routes/load/accumulated/without-page-data/+page.svelte
-843   	packages/kit/test/apps/basics/src/routes/load/accumulated/with-page-data/+page.js
-844   	packages/kit/test/apps/basics/src/routes/load/accumulated/with-page-data/+page.svelte
-845   	packages/kit/test/apps/basics/src/routes/load/cache-control/bust/count/+server.js
-846   	packages/kit/test/apps/basics/src/routes/load/cache-control/bust/increment/+server.js
-847   	packages/kit/test/apps/basics/src/routes/load/cache-control/bust/+page.js
-848   	packages/kit/test/apps/basics/src/routes/load/cache-control/bust/+page.svelte
-849   	packages/kit/test/apps/basics/src/routes/load/cache-control/bust/state.js
-850   	packages/kit/test/apps/basics/src/routes/load/cache-control/default/count/+server.js
-851   	packages/kit/test/apps/basics/src/routes/load/cache-control/default/increment/+server.js
-852   	packages/kit/test/apps/basics/src/routes/load/cache-control/default/+page.js
-853   	packages/kit/test/apps/basics/src/routes/load/cache-control/default/+page.svelte
-854   	packages/kit/test/apps/basics/src/routes/load/cache-control/default/state.js
-855   	packages/kit/test/apps/basics/src/routes/load/cache-control/force/count/+server.js
-856   	packages/kit/test/apps/basics/src/routes/load/cache-control/force/increment/+server.js
-857   	packages/kit/test/apps/basics/src/routes/load/cache-control/force/+page.js
-858   	packages/kit/test/apps/basics/src/routes/load/cache-control/force/+page.svelte
-859   	packages/kit/test/apps/basics/src/routes/load/cache-control/force/state.js
-860   	packages/kit/test/apps/basics/src/routes/load/change-detection/data.json/+server.js
-861   	packages/kit/test/apps/basics/src/routes/load/change-detection/+layout.js
-862   	packages/kit/test/apps/basics/src/routes/load/change-detection/+layout.svelte
-863   	packages/kit/test/apps/basics/src/routes/load/change-detection/one/[x]/+page.js
-864   	packages/kit/test/apps/basics/src/routes/load/change-detection/one/[x]/+page.svelte
-865   	packages/kit/test/apps/basics/src/routes/load/change-detection/two/[y]/+page.js
-866   	packages/kit/test/apps/basics/src/routes/load/change-detection/two/[y]/+page.svelte
-867   	packages/kit/test/apps/basics/src/routes/load/devalue/+page.svelte
-868   	packages/kit/test/apps/basics/src/routes/load/devalue/regex/+page.server.js
-869   	packages/kit/test/apps/basics/src/routes/load/devalue/regex/+page.svelte
-870   	packages/kit/test/apps/basics/src/routes/load/dynamic-import-styles/+page.js
-871   	packages/kit/test/apps/basics/src/routes/load/dynamic-import-styles/+page.svelte
-872   	packages/kit/test/apps/basics/src/routes/load/dynamic-import-styles/_/Thing.svelte
-873   	packages/kit/test/apps/basics/src/routes/load/[dynamic].json/+server.js
-874   	packages/kit/test/apps/basics/src/routes/load/[dynamic]/+page.js
-875   	packages/kit/test/apps/basics/src/routes/load/[dynamic]/+page.svelte
-876   	packages/kit/test/apps/basics/src/routes/load/fetch-arraybuffer-b64/data/+server.js
-877   	packages/kit/test/apps/basics/src/routes/load/fetch-arraybuffer-b64/+page.js
-878   	packages/kit/test/apps/basics/src/routes/load/fetch-arraybuffer-b64/+page.svelte
-879   	packages/kit/test/apps/basics/src/routes/load/fetch-cache-control/headers-diff/+page.js
-880   	packages/kit/test/apps/basics/src/routes/load/fetch-cache-control/headers-diff/+page.svelte
-881   	packages/kit/test/apps/basics/src/routes/load/fetch-cache-control/headers-diff/+server.js
-882   	packages/kit/test/apps/basics/src/routes/load/fetch-cache-control/load-data/+page.js
-883   	packages/kit/test/apps/basics/src/routes/load/fetch-cache-control/load-data/+page.svelte
-884   	packages/kit/test/apps/basics/src/routes/load/fetch-cache-control/load-data/+server.js
-885   	packages/kit/test/apps/basics/src/routes/load/fetch-cache-control/+page.svelte
-886   	packages/kit/test/apps/basics/src/routes/load/fetch-credentialed.json/+server.js
-887   	packages/kit/test/apps/basics/src/routes/load/fetch-credentialed/+page.js
-888   	packages/kit/test/apps/basics/src/routes/load/fetch-credentialed/+page.svelte
-889   	packages/kit/test/apps/basics/src/routes/load/fetch-external-no-cookies/+page.js
-890   	packages/kit/test/apps/basics/src/routes/load/fetch-external-no-cookies/+page.svelte
-891   	packages/kit/test/apps/basics/src/routes/load/fetch-origin-external/+page.js
-892   	packages/kit/test/apps/basics/src/routes/load/fetch-origin-external/+page.svelte
-893   	packages/kit/test/apps/basics/src/routes/load/fetch-origin-internal/+page.js
-894   	packages/kit/test/apps/basics/src/routes/load/fetch-origin-internal/+page.svelte
-895   	packages/kit/test/apps/basics/src/routes/load/fetch-origin-internal/resource/+server.js
-896   	packages/kit/test/apps/basics/src/routes/load/fetch-relative.json/+server.js
-897   	packages/kit/test/apps/basics/src/routes/load/fetch-relative/+page.js
-898   	packages/kit/test/apps/basics/src/routes/load/fetch-relative/+page.svelte
-899   	packages/kit/test/apps/basics/src/routes/load/fetch-request-headers/data/+server.js
-900   	packages/kit/test/apps/basics/src/routes/load/fetch-request-headers/+page.js
-901   	packages/kit/test/apps/basics/src/routes/load/fetch-request-headers/+page.svelte
-902   	packages/kit/test/apps/basics/src/routes/load/fetch-request.json/+server.js
-903   	packages/kit/test/apps/basics/src/routes/load/fetch-request/+page.js
-904   	packages/kit/test/apps/basics/src/routes/load/fetch-request/+page.svelte
-905   	packages/kit/test/apps/basics/src/routes/load/fetch-response-headers.json/+server.js
-906   	packages/kit/test/apps/basics/src/routes/load/fetch-response-headers/+page.js
-907   	packages/kit/test/apps/basics/src/routes/load/fetch-response-headers/+page.svelte
-908   	packages/kit/test/apps/basics/src/routes/load/invalidation/depends/+page.js
-909   	packages/kit/test/apps/basics/src/routes/load/invalidation/depends/+page.server.js
-910   	packages/kit/test/apps/basics/src/routes/load/invalidation/depends/+page.svelte
-911   	packages/kit/test/apps/basics/src/routes/load/invalidation/forced-goto/+layout.server.js
-912   	packages/kit/test/apps/basics/src/routes/load/invalidation/forced-goto/+layout.svelte
-913   	packages/kit/test/apps/basics/src/routes/load/invalidation/forced-goto/+page.server.js
-914   	packages/kit/test/apps/basics/src/routes/load/invalidation/forced-goto/+page.svelte
-915   	packages/kit/test/apps/basics/src/routes/load/invalidation/forced-goto/state.js
-916   	packages/kit/test/apps/basics/src/routes/load/invalidation/forced/+layout.server.js
-917   	packages/kit/test/apps/basics/src/routes/load/invalidation/forced/+layout.svelte
-918   	packages/kit/test/apps/basics/src/routes/load/invalidation/forced/+page.server.js
-919   	packages/kit/test/apps/basics/src/routes/load/invalidation/forced/+page.svelte
-920   	packages/kit/test/apps/basics/src/routes/load/invalidation/forced/state.js
-921   	packages/kit/test/apps/basics/src/routes/load/invalidation/invalidate-then-goto/+layout.server.js
-922   	packages/kit/test/apps/basics/src/routes/load/invalidation/invalidate-then-goto/+page.server.js
-923   	packages/kit/test/apps/basics/src/routes/load/invalidation/invalidate-then-goto/+page.svelte
-924   	packages/kit/test/apps/basics/src/routes/load/invalidation/multiple-batched/+page.js
-925   	packages/kit/test/apps/basics/src/routes/load/invalidation/multiple-batched/+page.svelte
-926   	packages/kit/test/apps/basics/src/routes/load/invalidation/multiple/+layout.js
-927   	packages/kit/test/apps/basics/src/routes/load/invalidation/multiple/+layout.svelte
-928   	packages/kit/test/apps/basics/src/routes/load/invalidation/multiple/+page.js
-929   	packages/kit/test/apps/basics/src/routes/load/invalidation/multiple/+page.svelte
-930   	packages/kit/test/apps/basics/src/routes/load/invalidation/multiple/redirect/+page.js
-931   	packages/kit/test/apps/basics/src/routes/load/invalidation/multiple/redirect/+page.svelte
-932   	packages/kit/test/apps/basics/src/routes/load/invalidation/multiple/state.js
-933   	packages/kit/test/apps/basics/src/routes/load/invalidation/params/[a]/[b]/+page.svelte
-934   	packages/kit/test/apps/basics/src/routes/load/invalidation/params/[a]/+page.svelte
-935   	packages/kit/test/apps/basics/src/routes/load/invalidation/params/+layout.js
-936   	packages/kit/test/apps/basics/src/routes/load/invalidation/params/+layout.svelte
-937   	packages/kit/test/apps/basics/src/routes/load/invalidation/params/+page.svelte
-938   	packages/kit/test/apps/basics/src/routes/load/invalidation/route/server/a/+page.svelte
-939   	packages/kit/test/apps/basics/src/routes/load/invalidation/route/server/b/+page.svelte
-940   	packages/kit/test/apps/basics/src/routes/load/invalidation/route/server/+layout.server.js
-941   	packages/kit/test/apps/basics/src/routes/load/invalidation/route/server/+layout.svelte
-942   	packages/kit/test/apps/basics/src/routes/load/invalidation/route/shared/a/+page.svelte
-943   	packages/kit/test/apps/basics/src/routes/load/invalidation/route/shared/b/+page.svelte
-944   	packages/kit/test/apps/basics/src/routes/load/invalidation/route/shared/+layout.js
-945   	packages/kit/test/apps/basics/src/routes/load/invalidation/route/shared/+layout.svelte
-946   	packages/kit/test/apps/basics/src/routes/load/invalidation/route/shared/[x]/+page.svelte
-947   	packages/kit/test/apps/basics/src/routes/load/invalidation/search-params/server/+page.server.js
-948   	packages/kit/test/apps/basics/src/routes/load/invalidation/search-params/server/+page.svelte
-949   	packages/kit/test/apps/basics/src/routes/load/invalidation/search-params/universal/+page.js
-950   	packages/kit/test/apps/basics/src/routes/load/invalidation/search-params/universal/+page.svelte
-951   	packages/kit/test/apps/basics/src/routes/load/invalidation/server-fetch/count.json/+server.js
-952   	packages/kit/test/apps/basics/src/routes/load/invalidation/server-fetch/+page.server.js
-953   	packages/kit/test/apps/basics/src/routes/load/invalidation/server-fetch/+page.svelte
-954   	packages/kit/test/apps/basics/src/routes/load/invalidation/url/+page.server.js
-955   	packages/kit/test/apps/basics/src/routes/load/invalidation/url/+page.svelte
-956   	packages/kit/test/apps/basics/src/routes/load/large-response/+page.js
-957   	packages/kit/test/apps/basics/src/routes/load/large-response/+page.svelte
-958   	packages/kit/test/apps/basics/src/routes/load/large-response/text.txt/+server.js
-959   	packages/kit/test/apps/basics/src/routes/load/mutated-url/+page.js
-960   	packages/kit/test/apps/basics/src/routes/load/mutated-url/+page.svelte
-961   	packages/kit/test/apps/basics/src/routes/load/no-server-load/a/+page.server.js
-962   	packages/kit/test/apps/basics/src/routes/load/no-server-load/a/+page.svelte
-963   	packages/kit/test/apps/basics/src/routes/load/no-server-load/b/+page.server.js
-964   	packages/kit/test/apps/basics/src/routes/load/no-server-load/b/+page.svelte
-965   	packages/kit/test/apps/basics/src/routes/load/no-server-load/+layout.svelte
-966   	packages/kit/test/apps/basics/src/routes/load/+page.js
-967   	packages/kit/test/apps/basics/src/routes/load/+page.svelte
-968   	packages/kit/test/apps/basics/src/routes/load/parent/server/+layout.server.js
-969   	packages/kit/test/apps/basics/src/routes/load/parent/server/+layout.svelte
-970   	packages/kit/test/apps/basics/src/routes/load/parent/server/[x]/+layout.server.js
-971   	packages/kit/test/apps/basics/src/routes/load/parent/server/[x]/+layout.svelte
-972   	packages/kit/test/apps/basics/src/routes/load/parent/server/[x]/[y]/+layout.svelte
-973   	packages/kit/test/apps/basics/src/routes/load/parent/server/[x]/[y]/[z]/+page.server.js
-974   	packages/kit/test/apps/basics/src/routes/load/parent/server/[x]/[y]/[z]/+page.svelte
-975   	packages/kit/test/apps/basics/src/routes/load/parent/shared/+layout.js
-976   	packages/kit/test/apps/basics/src/routes/load/parent/shared/+layout.svelte
-977   	packages/kit/test/apps/basics/src/routes/load/parent/shared/[x]/+layout.js
-978   	packages/kit/test/apps/basics/src/routes/load/parent/shared/[x]/+layout.svelte
-979   	packages/kit/test/apps/basics/src/routes/load/parent/shared/[x]/[y]/+layout.svelte
-980   	packages/kit/test/apps/basics/src/routes/load/parent/shared/[x]/[y]/[z]/+page.js
-981   	packages/kit/test/apps/basics/src/routes/load/parent/shared/[x]/[y]/[z]/+page.svelte
-982   	packages/kit/test/apps/basics/src/routes/load/props/+page.js
-983   	packages/kit/test/apps/basics/src/routes/load/props/+page.svelte
-984   	packages/kit/test/apps/basics/src/routes/load/raw-body/dataview/+page.js
-985   	packages/kit/test/apps/basics/src/routes/load/raw-body/dataview/+page.svelte
-986   	packages/kit/test/apps/basics/src/routes/load/raw-body.json/+server.js
-987   	packages/kit/test/apps/basics/src/routes/load/raw-body/+page.svelte
-988   	packages/kit/test/apps/basics/src/routes/load/raw-body/string/+page.js
-989   	packages/kit/test/apps/basics/src/routes/load/raw-body/string/+page.svelte
-990   	packages/kit/test/apps/basics/src/routes/load/raw-body/uint8array/+page.js
-991   	packages/kit/test/apps/basics/src/routes/load/raw-body/uint8array/+page.svelte
-992   	packages/kit/test/apps/basics/src/routes/load/relay.json/+server.js
-993   	packages/kit/test/apps/basics/src/routes/load/relay/+page.js
-994   	packages/kit/test/apps/basics/src/routes/load/relay/+page.svelte
-995   	packages/kit/test/apps/basics/src/routes/load/serialization/fetched-from-server.json/+server.js
-996   	packages/kit/test/apps/basics/src/routes/load/serialization/fetched-from-shared.json/+server.js
-997   	packages/kit/test/apps/basics/src/routes/load/serialization/+page.js
-998   	packages/kit/test/apps/basics/src/routes/load/serialization/+page.server.js
-999   	packages/kit/test/apps/basics/src/routes/load/serialization/+page.svelte
-1000  	packages/kit/test/apps/basics/src/routes/load/serialization-post.json/+server.js
-1001  	packages/kit/test/apps/basics/src/routes/load/serialization-post/+page.js
-1002  	packages/kit/test/apps/basics/src/routes/load/serialization-post/+page.svelte
-1003  	packages/kit/test/apps/basics/src/routes/load/serialization-post-request/+page.js
-1004  	packages/kit/test/apps/basics/src/routes/load/serialization-post-request/+page.svelte
-1005  	packages/kit/test/apps/basics/src/routes/load/server-data-nostore/+page.server.js
-1006  	packages/kit/test/apps/basics/src/routes/load/server-data-nostore/+page.svelte
-1007  	packages/kit/test/apps/basics/src/routes/load/server-data-reuse/no-load/+page.svelte
-1008  	packages/kit/test/apps/basics/src/routes/load/server-data-reuse/with-changing-parent/+layout.server.js
-1009  	packages/kit/test/apps/basics/src/routes/load/server-data-reuse/with-changing-parent/+layout.svelte
-1010  	packages/kit/test/apps/basics/src/routes/load/server-data-reuse/with-changing-parent/no-load/+page.svelte
-1011  	packages/kit/test/apps/basics/src/routes/load/server-data-reuse/with-changing-parent/with-server-load/+page.server.js
-1012  	packages/kit/test/apps/basics/src/routes/load/server-data-reuse/with-changing-parent/with-server-load/+page.svelte
-1013  	packages/kit/test/apps/basics/src/routes/load/server-data-reuse/with-server-load/+page.server.js
-1014  	packages/kit/test/apps/basics/src/routes/load/server-data-reuse/with-server-load/+page.svelte
-1015  	packages/kit/test/apps/basics/src/routes/load/server-fetch-request/+page.js
-1016  	packages/kit/test/apps/basics/src/routes/load/server-fetch-request/+page.svelte
-1017  	packages/kit/test/apps/basics/src/routes/load/set-cookie-fetch/a.json/+server.js
-1018  	packages/kit/test/apps/basics/src/routes/load/set-cookie-fetch/b.json/+server.js
-1019  	packages/kit/test/apps/basics/src/routes/load/set-cookie-fetch/+page.js
-1020  	packages/kit/test/apps/basics/src/routes/load/set-cookie-fetch/+page.svelte
-1021  	packages/kit/test/apps/basics/src/routes/load/static-file-with-hash/+page.js
-1022  	packages/kit/test/apps/basics/src/routes/load/static-file-with-hash/+page.svelte
-1023  	packages/kit/test/apps/basics/src/routes/load/unchanged/isolated/[slug]/+page.server.js
-1024  	packages/kit/test/apps/basics/src/routes/load/unchanged/isolated/[slug]/+page.svelte
-1025  	packages/kit/test/apps/basics/src/routes/load/unchanged/+layout.server.js
-1026  	packages/kit/test/apps/basics/src/routes/load/unchanged/+layout.svelte
-1027  	packages/kit/test/apps/basics/src/routes/load/unchanged/+page.svelte
-1028  	packages/kit/test/apps/basics/src/routes/load/unchanged-parent/+layout.server.js
-1029  	packages/kit/test/apps/basics/src/routes/load/unchanged-parent/+layout.svelte
-1030  	packages/kit/test/apps/basics/src/routes/load/unchanged-parent/+page.svelte
-1031  	packages/kit/test/apps/basics/src/routes/load/unchanged-parent/state.js
-1032  	packages/kit/test/apps/basics/src/routes/load/unchanged-parent/uses-parent/[slug]/+page.server.js
-1033  	packages/kit/test/apps/basics/src/routes/load/unchanged-parent/uses-parent/[slug]/+page.svelte
-1034  	packages/kit/test/apps/basics/src/routes/load/unchanged/state.js
-1035  	packages/kit/test/apps/basics/src/routes/load/url-hash/+page.js
-1036  	packages/kit/test/apps/basics/src/routes/load/url-hash/+page.svelte
-1037  	packages/kit/test/apps/basics/src/routes/load/url-query-param/+page.js
-1038  	packages/kit/test/apps/basics/src/routes/load/url-query-param/+page.server.js
-1039  	packages/kit/test/apps/basics/src/routes/load/url-query-param/+page.svelte
-1040  	packages/kit/test/apps/basics/src/routes/load/url-to-string/+page.js
-1041  	packages/kit/test/apps/basics/src/routes/load/url-to-string/+page.svelte
-1042  	packages/kit/test/apps/basics/src/routes/load/window-fetch/correct/+page.js
-1043  	packages/kit/test/apps/basics/src/routes/load/window-fetch/correct/+page.svelte
-1044  	packages/kit/test/apps/basics/src/routes/load/window-fetch/data.json/+server.js
-1045  	packages/kit/test/apps/basics/src/routes/load/window-fetch/incorrect/+page.js
-1046  	packages/kit/test/apps/basics/src/routes/load/window-fetch/incorrect/+page.svelte
-1047  	packages/kit/test/apps/basics/src/routes/load/window-fetch/outside-load/+page.svelte
-1048  	packages/kit/test/apps/basics/src/routes/load/window-fetch/patching/+page.js
-1049  	packages/kit/test/apps/basics/src/routes/load/window-fetch/patching/+page.svelte
-1050  	packages/kit/test/apps/basics/src/routes/navigation-lifecycle/after-navigate/a/+page.svelte
-1051  	packages/kit/test/apps/basics/src/routes/navigation-lifecycle/after-navigate/b/+page.svelte
-1052  	packages/kit/test/apps/basics/src/routes/navigation-lifecycle/before-navigate/a/+page.svelte
-1053  	packages/kit/test/apps/basics/src/routes/navigation-lifecycle/before-navigate/hash-links/+page.svelte
-1054  	packages/kit/test/apps/basics/src/routes/navigation-lifecycle/before-navigate/prevent-navigation/+page.svelte
-1055  	packages/kit/test/apps/basics/src/routes/navigation-lifecycle/before-navigate/redirect/+page.js
-1056  	packages/kit/test/apps/basics/src/routes/navigation-lifecycle/on-navigate/[x]/+page.svelte
-1057  	packages/kit/test/apps/basics/src/routes/nested-layout/error/+page.js
-1058  	packages/kit/test/apps/basics/src/routes/nested-layout/error/+page.svelte
-1059  	packages/kit/test/apps/basics/src/routes/nested-layout/foo/bar/+error.svelte
-1060  	packages/kit/test/apps/basics/src/routes/nested-layout/foo/bar/+layout.svelte
-1061  	packages/kit/test/apps/basics/src/routes/nested-layout/foo/bar/nope/+page.js
-1062  	packages/kit/test/apps/basics/src/routes/nested-layout/foo/bar/nope/+page.svelte
-1063  	packages/kit/test/apps/basics/src/routes/nested-layout/foo/baz/+page.svelte
-1064  	packages/kit/test/apps/basics/src/routes/nested-layout/foo/+layout.svelte
-1065  	packages/kit/test/apps/basics/src/routes/nested-layout/+layout.svelte
-1066  	packages/kit/test/apps/basics/src/routes/nested-layout/+page.svelte
-1067  	packages/kit/test/apps/basics/src/routes/nested-layout/reset/+layout@.svelte
-1068  	packages/kit/test/apps/basics/src/routes/nested-layout/reset/+page.svelte
-1069  	packages/kit/test/apps/basics/src/routes/no-csr/data.json/+server.js
-1070  	packages/kit/test/apps/basics/src/routes/no-csr/+page.js
-1071  	packages/kit/test/apps/basics/src/routes/no-csr/+page.svelte
-1072  	packages/kit/test/apps/basics/src/routes/no-ssr/browser-only-global/+page.svelte
-1073  	packages/kit/test/apps/basics/src/routes/no-ssr/+layout.js
-1074  	packages/kit/test/apps/basics/src/routes/no-ssr/+layout.svelte
-1075  	packages/kit/test/apps/basics/src/routes/no-ssr/margin/+page.svelte
-1076  	packages/kit/test/apps/basics/src/routes/no-ssr/other/+page.svelte
-1077  	packages/kit/test/apps/basics/src/routes/no-ssr/+page.svelte
-1078  	packages/kit/test/apps/basics/src/routes/no-ssr/ssr-page-config/layout/inherit/+page.svelte
-1079  	packages/kit/test/apps/basics/src/routes/no-ssr/ssr-page-config/layout/+layout.js
-1080  	packages/kit/test/apps/basics/src/routes/no-ssr/ssr-page-config/layout/+layout.svelte
-1081  	packages/kit/test/apps/basics/src/routes/no-ssr/ssr-page-config/layout/overwrite/+page.js
-1082  	packages/kit/test/apps/basics/src/routes/no-ssr/ssr-page-config/layout/overwrite/+page.svelte
-1083  	packages/kit/test/apps/basics/src/routes/no-ssr/ssr-page-config/+page.js
-1084  	packages/kit/test/apps/basics/src/routes/no-ssr/ssr-page-config/+page.svelte
-1085  	packages/kit/test/apps/basics/src/routes/origin/+page.svelte
-1086  	packages/kit/test/apps/basics/src/routes/package.json/+server.js
-1087  	packages/kit/test/apps/basics/src/routes/+page.js
-1088  	packages/kit/test/apps/basics/src/routes/+page.svelte
-1089  	packages/kit/test/apps/basics/src/routes/paths/deeply/nested/+page.svelte
-1090  	packages/kit/test/apps/basics/src/routes/paths/+page.svelte
-1091  	packages/kit/test/apps/basics/src/routes/prerendering/env/dynamic/+page.svelte
-1092  	packages/kit/test/apps/basics/src/routes/prerendering/env/+layout.svelte
-1093  	packages/kit/test/apps/basics/src/routes/prerendering/env/prerendered/+page.js
-1094  	packages/kit/test/apps/basics/src/routes/prerendering/env/prerendered/+page.svelte
-1095  	packages/kit/test/apps/basics/src/routes/prerendering/+error.svelte
-1096  	packages/kit/test/apps/basics/src/routes/prerendering/log-url/+page.js
-1097  	packages/kit/test/apps/basics/src/routes/prerendering/log-url/+page.svelte
-1098  	packages/kit/test/apps/basics/src/routes/prerendering/mutative-endpoint/+page.js
-1099  	packages/kit/test/apps/basics/src/routes/prerendering/mutative-endpoint/+page.server.ts
-1100  	packages/kit/test/apps/basics/src/routes/prerendering/mutative-endpoint/+page.svelte
-1101  	packages/kit/test/apps/basics/src/routes/prerendering/no-ssr/+page.js
-1102  	packages/kit/test/apps/basics/src/routes/prerendering/no-ssr/+page.svelte
-1103  	packages/kit/test/apps/basics/src/routes/prerendering/prerendered-endpoint/api/+server.js
-1104  	packages/kit/test/apps/basics/src/routes/prerendering/prerendered-endpoint/page/+page.server.js
-1105  	packages/kit/test/apps/basics/src/routes/prerendering/prerendered-endpoint/page/+page.svelte
-1106  	packages/kit/test/apps/basics/src/routes/prerendering/prerendered-endpoint/+page.svelte
-1107  	packages/kit/test/apps/basics/src/routes/prerendering/prerendered-endpoint/proxy/+server.js
-1108  	packages/kit/test/apps/basics/src/routes/query/echo/+page.js
-1109  	packages/kit/test/apps/basics/src/routes/query/echo/+page.svelte
-1110  	packages/kit/test/apps/basics/src/routes/query/echo/utils.js
-1111  	packages/kit/test/apps/basics/src/routes/read-file/auto.txt
-1112  	packages/kit/test/apps/basics/src/routes/read-file/+page.server.js
-1113  	packages/kit/test/apps/basics/src/routes/read-file/+page.svelte
-1114  	packages/kit/test/apps/basics/src/routes/read-file/url.txt
-1115  	packages/kit/test/apps/basics/src/routes/redirect/a/+page.js
-1116  	packages/kit/test/apps/basics/src/routes/redirect/a/+page.svelte
-1117  	packages/kit/test/apps/basics/src/routes/redirect/b/+page.js
-1118  	packages/kit/test/apps/basics/src/routes/redirect/b/+page.svelte
-1119  	packages/kit/test/apps/basics/src/routes/redirect/c/+page.svelte
-1120  	packages/kit/test/apps/basics/src/routes/redirect/in-handle/+page.server.js
-1121  	packages/kit/test/apps/basics/src/routes/redirect/in-handle/+page.svelte
-1122  	packages/kit/test/apps/basics/src/routes/redirect/loopy/a/+page.js
-1123  	packages/kit/test/apps/basics/src/routes/redirect/loopy/a/+page.svelte
-1124  	packages/kit/test/apps/basics/src/routes/redirect/loopy/b/+page.js
-1125  	packages/kit/test/apps/basics/src/routes/redirect/loopy/b/+page.svelte
-1126  	packages/kit/test/apps/basics/src/routes/redirect/missing-status/a/+page.js
-1127  	packages/kit/test/apps/basics/src/routes/redirect/missing-status/a/+page.svelte
-1128  	packages/kit/test/apps/basics/src/routes/redirect/missing-status/b/+page.js
-1129  	packages/kit/test/apps/basics/src/routes/redirect/missing-status/b/+page.svelte
-1130  	packages/kit/test/apps/basics/src/routes/redirect-on-load/+page.js
-1131  	packages/kit/test/apps/basics/src/routes/redirect-on-load/+page.svelte
-1132  	packages/kit/test/apps/basics/src/routes/redirect-on-load/redirected/+page.svelte
-1133  	packages/kit/test/apps/basics/src/routes/redirect/+page.svelte
-1134  	packages/kit/test/apps/basics/src/routes/reroute/basic/a/+page.svelte
-1135  	packages/kit/test/apps/basics/src/routes/reroute/basic/b/+page.svelte
-1136  	packages/kit/test/apps/basics/src/routes/reroute/basic/+page.svelte
-1137  	packages/kit/test/apps/basics/src/routes/reroute/client-only-redirect/a/+page.svelte
-1138  	packages/kit/test/apps/basics/src/routes/reroute/client-only-redirect/b/+page.svelte
-1139  	packages/kit/test/apps/basics/src/routes/reroute/client-only-redirect/+page.js
-1140  	packages/kit/test/apps/basics/src/routes/reroute/client-only-redirect/+page.svelte
-1141  	packages/kit/test/apps/basics/src/routes/reroute/error-handling/client-error/+page.svelte
-1142  	packages/kit/test/apps/basics/src/routes/reroute/error-handling/client-error-rewritten/+page.svelte
-1143  	packages/kit/test/apps/basics/src/routes/reroute/error-handling/+page.svelte
-1144  	packages/kit/test/apps/basics/src/routes/reroute/error-handling/server-error/+page.svelte
-1145  	packages/kit/test/apps/basics/src/routes/reroute/external/+page.svelte
-1146  	packages/kit/test/apps/basics/src/routes/reroute/preload-data/a/+page.js
-1147  	packages/kit/test/apps/basics/src/routes/reroute/preload-data/b/+page.js
-1148  	packages/kit/test/apps/basics/src/routes/reroute/preload-data/+page.svelte
-1149  	packages/kit/test/apps/basics/src/routes/routing/ambiguous/[slug].json/+server.js
-1150  	packages/kit/test/apps/basics/src/routes/routing/ambiguous/[slug]/+page.svelte
-1151  	packages/kit/test/apps/basics/src/routes/routing/a/+page.svelte
-1152  	packages/kit/test/apps/basics/src/routes/routing/b.json/+server.js
-1153  	packages/kit/test/apps/basics/src/routes/routing/b/+page.js
-1154  	packages/kit/test/apps/basics/src/routes/routing/b/+page.svelte
-1155  	packages/kit/test/apps/basics/src/routes/routing/cancellation/a/+page.js
-1156  	packages/kit/test/apps/basics/src/routes/routing/cancellation/a/+page.svelte
-1157  	packages/kit/test/apps/basics/src/routes/routing/cancellation/b/+page.svelte
-1158  	packages/kit/test/apps/basics/src/routes/routing/cancellation/+layout.svelte
-1159  	packages/kit/test/apps/basics/src/routes/routing/cancellation/+page.svelte
-1160  	packages/kit/test/apps/basics/src/routes/routing/client/bar/b/+page.svelte
-1161  	packages/kit/test/apps/basics/src/routes/routing/client/bar/+page.svelte
-1162  	packages/kit/test/apps/basics/src/routes/routing/client/foo/+page.svelte
-1163  	packages/kit/test/apps/basics/src/routes/routing/const/+page.svelte
-1164  	packages/kit/test/apps/basics/src/routes/routing/content-negotiation/+page.server.js
-1165  	packages/kit/test/apps/basics/src/routes/routing/content-negotiation/+page.svelte
-1166  	packages/kit/test/apps/basics/src/routes/routing/content-negotiation/+server.js
-1167  	packages/kit/test/apps/basics/src/routes/routing/dirs/bar/[a]/+page.svelte
-1168  	packages/kit/test/apps/basics/src/routes/routing/dirs/bar/+page.svelte
-1169  	packages/kit/test/apps/basics/src/routes/routing/dirs/foo/[b]/+page.svelte
-1170  	packages/kit/test/apps/basics/src/routes/routing/dirs/foo/+page.svelte
-1171  	packages/kit/test/apps/basics/src/routes/routing/external-popstate/+page.svelte
-1172  	packages/kit/test/apps/basics/src/routes/routing/form-get/+page.svelte
-1173  	packages/kit/test/apps/basics/src/routes/routing/hashes/a/+page.svelte
-1174  	packages/kit/test/apps/basics/src/routes/routing/hashes/b/+page.svelte
-1175  	packages/kit/test/apps/basics/src/routes/routing/hashes/pagestore/+page.svelte
-1176  	packages/kit/test/apps/basics/src/routes/routing/hashes/target/+page.svelte
-1177  	packages/kit/test/apps/basics/src/routes/routing/link-outside-app-target/source/+page.svelte
-1178  	packages/kit/test/apps/basics/src/routes/routing/link-outside-app-target/state.js
-1179  	packages/kit/test/apps/basics/src/routes/routing/link-outside-app-target/target/+page.svelte
-1180  	packages/kit/test/apps/basics/src/routes/routing/matched/[fallback]/+page.svelte
-1181  	packages/kit/test/apps/basics/src/routes/routing/matched/+layout.svelte
-1182  	packages/kit/test/apps/basics/src/routes/routing/matched/[letter=lowercase]/+page.svelte
-1183  	packages/kit/test/apps/basics/src/routes/routing/matched/[letter=uppercase]/+page.svelte
-1184  	packages/kit/test/apps/basics/src/routes/routing/matched/[number=numeric]/+page.svelte
-1185  	packages/kit/test/apps/basics/src/routes/routing/matched/+page.svelte
-1186  	packages/kit/test/apps/basics/src/routes/routing/missing-href/+page.svelte
-1187  	packages/kit/test/apps/basics/src/routes/routing/+page.svelte
-1188  	packages/kit/test/apps/basics/src/routes/routing/params-in-handle/[x]/+server.js
-1189  	packages/kit/test/apps/basics/src/routes/routing/preloading/hash-route/+page.js
-1190  	packages/kit/test/apps/basics/src/routes/routing/preloading/hash-route/+page.svelte
-1191  	packages/kit/test/apps/basics/src/routes/routing/preloading/preloaded.json/+server.js
-1192  	packages/kit/test/apps/basics/src/routes/routing/preloading/preloaded/+page.js
-1193  	packages/kit/test/apps/basics/src/routes/routing/preloading/preloaded/+page.svelte
-1194  	packages/kit/test/apps/basics/src/routes/routing/preloading/preload-error/+page.js
-1195  	packages/kit/test/apps/basics/src/routes/routing/preloading/preload-error/+page.svelte
-1196  	packages/kit/test/apps/basics/src/routes/routing/prerendered/+layout.js
-1197  	packages/kit/test/apps/basics/src/routes/routing/prerendered/trailing-slash/always/+page.js
-1198  	packages/kit/test/apps/basics/src/routes/routing/prerendered/trailing-slash/always/+page.svelte
-1199  	packages/kit/test/apps/basics/src/routes/routing/prerendered/trailing-slash/ignore/+page.js
-1200  	packages/kit/test/apps/basics/src/routes/routing/prerendered/trailing-slash/ignore/+page.svelte
-1201  	packages/kit/test/apps/basics/src/routes/routing/prerendered/trailing-slash/never/+page.svelte
-1202  	packages/kit/test/apps/basics/src/routes/routing/rest/complex/[...parts].json/+server.js
-1203  	packages/kit/test/apps/basics/src/routes/routing/rest/complex/prefix-[...parts]/+page.js
-1204  	packages/kit/test/apps/basics/src/routes/routing/rest/complex/prefix-[...parts]/+page.svelte
-1205  	packages/kit/test/apps/basics/src/routes/routing/rest/non-greedy/[dynamic]-bar/[...rest]/+page.svelte
-1206  	packages/kit/test/apps/basics/src/routes/routing/rest/non-greedy/foo/[...rest]/+page.svelte
-1207  	packages/kit/test/apps/basics/src/routes/routing/rest/non-greedy/+layout.svelte
-1208  	packages/kit/test/apps/basics/src/routes/routing/rest/non-greedy/+page.svelte
-1209  	packages/kit/test/apps/basics/src/routes/routing/rest/path/[...ignored]/+page.js
-1210  	packages/kit/test/apps/basics/src/routes/routing/rest/path/[...ignored]/+page.svelte
-1211  	packages/kit/test/apps/basics/src/routes/routing/rest/path/+layout.svelte
-1212  	packages/kit/test/apps/basics/src/routes/routing/rest/[...rest]/deep.json/+server.js
-1213  	packages/kit/test/apps/basics/src/routes/routing/rest/[...rest]/deep/+page.js
-1214  	packages/kit/test/apps/basics/src/routes/routing/rest/[...rest]/deep/+page.svelte
-1215  	packages/kit/test/apps/basics/src/routes/routing/rest/[...rest]/+page.js
-1216  	packages/kit/test/apps/basics/src/routes/routing/rest/[...rest]/+page.svelte
-1217  	packages/kit/test/apps/basics/src/routes/routing/route-id/+page.svelte
-1218  	packages/kit/test/apps/basics/src/routes/routing/route-id/[x]/+page.js
-1219  	packages/kit/test/apps/basics/src/routes/routing/route-id/[x]/+page.svelte
-1220  	packages/kit/test/apps/basics/src/routes/routing/shadow-dom/+page.svelte
-1221  	packages/kit/test/apps/basics/src/routes/routing/skipped/[one]/[two]/+page.js
-1222  	packages/kit/test/apps/basics/src/routes/routing/skipped/[one]/[two]/+page.svelte
-1223  	packages/kit/test/apps/basics/src/routes/routing/slashes/+page.svelte
-1224  	packages/kit/test/apps/basics/src/routes/routing/[slug]/+page.svelte
-1225  	packages/kit/test/apps/basics/src/routes/routing/split-params/[a]-[b]/+page.svelte
-1226  	packages/kit/test/apps/basics/src/routes/routing/split-params/+page.svelte
-1227  	packages/kit/test/apps/basics/src/routes/routing/symlink-to/+page.svelte
-1228  	packages/kit/test/apps/basics/src/routes/routing/trailing-slash/always/+page.js
-1229  	packages/kit/test/apps/basics/src/routes/routing/trailing-slash/always/+page.svelte
-1230  	packages/kit/test/apps/basics/src/routes/routing/trailing-slash/ignore/+page.js
-1231  	packages/kit/test/apps/basics/src/routes/routing/trailing-slash/ignore/+page.svelte
-1232  	packages/kit/test/apps/basics/src/routes/routing/trailing-slash/+layout.js
-1233  	packages/kit/test/apps/basics/src/routes/routing/trailing-slash/+layout.svelte
-1234  	packages/kit/test/apps/basics/src/routes/routing/trailing-slash/never/+page.svelte
-1235  	packages/kit/test/apps/basics/src/routes/routing/trailing-slash/+page.svelte
-1236  	packages/kit/test/apps/basics/src/routes/routing/trailing-slash-server/always/+page.server.js
-1237  	packages/kit/test/apps/basics/src/routes/routing/trailing-slash-server/always/+page.svelte
-1238  	packages/kit/test/apps/basics/src/routes/routing/trailing-slash-server/ignore/+page.server.js
-1239  	packages/kit/test/apps/basics/src/routes/routing/trailing-slash-server/ignore/+page.svelte
-1240  	packages/kit/test/apps/basics/src/routes/routing/trailing-slash-server/+layout.server.js
-1241  	packages/kit/test/apps/basics/src/routes/routing/trailing-slash-server/+layout.svelte
-1242  	packages/kit/test/apps/basics/src/routes/routing/trailing-slash-server/never/+page.svelte
-1243  	packages/kit/test/apps/basics/src/routes/routing/trailing-slash-server/+page.svelte
-1244  	packages/kit/test/apps/basics/src/routes/scroll/cross-document/a/+page.svelte
-1245  	packages/kit/test/apps/basics/src/routes/scroll/cross-document/b/+page.svelte
-1246  	packages/kit/test/apps/basics/src/routes/scroll/cross-document/c/+page.svelte
-1247  	packages/kit/test/apps/basics/src/routes/scroll/push-state/a/+page.svelte
-1248  	packages/kit/test/apps/basics/src/routes/scroll/push-state/+page.svelte
-1249  	packages/kit/test/apps/basics/src/routes/scroll/top/+page.svelte
-1250  	packages/kit/test/apps/basics/src/routes/selection/a/+page.svelte
-1251  	packages/kit/test/apps/basics/src/routes/selection/b/+page.svelte
-1252  	packages/kit/test/apps/basics/src/routes/selection/+layout.svelte
-1253  	packages/kit/test/apps/basics/src/routes/set-cookie/+server.js
-1254  	packages/kit/test/apps/basics/src/routes/shadowed/dynamic/[slug]/+page.server.js
-1255  	packages/kit/test/apps/basics/src/routes/shadowed/dynamic/[slug]/+page.svelte
-1256  	packages/kit/test/apps/basics/src/routes/shadowed/error-get/+page.server.js
-1257  	packages/kit/test/apps/basics/src/routes/shadowed/error-get/+page.svelte
-1258  	packages/kit/test/apps/basics/src/routes/shadowed/error-post/+page.server.js
-1259  	packages/kit/test/apps/basics/src/routes/shadowed/error-post/+page.svelte
-1260  	packages/kit/test/apps/basics/src/routes/shadowed/missing-get/+page.server.js
-1261  	packages/kit/test/apps/basics/src/routes/shadowed/missing-get/+page.svelte
-1262  	packages/kit/test/apps/basics/src/routes/shadowed/no-get/+page.server.js
-1263  	packages/kit/test/apps/basics/src/routes/shadowed/no-get/+page.svelte
-1264  	packages/kit/test/apps/basics/src/routes/shadowed/+page.svelte
-1265  	packages/kit/test/apps/basics/src/routes/shadowed/parent/+layout.server.js
-1266  	packages/kit/test/apps/basics/src/routes/shadowed/parent/+layout.svelte
-1267  	packages/kit/test/apps/basics/src/routes/shadowed/parent/+page.server.js
-1268  	packages/kit/test/apps/basics/src/routes/shadowed/parent/+page.svelte
-1269  	packages/kit/test/apps/basics/src/routes/shadowed/parent/sub/+page.server.js
-1270  	packages/kit/test/apps/basics/src/routes/shadowed/parent/sub/+page.svelte
-1271  	packages/kit/test/apps/basics/src/routes/shadowed/post-success-redirect/+page.server.js
-1272  	packages/kit/test/apps/basics/src/routes/shadowed/post-success-redirect/+page.svelte
-1273  	packages/kit/test/apps/basics/src/routes/shadowed/post-success-redirect/redirected/+page.svelte
-1274  	packages/kit/test/apps/basics/src/routes/shadowed/redirect/[a]/+page.server.js
-1275  	packages/kit/test/apps/basics/src/routes/shadowed/redirect/[a]/+page.svelte
-1276  	packages/kit/test/apps/basics/src/routes/shadowed/redirect/b/+page.svelte
-1277  	packages/kit/test/apps/basics/src/routes/shadowed/redirected/+page.server.js
-1278  	packages/kit/test/apps/basics/src/routes/shadowed/redirected/+page.svelte
-1279  	packages/kit/test/apps/basics/src/routes/shadowed/redirect-get/+page.server.js
-1280  	packages/kit/test/apps/basics/src/routes/shadowed/redirect-get/+page.svelte
-1281  	packages/kit/test/apps/basics/src/routes/shadowed/redirect-get-with-cookie-from-fetch/endpoint/+server.js
-1282  	packages/kit/test/apps/basics/src/routes/shadowed/redirect-get-with-cookie-from-fetch/+page.js
-1283  	packages/kit/test/apps/basics/src/routes/shadowed/redirect-get-with-cookie-from-fetch/+page.svelte
-1284  	packages/kit/test/apps/basics/src/routes/shadowed/redirect-get-with-cookie/+page.server.js
-1285  	packages/kit/test/apps/basics/src/routes/shadowed/redirect-get-with-cookie/+page.svelte
-1286  	packages/kit/test/apps/basics/src/routes/shadowed/redirect/+page.svelte
-1287  	packages/kit/test/apps/basics/src/routes/shadowed/redirect-post/+page.server.js
-1288  	packages/kit/test/apps/basics/src/routes/shadowed/redirect-post/+page.svelte
-1289  	packages/kit/test/apps/basics/src/routes/shadowed/redirect-post-with-cookie/+page.server.js
-1290  	packages/kit/test/apps/basics/src/routes/shadowed/redirect-post-with-cookie/+page.svelte
-1291  	packages/kit/test/apps/basics/src/routes/shadowed/same-render-entry/+page.svelte
-1292  	packages/kit/test/apps/basics/src/routes/shadowed/same-render/+page.server.js
-1293  	packages/kit/test/apps/basics/src/routes/shadowed/same-render/+page.svelte
-1294  	packages/kit/test/apps/basics/src/routes/shadowed/serialization/+page.server.js
-1295  	packages/kit/test/apps/basics/src/routes/shadowed/serialization/+page.svelte
-1296  	packages/kit/test/apps/basics/src/routes/shadowed/simple/+page.server.js
-1297  	packages/kit/test/apps/basics/src/routes/shadowed/simple/+page.svelte
-1298  	packages/kit/test/apps/basics/src/routes/shadowed/simple/post/+page.server.js
-1299  	packages/kit/test/apps/basics/src/routes/shadowed/simple/post/+page.svelte
-1300  	packages/kit/test/apps/basics/src/routes/shallow-routing/push-state/a/+page.svelte
-1301  	packages/kit/test/apps/basics/src/routes/shallow-routing/push-state/b/+page.svelte
-1302  	packages/kit/test/apps/basics/src/routes/shallow-routing/push-state/+layout.svelte
-1303  	packages/kit/test/apps/basics/src/routes/shallow-routing/push-state/+page.js
-1304  	packages/kit/test/apps/basics/src/routes/shallow-routing/push-state/+page.svelte
-1305  	packages/kit/test/apps/basics/src/routes/shallow-routing/replace-state/a/+page.svelte
-1306  	packages/kit/test/apps/basics/src/routes/shallow-routing/replace-state/b/+page.svelte
-1307  	packages/kit/test/apps/basics/src/routes/shallow-routing/replace-state/+layout.svelte
-1308  	packages/kit/test/apps/basics/src/routes/shallow-routing/replace-state/+page.svelte
-1309  	packages/kit/test/apps/basics/src/routes/snapshot/a/+page.svelte
-1310  	packages/kit/test/apps/basics/src/routes/snapshot/b/+page.svelte
-1311  	packages/kit/test/apps/basics/src/routes/snapshot/c/+page.svelte
-1312  	packages/kit/test/apps/basics/src/routes/snapshot/+layout.svelte
-1313  	packages/kit/test/apps/basics/src/routes/src/[...anything]/+server.js
-1314  	packages/kit/test/apps/basics/src/routes/static/+page.svelte
-1315  	packages/kit/test/apps/basics/src/routes/store/client-access/+page.svelte
-1316  	packages/kit/test/apps/basics/src/routes/store/data/+error.svelte
-1317  	packages/kit/test/apps/basics/src/routes/store/data/foo/+page.js
-1318  	packages/kit/test/apps/basics/src/routes/store/data/foo/+page.svelte
-1319  	packages/kit/test/apps/basics/src/routes/store/data/[item]/+page.js
-1320  	packages/kit/test/apps/basics/src/routes/store/data/[item]/+page.svelte
-1321  	packages/kit/test/apps/basics/src/routes/store/data/+layout.js
-1322  	packages/kit/test/apps/basics/src/routes/store/data/+layout.svelte
-1323  	packages/kit/test/apps/basics/src/routes/store/data/store-update/a/+page.svelte
-1324  	packages/kit/test/apps/basics/src/routes/store/data/store-update/b/+page.svelte
-1325  	packages/kit/test/apps/basics/src/routes/store/data/store-update/+layout.svelte
-1326  	packages/kit/test/apps/basics/src/routes/store/data/store-update/same-keys/+layout.js
-1327  	packages/kit/test/apps/basics/src/routes/store/data/store-update/same-keys/+page.svelte
-1328  	packages/kit/test/apps/basics/src/routes/store/data/store-update/same-keys/same-deep/nested/+page.js
-1329  	packages/kit/test/apps/basics/src/routes/store/data/store-update/same-keys/same-deep/nested/+page.svelte
-1330  	packages/kit/test/apps/basics/src/routes/store/data/store-update/same-keys/same/+page.js
-1331  	packages/kit/test/apps/basics/src/routes/store/data/store-update/same-keys/same/+page.svelte
-1332  	packages/kit/test/apps/basics/src/routes/store/navigating/a/+page.js
-1333  	packages/kit/test/apps/basics/src/routes/store/navigating/a/+page.svelte
-1334  	packages/kit/test/apps/basics/src/routes/store/navigating/b/+page.js
-1335  	packages/kit/test/apps/basics/src/routes/store/navigating/b/+page.svelte
-1336  	packages/kit/test/apps/basics/src/routes/store/navigating/c/+page.js
-1337  	packages/kit/test/apps/basics/src/routes/store/navigating/c/+page.svelte
-1338  	packages/kit/test/apps/basics/src/routes/store/navigating/+layout.svelte
-1339  	packages/kit/test/apps/basics/src/routes/streaming/+page.svelte
-1340  	packages/kit/test/apps/basics/src/routes/streaming/server-error/+page.server.js
-1341  	packages/kit/test/apps/basics/src/routes/streaming/server-error/+page.svelte
-1342  	packages/kit/test/apps/basics/src/routes/streaming/server/+page.server.js
-1343  	packages/kit/test/apps/basics/src/routes/streaming/server/+page.svelte
-1344  	packages/kit/test/apps/basics/src/routes/streaming/universal/+page.js
-1345  	packages/kit/test/apps/basics/src/routes/streaming/universal/+page.svelte
-1346  	packages/kit/test/apps/basics/src/routes/transform-page-chunk/+page.svelte
-1347  	packages/kit/test/apps/basics/src/routes/unsafe-replacement/+page.js
-1348  	packages/kit/test/apps/basics/src/routes/unsafe-replacement/+page.svelte
-1349  	packages/kit/test/apps/basics/src/routes/untrack/server/+layout.server.js
-1350  	packages/kit/test/apps/basics/src/routes/untrack/server/[x]/+page.server.js
-1351  	packages/kit/test/apps/basics/src/routes/untrack/server/[x]/+page.svelte
-1352  	packages/kit/test/apps/basics/src/routes/untrack/universal/+layout.js
-1353  	packages/kit/test/apps/basics/src/routes/untrack/universal/[x]/+page.js
-1354  	packages/kit/test/apps/basics/src/routes/untrack/universal/[x]/+page.svelte
-1355  	packages/kit/test/apps/basics/src/routes/use-action/focus-and-scroll/+page.svelte
-1356  	packages/kit/test/apps/basics/src/routes/use-action/+page.svelte
-1357  	packages/kit/test/apps/basics/src/routes/xss.json/+server.js
-1358  	packages/kit/test/apps/basics/src/routes/xss/+page.js
-1359  	packages/kit/test/apps/basics/src/routes/xss/+page.svelte
-1360  	packages/kit/test/apps/basics/src/routes/xss/[path]/+page.svelte
-1361  	packages/kit/test/apps/basics/src/routes/xss/query/+page.js
-1362  	packages/kit/test/apps/basics/src/routes/xss/query/+page.svelte
-1363  	packages/kit/test/apps/basics/src/routes/xss/query/utils.js
-1364  	packages/kit/test/apps/basics/src/routes/xss/shadow/+page.server.js
-1365  	packages/kit/test/apps/basics/src/routes/xss/shadow/+page.svelte
-1366  	packages/kit/test/apps/basics/src/service-worker.js
-1367  	packages/kit/test/apps/basics/static/empty.js
-1368  	packages/kit/test/apps/basics/static/load/assets/a#b.txt
-1369  	packages/kit/test/apps/basics/static/load/foo.json
-1370  	packages/kit/test/apps/basics/static/static.json
-1371  	packages/kit/test/apps/basics/static/subdirectory/static.json
-1372  	packages/kit/test/apps/basics/static/symlink-to/hello.txt
-1373  	packages/kit/test/apps/basics/svelte.config.js
-1374  	packages/kit/test/apps/basics/test/client.test.js
-1375  	packages/kit/test/apps/basics/test/cross-platform/client.test.js
-1376  	packages/kit/test/apps/basics/test/cross-platform/server.test.js
-1377  	packages/kit/test/apps/basics/test/cross-platform/test.js
-1378  	packages/kit/test/apps/basics/test/server.test.js
-1379  	packages/kit/test/apps/basics/test/setup.js
-1380  	packages/kit/test/apps/basics/test/test.js
-1381  	packages/kit/test/apps/basics/tsconfig.json
-1382  	packages/kit/test/apps/basics/vite.config.js
-1383  	packages/kit/test/apps/dev-only/package.json
-1384  	packages/kit/test/apps/dev-only/playwright.config.js
-1385  	packages/kit/test/apps/dev-only/src/app.html
-1386  	packages/kit/test/apps/dev-only/src/hooks.server.js
-1387  	packages/kit/test/apps/dev-only/src/lib/server/blah/private.js
-1388  	packages/kit/test/apps/dev-only/src/lib/test.server.js
-1389  	packages/kit/test/apps/dev-only/src/routes/+error.svelte
-1390  	packages/kit/test/apps/dev-only/src/routes/illegal-imports/env/dynamic-private-dynamic-import/+page.svelte
-1391  	packages/kit/test/apps/dev-only/src/routes/illegal-imports/env/dynamic-private/+page.svelte
-1392  	packages/kit/test/apps/dev-only/src/routes/illegal-imports/env/static-private-dynamic-import/+page.svelte
-1393  	packages/kit/test/apps/dev-only/src/routes/illegal-imports/env/static-private/+page.svelte
-1394  	packages/kit/test/apps/dev-only/src/routes/illegal-imports/server-only-folder/dynamic-import/+page.svelte
-1395  	packages/kit/test/apps/dev-only/src/routes/illegal-imports/server-only-folder/static-import/+page.svelte
-1396  	packages/kit/test/apps/dev-only/src/routes/illegal-imports/server-only-modules/dynamic-import/+page.svelte
-1397  	packages/kit/test/apps/dev-only/src/routes/illegal-imports/server-only-modules/illegal.server.js
-1398  	packages/kit/test/apps/dev-only/src/routes/illegal-imports/server-only-modules/static-import/+page.svelte
-1399  	packages/kit/test/apps/dev-only/src/routes/+layout.svelte
-1400  	packages/kit/test/apps/dev-only/svelte.config.js
-1401  	packages/kit/test/apps/dev-only/test/test.js
-1402  	packages/kit/test/apps/dev-only/tsconfig.json
-1403  	packages/kit/test/apps/dev-only/vite.config.js
-1404  	packages/kit/test/apps/embed/package.json
-1405  	packages/kit/test/apps/embed/playwright.config.js
-1406  	packages/kit/test/apps/embed/src/app.html
-1407  	packages/kit/test/apps/embed/src/routes/embed/a/+page.svelte
-1408  	packages/kit/test/apps/embed/src/routes/embed/b/+page.svelte
-1409  	packages/kit/test/apps/embed/src/routes/embed/+page.js
-1410  	packages/kit/test/apps/embed/src/routes/embed/+page.svelte
-1411  	packages/kit/test/apps/embed/src/routes/+layout.svelte
-1412  	packages/kit/test/apps/embed/svelte.config.js
-1413  	packages/kit/test/apps/embed/test/test.js
-1414  	packages/kit/test/apps/embed/tsconfig.json
-1415  	packages/kit/test/apps/embed/vite.config.js
-1416  	packages/kit/test/apps/no-ssr/package.json
-1417  	packages/kit/test/apps/no-ssr/playwright.config.js
-1418  	packages/kit/test/apps/no-ssr/src/app.html
-1419  	packages/kit/test/apps/no-ssr/src/routes/+layout.js
-1420  	packages/kit/test/apps/no-ssr/src/routes/+layout.server.js
-1421  	packages/kit/test/apps/no-ssr/src/routes/+layout.svelte
-1422  	packages/kit/test/apps/no-ssr/src/routes/+page.svelte
-1423  	packages/kit/test/apps/no-ssr/svelte.config.js
-1424  	packages/kit/test/apps/no-ssr/test/test.js
-1425  	packages/kit/test/apps/no-ssr/tsconfig.json
-1426  	packages/kit/test/apps/no-ssr/vite.config.js
-1427  	packages/kit/test/apps/options-2/package.json
-1428  	packages/kit/test/apps/options-2/playwright.config.js
-1429  	packages/kit/test/apps/options-2/README.md
-1430  	packages/kit/test/apps/options-2/src/app.html
-1431  	packages/kit/test/apps/options-2/src/routes/deeply/nested/page/+page.svelte
-1432  	packages/kit/test/apps/options-2/src/routes/env/+page.svelte
-1433  	packages/kit/test/apps/options-2/src/routes/hello/+page.js
-1434  	packages/kit/test/apps/options-2/src/routes/hello/+page.svelte
-1435  	packages/kit/test/apps/options-2/src/routes/+layout.svelte
-1436  	packages/kit/test/apps/options-2/src/routes/+page.svelte
-1437  	packages/kit/test/apps/options-2/src/service-worker.js
-1438  	packages/kit/test/apps/options-2/static/answer.txt
-1439  	packages/kit/test/apps/options-2/svelte.config.js
-1440  	packages/kit/test/apps/options-2/test/test.js
-1441  	packages/kit/test/apps/options-2/tsconfig.json
-1442  	packages/kit/test/apps/options-2/vite.config.js
-1443  	packages/kit/test/apps/options/package.json
-1444  	packages/kit/test/apps/options/playwright.config.js
-1445  	packages/kit/test/apps/options/public/answer.html
-1446  	packages/kit/test/apps/options/source/components/Message.svelte
-1447  	packages/kit/test/apps/options/source/components/SvelteLogo.svelte
-1448  	packages/kit/test/apps/options/source/hooks.client.js
-1449  	packages/kit/test/apps/options/source/hooks.server.js
-1450  	packages/kit/test/apps/options/source/pages/base/+page.js
-1451  	packages/kit/test/apps/options/source/pages/base/+page.svelte
-1452  	packages/kit/test/apps/options/source/pages/base/[slug]/+page.svelte
-1453  	packages/kit/test/apps/options/source/pages/csp/+page.svelte
-1454  	packages/kit/test/apps/options/source/pages/custom-extensions/a/+page.svelte
-1455  	packages/kit/test/apps/options/source/pages/custom-extensions/const/+page.whokilledthemuffinman
-1456  	packages/kit/test/apps/options/source/pages/custom-extensions/+layout.svelte
-1457  	packages/kit/test/apps/options/source/pages/custom-extensions/+page.jesuslivesineveryone
-1458  	packages/kit/test/apps/options/source/pages/custom-extensions/[slug]/+page.svelte.md
-1459  	packages/kit/test/apps/options/source/pages/custom-extensions/unsafe-replacement/+page.svelte
-1460  	packages/kit/test/apps/options/source/pages/endpoint/+server.js
-1461  	packages/kit/test/apps/options/source/pages/endpoint-with-slash/+server.js
-1462  	packages/kit/test/apps/options/source/pages/env/+page.server.js
-1463  	packages/kit/test/apps/options/source/pages/env/+page.svelte
-1464  	packages/kit/test/apps/options/source/pages/error/+page.svelte
-1465  	packages/kit/test/apps/options/source/pages/+layout.server.js
-1466  	packages/kit/test/apps/options/source/pages/+layout.svelte
-1467  	packages/kit/test/apps/options/source/pages/mode/+page.server.js
-1468  	packages/kit/test/apps/options/source/pages/mode/+page.svelte
-1469  	packages/kit/test/apps/options/source/pages/page-endpoint/+page.server.js
-1470  	packages/kit/test/apps/options/source/pages/page-endpoint/+page.svelte
-1471  	packages/kit/test/apps/options/source/pages/+page.svelte
-1472  	packages/kit/test/apps/options/source/pages/preloading/code/+page.svelte
-1473  	packages/kit/test/apps/options/source/pages/preloading/+page.svelte
-1474  	packages/kit/test/apps/options/source/pages/preloading/preloaded/+page.server.js
-1475  	packages/kit/test/apps/options/source/pages/preloading/preloaded/+page.svelte
-1476  	packages/kit/test/apps/options/source/pages/resolve-route/[foo]/+page.svelte
-1477  	packages/kit/test/apps/options/source/pages/resolve-route/+page.svelte
-1478  	packages/kit/test/apps/options/source/pages/routing/link-outside-app-target/source/+page.svelte
-1479  	packages/kit/test/apps/options/source/pages/routing/link-outside-app-target/state.js
-1480  	packages/kit/test/apps/options/source/pages/routing/link-outside-app-target/target/+page.svelte
-1481  	packages/kit/test/apps/options/source/pages/slash/child/+page.svelte
-1482  	packages/kit/test/apps/options/source/pages/slash/+page.svelte
-1483  	packages/kit/test/apps/options/source/pages/test.txt
-1484  	packages/kit/test/apps/options/source/template.html
-1485  	packages/kit/test/apps/options/svelte.config.js
-1486  	packages/kit/test/apps/options/test/test.js
-1487  	packages/kit/test/apps/options/tsconfig.json
-1488  	packages/kit/test/apps/options/vite.custom.config.js
-1489  	packages/kit/test/apps/read-file-test.txt
-1490  	packages/kit/test/apps/writes/package.json
-1491  	packages/kit/test/apps/writes/playwright.config.js
-1492  	packages/kit/test/apps/writes/src/app.html
-1493  	packages/kit/test/apps/writes/src/global.d.ts
-1494  	packages/kit/test/apps/writes/src/routes/double-mount/+page.svelte
-1495  	packages/kit/test/apps/writes/src/routes/+layout.svelte
-1496  	packages/kit/test/apps/writes/src/routes/new-route/+page.svelte
-1497  	packages/kit/test/apps/writes/src/routes/new-route/zzzz1662642734866/+page.svelte
-1498  	packages/kit/test/apps/writes/svelte.config.js
-1499  	packages/kit/test/apps/writes/test/test.js
-1500  	packages/kit/test/apps/writes/tsconfig.json
-1501  	packages/kit/test/apps/writes/vite.config.js
-1502  	packages/kit/test/build-errors/apps/prerenderable-incorrect-fragment/package.json
-1503  	packages/kit/test/build-errors/apps/prerenderable-incorrect-fragment/src/app.html
-1504  	packages/kit/test/build-errors/apps/prerenderable-incorrect-fragment/src/routes/foo/+page.svelte
-1505  	packages/kit/test/build-errors/apps/prerenderable-incorrect-fragment/src/routes/+layout.js
-1506  	packages/kit/test/build-errors/apps/prerenderable-incorrect-fragment/src/routes/+page.svelte
-1507  	packages/kit/test/build-errors/apps/prerenderable-incorrect-fragment/svelte.config.js
-1508  	packages/kit/test/build-errors/apps/prerenderable-incorrect-fragment/tsconfig.json
-1509  	packages/kit/test/build-errors/apps/prerenderable-incorrect-fragment/vite.config.js
-1510  	packages/kit/test/build-errors/apps/prerenderable-not-prerendered/package.json
-1511  	packages/kit/test/build-errors/apps/prerenderable-not-prerendered/src/app.html
-1512  	packages/kit/test/build-errors/apps/prerenderable-not-prerendered/src/routes/+page.svelte
-1513  	packages/kit/test/build-errors/apps/prerenderable-not-prerendered/src/routes/[x]/+page.js
-1514  	packages/kit/test/build-errors/apps/prerenderable-not-prerendered/src/routes/[x]/+page.svelte
-1515  	packages/kit/test/build-errors/apps/prerenderable-not-prerendered/svelte.config.js
-1516  	packages/kit/test/build-errors/apps/prerenderable-not-prerendered/tsconfig.json
-1517  	packages/kit/test/build-errors/apps/prerenderable-not-prerendered/vite.config.js
-1518  	packages/kit/test/build-errors/apps/prerender-entry-generator-mismatch/package.json
-1519  	packages/kit/test/build-errors/apps/prerender-entry-generator-mismatch/src/app.html
-1520  	packages/kit/test/build-errors/apps/prerender-entry-generator-mismatch/src/routes/+layout.js
-1521  	packages/kit/test/build-errors/apps/prerender-entry-generator-mismatch/src/routes/[slug]/[notSpecific]/+page.ts
-1522  	packages/kit/test/build-errors/apps/prerender-entry-generator-mismatch/src/routes/[slug]/specific/+page.svelte
-1523  	packages/kit/test/build-errors/apps/prerender-entry-generator-mismatch/svelte.config.js
-1524  	packages/kit/test/build-errors/apps/prerender-entry-generator-mismatch/tsconfig.json
-1525  	packages/kit/test/build-errors/apps/prerender-entry-generator-mismatch/vite.config.js
-1526  	packages/kit/test/build-errors/apps/private-dynamic-env-dynamic-import/package.json
-1527  	packages/kit/test/build-errors/apps/private-dynamic-env-dynamic-import/src/app.html
-1528  	packages/kit/test/build-errors/apps/private-dynamic-env-dynamic-import/src/routes/+page.svelte
-1529  	packages/kit/test/build-errors/apps/private-dynamic-env-dynamic-import/svelte.config.js
-1530  	packages/kit/test/build-errors/apps/private-dynamic-env-dynamic-import/tsconfig.json
-1531  	packages/kit/test/build-errors/apps/private-dynamic-env-dynamic-import/vite.config.js
-1532  	packages/kit/test/build-errors/apps/private-dynamic-env/package.json
-1533  	packages/kit/test/build-errors/apps/private-dynamic-env/src/app.html
-1534  	packages/kit/test/build-errors/apps/private-dynamic-env/src/routes/+page.svelte
-1535  	packages/kit/test/build-errors/apps/private-dynamic-env/svelte.config.js
-1536  	packages/kit/test/build-errors/apps/private-dynamic-env/tsconfig.json
-1537  	packages/kit/test/build-errors/apps/private-dynamic-env/vite.config.js
-1538  	packages/kit/test/build-errors/apps/private-static-env-dynamic-import/package.json
-1539  	packages/kit/test/build-errors/apps/private-static-env-dynamic-import/src/app.html
-1540  	packages/kit/test/build-errors/apps/private-static-env-dynamic-import/src/routes/+page.svelte
-1541  	packages/kit/test/build-errors/apps/private-static-env-dynamic-import/svelte.config.js
-1542  	packages/kit/test/build-errors/apps/private-static-env-dynamic-import/tsconfig.json
-1543  	packages/kit/test/build-errors/apps/private-static-env-dynamic-import/vite.config.js
-1544  	packages/kit/test/build-errors/apps/private-static-env/package.json
-1545  	packages/kit/test/build-errors/apps/private-static-env/src/app.html
-1546  	packages/kit/test/build-errors/apps/private-static-env/src/routes/+page.svelte
-1547  	packages/kit/test/build-errors/apps/private-static-env/svelte.config.js
-1548  	packages/kit/test/build-errors/apps/private-static-env/tsconfig.json
-1549  	packages/kit/test/build-errors/apps/private-static-env/vite.config.js
-1550  	packages/kit/test/build-errors/apps/server-only-folder-dynamic-import/package.json
-1551  	packages/kit/test/build-errors/apps/server-only-folder-dynamic-import/src/app.html
-1552  	packages/kit/test/build-errors/apps/server-only-folder-dynamic-import/src/lib/server/something/private.js
-1553  	packages/kit/test/build-errors/apps/server-only-folder-dynamic-import/src/routes/+page.svelte
-1554  	packages/kit/test/build-errors/apps/server-only-folder-dynamic-import/svelte.config.js
-1555  	packages/kit/test/build-errors/apps/server-only-folder-dynamic-import/tsconfig.json
-1556  	packages/kit/test/build-errors/apps/server-only-folder-dynamic-import/vite.config.js
-1557  	packages/kit/test/build-errors/apps/server-only-folder/package.json
-1558  	packages/kit/test/build-errors/apps/server-only-folder/src/app.html
-1559  	packages/kit/test/build-errors/apps/server-only-folder/src/lib/server/something/private.js
-1560  	packages/kit/test/build-errors/apps/server-only-folder/src/routes/+page.svelte
-1561  	packages/kit/test/build-errors/apps/server-only-folder/svelte.config.js
-1562  	packages/kit/test/build-errors/apps/server-only-folder/tsconfig.json
-1563  	packages/kit/test/build-errors/apps/server-only-folder/vite.config.js
-1564  	packages/kit/test/build-errors/apps/server-only-module-dynamic-import/package.json
-1565  	packages/kit/test/build-errors/apps/server-only-module-dynamic-import/src/app.html
-1566  	packages/kit/test/build-errors/apps/server-only-module-dynamic-import/src/lib/test.server.js
-1567  	packages/kit/test/build-errors/apps/server-only-module-dynamic-import/src/routes/+page.svelte
-1568  	packages/kit/test/build-errors/apps/server-only-module-dynamic-import/svelte.config.js
-1569  	packages/kit/test/build-errors/apps/server-only-module-dynamic-import/tsconfig.json
-1570  	packages/kit/test/build-errors/apps/server-only-module-dynamic-import/vite.config.js
-1571  	packages/kit/test/build-errors/apps/server-only-module/package.json
-1572  	packages/kit/test/build-errors/apps/server-only-module/src/app.html
-1573  	packages/kit/test/build-errors/apps/server-only-module/src/lib/test.server.js
-1574  	packages/kit/test/build-errors/apps/server-only-module/src/routes/+page.svelte
-1575  	packages/kit/test/build-errors/apps/server-only-module/svelte.config.js
-1576  	packages/kit/test/build-errors/apps/server-only-module/tsconfig.json
-1577  	packages/kit/test/build-errors/apps/server-only-module/vite.config.js
-1578  	packages/kit/test/build-errors/apps/service-worker-dynamic-public-env/package.json
-1579  	packages/kit/test/build-errors/apps/service-worker-dynamic-public-env/src/app.html
-1580  	packages/kit/test/build-errors/apps/service-worker-dynamic-public-env/src/routes/+page.svelte
-1581  	packages/kit/test/build-errors/apps/service-worker-dynamic-public-env/src/service-worker.js
-1582  	packages/kit/test/build-errors/apps/service-worker-dynamic-public-env/svelte.config.js
-1583  	packages/kit/test/build-errors/apps/service-worker-dynamic-public-env/tsconfig.json
-1584  	packages/kit/test/build-errors/apps/service-worker-dynamic-public-env/vite.config.js
-1585  	packages/kit/test/build-errors/apps/service-worker-private-env/package.json
-1586  	packages/kit/test/build-errors/apps/service-worker-private-env/src/app.html
-1587  	packages/kit/test/build-errors/apps/service-worker-private-env/src/routes/+page.svelte
-1588  	packages/kit/test/build-errors/apps/service-worker-private-env/src/service-worker.js
-1589  	packages/kit/test/build-errors/apps/service-worker-private-env/svelte.config.js
-1590  	packages/kit/test/build-errors/apps/service-worker-private-env/tsconfig.json
-1591  	packages/kit/test/build-errors/apps/service-worker-private-env/vite.config.js
-1592  	packages/kit/test/build-errors/apps/syntax-error/package.json
-1593  	packages/kit/test/build-errors/apps/syntax-error/src/app.html
-1594  	packages/kit/test/build-errors/apps/syntax-error/src/lib/test.server.js
-1595  	packages/kit/test/build-errors/apps/syntax-error/src/routes/+page.svelte
-1596  	packages/kit/test/build-errors/apps/syntax-error/svelte.config.js
-1597  	packages/kit/test/build-errors/apps/syntax-error/tsconfig.json
-1598  	packages/kit/test/build-errors/apps/syntax-error/vite.config.js
-1599  	packages/kit/test/build-errors/env.spec.js
-1600  	packages/kit/test/build-errors/package.json
-1601  	packages/kit/test/build-errors/prerender.spec.js
-1602  	packages/kit/test/build-errors/server-only.spec.js
-1603  	packages/kit/test/build-errors/syntax-error.spec.js
-1604  	packages/kit/test/github-flaky-warning-reporter.js
-1605  	packages/kit/test/prerendering/basics/package.json
-1606  	packages/kit/test/prerendering/basics/src/app.d.ts
-1607  	packages/kit/test/prerendering/basics/src/app.html
-1608  	packages/kit/test/prerendering/basics/src/hooks.server.js
-1609  	packages/kit/test/prerendering/basics/src/routes/encöded-hash-link/+page.svelte
-1610  	packages/kit/test/prerendering/basics/src/routes/encoding/[path].json/+server.js
-1611  	packages/kit/test/prerendering/basics/src/routes/encoding/[path]/+page.svelte
-1612  	packages/kit/test/prerendering/basics/src/routes/encoding/path with spaces/+page.js
-1613  	packages/kit/test/prerendering/basics/src/routes/encoding/path with spaces/+page.svelte
-1614  	packages/kit/test/prerendering/basics/src/routes/encoding/redirect/+page.js
-1615  	packages/kit/test/prerendering/basics/src/routes/encoding/redirect/+page.svelte
-1616  	packages/kit/test/prerendering/basics/src/routes/env/+page.server.js
-1617  	packages/kit/test/prerendering/basics/src/routes/env/+page.svelte
-1618  	packages/kit/test/prerendering/basics/src/routes/fetch-404/+page.js
-1619  	packages/kit/test/prerendering/basics/src/routes/fetch-404/+page.svelte
-1620  	packages/kit/test/prerendering/basics/src/routes/fetch-endpoint/also-not-buffered/+page.js
-1621  	packages/kit/test/prerendering/basics/src/routes/fetch-endpoint/also-not-buffered/+page.svelte
-1622  	packages/kit/test/prerendering/basics/src/routes/fetch-endpoint/buffered.json/+server.js
-1623  	packages/kit/test/prerendering/basics/src/routes/fetch-endpoint/buffered/+page.js
-1624  	packages/kit/test/prerendering/basics/src/routes/fetch-endpoint/buffered/+page.svelte
-1625  	packages/kit/test/prerendering/basics/src/routes/fetch-endpoint/not-buffered.json/+server.js
-1626  	packages/kit/test/prerendering/basics/src/routes/fetch-endpoint/not-buffered/+page.js
-1627  	packages/kit/test/prerendering/basics/src/routes/fetch-endpoint/not-buffered/+page.svelte
-1628  	packages/kit/test/prerendering/basics/src/routes/fetch-image/+page.svelte
-1629  	packages/kit/test/prerendering/basics/src/routes/fetch-image/[...slug]/+server.js
-1630  	packages/kit/test/prerendering/basics/src/routes/(grouped)/grouped/+page.svelte
-1631  	packages/kit/test/prerendering/basics/src/routes/immutable-headers/+server.js
-1632  	packages/kit/test/prerendering/basics/src/routes/+layout.js
-1633  	packages/kit/test/prerendering/basics/src/routes/+layout.svelte
-1634  	packages/kit/test/prerendering/basics/src/routes/load-file-with-spaces/+page.js
-1635  	packages/kit/test/prerendering/basics/src/routes/load-file-with-spaces/+page.svelte
-1636  	packages/kit/test/prerendering/basics/src/routes/max-age/+page.js
-1637  	packages/kit/test/prerendering/basics/src/routes/max-age/+page.svelte
-1638  	packages/kit/test/prerendering/basics/src/routes/optional-params/[[optional]]/+page.svelte
-1639  	packages/kit/test/prerendering/basics/src/routes/origin/message.json/+server.js
-1640  	packages/kit/test/prerendering/basics/src/routes/origin/+page.server.js
-1641  	packages/kit/test/prerendering/basics/src/routes/origin/+page.svelte
-1642  	packages/kit/test/prerendering/basics/src/routes/page.html/+page.server.js
-1643  	packages/kit/test/prerendering/basics/src/routes/page.html/+page.svelte
-1644  	packages/kit/test/prerendering/basics/src/routes/+page.server.js
-1645  	packages/kit/test/prerendering/basics/src/routes/+page.svelte
-1646  	packages/kit/test/prerendering/basics/src/routes/prerendering-true/+page.svelte
-1647  	packages/kit/test/prerendering/basics/src/routes/redirect-encoded/+page.js
-1648  	packages/kit/test/prerendering/basics/src/routes/redirect-malicious/+page.js
-1649  	packages/kit/test/prerendering/basics/src/routes/redirect/+page.js
-1650  	packages/kit/test/prerendering/basics/src/routes/redirect-relative/+page.js
-1651  	packages/kit/test/prerendering/basics/src/routes/redirect-server/+page.server.js
-1652  	packages/kit/test/prerendering/basics/src/routes/shadowed-get/+page.server.js
-1653  	packages/kit/test/prerendering/basics/src/routes/shadowed-get/+page.svelte
-1654  	packages/kit/test/prerendering/basics/src/routes/shadowed-get/ssr-off/+page.server.js
-1655  	packages/kit/test/prerendering/basics/src/routes/shadowed-get/ssr-off/+page.svelte
-1656  	packages/kit/test/prerendering/basics/src/routes/shadowed-post/+page.server.js
-1657  	packages/kit/test/prerendering/basics/src/routes/shadowed-post/+page.svelte
-1658  	packages/kit/test/prerendering/basics/src/routes/spa-shell/+page.js
-1659  	packages/kit/test/prerendering/basics/src/routes/spa-shell/+page.server.js
-1660  	packages/kit/test/prerendering/basics/src/routes/spa-shell/+page.svelte
-1661  	packages/kit/test/prerendering/basics/src/routes/trailing-slash/+layout.js
-1662  	packages/kit/test/prerendering/basics/src/routes/trailing-slash/+layout.svelte
-1663  	packages/kit/test/prerendering/basics/src/routes/trailing-slash/page/+page.server.js
-1664  	packages/kit/test/prerendering/basics/src/routes/trailing-slash/page/+page.svelte
-1665  	packages/kit/test/prerendering/basics/src/routes/trailing-slash/+page.svelte
-1666  	packages/kit/test/prerendering/basics/src/routes/trailing-slash/standalone-endpoint.json/+server.js
-1667  	packages/kit/test/prerendering/basics/src/routes/初めまして/+page.svelte
-1668  	packages/kit/test/prerendering/basics/src/service-worker.js
-1669  	packages/kit/test/prerendering/basics/static/file with spaces.json
-1670  	packages/kit/test/prerendering/basics/svelte.config.js
-1671  	packages/kit/test/prerendering/basics/test/tests.spec.js
-1672  	packages/kit/test/prerendering/basics/tsconfig.json
-1673  	packages/kit/test/prerendering/basics/vite.config.js
-1674  	packages/kit/test/prerendering/options/package.json
-1675  	packages/kit/test/prerendering/options/public/robots.txt
-1676  	packages/kit/test/prerendering/options/src/app.html
-1677  	packages/kit/test/prerendering/options/src/routes/(group)/+page.svelte
-1678  	packages/kit/test/prerendering/options/src/routes/+layout.js
-1679  	packages/kit/test/prerendering/options/src/routes/+layout.svelte
-1680  	packages/kit/test/prerendering/options/src/routes/nested/+page.svelte
-1681  	packages/kit/test/prerendering/options/src/routes/rss.xml/+server.js
-1682  	packages/kit/test/prerendering/options/svelte.config.js
-1683  	packages/kit/test/prerendering/options/test/tests.spec.js
-1684  	packages/kit/test/prerendering/options/tsconfig.json
-1685  	packages/kit/test/prerendering/options/vite.config.js
-1686  	packages/kit/test/prerendering/paths-base/package.json
-1687  	packages/kit/test/prerendering/paths-base/src/app.d.ts
-1688  	packages/kit/test/prerendering/paths-base/src/app.html
-1689  	packages/kit/test/prerendering/paths-base/src/hooks.server.js
-1690  	packages/kit/test/prerendering/paths-base/src/routes/a/b/c/+page.svelte
-1691  	packages/kit/test/prerendering/paths-base/src/routes/a/b/d/+page.svelte
-1692  	packages/kit/test/prerendering/paths-base/src/routes/assets/+page.svelte
-1693  	packages/kit/test/prerendering/paths-base/src/routes/dynamic/[slug]/+page.svelte
-1694  	packages/kit/test/prerendering/paths-base/src/routes/+layout.js
-1695  	packages/kit/test/prerendering/paths-base/src/routes/+layout.svelte
-1696  	packages/kit/test/prerendering/paths-base/src/routes/nested/+page.svelte
-1697  	packages/kit/test/prerendering/paths-base/src/routes/+page.svelte
-1698  	packages/kit/test/prerendering/paths-base/src/routes/redirect/+page.js
-1699  	packages/kit/test/prerendering/paths-base/svelte.config.js
-1700  	packages/kit/test/prerendering/paths-base/test/tests.spec.js
-1701  	packages/kit/test/prerendering/paths-base/tsconfig.json
-1702  	packages/kit/test/prerendering/paths-base/vite.config.js
-1703  	packages/kit/test/prerendering/test-utils.js
-1704  	packages/kit/test/setup.js
-1705  	packages/kit/test/tsconfig.json
-1706  	packages/kit/test/types/actions.test.ts
-1707  	packages/kit/test/types/load.test.ts
-1708  	packages/kit/test/types/tsconfig.json
-1709  	packages/kit/test/utils.d.ts
-1710  	packages/kit/test/utils.js
-1711  	packages/kit/tsconfig.json
-1712  	packages/kit/types/index.d.ts
-1713  	packages/migrate/bin.js
-1714  	packages/migrate/CHANGELOG.md
-1715  	packages/migrate/migrations/package/index.js
-1716  	packages/migrate/migrations/package/migrate_config.js
-1717  	packages/migrate/migrations/package/migrate_config.spec.js
-1718  	packages/migrate/migrations/package/migrate_pkg.js
-1719  	packages/migrate/migrations/package/migrate_pkg.spec.js
-1720  	packages/migrate/migrations/routes/index.js
-1721  	packages/migrate/migrations/routes/migrate_page_js/index.js
-1722  	packages/migrate/migrations/routes/migrate_page_js/index.spec.js
-1723  	packages/migrate/migrations/routes/migrate_page_js/samples.md
-1724  	packages/migrate/migrations/routes/migrate_page_server/index.js
-1725  	packages/migrate/migrations/routes/migrate_page_server/index.spec.js
-1726  	packages/migrate/migrations/routes/migrate_page_server/samples.md
-1727  	packages/migrate/migrations/routes/migrate_scripts/index.js
-1728  	packages/migrate/migrations/routes/migrate_scripts/index.spec.js
-1729  	packages/migrate/migrations/routes/migrate_scripts/samples.md
-1730  	packages/migrate/migrations/routes/migrate_server/index.js
-1731  	packages/migrate/migrations/routes/migrate_server/index.spec.js
-1732  	packages/migrate/migrations/routes/migrate_server/samples.md
-1733  	packages/migrate/migrations/routes/tasks.js
-1734  	packages/migrate/migrations/routes/utils.js
-1735  	packages/migrate/migrations/self-closing-tags/index.js
-1736  	packages/migrate/migrations/self-closing-tags/migrate.js
-1737  	packages/migrate/migrations/self-closing-tags/migrate.spec.js
-1738  	packages/migrate/migrations/svelte-4/index.js
-1739  	packages/migrate/migrations/svelte-4/migrate.js
-1740  	packages/migrate/migrations/svelte-4/migrate.spec.js
-1741  	packages/migrate/migrations/sveltekit-2/index.js
-1742  	packages/migrate/migrations/sveltekit-2/migrate.js
-1743  	packages/migrate/migrations/sveltekit-2/migrate.spec.js
-1744  	packages/migrate/migrations/sveltekit-2/svelte-config-samples.md
-1745  	packages/migrate/migrations/sveltekit-2/tsconfig-samples.md
-1746  	packages/migrate/migrations/sveltekit-2/tsjs-samples.md
-1747  	packages/migrate/package.json
-1748  	packages/migrate/README.md
-1749  	packages/migrate/tsconfig.json
-1750  	packages/migrate/utils.js
-1751  	packages/migrate/utils.spec.js
-1752  	packages/package/CHANGELOG.md
-1753  	packages/package/package.json
-1754  	packages/package/README.md
-1755  	packages/package/src/cli.js
-1756  	packages/package/src/config.js
-1757  	packages/package/src/filesystem.js
-1758  	packages/package/src/index.js
-1759  	packages/package/src/typescript.js
-1760  	packages/package/src/types.d.ts
-1761  	packages/package/src/utils.js
-1762  	packages/package/src/validate.js
-1763  	packages/package/svelte-package.js
-1764  	packages/package/test/errors/no-lib-folder/package.json
-1765  	packages/package/test/errors/no-lib-folder/svelte.config.js
-1766  	packages/package/test/errors/no-lib-folder/tsconfig.json
-1767  	packages/package/test/fixtures/assets/jsconfig.json
-1768  	packages/package/test/fixtures/assets/package.json
-1769  	packages/package/test/fixtures/assets/svelte.config.js
-1770  	packages/package/test/fixtures/emitTypes-false/expected/foo.d.ts
-1771  	packages/package/test/fixtures/emitTypes-false/expected/index.js
-1772  	packages/package/test/fixtures/emitTypes-false/expected/Test2.svelte
-1773  	packages/package/test/fixtures/emitTypes-false/expected/Test.svelte
-1774  	packages/package/test/fixtures/emitTypes-false/package.json
-1775  	packages/package/test/fixtures/emitTypes-false/src/lib/foo.d.ts
-1776  	packages/package/test/fixtures/emitTypes-false/src/lib/index.js
-1777  	packages/package/test/fixtures/emitTypes-false/src/lib/Test2.svelte
-1778  	packages/package/test/fixtures/emitTypes-false/src/lib/Test.svelte
-1779  	packages/package/test/fixtures/emitTypes-false/svelte.config.js
-1780  	packages/package/test/fixtures/javascript/expected/foo.d.ts
-1781  	packages/package/test/fixtures/javascript/expected/index.d.ts
-1782  	packages/package/test/fixtures/javascript/expected/index.js
-1783  	packages/package/test/fixtures/javascript/expected/internal/foo.d.ts
-1784  	packages/package/test/fixtures/javascript/expected/internal/index.d.ts
-1785  	packages/package/test/fixtures/javascript/expected/internal/index.js
-1786  	packages/package/test/fixtures/javascript/expected/internal/runes.svelte.d.ts
-1787  	packages/package/test/fixtures/javascript/expected/internal/runes.svelte.js
-1788  	packages/package/test/fixtures/javascript/expected/internal/Test.svelte
-1789  	packages/package/test/fixtures/javascript/expected/internal/Test.svelte.d.ts
-1790  	packages/package/test/fixtures/javascript/expected/Test2.svelte
-1791  	packages/package/test/fixtures/javascript/expected/Test2.svelte.d.ts
-1792  	packages/package/test/fixtures/javascript/expected/Test.svelte
-1793  	packages/package/test/fixtures/javascript/expected/Test.svelte.d.ts
-1794  	packages/package/test/fixtures/javascript/expected/utils.d.ts
-1795  	packages/package/test/fixtures/javascript/expected/utils.js
-1796  	packages/package/test/fixtures/javascript/jsconfig.json
-1797  	packages/package/test/fixtures/javascript/package.json
-1798  	packages/package/test/fixtures/javascript/ReadMe.md
-1799  	packages/package/test/fixtures/javascript/src/lib/foo.d.ts
-1800  	packages/package/test/fixtures/javascript/src/lib/index.js
-1801  	packages/package/test/fixtures/javascript/src/lib/internal/foo.d.ts
-1802  	packages/package/test/fixtures/javascript/src/lib/internal/index.js
-1803  	packages/package/test/fixtures/javascript/src/lib/internal/runes.svelte.js
-1804  	packages/package/test/fixtures/javascript/src/lib/internal/Test.svelte
-1805  	packages/package/test/fixtures/javascript/src/lib/Test2.svelte
-1806  	packages/package/test/fixtures/javascript/src/lib/Test.svelte
-1807  	packages/package/test/fixtures/javascript/src/lib/utils.js
-1808  	packages/package/test/fixtures/javascript/svelte.config.js
-1809  	packages/package/test/fixtures/resolve-alias/expected/baz.d.ts
-1810  	packages/package/test/fixtures/resolve-alias/expected/baz.js
-1811  	packages/package/test/fixtures/resolve-alias/expected/index.d.ts
-1812  	packages/package/test/fixtures/resolve-alias/expected/index.js
-1813  	packages/package/test/fixtures/resolve-alias/expected/sub/bar.d.ts
-1814  	packages/package/test/fixtures/resolve-alias/expected/sub/bar.js
-1815  	packages/package/test/fixtures/resolve-alias/expected/sub/foo.d.ts
-1816  	packages/package/test/fixtures/resolve-alias/expected/sub/foo.js
-1817  	packages/package/test/fixtures/resolve-alias/expected/Test.svelte
-1818  	packages/package/test/fixtures/resolve-alias/expected/Test.svelte.d.ts
-1819  	packages/package/test/fixtures/resolve-alias/expected/utils/index.d.ts
-1820  	packages/package/test/fixtures/resolve-alias/expected/utils/index.js
-1821  	packages/package/test/fixtures/resolve-alias/package.json
-1822  	packages/package/test/fixtures/resolve-alias/src/lib/baz.ts
-1823  	packages/package/test/fixtures/resolve-alias/src/lib/index.ts
-1824  	packages/package/test/fixtures/resolve-alias/src/lib/sub/bar.ts
-1825  	packages/package/test/fixtures/resolve-alias/src/lib/sub/foo.ts
-1826  	packages/package/test/fixtures/resolve-alias/src/lib/Test.svelte
-1827  	packages/package/test/fixtures/resolve-alias/src/lib/utils/index.ts
-1828  	packages/package/test/fixtures/resolve-alias/svelte.config.js
-1829  	packages/package/test/fixtures/resolve-alias/tsconfig.json
-1830  	packages/package/test/fixtures/svelte-3-types/expected/index.d.ts
-1831  	packages/package/test/fixtures/svelte-3-types/expected/index.js
-1832  	packages/package/test/fixtures/svelte-3-types/expected/Test.svelte
-1833  	packages/package/test/fixtures/svelte-3-types/expected/Test.svelte.d.ts
-1834  	packages/package/test/fixtures/svelte-3-types/package.json
-1835  	packages/package/test/fixtures/svelte-3-types/src/lib/index.ts
-1836  	packages/package/test/fixtures/svelte-3-types/src/lib/Test.svelte
-1837  	packages/package/test/fixtures/svelte-3-types/svelte.config.js
-1838  	packages/package/test/fixtures/svelte-3-types/tsconfig.json
-1839  	packages/package/test/fixtures/svelte-kit/expected/foo.d.ts
-1840  	packages/package/test/fixtures/svelte-kit/expected/index.d.ts
-1841  	packages/package/test/fixtures/svelte-kit/expected/index.js
-1842  	packages/package/test/fixtures/svelte-kit/expected/Test.svelte
-1843  	packages/package/test/fixtures/svelte-kit/expected/Test.svelte.d.ts
-1844  	packages/package/test/fixtures/svelte-kit/jsconfig.json
-1845  	packages/package/test/fixtures/svelte-kit/package.json
-1846  	packages/package/test/fixtures/svelte-kit/src/kitlib/foo.d.ts
-1847  	packages/package/test/fixtures/svelte-kit/src/kitlib/index.js
-1848  	packages/package/test/fixtures/svelte-kit/src/kitlib/Test.svelte
-1849  	packages/package/test/fixtures/svelte-kit/svelte.config.js
-1850  	packages/package/test/fixtures/tsconfig-specified/expected/runes.svelte.d.ts
-1851  	packages/package/test/fixtures/tsconfig-specified/expected/runes.svelte.js
-1852  	packages/package/test/fixtures/tsconfig-specified/package.json
-1853  	packages/package/test/fixtures/tsconfig-specified/src/lib/runes.svelte.ts
-1854  	packages/package/test/fixtures/tsconfig-specified/svelte.config.js
-1855  	packages/package/test/fixtures/tsconfig-specified/tsconfig.build.json
-1856  	packages/package/test/fixtures/tsconfig-specified/tsconfig.json
-1857  	packages/package/test/fixtures/typescript-esnext/expected/foo.d.ts
-1858  	packages/package/test/fixtures/typescript-esnext/expected/index.d.ts
-1859  	packages/package/test/fixtures/typescript-esnext/expected/index.js
-1860  	packages/package/test/fixtures/typescript-esnext/expected/Plain.svelte
-1861  	packages/package/test/fixtures/typescript-esnext/expected/Plain.svelte.d.ts
-1862  	packages/package/test/fixtures/typescript-esnext/expected/runes.svelte.d.ts
-1863  	packages/package/test/fixtures/typescript-esnext/expected/runes.svelte.js
-1864  	packages/package/test/fixtures/typescript-esnext/expected/Test2.svelte
-1865  	packages/package/test/fixtures/typescript-esnext/expected/Test2.svelte.d.ts
-1866  	packages/package/test/fixtures/typescript-esnext/expected/Test.svelte
-1867  	packages/package/test/fixtures/typescript-esnext/expected/Test.svelte.d.ts
-1868  	packages/package/test/fixtures/typescript-esnext/expected/utils.d.ts
-1869  	packages/package/test/fixtures/typescript-esnext/expected/utils.js
-1870  	packages/package/test/fixtures/typescript-esnext/package.json
-1871  	packages/package/test/fixtures/typescript-esnext/src/lib/foo.d.ts
-1872  	packages/package/test/fixtures/typescript-esnext/src/lib/index.ts
-1873  	packages/package/test/fixtures/typescript-esnext/src/lib/Plain.svelte
-1874  	packages/package/test/fixtures/typescript-esnext/src/lib/runes.svelte.ts
-1875  	packages/package/test/fixtures/typescript-esnext/src/lib/Test2.svelte
-1876  	packages/package/test/fixtures/typescript-esnext/src/lib/Test.svelte
-1877  	packages/package/test/fixtures/typescript-esnext/src/lib/utils.ts
-1878  	packages/package/test/fixtures/typescript-esnext/svelte.config.js
-1879  	packages/package/test/fixtures/typescript-esnext/tsconfig.json
-1880  	packages/package/test/fixtures/typescript-nodenext/expected/index.d.ts
-1881  	packages/package/test/fixtures/typescript-nodenext/expected/index.js
-1882  	packages/package/test/fixtures/typescript-nodenext/expected/runes.svelte.d.ts
-1883  	packages/package/test/fixtures/typescript-nodenext/expected/runes.svelte.js
-1884  	packages/package/test/fixtures/typescript-nodenext/expected/Test.svelte
-1885  	packages/package/test/fixtures/typescript-nodenext/expected/Test.svelte.d.ts
-1886  	packages/package/test/fixtures/typescript-nodenext/package.json
-1887  	packages/package/test/fixtures/typescript-nodenext/src/lib/index.ts
-1888  	packages/package/test/fixtures/typescript-nodenext/src/lib/runes.svelte.ts
-1889  	packages/package/test/fixtures/typescript-nodenext/src/lib/Test.svelte
-1890  	packages/package/test/fixtures/typescript-nodenext/svelte.config.js
-1891  	packages/package/test/fixtures/typescript-nodenext/tsconfig.json
-1892  	packages/package/test/index.js
-1893  	packages/package/test/watch/expected/a.d.ts
-1894  	packages/package/test/watch/expected/a.js
-1895  	packages/package/test/watch/expected/b.d.ts
-1896  	packages/package/test/watch/expected/b.js
-1897  	packages/package/test/watch/expected/index.js
-1898  	packages/package/test/watch/expected/package.json
-1899  	packages/package/test/watch/expected/post-error.svelte
-1900  	packages/package/test/watch/expected/Test.svelte
-1901  	packages/package/test/watch/expected/Test.svelte.d.ts
-1902  	packages/package/test/watch/package.json
-1903  	packages/package/test/watch/src/lib/index.js
-1904  	packages/package/test/watch/svelte.config.js
-1905  	packages/package/test/watch/tsconfig.json
-1906  	packages/package/tsconfig.json
-1907  	playgrounds/basic/jsconfig.json
-1908  	playgrounds/basic/package.json
-1909  	playgrounds/basic/src/app.d.ts
-1910  	playgrounds/basic/src/app.html
-1911  	playgrounds/basic/src/lib/index.js
-1912  	playgrounds/basic/src/routes/+page.svelte
-1913  	playgrounds/basic/svelte.config.js
-1914  	playgrounds/basic/vite.config.js
-1915  	playgrounds/README.md
-1916  	pnpm-lock.yaml
-1917  	pnpm-workspace.yaml
-1918  	README.md
-1919  	renovate.json
-1920  	scripts/check-dependencies.js
-1921  	scripts/sync-all.js
-1922  	sites/kit.svelte.dev/package.json
-1923  	sites/kit.svelte.dev/README.md
-1924  	sites/kit.svelte.dev/scripts/tsconfig.json
-1925  	sites/kit.svelte.dev/scripts/types/index.js
-1926  	sites/kit.svelte.dev/src/app.d.ts
-1927  	sites/kit.svelte.dev/src/app.html
-1928  	sites/kit.svelte.dev/src/hooks.server.js
-1929  	sites/kit.svelte.dev/src/lib/server/docs/index.js
-1930  	sites/kit.svelte.dev/src/lib/server/docs/types.d.ts
-1931  	sites/kit.svelte.dev/src/lib/server/renderer.js
-1932  	sites/kit.svelte.dev/src/routes/content.json/content.server.js
-1933  	sites/kit.svelte.dev/src/routes/content.json/+server.js
-1934  	sites/kit.svelte.dev/src/routes/docs/+layout.server.js
-1935  	sites/kit.svelte.dev/src/routes/docs/+layout.svelte
-1936  	sites/kit.svelte.dev/src/routes/docs/+page.js
-1937  	sites/kit.svelte.dev/src/routes/docs/[slug]/+page.server.js
-1938  	sites/kit.svelte.dev/src/routes/docs/[slug]/+page.svelte
-1939  	sites/kit.svelte.dev/src/routes/edge.svg/countries.json
-1940  	sites/kit.svelte.dev/src/routes/edge.svg/land-110m.json
-1941  	sites/kit.svelte.dev/src/routes/edge.svg/+server.js
-1942  	sites/kit.svelte.dev/src/routes/+error.svelte
-1943  	sites/kit.svelte.dev/src/routes/faq/+page.js
-1944  	sites/kit.svelte.dev/src/routes/home/common.css
-1945  	sites/kit.svelte.dev/src/routes/home/Deployment.svelte
-1946  	sites/kit.svelte.dev/src/routes/home/Features.svelte
-1947  	sites/kit.svelte.dev/src/routes/home/Hero.svelte
-1948  	sites/kit.svelte.dev/src/routes/home/Intro.svelte
-1949  	sites/kit.svelte.dev/src/routes/home/Showcase.svelte
-1950  	sites/kit.svelte.dev/src/routes/home/subtitles.vtt
-1951  	sites/kit.svelte.dev/src/routes/home/svelte-kit-logotype.svg.svelte
-1952  	sites/kit.svelte.dev/src/routes/home/Svelte.svelte
-1953  	sites/kit.svelte.dev/src/routes/home/Video.svelte
-1954  	sites/kit.svelte.dev/src/routes/+layout.server.js
-1955  	sites/kit.svelte.dev/src/routes/+layout.svelte
-1956  	sites/kit.svelte.dev/src/routes/nav.json/+server.js
-1957  	sites/kit.svelte.dev/src/routes/+page.js
-1958  	sites/kit.svelte.dev/src/routes/+page.svelte
-1959  	sites/kit.svelte.dev/src/routes/schema.json
-1960  	sites/kit.svelte.dev/src/routes/search/+page.js
-1961  	sites/kit.svelte.dev/src/routes/search/+page.server.js
-1962  	sites/kit.svelte.dev/src/routes/search/+page.svelte
-1963  	sites/kit.svelte.dev/static/manifest.json
-1964  	sites/kit.svelte.dev/static/opensearch.xml
-1965  	sites/kit.svelte.dev/static/robots.txt
-1966  	sites/kit.svelte.dev/svelte.config.js
-1967  	sites/kit.svelte.dev/tsconfig.json
-1968  	sites/kit.svelte.dev/vercel.json
-1969  	sites/kit.svelte.dev/vite.config.js
+| Index | File name |
+|-------|-----------|
+| 1 | CONTRIBUTING.md |
+| 2 | documentation/docs/10-getting-started/10-introduction.md |
+| 3 | documentation/docs/10-getting-started/20-creating-a-project.md |
+| 4 | documentation/docs/10-getting-started/30-project-structure.md |
+| 5 | documentation/docs/10-getting-started/40-web-standards.md |
+| 6 | documentation/docs/10-getting-started/meta.json |
+| 7 | documentation/docs/20-core-concepts/10-routing.md |
+| 8 | documentation/docs/20-core-concepts/20-load.md |
+| 9 | documentation/docs/20-core-concepts/30-form-actions.md |
+| 10 | documentation/docs/20-core-concepts/40-page-options.md |
+| 11 | documentation/docs/20-core-concepts/50-state-management.md |
+| 12 | documentation/docs/20-core-concepts/meta.json |
+| 13 | documentation/docs/25-build-and-deploy/10-building-your-app.md |
+| 14 | documentation/docs/25-build-and-deploy/20-adapters.md |
+| 15 | documentation/docs/25-build-and-deploy/30-adapter-auto.md |
+| 16 | documentation/docs/25-build-and-deploy/40-adapter-node.md |
+| 17 | documentation/docs/25-build-and-deploy/50-adapter-static.md |
+| 18 | documentation/docs/25-build-and-deploy/55-single-page-apps.md |
+| 19 | documentation/docs/25-build-and-deploy/60-adapter-cloudflare.md |
+| 20 | documentation/docs/25-build-and-deploy/70-adapter-cloudflare-workers.md |
+| 21 | documentation/docs/25-build-and-deploy/80-adapter-netlify.md |
+| 22 | documentation/docs/25-build-and-deploy/90-adapter-vercel.md |
+| 23 | documentation/docs/25-build-and-deploy/99-writing-adapters.md |
+| 24 | documentation/docs/25-build-and-deploy/meta.json |
+| 25 | documentation/docs/30-advanced/10-advanced-routing.md |
+| 26 | documentation/docs/30-advanced/20-hooks.md |
+| 27 | documentation/docs/30-advanced/25-errors.md |
+| 28 | documentation/docs/30-advanced/30-link-options.md |
+| 29 | documentation/docs/30-advanced/40-service-workers.md |
+| 30 | documentation/docs/30-advanced/50-server-only-modules.md |
+| 31 | documentation/docs/30-advanced/65-snapshots.md |
+| 32 | documentation/docs/30-advanced/67-shallow-routing.md |
+| 33 | documentation/docs/30-advanced/70-packaging.md |
+| 34 | documentation/docs/30-advanced/meta.json |
+| 35 | documentation/docs/40-best-practices/05-performance.md |
+| 36 | documentation/docs/40-best-practices/07-images.md |
+| 37 | documentation/docs/40-best-practices/10-accessibility.md |
+| 38 | documentation/docs/40-best-practices/20-seo.md |
+| 39 | documentation/docs/40-best-practices/meta.json |
+| 40 | documentation/docs/50-reference/10-configuration.md |
+| 41 | documentation/docs/50-reference/20-cli.md |
+| 42 | documentation/docs/50-reference/30-modules.md |
+| 43 | documentation/docs/50-reference/40-types.md |
+| 44 | documentation/docs/50-reference/meta.json |
+| 45 | documentation/docs/60-appendix/10-faq.md |
+| 46 | documentation/docs/60-appendix/20-integrations.md |
+| 47 | documentation/docs/60-appendix/30-migrating-to-sveltekit-2.md |
+| 48 | documentation/docs/60-appendix/40-migrating.md |
+| 49 | documentation/docs/60-appendix/50-additional-resources.md |
+| 50 | documentation/docs/60-appendix/60-glossary.md |
+| 51 | documentation/docs/60-appendix/meta.json |
+| 52 | FUNDING.json |
+| 53 | LICENSE |
+| 54 | package.json |
+| 55 | packages/adapter-auto/adapters.js |
+| 56 | packages/adapter-auto/CHANGELOG.md |
+| 57 | packages/adapter-auto/index.d.ts |
+| 58 | packages/adapter-auto/index.js |
+| 59 | packages/adapter-auto/package.json |
+| 60 | packages/adapter-auto/README.md |
+| 61 | packages/adapter-auto/tsconfig.json |
+| 62 | packages/adapter-cloudflare/ambient.d.ts |
+| 63 | packages/adapter-cloudflare/CHANGELOG.md |
+| 64 | packages/adapter-cloudflare/index.d.ts |
+| 65 | packages/adapter-cloudflare/index.js |
+| 66 | packages/adapter-cloudflare/package.json |
+| 67 | packages/adapter-cloudflare/placeholders.d.ts |
+| 68 | packages/adapter-cloudflare/README.md |
+| 69 | packages/adapter-cloudflare/src/worker.js |
+| 70 | packages/adapter-cloudflare/tsconfig.json |
+| 71 | packages/adapter-cloudflare-workers/ambient.d.ts |
+| 72 | packages/adapter-cloudflare-workers/CHANGELOG.md |
+| 73 | packages/adapter-cloudflare-workers/files/entry.js |
+| 74 | packages/adapter-cloudflare-workers/files/_package.json |
+| 75 | packages/adapter-cloudflare-workers/index.d.ts |
+| 76 | packages/adapter-cloudflare-workers/index.js |
+| 77 | packages/adapter-cloudflare-workers/package.json |
+| 78 | packages/adapter-cloudflare-workers/placeholders.d.ts |
+| 79 | packages/adapter-cloudflare-workers/README.md |
+| 80 | packages/adapter-cloudflare-workers/tsconfig.json |
+| 81 | packages/adapter-netlify/ambient.d.ts |
+| 82 | packages/adapter-netlify/CHANGELOG.md |
+| 83 | packages/adapter-netlify/index.d.ts |
+| 84 | packages/adapter-netlify/index.js |
+| 85 | packages/adapter-netlify/package.json |
+| 86 | packages/adapter-netlify/README.md |
+| 87 | packages/adapter-netlify/rollup.config.js |
+| 88 | packages/adapter-netlify/src/edge.js |
+| 89 | packages/adapter-netlify/src/headers.js |
+| 90 | packages/adapter-netlify/src/headers.spec.js |
+| 91 | packages/adapter-netlify/src/serverless.js |
+| 92 | packages/adapter-netlify/src/shims.js |
+| 93 | packages/adapter-netlify/tsconfig.json |
+| 94 | packages/adapter-node/ambient.d.ts |
+| 95 | packages/adapter-node/CHANGELOG.md |
+| 96 | packages/adapter-node/index.d.ts |
+| 97 | packages/adapter-node/index.js |
+| 98 | packages/adapter-node/LICENSE |
+| 99 | packages/adapter-node/package.json |
+| 100 | packages/adapter-node/README.md |
+| 101 | packages/adapter-node/rollup.config.js |
+| 102 | packages/adapter-node/src/env.js |
+| 103 | packages/adapter-node/src/handler.js |
+| 104 | packages/adapter-node/src/index.js |
+| 105 | packages/adapter-node/src/shims.js |
+| 106 | packages/adapter-node/tests/smoke.spec.js |
+| 107 | packages/adapter-node/tsconfig.json |
+| 108 | packages/adapter-static/CHANGELOG.md |
+| 109 | packages/adapter-static/index.d.ts |
+| 110 | packages/adapter-static/index.js |
+| 111 | packages/adapter-static/LICENSE |
+| 112 | packages/adapter-static/package.json |
+| 113 | packages/adapter-static/platforms.js |
+| 114 | packages/adapter-static/README.md |
+| 115 | packages/adapter-static/test/apps/prerendered/package.json |
+| 116 | packages/adapter-static/test/apps/prerendered/playwright.config.js |
+| 117 | packages/adapter-static/test/apps/prerendered/src/app.html |
+| 118 | packages/adapter-static/test/apps/prerendered/src/global.d.ts |
+| 119 | packages/adapter-static/test/apps/prerendered/src/routes/endpoint/explicit.json/+server.js |
+| 120 | packages/adapter-static/test/apps/prerendered/src/routes/endpoint/implicit.json/+server.js |
+| 121 | packages/adapter-static/test/apps/prerendered/src/routes/+layout.js |
+| 122 | packages/adapter-static/test/apps/prerendered/src/routes/+layout.svelte |
+| 123 | packages/adapter-static/test/apps/prerendered/src/routes/+page.js |
+| 124 | packages/adapter-static/test/apps/prerendered/src/routes/+page.svelte |
+| 125 | packages/adapter-static/test/apps/prerendered/src/routes/public-env/+page.svelte |
+| 126 | packages/adapter-static/test/apps/prerendered/src/routes/server-emitted-asset/+page.server.js |
+| 127 | packages/adapter-static/test/apps/prerendered/src/routes/server-emitted-asset/+page.svelte |
+| 128 | packages/adapter-static/test/apps/prerendered/svelte.config.js |
+| 129 | packages/adapter-static/test/apps/prerendered/test/test.js |
+| 130 | packages/adapter-static/test/apps/prerendered/vite.config.js |
+| 131 | packages/adapter-static/test/apps/spa/jsconfig.json |
+| 132 | packages/adapter-static/test/apps/spa/package.json |
+| 133 | packages/adapter-static/test/apps/spa/playwright.config.js |
+| 134 | packages/adapter-static/test/apps/spa/README.md |
+| 135 | packages/adapter-static/test/apps/spa/src/app.html |
+| 136 | packages/adapter-static/test/apps/spa/src/routes/about/+page.js |
+| 137 | packages/adapter-static/test/apps/spa/src/routes/about/+page.svelte |
+| 138 | packages/adapter-static/test/apps/spa/src/routes/+error.svelte |
+| 139 | packages/adapter-static/test/apps/spa/src/routes/fallback/[...rest]/+page.svelte |
+| 140 | packages/adapter-static/test/apps/spa/src/routes/+layout.svelte |
+| 141 | packages/adapter-static/test/apps/spa/src/routes/+page.svelte |
+| 142 | packages/adapter-static/test/apps/spa/svelte.config.js |
+| 143 | packages/adapter-static/test/apps/spa/test/test.js |
+| 144 | packages/adapter-static/test/apps/spa/vite.config.js |
+| 145 | packages/adapter-static/test/utils.js |
+| 146 | packages/adapter-static/tsconfig.json |
+| 147 | packages/adapter-vercel/ambient.d.ts |
+| 148 | packages/adapter-vercel/CHANGELOG.md |
+| 149 | packages/adapter-vercel/files/edge.js |
+| 150 | packages/adapter-vercel/files/serverless.js |
+| 151 | packages/adapter-vercel/index.d.ts |
+| 152 | packages/adapter-vercel/index.js |
+| 153 | packages/adapter-vercel/internal.d.ts |
+| 154 | packages/adapter-vercel/package.json |
+| 155 | packages/adapter-vercel/README.md |
+| 156 | packages/adapter-vercel/test/utils.spec.js |
+| 157 | packages/adapter-vercel/tsconfig.json |
+| 158 | packages/adapter-vercel/utils.js |
+| 159 | packages/amp/CHANGELOG.md |
+| 160 | packages/amp/index.d.ts |
+| 161 | packages/amp/index.js |
+| 162 | packages/amp/package.json |
+| 163 | packages/create-svelte/bin.js |
+| 164 | packages/create-svelte/CHANGELOG.md |
+| 165 | packages/create-svelte/index.js |
+| 166 | packages/create-svelte/package.json |
+| 167 | packages/create-svelte/README.md |
+| 168 | packages/create-svelte/scripts/build-templates.js |
+| 169 | packages/create-svelte/scripts/update-template-repo-contents.js |
+| 170 | packages/create-svelte/scripts/update-template-repo.sh |
+| 171 | packages/create-svelte/shared/+checkjs/jsconfig.json |
+| 172 | packages/create-svelte/shared/+checkjs/package.json |
+| 173 | packages/create-svelte/shared/+default+checkjs/svelte.config.js |
+| 174 | packages/create-svelte/shared/+default+typescript/svelte.config.js |
+| 175 | packages/create-svelte/shared/+default-typescript/svelte.config.js |
+| 176 | packages/create-svelte/shared/+default+vitest/src/routes/sverdle/game.test.ts |
+| 177 | packages/create-svelte/shared/+eslint/package.json |
+| 178 | packages/create-svelte/shared/+eslint+prettier/package.json |
+| 179 | packages/create-svelte/shared/+eslint-prettier/package.json |
+| 180 | packages/create-svelte/shared/-eslint+prettier/package.json |
+| 181 | packages/create-svelte/shared/+eslint+svelte5/package.json |
+| 182 | packages/create-svelte/shared/+eslint+typescript/package.json |
+| 183 | packages/create-svelte/shared/+playwright+default/tests/test.ts |
+| 184 | packages/create-svelte/shared/+playwright/package.json |
+| 185 | packages/create-svelte/shared/+playwright+skeletonlib/tests/test.ts |
+| 186 | packages/create-svelte/shared/+playwright+skeleton/tests/test.ts |
+| 187 | packages/create-svelte/shared/+playwright-typescript/playwright.config.js |
+| 188 | packages/create-svelte/shared/+playwright+typescript/playwright.config.ts |
+| 189 | packages/create-svelte/shared/+playwright+vitest/package.json |
+| 190 | packages/create-svelte/shared/+prettier/package.json |
+| 191 | packages/create-svelte/shared/README.md |
+| 192 | packages/create-svelte/shared/+skeletonlib+checkjs/jsconfig.json |
+| 193 | packages/create-svelte/shared/+skeletonlib/README.md |
+| 194 | packages/create-svelte/shared/+skeletonlib+svelte5/package.json |
+| 195 | packages/create-svelte/shared/+skeletonlib-typescript/jsconfig.json |
+| 196 | packages/create-svelte/shared/+skeletonlib+typescript/tsconfig.json |
+| 197 | packages/create-svelte/shared/+svelte5/package.json |
+| 198 | packages/create-svelte/shared/+typescript/package.json |
+| 199 | packages/create-svelte/shared/+typescript/svelte.config.js |
+| 200 | packages/create-svelte/shared/-typescript/svelte.config.js |
+| 201 | packages/create-svelte/shared/+typescript/tsconfig.json |
+| 202 | packages/create-svelte/shared/vite.config.ts |
+| 203 | packages/create-svelte/shared/+vitest/package.json |
+| 204 | packages/create-svelte/shared/+vitest+skeletonlib/src/index.test.ts |
+| 205 | packages/create-svelte/shared/+vitest+skeleton/src/index.test.ts |
+| 206 | packages/create-svelte/shared/+vitest/vite.config.ts |
+| 207 | packages/create-svelte/templates/default/netlify.toml |
+| 208 | packages/create-svelte/templates/default/package.json |
+| 209 | packages/create-svelte/templates/default/package.template.json |
+| 210 | packages/create-svelte/templates/default/README.md |
+| 211 | packages/create-svelte/templates/default/src/app.d.ts |
+| 212 | packages/create-svelte/templates/default/src/app.html |
+| 213 | packages/create-svelte/templates/default/src/routes/about/+page.svelte |
+| 214 | packages/create-svelte/templates/default/src/routes/about/+page.ts |
+| 215 | packages/create-svelte/templates/default/src/routes/Counter.svelte |
+| 216 | packages/create-svelte/templates/default/src/routes/Header.svelte |
+| 217 | packages/create-svelte/templates/default/src/routes/+layout.svelte |
+| 218 | packages/create-svelte/templates/default/src/routes/+page.svelte |
+| 219 | packages/create-svelte/templates/default/src/routes/+page.ts |
+| 220 | packages/create-svelte/templates/default/src/routes/styles.css |
+| 221 | packages/create-svelte/templates/default/src/routes/sverdle/game.ts |
+| 222 | packages/create-svelte/templates/default/src/routes/sverdle/how-to-play/+page.svelte |
+| 223 | packages/create-svelte/templates/default/src/routes/sverdle/how-to-play/+page.ts |
+| 224 | packages/create-svelte/templates/default/src/routes/sverdle/+page.server.ts |
+| 225 | packages/create-svelte/templates/default/src/routes/sverdle/+page.svelte |
+| 226 | packages/create-svelte/templates/default/src/routes/sverdle/reduced-motion.ts |
+| 227 | packages/create-svelte/templates/default/src/routes/sverdle/words.server.ts |
+| 228 | packages/create-svelte/templates/default/static/robots.txt |
+| 229 | packages/create-svelte/templates/default/svelte.config.js |
+| 230 | packages/create-svelte/templates/default/tsconfig.json |
+| 231 | packages/create-svelte/templates/default/vercel.json |
+| 232 | packages/create-svelte/templates/default/vite.config.js |
+| 233 | packages/create-svelte/templates/default/wrangler.toml |
+| 234 | packages/create-svelte/templates/skeletonlib/package.template.json |
+| 235 | packages/create-svelte/templates/skeletonlib/src/app.d.ts |
+| 236 | packages/create-svelte/templates/skeletonlib/src/app.html |
+| 237 | packages/create-svelte/templates/skeletonlib/src/lib/index.ts |
+| 238 | packages/create-svelte/templates/skeletonlib/src/routes/+page.svelte |
+| 239 | packages/create-svelte/templates/skeletonlib/svelte.config.js |
+| 240 | packages/create-svelte/templates/skeletonlib/vite.config.js |
+| 241 | packages/create-svelte/templates/skeleton/package.json |
+| 242 | packages/create-svelte/templates/skeleton/package.template.json |
+| 243 | packages/create-svelte/templates/skeleton/src/app.d.ts |
+| 244 | packages/create-svelte/templates/skeleton/src/app.html |
+| 245 | packages/create-svelte/templates/skeleton/src/lib/index.ts |
+| 246 | packages/create-svelte/templates/skeleton/src/routes/+page.svelte |
+| 247 | packages/create-svelte/templates/skeleton/svelte.config.js |
+| 248 | packages/create-svelte/templates/skeleton/vite.config.js |
+| 249 | packages/create-svelte/test/check.js |
+| 250 | packages/create-svelte/tsconfig.json |
+| 251 | packages/create-svelte/types/index.d.ts |
+| 252 | packages/create-svelte/types/internal.d.ts |
+| 253 | packages/create-svelte/utils.js |
+| 254 | packages/create-svelte/vitest.config.js |
+| 255 | packages/enhanced-img/CHANGELOG.md |
+| 256 | packages/enhanced-img/package.json |
+| 257 | packages/enhanced-img/README.md |
+| 258 | packages/enhanced-img/src/index.js |
+| 259 | packages/enhanced-img/src/preprocessor.js |
+| 260 | packages/enhanced-img/test/Input.svelte |
+| 261 | packages/enhanced-img/test/Output.svelte |
+| 262 | packages/enhanced-img/test/preprocessor.spec.js |
+| 263 | packages/enhanced-img/tsconfig.json |
+| 264 | packages/enhanced-img/types/ambient.d.ts |
+| 265 | packages/enhanced-img/types/index.d.ts |
+| 266 | packages/kit/CHANGELOG.md |
+| 267 | packages/kit/kit.vitest.config.js |
+| 268 | packages/kit/package.json |
+| 269 | packages/kit/postinstall.js |
+| 270 | packages/kit/README.md |
+| 271 | packages/kit/scripts/cp.js |
+| 272 | packages/kit/scripts/generate-dts.js |
+| 273 | packages/kit/scripts/generate-version.js |
+| 274 | packages/kit/src/cli.js |
+| 275 | packages/kit/src/constants.js |
+| 276 | packages/kit/src/core/adapt/builder.js |
+| 277 | packages/kit/src/core/adapt/builder.spec.js |
+| 278 | packages/kit/src/core/adapt/fixtures/basic/static/answer.md |
+| 279 | packages/kit/src/core/adapt/fixtures/compress/foo.css |
+| 280 | packages/kit/src/core/adapt/index.js |
+| 281 | packages/kit/src/core/config/default-error.html |
+| 282 | packages/kit/src/core/config/fixtures/default/svelte.config.js |
+| 283 | packages/kit/src/core/config/fixtures/export-string/svelte.config.js |
+| 284 | packages/kit/src/core/config/index.js |
+| 285 | packages/kit/src/core/config/index.spec.js |
+| 286 | packages/kit/src/core/config/options.js |
+| 287 | packages/kit/src/core/config/types.d.ts |
+| 288 | packages/kit/src/core/env.js |
+| 289 | packages/kit/src/core/generate_manifest/find_server_assets.js |
+| 290 | packages/kit/src/core/generate_manifest/index.js |
+| 291 | packages/kit/src/core/postbuild/analyse.js |
+| 292 | packages/kit/src/core/postbuild/crawl.js |
+| 293 | packages/kit/src/core/postbuild/crawl.spec.js |
+| 294 | packages/kit/src/core/postbuild/entities.js |
+| 295 | packages/kit/src/core/postbuild/entities.spec.js |
+| 296 | packages/kit/src/core/postbuild/fallback.js |
+| 297 | packages/kit/src/core/postbuild/fixtures/base/input.html |
+| 298 | packages/kit/src/core/postbuild/fixtures/base/output.json |
+| 299 | packages/kit/src/core/postbuild/fixtures/basic-href/input.html |
+| 300 | packages/kit/src/core/postbuild/fixtures/basic-href/output.json |
+| 301 | packages/kit/src/core/postbuild/fixtures/basic-src/input.html |
+| 302 | packages/kit/src/core/postbuild/fixtures/basic-src/output.json |
+| 303 | packages/kit/src/core/postbuild/fixtures/basic-srcset/input.html |
+| 304 | packages/kit/src/core/postbuild/fixtures/basic-srcset/output.json |
+| 305 | packages/kit/src/core/postbuild/fixtures/href-with-character-reference/input.html |
+| 306 | packages/kit/src/core/postbuild/fixtures/href-with-character-reference/output.json |
+| 307 | packages/kit/src/core/postbuild/fixtures/ids/input.html |
+| 308 | packages/kit/src/core/postbuild/fixtures/ids/output.json |
+| 309 | packages/kit/src/core/postbuild/fixtures/include-rel-external/input.html |
+| 310 | packages/kit/src/core/postbuild/fixtures/include-rel-external/output.json |
+| 311 | packages/kit/src/core/postbuild/fixtures/meta/input.html |
+| 312 | packages/kit/src/core/postbuild/fixtures/meta/output.json |
+| 313 | packages/kit/src/core/postbuild/fixtures/unquoted-attributes/input.html |
+| 314 | packages/kit/src/core/postbuild/fixtures/unquoted-attributes/output.json |
+| 315 | packages/kit/src/core/postbuild/prerender.js |
+| 316 | packages/kit/src/core/postbuild/queue.js |
+| 317 | packages/kit/src/core/postbuild/queue.spec.js |
+| 318 | packages/kit/src/core/sync/create_manifest_data/conflict.js |
+| 319 | packages/kit/src/core/sync/create_manifest_data/index.js |
+| 320 | packages/kit/src/core/sync/create_manifest_data/index.spec.js |
+| 321 | packages/kit/src/core/sync/create_manifest_data/sort.js |
+| 322 | packages/kit/src/core/sync/create_manifest_data/test/params/bar.js |
+| 323 | packages/kit/src/core/sync/create_manifest_data/test/params/foo.js |
+| 324 | packages/kit/src/core/sync/create_manifest_data/test/samples/basic/about/+page.svelte |
+| 325 | packages/kit/src/core/sync/create_manifest_data/test/samples/basic/blog/default.svelte |
+| 326 | packages/kit/src/core/sync/create_manifest_data/test/samples/basic/blog.json/+server.js |
+| 327 | packages/kit/src/core/sync/create_manifest_data/test/samples/basic/blog/+page.svelte |
+| 328 | packages/kit/src/core/sync/create_manifest_data/test/samples/basic/blog/[slug].json/+server.ts |
+| 329 | packages/kit/src/core/sync/create_manifest_data/test/samples/basic/blog/[slug]/+page.svelte |
+| 330 | packages/kit/src/core/sync/create_manifest_data/test/samples/basic-layout/foo/+layout.svelte |
+| 331 | packages/kit/src/core/sync/create_manifest_data/test/samples/basic-layout/foo/+page.svelte |
+| 332 | packages/kit/src/core/sync/create_manifest_data/test/samples/basic-layout/+layout.svelte |
+| 333 | packages/kit/src/core/sync/create_manifest_data/test/samples/basic-layout/+page.svelte |
+| 334 | packages/kit/src/core/sync/create_manifest_data/test/samples/basic/+page.d.ts |
+| 335 | packages/kit/src/core/sync/create_manifest_data/test/samples/basic/+page.svelte |
+| 336 | packages/kit/src/core/sync/create_manifest_data/test/samples/conflicting-groups/(x)/a/+page.svelte |
+| 337 | packages/kit/src/core/sync/create_manifest_data/test/samples/conflicting-groups/(y)/a/+page.svelte |
+| 338 | packages/kit/src/core/sync/create_manifest_data/test/samples/conflicting-params/[slug1]/+page.svelte |
+| 339 | packages/kit/src/core/sync/create_manifest_data/test/samples/conflicting-params/[slug2]/+page.svelte |
+| 340 | packages/kit/src/core/sync/create_manifest_data/test/samples/conflicting-ts-js-handlers-layout/+layout.server.js |
+| 341 | packages/kit/src/core/sync/create_manifest_data/test/samples/conflicting-ts-js-handlers-layout/+layout.server.ts |
+| 342 | packages/kit/src/core/sync/create_manifest_data/test/samples/conflicting-ts-js-handlers-page/+page.js |
+| 343 | packages/kit/src/core/sync/create_manifest_data/test/samples/conflicting-ts-js-handlers-page/+page.ts |
+| 344 | packages/kit/src/core/sync/create_manifest_data/test/samples/conflicting-ts-js-handlers-server/+server.js |
+| 345 | packages/kit/src/core/sync/create_manifest_data/test/samples/conflicting-ts-js-handlers-server/+server.ts |
+| 346 | packages/kit/src/core/sync/create_manifest_data/test/samples/custom-extension/about/+page.jazz |
+| 347 | packages/kit/src/core/sync/create_manifest_data/test/samples/custom-extension/blog/_default.svelte |
+| 348 | packages/kit/src/core/sync/create_manifest_data/test/samples/custom-extension/blog.json/+server.js |
+| 349 | packages/kit/src/core/sync/create_manifest_data/test/samples/custom-extension/blog/+page.svelte |
+| 350 | packages/kit/src/core/sync/create_manifest_data/test/samples/custom-extension/blog/[slug].json/+server.js |
+| 351 | packages/kit/src/core/sync/create_manifest_data/test/samples/custom-extension/blog/[slug]/+page.beebop |
+| 352 | packages/kit/src/core/sync/create_manifest_data/test/samples/custom-extension/+page.funk |
+| 353 | packages/kit/src/core/sync/create_manifest_data/test/samples/declared-layout/+layout-foo.svelte |
+| 354 | packages/kit/src/core/sync/create_manifest_data/test/samples/encoding/[x+22]/+page.svelte |
+| 355 | packages/kit/src/core/sync/create_manifest_data/test/samples/encoding/[x+23]/+page.svelte |
+| 356 | packages/kit/src/core/sync/create_manifest_data/test/samples/encoding/[x+3f]/+page.svelte |
+| 357 | packages/kit/src/core/sync/create_manifest_data/test/samples/hidden-underscore/a/_b/c/d.js |
+| 358 | packages/kit/src/core/sync/create_manifest_data/test/samples/hidden-underscore/e/f/g/h/+server.js |
+| 359 | packages/kit/src/core/sync/create_manifest_data/test/samples/hidden-underscore/_foo.js |
+| 360 | packages/kit/src/core/sync/create_manifest_data/test/samples/hidden-underscore/i/_j.js |
+| 361 | packages/kit/src/core/sync/create_manifest_data/test/samples/hidden-underscore/+page.svelte |
+| 362 | packages/kit/src/core/sync/create_manifest_data/test/samples/invalid-named-layout-reference/x/+page@.js |
+| 363 | packages/kit/src/core/sync/create_manifest_data/test/samples/invalid-named-layout-reference/x/+page@.svelte |
+| 364 | packages/kit/src/core/sync/create_manifest_data/test/samples/invalid-params/[foo][bar]/+server.js |
+| 365 | packages/kit/src/core/sync/create_manifest_data/test/samples/lockfiles/foo/+server.js |
+| 366 | packages/kit/src/core/sync/create_manifest_data/test/samples/lockfiles/foo/+server.js_tmp |
+| 367 | packages/kit/src/core/sync/create_manifest_data/test/samples/multiple-layouts/+layout.svelte |
+| 368 | packages/kit/src/core/sync/create_manifest_data/test/samples/multiple-layouts/+layout@.svelte |
+| 369 | packages/kit/src/core/sync/create_manifest_data/test/samples/multiple-pages/+page.svelte |
+| 370 | packages/kit/src/core/sync/create_manifest_data/test/samples/multiple-pages/+page@.svelte |
+| 371 | packages/kit/src/core/sync/create_manifest_data/test/samples/multiple-slugs/[file].[ext]/+server.js |
+| 372 | packages/kit/src/core/sync/create_manifest_data/test/samples/named-layout-missing/+page@missing.svelte |
+| 373 | packages/kit/src/core/sync/create_manifest_data/test/samples/named-layouts/a/a1/+page.svelte |
+| 374 | packages/kit/src/core/sync/create_manifest_data/test/samples/named-layouts/a/+layout.svelte |
+| 375 | packages/kit/src/core/sync/create_manifest_data/test/samples/named-layouts/b/c/c2/+page@.svelte |
+| 376 | packages/kit/src/core/sync/create_manifest_data/test/samples/named-layouts/b/c/+layout.svelte |
+| 377 | packages/kit/src/core/sync/create_manifest_data/test/samples/named-layouts/b/d/d1/+page.svelte |
+| 378 | packages/kit/src/core/sync/create_manifest_data/test/samples/named-layouts/b/d/(special)/(extraspecial)/d2/+page.svelte |
+| 379 | packages/kit/src/core/sync/create_manifest_data/test/samples/named-layouts/b/d/(special)/(extraspecial)/d3/+page@(special).svelte |
+| 380 | packages/kit/src/core/sync/create_manifest_data/test/samples/named-layouts/b/d/(special)/(extraspecial)/+layout.svelte |
+| 381 | packages/kit/src/core/sync/create_manifest_data/test/samples/named-layouts/b/d/(special)/+layout.svelte |
+| 382 | packages/kit/src/core/sync/create_manifest_data/test/samples/named-layouts/b/d/(special)/+page.svelte |
+| 383 | packages/kit/src/core/sync/create_manifest_data/test/samples/named-layouts/+layout.svelte |
+| 384 | packages/kit/src/core/sync/create_manifest_data/test/samples/named-layouts/(special)/a/a2/+page.svelte |
+| 385 | packages/kit/src/core/sync/create_manifest_data/test/samples/named-layouts/(special)/(alsospecial)/b/c/c1/+page.svelte |
+| 386 | packages/kit/src/core/sync/create_manifest_data/test/samples/named-layouts/(special)/(alsospecial)/+layout.svelte |
+| 387 | packages/kit/src/core/sync/create_manifest_data/test/samples/named-layouts/(special)/+layout.js |
+| 388 | packages/kit/src/core/sync/create_manifest_data/test/samples/named-layouts/(special)/+layout.server.js |
+| 389 | packages/kit/src/core/sync/create_manifest_data/test/samples/named-layouts/(special)/+layout.svelte |
+| 390 | packages/kit/src/core/sync/create_manifest_data/test/samples/nested-errors/foo/bar/baz/+error.svelte |
+| 391 | packages/kit/src/core/sync/create_manifest_data/test/samples/nested-errors/foo/bar/baz/+layout.svelte |
+| 392 | packages/kit/src/core/sync/create_manifest_data/test/samples/nested-errors/foo/bar/baz/+page.svelte |
+| 393 | packages/kit/src/core/sync/create_manifest_data/test/samples/nested-errors/foo/bar/+error.svelte |
+| 394 | packages/kit/src/core/sync/create_manifest_data/test/samples/nested-errors/foo/+layout.svelte |
+| 395 | packages/kit/src/core/sync/create_manifest_data/test/samples/nested-optionals/[[a]]/[[b]]/+page.svelte |
+| 396 | packages/kit/src/core/sync/create_manifest_data/test/samples/optional/[[foo]]bar/+server.js |
+| 397 | packages/kit/src/core/sync/create_manifest_data/test/samples/optional/nested/[[optional]]/sub/+page.svelte |
+| 398 | packages/kit/src/core/sync/create_manifest_data/test/samples/optional/[[optional]]/+page.svelte |
+| 399 | packages/kit/src/core/sync/create_manifest_data/test/samples/optional/prefix[[suffix]]/+page.svelte |
+| 400 | packages/kit/src/core/sync/create_manifest_data/test/samples/page-without-svelte-file/error/+error.svelte |
+| 401 | packages/kit/src/core/sync/create_manifest_data/test/samples/page-without-svelte-file/error/[...path]/+page.js |
+| 402 | packages/kit/src/core/sync/create_manifest_data/test/samples/page-without-svelte-file/layout/exists/+layout.js |
+| 403 | packages/kit/src/core/sync/create_manifest_data/test/samples/page-without-svelte-file/layout/exists/+page.svelte |
+| 404 | packages/kit/src/core/sync/create_manifest_data/test/samples/page-without-svelte-file/layout/+layout.svelte |
+| 405 | packages/kit/src/core/sync/create_manifest_data/test/samples/page-without-svelte-file/layout/redirect/+page.server.js |
+| 406 | packages/kit/src/core/sync/create_manifest_data/test/samples/page-without-svelte-file/+page.svelte |
+| 407 | packages/kit/src/core/sync/create_manifest_data/test/samples/rest/a/[...rest]/+page.server.js |
+| 408 | packages/kit/src/core/sync/create_manifest_data/test/samples/rest/a/[...rest]/+page.svelte |
+| 409 | packages/kit/src/core/sync/create_manifest_data/test/samples/rest/b/[...rest]/+page.server.ts |
+| 410 | packages/kit/src/core/sync/create_manifest_data/test/samples/rest/b/[...rest]/+page.svelte |
+| 411 | packages/kit/src/core/sync/create_manifest_data/test/samples/rest-prefix-suffix/prefix-[...rest]/+page.svelte |
+| 412 | packages/kit/src/core/sync/create_manifest_data/test/samples/rest-prefix-suffix/[...rest].json/+server.js |
+| 413 | packages/kit/src/core/sync/create_manifest_data/test/samples/symlinks/bar/+page.svelte |
+| 414 | packages/kit/src/core/sync/create_manifest_data/test/samples/symlinks/routes/+page.svelte |
+| 415 | packages/kit/src/core/sync/create_manifest_data/test/static/bar/baz.txt |
+| 416 | packages/kit/src/core/sync/create_manifest_data/test/static/foo.txt |
+| 417 | packages/kit/src/core/sync/create_manifest_data/types.d.ts |
+| 418 | packages/kit/src/core/sync/sync.js |
+| 419 | packages/kit/src/core/sync/ts.js |
+| 420 | packages/kit/src/core/sync/utils.js |
+| 421 | packages/kit/src/core/sync/write_ambient.js |
+| 422 | packages/kit/src/core/sync/write_client_manifest.js |
+| 423 | packages/kit/src/core/sync/write_non_ambient.js |
+| 424 | packages/kit/src/core/sync/write_root.js |
+| 425 | packages/kit/src/core/sync/write_server.js |
+| 426 | packages/kit/src/core/sync/write_tsconfig.js |
+| 427 | packages/kit/src/core/sync/write_tsconfig.spec.js |
+| 428 | packages/kit/src/core/sync/write_types/index.js |
+| 429 | packages/kit/src/core/sync/write_types/index.spec.js |
+| 430 | packages/kit/src/core/sync/write_types/test/actions/+page.server.js |
+| 431 | packages/kit/src/core/sync/write_types/test/layout-advanced/+layout.js |
+| 432 | packages/kit/src/core/sync/write_types/test/layout-advanced/+layout.svelte |
+| 433 | packages/kit/src/core/sync/write_types/test/layout-advanced/(main)/+layout.server.js |
+| 434 | packages/kit/src/core/sync/write_types/test/layout-advanced/(main)/+layout.svelte |
+| 435 | packages/kit/src/core/sync/write_types/test/layout-advanced/(main)/+page.js |
+| 436 | packages/kit/src/core/sync/write_types/test/layout-advanced/(main)/+page@.svelte |
+| 437 | packages/kit/src/core/sync/write_types/test/layout-advanced/(main)/sub/+page.js |
+| 438 | packages/kit/src/core/sync/write_types/test/layout-advanced/(main)/sub/+page.svelte |
+| 439 | packages/kit/src/core/sync/write_types/test/layout/+layout.js |
+| 440 | packages/kit/src/core/sync/write_types/test/layout/+layout.server.js |
+| 441 | packages/kit/src/core/sync/write_types/test/layout/+layout.svelte |
+| 442 | packages/kit/src/core/sync/write_types/test/layout/+page.js |
+| 443 | packages/kit/src/core/sync/write_types/test/layout/+page.server.js |
+| 444 | packages/kit/src/core/sync/write_types/test/layout/+page.svelte |
+| 445 | packages/kit/src/core/sync/write_types/test/package.json |
+| 446 | packages/kit/src/core/sync/write_types/test/param-type-inference/optional/[[optionalNarrowedParam=narrowed]]/+page.js |
+| 447 | packages/kit/src/core/sync/write_types/test/param-type-inference/params/narrowed.js |
+| 448 | packages/kit/src/core/sync/write_types/test/param-type-inference/params/not_narrowed.js |
+| 449 | packages/kit/src/core/sync/write_types/test/param-type-inference/required/+layout.js |
+| 450 | packages/kit/src/core/sync/write_types/test/param-type-inference/required/[narrowedParam=narrowed]/+page.js |
+| 451 | packages/kit/src/core/sync/write_types/test/param-type-inference/required/[regularParam=not_narrowed]/+page.js |
+| 452 | packages/kit/src/core/sync/write_types/test/param-type-inference/spread/[...spread=narrowed]/+page.js |
+| 453 | packages/kit/src/core/sync/write_types/test/simple-page-server-and-shared/+page.js |
+| 454 | packages/kit/src/core/sync/write_types/test/simple-page-server-and-shared/+page.server.js |
+| 455 | packages/kit/src/core/sync/write_types/test/simple-page-server-and-shared/+page.svelte |
+| 456 | packages/kit/src/core/sync/write_types/test/simple-page-server-only/+page.server.js |
+| 457 | packages/kit/src/core/sync/write_types/test/simple-page-server-only/+page.svelte |
+| 458 | packages/kit/src/core/sync/write_types/test/simple-page-server-only/sub/+page.server.js |
+| 459 | packages/kit/src/core/sync/write_types/test/simple-page-server-only/sub/+page.svelte |
+| 460 | packages/kit/src/core/sync/write_types/test/simple-page-shared-only/+page.js |
+| 461 | packages/kit/src/core/sync/write_types/test/simple-page-shared-only/+page.svelte |
+| 462 | packages/kit/src/core/sync/write_types/test/simple-page-shared-only/sub/+page.js |
+| 463 | packages/kit/src/core/sync/write_types/test/simple-page-shared-only/sub/+page.svelte |
+| 464 | packages/kit/src/core/sync/write_types/test/slugs/+layout.js |
+| 465 | packages/kit/src/core/sync/write_types/test/slugs-layout-not-all-pages-have-load/+layout.js |
+| 466 | packages/kit/src/core/sync/write_types/test/slugs-layout-not-all-pages-have-load/+layout.svelte |
+| 467 | packages/kit/src/core/sync/write_types/test/slugs-layout-not-all-pages-have-load/nested/+layout.js |
+| 468 | packages/kit/src/core/sync/write_types/test/slugs-layout-not-all-pages-have-load/nested/+layout.svelte |
+| 469 | packages/kit/src/core/sync/write_types/test/slugs-layout-not-all-pages-have-load/nested/[...rest]/+page.js |
+| 470 | packages/kit/src/core/sync/write_types/test/slugs-layout-not-all-pages-have-load/nested/[...rest]/+page.svelte |
+| 471 | packages/kit/src/core/sync/write_types/test/slugs-layout-not-all-pages-have-load/nested/[slug]/+page@.svelte |
+| 472 | packages/kit/src/core/sync/write_types/test/slugs/+layout.svelte |
+| 473 | packages/kit/src/core/sync/write_types/test/slugs/[...rest]/+page.js |
+| 474 | packages/kit/src/core/sync/write_types/test/slugs/[...rest]/+page.svelte |
+| 475 | packages/kit/src/core/sync/write_types/test/slugs/[slug]/+page.js |
+| 476 | packages/kit/src/core/sync/write_types/test/slugs/[slug]/+page.svelte |
+| 477 | packages/kit/src/core/sync/write_types/test/slugs/x/[[optional]]/+page.js |
+| 478 | packages/kit/src/core/sync/write_types/test/slugs/x/[[optional]]/+page.svelte |
+| 479 | packages/kit/src/core/sync/write_types/test/tsconfig.json |
+| 480 | packages/kit/src/core/utils.js |
+| 481 | packages/kit/src/exports/hooks/index.js |
+| 482 | packages/kit/src/exports/hooks/sequence.js |
+| 483 | packages/kit/src/exports/hooks/sequence.spec.js |
+| 484 | packages/kit/src/exports/index.js |
+| 485 | packages/kit/src/exports/node/index.js |
+| 486 | packages/kit/src/exports/node/polyfills.js |
+| 487 | packages/kit/src/exports/public.d.ts |
+| 488 | packages/kit/src/exports/vite/build/build_server.js |
+| 489 | packages/kit/src/exports/vite/build/build_service_worker.js |
+| 490 | packages/kit/src/exports/vite/build/utils.js |
+| 491 | packages/kit/src/exports/vite/dev/index.js |
+| 492 | packages/kit/src/exports/vite/graph_analysis/index.js |
+| 493 | packages/kit/src/exports/vite/graph_analysis/index.spec.js |
+| 494 | packages/kit/src/exports/vite/graph_analysis/types.d.ts |
+| 495 | packages/kit/src/exports/vite/graph_analysis/utils.js |
+| 496 | packages/kit/src/exports/vite/graph_analysis/utils.spec.js |
+| 497 | packages/kit/src/exports/vite/index.js |
+| 498 | packages/kit/src/exports/vite/module_ids.js |
+| 499 | packages/kit/src/exports/vite/preview/index.js |
+| 500 | packages/kit/src/exports/vite/types.d.ts |
+| 501 | packages/kit/src/exports/vite/utils.js |
+| 502 | packages/kit/src/exports/vite/utils.spec.js |
+| 503 | packages/kit/src/runtime/app/environment/index.js |
+| 504 | packages/kit/src/runtime/app/environment/types.d.ts |
+| 505 | packages/kit/src/runtime/app/forms.js |
+| 506 | packages/kit/src/runtime/app/navigation.js |
+| 507 | packages/kit/src/runtime/app/paths/index.js |
+| 508 | packages/kit/src/runtime/app/paths/types.d.ts |
+| 509 | packages/kit/src/runtime/app/server/index.js |
+| 510 | packages/kit/src/runtime/app/stores.js |
+| 511 | packages/kit/src/runtime/client/client.js |
+| 512 | packages/kit/src/runtime/client/constants.js |
+| 513 | packages/kit/src/runtime/client/entry.js |
+| 514 | packages/kit/src/runtime/client/fetcher.js |
+| 515 | packages/kit/src/runtime/client/parse.js |
+| 516 | packages/kit/src/runtime/client/session-storage.js |
+| 517 | packages/kit/src/runtime/client/types.d.ts |
+| 518 | packages/kit/src/runtime/client/utils.js |
+| 519 | packages/kit/src/runtime/components/error.svelte |
+| 520 | packages/kit/src/runtime/components/layout.svelte |
+| 521 | packages/kit/src/runtime/control.js |
+| 522 | packages/kit/src/runtime/env/dynamic/private.js |
+| 523 | packages/kit/src/runtime/env/dynamic/public.js |
+| 524 | packages/kit/src/runtime/hash.js |
+| 525 | packages/kit/src/runtime/server/ambient.d.ts |
+| 526 | packages/kit/src/runtime/server/cookie.js |
+| 527 | packages/kit/src/runtime/server/cookie.spec.js |
+| 528 | packages/kit/src/runtime/server/data/index.js |
+| 529 | packages/kit/src/runtime/server/endpoint.js |
+| 530 | packages/kit/src/runtime/server/env_module.js |
+| 531 | packages/kit/src/runtime/server/fetch.js |
+| 532 | packages/kit/src/runtime/server/index.js |
+| 533 | packages/kit/src/runtime/server/page/actions.js |
+| 534 | packages/kit/src/runtime/server/page/crypto.js |
+| 535 | packages/kit/src/runtime/server/page/crypto.spec.js |
+| 536 | packages/kit/src/runtime/server/page/csp.js |
+| 537 | packages/kit/src/runtime/server/page/csp.spec.js |
+| 538 | packages/kit/src/runtime/server/page/index.js |
+| 539 | packages/kit/src/runtime/server/page/load_data.js |
+| 540 | packages/kit/src/runtime/server/page/load_data.spec.js |
+| 541 | packages/kit/src/runtime/server/page/load_page_nodes.js |
+| 542 | packages/kit/src/runtime/server/page/render.js |
+| 543 | packages/kit/src/runtime/server/page/respond_with_error.js |
+| 544 | packages/kit/src/runtime/server/page/serialize_data.js |
+| 545 | packages/kit/src/runtime/server/page/serialize_data.spec.js |
+| 546 | packages/kit/src/runtime/server/page/types.d.ts |
+| 547 | packages/kit/src/runtime/server/respond.js |
+| 548 | packages/kit/src/runtime/server/utils.js |
+| 549 | packages/kit/src/runtime/shared.js |
+| 550 | packages/kit/src/runtime/shared-server.js |
+| 551 | packages/kit/src/runtime/utils.js |
+| 552 | packages/kit/src/types/ambient.d.ts |
+| 553 | packages/kit/src/types/ambient-private.d.ts |
+| 554 | packages/kit/src/types/global-private.d.ts |
+| 555 | packages/kit/src/types/internal.d.ts |
+| 556 | packages/kit/src/types/private.d.ts |
+| 557 | packages/kit/src/types/synthetic/$env+dynamic+private.md |
+| 558 | packages/kit/src/types/synthetic/$env+dynamic+public.md |
+| 559 | packages/kit/src/types/synthetic/$env+static+private.md |
+| 560 | packages/kit/src/types/synthetic/$env+static+public.md |
+| 561 | packages/kit/src/types/synthetic/$lib.md |
+| 562 | packages/kit/src/utils/array.js |
+| 563 | packages/kit/src/utils/env.js |
+| 564 | packages/kit/src/utils/error.js |
+| 565 | packages/kit/src/utils/escape.js |
+| 566 | packages/kit/src/utils/escape.spec.js |
+| 567 | packages/kit/src/utils/exports.js |
+| 568 | packages/kit/src/utils/exports.spec.js |
+| 569 | packages/kit/src/utils/features.js |
+| 570 | packages/kit/src/utils/filesystem.js |
+| 571 | packages/kit/src/utils/filesystem.spec.js |
+| 572 | packages/kit/src/utils/fork.js |
+| 573 | packages/kit/src/utils/functions.js |
+| 574 | packages/kit/src/utils/http.js |
+| 575 | packages/kit/src/utils/http.spec.js |
+| 576 | packages/kit/src/utils/misc.js |
+| 577 | packages/kit/src/utils/options.js |
+| 578 | packages/kit/src/utils/route_config.js |
+| 579 | packages/kit/src/utils/routing.js |
+| 580 | packages/kit/src/utils/routing.spec.js |
+| 581 | packages/kit/src/utils/streaming.js |
+| 582 | packages/kit/src/utils/streaming.spec.js |
+| 583 | packages/kit/src/utils/url.js |
+| 584 | packages/kit/src/utils/url.spec.js |
+| 585 | packages/kit/src/version.js |
+| 586 | packages/kit/src/version.spec.js |
+| 587 | packages/kit/svelte-kit.js |
+| 588 | packages/kit/test/ambient.d.ts |
+| 589 | packages/kit/test/apps/amp/package.json |
+| 590 | packages/kit/test/apps/amp/playwright.config.js |
+| 591 | packages/kit/test/apps/amp/src/app.d.ts |
+| 592 | packages/kit/test/apps/amp/src/app.html |
+| 593 | packages/kit/test/apps/amp/src/hooks.server.js |
+| 594 | packages/kit/test/apps/amp/src/routes/http-equiv/cache-control/+page.js |
+| 595 | packages/kit/test/apps/amp/src/routes/http-equiv/cache-control/+page.svelte |
+| 596 | packages/kit/test/apps/amp/src/routes/invalid/has-stylesheet/+page.svelte |
+| 597 | packages/kit/test/apps/amp/src/routes/invalid/+page.svelte |
+| 598 | packages/kit/test/apps/amp/src/routes/+layout.js |
+| 599 | packages/kit/test/apps/amp/src/routes/+layout.svelte |
+| 600 | packages/kit/test/apps/amp/src/routes/origin.json/+server.js |
+| 601 | packages/kit/test/apps/amp/src/routes/origin/+page.js |
+| 602 | packages/kit/test/apps/amp/src/routes/origin/+page.svelte |
+| 603 | packages/kit/test/apps/amp/src/routes/styles/imported.css |
+| 604 | packages/kit/test/apps/amp/src/routes/styles/+page.svelte |
+| 605 | packages/kit/test/apps/amp/src/routes/styles/Unused.svelte |
+| 606 | packages/kit/test/apps/amp/src/routes/valid.json/+server.js |
+| 607 | packages/kit/test/apps/amp/src/routes/valid/+page.js |
+| 608 | packages/kit/test/apps/amp/src/routes/valid/+page.svelte |
+| 609 | packages/kit/test/apps/amp/svelte.config.js |
+| 610 | packages/kit/test/apps/amp/test/test.js |
+| 611 | packages/kit/test/apps/amp/tsconfig.json |
+| 612 | packages/kit/test/apps/amp/vite.config.js |
+| 613 | packages/kit/test/apps/basics/package.json |
+| 614 | packages/kit/test/apps/basics/playwright.config.js |
+| 615 | packages/kit/test/apps/basics/src/app.d.ts |
+| 616 | packages/kit/test/apps/basics/src/app.html |
+| 617 | packages/kit/test/apps/basics/src/error.html |
+| 618 | packages/kit/test/apps/basics/src/global.d.ts |
+| 619 | packages/kit/test/apps/basics/src/hooks.client.js |
+| 620 | packages/kit/test/apps/basics/src/hooks.js |
+| 621 | packages/kit/test/apps/basics/src/hooks.server.js |
+| 622 | packages/kit/test/apps/basics/src/params/lowercase.js |
+| 623 | packages/kit/test/apps/basics/src/params/numeric.js |
+| 624 | packages/kit/test/apps/basics/src/params/uppercase.js |
+| 625 | packages/kit/test/apps/basics/src/routes/accessibility/a/+page.svelte |
+| 626 | packages/kit/test/apps/basics/src/routes/accessibility/autofocus/a/+page.svelte |
+| 627 | packages/kit/test/apps/basics/src/routes/accessibility/autofocus/b/+page.server.js |
+| 628 | packages/kit/test/apps/basics/src/routes/accessibility/autofocus/b/+page.svelte |
+| 629 | packages/kit/test/apps/basics/src/routes/accessibility/autofocus/+layout.svelte |
+| 630 | packages/kit/test/apps/basics/src/routes/accessibility/b/+page.svelte |
+| 631 | packages/kit/test/apps/basics/src/routes/accessibility/c/+page.server.js |
+| 632 | packages/kit/test/apps/basics/src/routes/accessibility/c/+page.svelte |
+| 633 | packages/kit/test/apps/basics/src/routes/accessibility/+layout.svelte |
+| 634 | packages/kit/test/apps/basics/src/routes/actions/enhance/+page.server.js |
+| 635 | packages/kit/test/apps/basics/src/routes/actions/enhance/+page.svelte |
+| 636 | packages/kit/test/apps/basics/src/routes/actions/file-without-enctype/+page.server.js |
+| 637 | packages/kit/test/apps/basics/src/routes/actions/file-without-enctype/+page.svelte |
+| 638 | packages/kit/test/apps/basics/src/routes/actions/form-errors/adjacent-error-boundary/+error.svelte |
+| 639 | packages/kit/test/apps/basics/src/routes/actions/form-errors/adjacent-error-boundary/+page.server.js |
+| 640 | packages/kit/test/apps/basics/src/routes/actions/form-errors/adjacent-error-boundary/+page.svelte |
+| 641 | packages/kit/test/apps/basics/src/routes/actions/form-errors/+page.server.js |
+| 642 | packages/kit/test/apps/basics/src/routes/actions/form-errors/+page.svelte |
+| 643 | packages/kit/test/apps/basics/src/routes/actions/form-errors-persist-fields/+page.server.js |
+| 644 | packages/kit/test/apps/basics/src/routes/actions/form-errors-persist-fields/+page.svelte |
+| 645 | packages/kit/test/apps/basics/src/routes/actions/invalidate-all/+layout.js |
+| 646 | packages/kit/test/apps/basics/src/routes/actions/invalidate-all/+page.server.js |
+| 647 | packages/kit/test/apps/basics/src/routes/actions/invalidate-all/+page.svelte |
+| 648 | packages/kit/test/apps/basics/src/routes/actions/redirect-in-handle/+page.server.js |
+| 649 | packages/kit/test/apps/basics/src/routes/actions/redirect-in-handle/+page.svelte |
+| 650 | packages/kit/test/apps/basics/src/routes/actions/redirect/+page.server.js |
+| 651 | packages/kit/test/apps/basics/src/routes/actions/redirect/+page.svelte |
+| 652 | packages/kit/test/apps/basics/src/routes/actions/success-data/+page.server.js |
+| 653 | packages/kit/test/apps/basics/src/routes/actions/success-data/+page.svelte |
+| 654 | packages/kit/test/apps/basics/src/routes/actions/update-form/+page.svelte |
+| 655 | packages/kit/test/apps/basics/src/routes/adapter/dynamic/+page.server.js |
+| 656 | packages/kit/test/apps/basics/src/routes/adapter/dynamic/+page.svelte |
+| 657 | packages/kit/test/apps/basics/src/routes/adapter/prerendered/+page.server.js |
+| 658 | packages/kit/test/apps/basics/src/routes/adapter/prerendered/+page.svelte |
+| 659 | packages/kit/test/apps/basics/src/routes/anchor/anchor/+page.svelte |
+| 660 | packages/kit/test/apps/basics/src/routes/anchor/+page.svelte |
+| 661 | packages/kit/test/apps/basics/src/routes/anchor-with-manual-scroll/anchor-afternavigate/+page.svelte |
+| 662 | packages/kit/test/apps/basics/src/routes/anchor-with-manual-scroll/anchor-onmount/+page.svelte |
+| 663 | packages/kit/test/apps/basics/src/routes/anchor-with-manual-scroll/+page.svelte |
+| 664 | packages/kit/test/apps/basics/src/routes/answer.json/+server.js |
+| 665 | packages/kit/test/apps/basics/src/routes/app-environment/+page.svelte |
+| 666 | packages/kit/test/apps/basics/src/routes/asset-import/+page.svelte |
+| 667 | packages/kit/test/apps/basics/src/routes/caching/+page.js |
+| 668 | packages/kit/test/apps/basics/src/routes/caching/+page.svelte |
+| 669 | packages/kit/test/apps/basics/src/routes/caching/server-data/+page.server.js |
+| 670 | packages/kit/test/apps/basics/src/routes/caching/server-data/+page.svelte |
+| 671 | packages/kit/test/apps/basics/src/routes/content-length-header/+page.svelte |
+| 672 | packages/kit/test/apps/basics/src/routes/content-type-header/+page.svelte |
+| 673 | packages/kit/test/apps/basics/src/routes/cookies/collect-without-re-escaping/+page.js |
+| 674 | packages/kit/test/apps/basics/src/routes/cookies/collect-without-re-escaping/+page.svelte |
+| 675 | packages/kit/test/apps/basics/src/routes/cookies/collect-without-re-escaping/set-cookie/+server.js |
+| 676 | packages/kit/test/apps/basics/src/routes/cookies/delete/+server.js |
+| 677 | packages/kit/test/apps/basics/src/routes/cookies/encoding/not-decoded-twice/+server.js |
+| 678 | packages/kit/test/apps/basics/src/routes/cookies/encoding/+page.server.js |
+| 679 | packages/kit/test/apps/basics/src/routes/cookies/encoding/+page.svelte |
+| 680 | packages/kit/test/apps/basics/src/routes/cookies/encoding/set/+server.js |
+| 681 | packages/kit/test/apps/basics/src/routes/cookies/enhanced/basic/+page.server.ts |
+| 682 | packages/kit/test/apps/basics/src/routes/cookies/enhanced/basic/+page.svelte |
+| 683 | packages/kit/test/apps/basics/src/routes/cookies/forwarded-in-etag/+page.server.js |
+| 684 | packages/kit/test/apps/basics/src/routes/cookies/forwarded-in-etag/+page.svelte |
+| 685 | packages/kit/test/apps/basics/src/routes/cookies/nested/a/+page.server.js |
+| 686 | packages/kit/test/apps/basics/src/routes/cookies/nested/a/+page.svelte |
+| 687 | packages/kit/test/apps/basics/src/routes/cookies/nested/b/+page.server.js |
+| 688 | packages/kit/test/apps/basics/src/routes/cookies/nested/b/+page.svelte |
+| 689 | packages/kit/test/apps/basics/src/routes/cookies/+page.server.js |
+| 690 | packages/kit/test/apps/basics/src/routes/cookies/+page.svelte |
+| 691 | packages/kit/test/apps/basics/src/routes/cookies/serialize/+server.js |
+| 692 | packages/kit/test/apps/basics/src/routes/cookies/set-in-layout/+layout.server.js |
+| 693 | packages/kit/test/apps/basics/src/routes/cookies/set-in-layout/+layout.svelte |
+| 694 | packages/kit/test/apps/basics/src/routes/cookies/set-in-layout/+page.server.js |
+| 695 | packages/kit/test/apps/basics/src/routes/cookies/set-in-layout/+page.svelte |
+| 696 | packages/kit/test/apps/basics/src/routes/cookies/set-more-than-one/+page.server.js |
+| 697 | packages/kit/test/apps/basics/src/routes/cookies/set-more-than-one/+page.svelte |
+| 698 | packages/kit/test/apps/basics/src/routes/cookies/set/+server.js |
+| 699 | packages/kit/test/apps/basics/src/routes/cookies/shared.js |
+| 700 | packages/kit/test/apps/basics/src/routes/csrf/+server.js |
+| 701 | packages/kit/test/apps/basics/src/routes/css/_base.css |
+| 702 | packages/kit/test/apps/basics/src/routes/css/encöded/+page.svelte |
+| 703 | packages/kit/test/apps/basics/src/routes/css/_manual.css |
+| 704 | packages/kit/test/apps/basics/src/routes/css/other/+page.svelte |
+| 705 | packages/kit/test/apps/basics/src/routes/css/+page.svelte |
+| 706 | packages/kit/test/apps/basics/src/routes/css/_styles.css |
+| 707 | packages/kit/test/apps/basics/src/routes/cyclical-dynamic-import/_is_even.js |
+| 708 | packages/kit/test/apps/basics/src/routes/cyclical-dynamic-import/_is_odd.js |
+| 709 | packages/kit/test/apps/basics/src/routes/cyclical-dynamic-import/+page.svelte |
+| 710 | packages/kit/test/apps/basics/src/routes/data-sveltekit/noscroll/+page.svelte |
+| 711 | packages/kit/test/apps/basics/src/routes/data-sveltekit/noscroll/target/+page.svelte |
+| 712 | packages/kit/test/apps/basics/src/routes/data-sveltekit/preload-data/offline/+layout.server.js |
+| 713 | packages/kit/test/apps/basics/src/routes/data-sveltekit/preload-data/offline/+page.svelte |
+| 714 | packages/kit/test/apps/basics/src/routes/data-sveltekit/preload-data/offline/slow-navigation/+page.server.js |
+| 715 | packages/kit/test/apps/basics/src/routes/data-sveltekit/preload-data/offline/slow-navigation/+page.svelte |
+| 716 | packages/kit/test/apps/basics/src/routes/data-sveltekit/preload-data/offline/target/+page.svelte |
+| 717 | packages/kit/test/apps/basics/src/routes/data-sveltekit/preload-data/+page.svelte |
+| 718 | packages/kit/test/apps/basics/src/routes/data-sveltekit/preload-data/target/+page.svelte |
+| 719 | packages/kit/test/apps/basics/src/routes/data-sveltekit/reload/+page.svelte |
+| 720 | packages/kit/test/apps/basics/src/routes/data-sveltekit/reload/target/+page.svelte |
+| 721 | packages/kit/test/apps/basics/src/routes/data-sveltekit/replacestate/+page.svelte |
+| 722 | packages/kit/test/apps/basics/src/routes/data-sveltekit/replacestate/target/+page.svelte |
+| 723 | packages/kit/test/apps/basics/src/routes/delete-route/[id].json/+server.js |
+| 724 | packages/kit/test/apps/basics/src/routes/delete-route/+page.svelte |
+| 725 | packages/kit/test/apps/basics/src/routes/encoded/endpoint/+server.js |
+| 726 | packages/kit/test/apps/basics/src/routes/encoded/escape-sequences/+layout.svelte |
+| 727 | packages/kit/test/apps/basics/src/routes/encoded/escape-sequences/+page.svelte |
+| 728 | packages/kit/test/apps/basics/src/routes/encoded/escape-sequences/[u+82d7]/+page.svelte |
+| 729 | packages/kit/test/apps/basics/src/routes/encoded/escape-sequences/[u+d83e][u+dd2a]/+page.svelte |
+| 730 | packages/kit/test/apps/basics/src/routes/encoded/escape-sequences/[x+23]/+page.svelte |
+| 731 | packages/kit/test/apps/basics/src/routes/encoded/escape-sequences/[x+25]/+page.svelte |
+| 732 | packages/kit/test/apps/basics/src/routes/encoded/escape-sequences/[x+2f]/+page.svelte |
+| 733 | packages/kit/test/apps/basics/src/routes/encoded/escape-sequences/[x+3a]-[x+29]/+page.svelte |
+| 734 | packages/kit/test/apps/basics/src/routes/encoded/escape-sequences/[x+3c]/+page.svelte |
+| 735 | packages/kit/test/apps/basics/src/routes/encoded/escape-sequences/[x+3f]/+page.svelte |
+| 736 | packages/kit/test/apps/basics/src/routes/encoded/escape-sequences/[x][x+3c][y]/+page.svelte |
+| 737 | packages/kit/test/apps/basics/src/routes/encoded/+page.svelte |
+| 738 | packages/kit/test/apps/basics/src/routes/encoded/redirected/+page.js |
+| 739 | packages/kit/test/apps/basics/src/routes/encoded/redirected/+page.svelte |
+| 740 | packages/kit/test/apps/basics/src/routes/encoded/redirect/+page.js |
+| 741 | packages/kit/test/apps/basics/src/routes/encoded/redirect/+page.svelte |
+| 742 | packages/kit/test/apps/basics/src/routes/encoded/[slug]/+page.js |
+| 743 | packages/kit/test/apps/basics/src/routes/encoded/[slug]/+page.svelte |
+| 744 | packages/kit/test/apps/basics/src/routes/encoded/@[username]/+page.svelte |
+| 745 | packages/kit/test/apps/basics/src/routes/encoded/反应/+page.js |
+| 746 | packages/kit/test/apps/basics/src/routes/encoded/反应/+page.svelte |
+| 747 | packages/kit/test/apps/basics/src/routes/encoded/苗条/+page.js |
+| 748 | packages/kit/test/apps/basics/src/routes/encoded/苗条/+page.svelte |
+| 749 | packages/kit/test/apps/basics/src/routes/endpoint-input/sha256/+server.js |
+| 750 | packages/kit/test/apps/basics/src/routes/endpoint-output/body/+server.js |
+| 751 | packages/kit/test/apps/basics/src/routes/endpoint-output/fallback/+server.js |
+| 752 | packages/kit/test/apps/basics/src/routes/endpoint-output/head-handler/+page.svelte |
+| 753 | packages/kit/test/apps/basics/src/routes/endpoint-output/head-handler/+server.js |
+| 754 | packages/kit/test/apps/basics/src/routes/endpoint-output/head-write-error/+server.js |
+| 755 | packages/kit/test/apps/basics/src/routes/endpoint-output/+server.js |
+| 756 | packages/kit/test/apps/basics/src/routes/endpoint-output/stream/+server.js |
+| 757 | packages/kit/test/apps/basics/src/routes/endpoint-output/stream-throw-error/+server.js |
+| 758 | packages/kit/test/apps/basics/src/routes/endpoint-output/stream-typeerror/+server.js |
+| 759 | packages/kit/test/apps/basics/src/routes/env/includes/+page.server.js |
+| 760 | packages/kit/test/apps/basics/src/routes/env/includes/+page.svelte |
+| 761 | packages/kit/test/apps/basics/src/routes/env/+page.svelte |
+| 762 | packages/kit/test/apps/basics/src/routes/errors/clientside/+page.svelte |
+| 763 | packages/kit/test/apps/basics/src/routes/errors/endpoint.json/+server.js |
+| 764 | packages/kit/test/apps/basics/src/routes/errors/endpoint/+page.js |
+| 765 | packages/kit/test/apps/basics/src/routes/errors/endpoint/+page.svelte |
+| 766 | packages/kit/test/apps/basics/src/routes/errors/endpoint-shadow-not-ok/+page.server.js |
+| 767 | packages/kit/test/apps/basics/src/routes/errors/endpoint-shadow-not-ok/+page.svelte |
+| 768 | packages/kit/test/apps/basics/src/routes/errors/endpoint-shadow/+page.server.js |
+| 769 | packages/kit/test/apps/basics/src/routes/errors/endpoint-shadow/+page.svelte |
+| 770 | packages/kit/test/apps/basics/src/routes/errors/endpoint-throw-error/+server.js |
+| 771 | packages/kit/test/apps/basics/src/routes/errors/endpoint-throw-redirect/+server.js |
+| 772 | packages/kit/test/apps/basics/src/routes/errors/error-html/make-root-fail/+server.js |
+| 773 | packages/kit/test/apps/basics/src/routes/errors/error-html/+page.svelte |
+| 774 | packages/kit/test/apps/basics/src/routes/errors/error-in-handle/+page.svelte |
+| 775 | packages/kit/test/apps/basics/src/routes/errors/error-in-layout/+page.svelte |
+| 776 | packages/kit/test/apps/basics/src/routes/errors/init-error-endpoint/+server.js |
+| 777 | packages/kit/test/apps/basics/src/routes/errors/invalid-load-response/+page.js |
+| 778 | packages/kit/test/apps/basics/src/routes/errors/invalid-load-response/+page.svelte |
+| 779 | packages/kit/test/apps/basics/src/routes/errors/invalid-route-response/+server.js |
+| 780 | packages/kit/test/apps/basics/src/routes/errors/invalid-server-load-response/+page.server.js |
+| 781 | packages/kit/test/apps/basics/src/routes/errors/invalid-server-load-response/+page.svelte |
+| 782 | packages/kit/test/apps/basics/src/routes/errors/+layout.js |
+| 783 | packages/kit/test/apps/basics/src/routes/errors/+layout.svelte |
+| 784 | packages/kit/test/apps/basics/src/routes/errors/load-client/+page.js |
+| 785 | packages/kit/test/apps/basics/src/routes/errors/load-client/+page.svelte |
+| 786 | packages/kit/test/apps/basics/src/routes/errors/load-error-client/+page.js |
+| 787 | packages/kit/test/apps/basics/src/routes/errors/load-error-client/+page.svelte |
+| 788 | packages/kit/test/apps/basics/src/routes/errors/load-error-server/+page.js |
+| 789 | packages/kit/test/apps/basics/src/routes/errors/load-error-server/+page.svelte |
+| 790 | packages/kit/test/apps/basics/src/routes/errors/load-error-string-server/+page.js |
+| 791 | packages/kit/test/apps/basics/src/routes/errors/load-error-string-server/+page.svelte |
+| 792 | packages/kit/test/apps/basics/src/routes/errors/load-server/+page.js |
+| 793 | packages/kit/test/apps/basics/src/routes/errors/load-server/+page.svelte |
+| 794 | packages/kit/test/apps/basics/src/routes/errors/load-status-without-error-client/+page.js |
+| 795 | packages/kit/test/apps/basics/src/routes/errors/load-status-without-error-client/+page.svelte |
+| 796 | packages/kit/test/apps/basics/src/routes/errors/missing-actions/+page.svelte |
+| 797 | packages/kit/test/apps/basics/src/routes/errors/module-scope-client/+page.svelte |
+| 798 | packages/kit/test/apps/basics/src/routes/errors/module-scope-server/+page.svelte |
+| 799 | packages/kit/test/apps/basics/src/routes/errors/nested-error-page/+error.svelte |
+| 800 | packages/kit/test/apps/basics/src/routes/errors/nested-error-page/nope/+page.js |
+| 801 | packages/kit/test/apps/basics/src/routes/errors/nested-error-page/nope/+page.svelte |
+| 802 | packages/kit/test/apps/basics/src/routes/errors/nested-error-page/+page.svelte |
+| 803 | packages/kit/test/apps/basics/src/routes/errors/page-endpoint/+error.svelte |
+| 804 | packages/kit/test/apps/basics/src/routes/errors/page-endpoint/get-explicit/+page.server.js |
+| 805 | packages/kit/test/apps/basics/src/routes/errors/page-endpoint/get-explicit/+page.svelte |
+| 806 | packages/kit/test/apps/basics/src/routes/errors/page-endpoint/get-implicit/+page.server.js |
+| 807 | packages/kit/test/apps/basics/src/routes/errors/page-endpoint/get-implicit/+page.svelte |
+| 808 | packages/kit/test/apps/basics/src/routes/errors/page-endpoint/+page.svelte |
+| 809 | packages/kit/test/apps/basics/src/routes/errors/page-endpoint/post-explicit/+page.server.js |
+| 810 | packages/kit/test/apps/basics/src/routes/errors/page-endpoint/post-explicit/+page.svelte |
+| 811 | packages/kit/test/apps/basics/src/routes/errors/page-endpoint/post-implicit/+page.server.js |
+| 812 | packages/kit/test/apps/basics/src/routes/errors/page-endpoint/post-implicit/+page.svelte |
+| 813 | packages/kit/test/apps/basics/src/routes/errors/page-endpoint/_shared.js |
+| 814 | packages/kit/test/apps/basics/src/routes/errors/serverside/+page.svelte |
+| 815 | packages/kit/test/apps/basics/src/routes/errors/stack-trace/_bad.js |
+| 816 | packages/kit/test/apps/basics/src/routes/errors/stack-trace/+page.svelte |
+| 817 | packages/kit/test/apps/basics/src/routes/+error.svelte |
+| 818 | packages/kit/test/apps/basics/src/routes/favicon.ico/+server.js |
+| 819 | packages/kit/test/apps/basics/src/routes/goto/+page.svelte |
+| 820 | packages/kit/test/apps/basics/src/routes/headers/class/+page.js |
+| 821 | packages/kit/test/apps/basics/src/routes/headers/class/+page.svelte |
+| 822 | packages/kit/test/apps/basics/src/routes/headers/echo/+server.js |
+| 823 | packages/kit/test/apps/basics/src/routes/headers/+page.svelte |
+| 824 | packages/kit/test/apps/basics/src/routes/headers/set-cookie/+layout.server.js |
+| 825 | packages/kit/test/apps/basics/src/routes/headers/set-cookie/+layout.svelte |
+| 826 | packages/kit/test/apps/basics/src/routes/headers/set-cookie/sub/+page.server.js |
+| 827 | packages/kit/test/apps/basics/src/routes/headers/set-cookie/sub/+page.svelte |
+| 828 | packages/kit/test/apps/basics/src/routes/iframes/nested/child/+page.svelte |
+| 829 | packages/kit/test/apps/basics/src/routes/iframes/nested/parent/+page.svelte |
+| 830 | packages/kit/test/apps/basics/src/routes/iframes/+page.svelte |
+| 831 | packages/kit/test/apps/basics/src/routes/immutable-headers/+page.js |
+| 832 | packages/kit/test/apps/basics/src/routes/immutable-headers/+server.js |
+| 833 | packages/kit/test/apps/basics/src/routes/imports/markdown/+page.svelte |
+| 834 | packages/kit/test/apps/basics/src/routes/imports/+page.svelte |
+| 835 | packages/kit/test/apps/basics/src/routes/index.css |
+| 836 | packages/kit/test/apps/basics/src/routes/interactivity/toggle-element/+page.svelte |
+| 837 | packages/kit/test/apps/basics/src/routes/keepfocus/+page.svelte |
+| 838 | packages/kit/test/apps/basics/src/routes/+layout.js |
+| 839 | packages/kit/test/apps/basics/src/routes/+layout.server.js |
+| 840 | packages/kit/test/apps/basics/src/routes/+layout.svelte |
+| 841 | packages/kit/test/apps/basics/src/routes/load/accumulated/+page.svelte |
+| 842 | packages/kit/test/apps/basics/src/routes/load/accumulated/without-page-data/+page.svelte |
+| 843 | packages/kit/test/apps/basics/src/routes/load/accumulated/with-page-data/+page.js |
+| 844 | packages/kit/test/apps/basics/src/routes/load/accumulated/with-page-data/+page.svelte |
+| 845 | packages/kit/test/apps/basics/src/routes/load/cache-control/bust/count/+server.js |
+| 846 | packages/kit/test/apps/basics/src/routes/load/cache-control/bust/increment/+server.js |
+| 847 | packages/kit/test/apps/basics/src/routes/load/cache-control/bust/+page.js |
+| 848 | packages/kit/test/apps/basics/src/routes/load/cache-control/bust/+page.svelte |
+| 849 | packages/kit/test/apps/basics/src/routes/load/cache-control/bust/state.js |
+| 850 | packages/kit/test/apps/basics/src/routes/load/cache-control/default/count/+server.js |
+| 851 | packages/kit/test/apps/basics/src/routes/load/cache-control/default/increment/+server.js |
+| 852 | packages/kit/test/apps/basics/src/routes/load/cache-control/default/+page.js |
+| 853 | packages/kit/test/apps/basics/src/routes/load/cache-control/default/+page.svelte |
+| 854 | packages/kit/test/apps/basics/src/routes/load/cache-control/default/state.js |
+| 855 | packages/kit/test/apps/basics/src/routes/load/cache-control/force/count/+server.js |
+| 856 | packages/kit/test/apps/basics/src/routes/load/cache-control/force/increment/+server.js |
+| 857 | packages/kit/test/apps/basics/src/routes/load/cache-control/force/+page.js |
+| 858 | packages/kit/test/apps/basics/src/routes/load/cache-control/force/+page.svelte |
+| 859 | packages/kit/test/apps/basics/src/routes/load/cache-control/force/state.js |
+| 860 | packages/kit/test/apps/basics/src/routes/load/change-detection/data.json/+server.js |
+| 861 | packages/kit/test/apps/basics/src/routes/load/change-detection/+layout.js |
+| 862 | packages/kit/test/apps/basics/src/routes/load/change-detection/+layout.svelte |
+| 863 | packages/kit/test/apps/basics/src/routes/load/change-detection/one/[x]/+page.js |
+| 864 | packages/kit/test/apps/basics/src/routes/load/change-detection/one/[x]/+page.svelte |
+| 865 | packages/kit/test/apps/basics/src/routes/load/change-detection/two/[y]/+page.js |
+| 866 | packages/kit/test/apps/basics/src/routes/load/change-detection/two/[y]/+page.svelte |
+| 867 | packages/kit/test/apps/basics/src/routes/load/devalue/+page.svelte |
+| 868 | packages/kit/test/apps/basics/src/routes/load/devalue/regex/+page.server.js |
+| 869 | packages/kit/test/apps/basics/src/routes/load/devalue/regex/+page.svelte |
+| 870 | packages/kit/test/apps/basics/src/routes/load/dynamic-import-styles/+page.js |
+| 871 | packages/kit/test/apps/basics/src/routes/load/dynamic-import-styles/+page.svelte |
+| 872 | packages/kit/test/apps/basics/src/routes/load/dynamic-import-styles/_/Thing.svelte |
+| 873 | packages/kit/test/apps/basics/src/routes/load/[dynamic].json/+server.js |
+| 874 | packages/kit/test/apps/basics/src/routes/load/[dynamic]/+page.js |
+| 875 | packages/kit/test/apps/basics/src/routes/load/[dynamic]/+page.svelte |
+| 876 | packages/kit/test/apps/basics/src/routes/load/fetch-arraybuffer-b64/data/+server.js |
+| 877 | packages/kit/test/apps/basics/src/routes/load/fetch-arraybuffer-b64/+page.js |
+| 878 | packages/kit/test/apps/basics/src/routes/load/fetch-arraybuffer-b64/+page.svelte |
+| 879 | packages/kit/test/apps/basics/src/routes/load/fetch-cache-control/headers-diff/+page.js |
+| 880 | packages/kit/test/apps/basics/src/routes/load/fetch-cache-control/headers-diff/+page.svelte |
+| 881 | packages/kit/test/apps/basics/src/routes/load/fetch-cache-control/headers-diff/+server.js |
+| 882 | packages/kit/test/apps/basics/src/routes/load/fetch-cache-control/load-data/+page.js |
+| 883 | packages/kit/test/apps/basics/src/routes/load/fetch-cache-control/load-data/+page.svelte |
+| 884 | packages/kit/test/apps/basics/src/routes/load/fetch-cache-control/load-data/+server.js |
+| 885 | packages/kit/test/apps/basics/src/routes/load/fetch-cache-control/+page.svelte |
+| 886 | packages/kit/test/apps/basics/src/routes/load/fetch-credentialed.json/+server.js |
+| 887 | packages/kit/test/apps/basics/src/routes/load/fetch-credentialed/+page.js |
+| 888 | packages/kit/test/apps/basics/src/routes/load/fetch-credentialed/+page.svelte |
+| 889 | packages/kit/test/apps/basics/src/routes/load/fetch-external-no-cookies/+page.js |
+| 890 | packages/kit/test/apps/basics/src/routes/load/fetch-external-no-cookies/+page.svelte |
+| 891 | packages/kit/test/apps/basics/src/routes/load/fetch-origin-external/+page.js |
+| 892 | packages/kit/test/apps/basics/src/routes/load/fetch-origin-external/+page.svelte |
+| 893 | packages/kit/test/apps/basics/src/routes/load/fetch-origin-internal/+page.js |
+| 894 | packages/kit/test/apps/basics/src/routes/load/fetch-origin-internal/+page.svelte |
+| 895 | packages/kit/test/apps/basics/src/routes/load/fetch-origin-internal/resource/+server.js |
+| 896 | packages/kit/test/apps/basics/src/routes/load/fetch-relative.json/+server.js |
+| 897 | packages/kit/test/apps/basics/src/routes/load/fetch-relative/+page.js |
+| 898 | packages/kit/test/apps/basics/src/routes/load/fetch-relative/+page.svelte |
+| 899 | packages/kit/test/apps/basics/src/routes/load/fetch-request-headers/data/+server.js |
+| 900 | packages/kit/test/apps/basics/src/routes/load/fetch-request-headers/+page.js |
+| 901 | packages/kit/test/apps/basics/src/routes/load/fetch-request-headers/+page.svelte |
+| 902 | packages/kit/test/apps/basics/src/routes/load/fetch-request.json/+server.js |
+| 903 | packages/kit/test/apps/basics/src/routes/load/fetch-request/+page.js |
+| 904 | packages/kit/test/apps/basics/src/routes/load/fetch-request/+page.svelte |
+| 905 | packages/kit/test/apps/basics/src/routes/load/fetch-response-headers.json/+server.js |
+| 906 | packages/kit/test/apps/basics/src/routes/load/fetch-response-headers/+page.js |
+| 907 | packages/kit/test/apps/basics/src/routes/load/fetch-response-headers/+page.svelte |
+| 908 | packages/kit/test/apps/basics/src/routes/load/invalidation/depends/+page.js |
+| 909 | packages/kit/test/apps/basics/src/routes/load/invalidation/depends/+page.server.js |
+| 910 | packages/kit/test/apps/basics/src/routes/load/invalidation/depends/+page.svelte |
+| 911 | packages/kit/test/apps/basics/src/routes/load/invalidation/forced-goto/+layout.server.js |
+| 912 | packages/kit/test/apps/basics/src/routes/load/invalidation/forced-goto/+layout.svelte |
+| 913 | packages/kit/test/apps/basics/src/routes/load/invalidation/forced-goto/+page.server.js |
+| 914 | packages/kit/test/apps/basics/src/routes/load/invalidation/forced-goto/+page.svelte |
+| 915 | packages/kit/test/apps/basics/src/routes/load/invalidation/forced-goto/state.js |
+| 916 | packages/kit/test/apps/basics/src/routes/load/invalidation/forced/+layout.server.js |
+| 917 | packages/kit/test/apps/basics/src/routes/load/invalidation/forced/+layout.svelte |
+| 918 | packages/kit/test/apps/basics/src/routes/load/invalidation/forced/+page.server.js |
+| 919 | packages/kit/test/apps/basics/src/routes/load/invalidation/forced/+page.svelte |
+| 920 | packages/kit/test/apps/basics/src/routes/load/invalidation/forced/state.js |
+| 921 | packages/kit/test/apps/basics/src/routes/load/invalidation/invalidate-then-goto/+layout.server.js |
+| 922 | packages/kit/test/apps/basics/src/routes/load/invalidation/invalidate-then-goto/+page.server.js |
+| 923 | packages/kit/test/apps/basics/src/routes/load/invalidation/invalidate-then-goto/+page.svelte |
+| 924 | packages/kit/test/apps/basics/src/routes/load/invalidation/multiple-batched/+page.js |
+| 925 | packages/kit/test/apps/basics/src/routes/load/invalidation/multiple-batched/+page.svelte |
+| 926 | packages/kit/test/apps/basics/src/routes/load/invalidation/multiple/+layout.js |
+| 927 | packages/kit/test/apps/basics/src/routes/load/invalidation/multiple/+layout.svelte |
+| 928 | packages/kit/test/apps/basics/src/routes/load/invalidation/multiple/+page.js |
+| 929 | packages/kit/test/apps/basics/src/routes/load/invalidation/multiple/+page.svelte |
+| 930 | packages/kit/test/apps/basics/src/routes/load/invalidation/multiple/redirect/+page.js |
+| 931 | packages/kit/test/apps/basics/src/routes/load/invalidation/multiple/redirect/+page.svelte |
+| 932 | packages/kit/test/apps/basics/src/routes/load/invalidation/multiple/state.js |
+| 933 | packages/kit/test/apps/basics/src/routes/load/invalidation/params/[a]/[b]/+page.svelte |
+| 934 | packages/kit/test/apps/basics/src/routes/load/invalidation/params/[a]/+page.svelte |
+| 935 | packages/kit/test/apps/basics/src/routes/load/invalidation/params/+layout.js |
+| 936 | packages/kit/test/apps/basics/src/routes/load/invalidation/params/+layout.svelte |
+| 937 | packages/kit/test/apps/basics/src/routes/load/invalidation/params/+page.svelte |
+| 938 | packages/kit/test/apps/basics/src/routes/load/invalidation/route/server/a/+page.svelte |
+| 939 | packages/kit/test/apps/basics/src/routes/load/invalidation/route/server/b/+page.svelte |
+| 940 | packages/kit/test/apps/basics/src/routes/load/invalidation/route/server/+layout.server.js |
+| 941 | packages/kit/test/apps/basics/src/routes/load/invalidation/route/server/+layout.svelte |
+| 942 | packages/kit/test/apps/basics/src/routes/load/invalidation/route/shared/a/+page.svelte |
+| 943 | packages/kit/test/apps/basics/src/routes/load/invalidation/route/shared/b/+page.svelte |
+| 944 | packages/kit/test/apps/basics/src/routes/load/invalidation/route/shared/+layout.js |
+| 945 | packages/kit/test/apps/basics/src/routes/load/invalidation/route/shared/+layout.svelte |
+| 946 | packages/kit/test/apps/basics/src/routes/load/invalidation/route/shared/[x]/+page.svelte |
+| 947 | packages/kit/test/apps/basics/src/routes/load/invalidation/search-params/server/+page.server.js |
+| 948 | packages/kit/test/apps/basics/src/routes/load/invalidation/search-params/server/+page.svelte |
+| 949 | packages/kit/test/apps/basics/src/routes/load/invalidation/search-params/universal/+page.js |
+| 950 | packages/kit/test/apps/basics/src/routes/load/invalidation/search-params/universal/+page.svelte |
+| 951 | packages/kit/test/apps/basics/src/routes/load/invalidation/server-fetch/count.json/+server.js |
+| 952 | packages/kit/test/apps/basics/src/routes/load/invalidation/server-fetch/+page.server.js |
+| 953 | packages/kit/test/apps/basics/src/routes/load/invalidation/server-fetch/+page.svelte |
+| 954 | packages/kit/test/apps/basics/src/routes/load/invalidation/url/+page.server.js |
+| 955 | packages/kit/test/apps/basics/src/routes/load/invalidation/url/+page.svelte |
+| 956 | packages/kit/test/apps/basics/src/routes/load/large-response/+page.js |
+| 957 | packages/kit/test/apps/basics/src/routes/load/large-response/+page.svelte |
+| 958 | packages/kit/test/apps/basics/src/routes/load/large-response/text.txt/+server.js |
+| 959 | packages/kit/test/apps/basics/src/routes/load/mutated-url/+page.js |
+| 960 | packages/kit/test/apps/basics/src/routes/load/mutated-url/+page.svelte |
+| 961 | packages/kit/test/apps/basics/src/routes/load/no-server-load/a/+page.server.js |
+| 962 | packages/kit/test/apps/basics/src/routes/load/no-server-load/a/+page.svelte |
+| 963 | packages/kit/test/apps/basics/src/routes/load/no-server-load/b/+page.server.js |
+| 964 | packages/kit/test/apps/basics/src/routes/load/no-server-load/b/+page.svelte |
+| 965 | packages/kit/test/apps/basics/src/routes/load/no-server-load/+layout.svelte |
+| 966 | packages/kit/test/apps/basics/src/routes/load/+page.js |
+| 967 | packages/kit/test/apps/basics/src/routes/load/+page.svelte |
+| 968 | packages/kit/test/apps/basics/src/routes/load/parent/server/+layout.server.js |
+| 969 | packages/kit/test/apps/basics/src/routes/load/parent/server/+layout.svelte |
+| 970 | packages/kit/test/apps/basics/src/routes/load/parent/server/[x]/+layout.server.js |
+| 971 | packages/kit/test/apps/basics/src/routes/load/parent/server/[x]/+layout.svelte |
+| 972 | packages/kit/test/apps/basics/src/routes/load/parent/server/[x]/[y]/+layout.svelte |
+| 973 | packages/kit/test/apps/basics/src/routes/load/parent/server/[x]/[y]/[z]/+page.server.js |
+| 974 | packages/kit/test/apps/basics/src/routes/load/parent/server/[x]/[y]/[z]/+page.svelte |
+| 975 | packages/kit/test/apps/basics/src/routes/load/parent/shared/+layout.js |
+| 976 | packages/kit/test/apps/basics/src/routes/load/parent/shared/+layout.svelte |
+| 977 | packages/kit/test/apps/basics/src/routes/load/parent/shared/[x]/+layout.js |
+| 978 | packages/kit/test/apps/basics/src/routes/load/parent/shared/[x]/+layout.svelte |
+| 979 | packages/kit/test/apps/basics/src/routes/load/parent/shared/[x]/[y]/+layout.svelte |
+| 980 | packages/kit/test/apps/basics/src/routes/load/parent/shared/[x]/[y]/[z]/+page.js |
+| 981 | packages/kit/test/apps/basics/src/routes/load/parent/shared/[x]/[y]/[z]/+page.svelte |
+| 982 | packages/kit/test/apps/basics/src/routes/load/props/+page.js |
+| 983 | packages/kit/test/apps/basics/src/routes/load/props/+page.svelte |
+| 984 | packages/kit/test/apps/basics/src/routes/load/raw-body/dataview/+page.js |
+| 985 | packages/kit/test/apps/basics/src/routes/load/raw-body/dataview/+page.svelte |
+| 986 | packages/kit/test/apps/basics/src/routes/load/raw-body.json/+server.js |
+| 987 | packages/kit/test/apps/basics/src/routes/load/raw-body/+page.svelte |
+| 988 | packages/kit/test/apps/basics/src/routes/load/raw-body/string/+page.js |
+| 989 | packages/kit/test/apps/basics/src/routes/load/raw-body/string/+page.svelte |
+| 990 | packages/kit/test/apps/basics/src/routes/load/raw-body/uint8array/+page.js |
+| 991 | packages/kit/test/apps/basics/src/routes/load/raw-body/uint8array/+page.svelte |
+| 992 | packages/kit/test/apps/basics/src/routes/load/relay.json/+server.js |
+| 993 | packages/kit/test/apps/basics/src/routes/load/relay/+page.js |
+| 994 | packages/kit/test/apps/basics/src/routes/load/relay/+page.svelte |
+| 995 | packages/kit/test/apps/basics/src/routes/load/serialization/fetched-from-server.json/+server.js |
+| 996 | packages/kit/test/apps/basics/src/routes/load/serialization/fetched-from-shared.json/+server.js |
+| 997 | packages/kit/test/apps/basics/src/routes/load/serialization/+page.js |
+| 998 | packages/kit/test/apps/basics/src/routes/load/serialization/+page.server.js |
+| 999 | packages/kit/test/apps/basics/src/routes/load/serialization/+page.svelte |
+| 1000 | packages/kit/test/apps/basics/src/routes/load/serialization-post.json/+server.js |
+| 1001 | packages/kit/test/apps/basics/src/routes/load/serialization-post/+page.js |
+| 1002 | packages/kit/test/apps/basics/src/routes/load/serialization-post/+page.svelte |
+| 1003 | packages/kit/test/apps/basics/src/routes/load/serialization-post-request/+page.js |
+| 1004 | packages/kit/test/apps/basics/src/routes/load/serialization-post-request/+page.svelte |
+| 1005 | packages/kit/test/apps/basics/src/routes/load/server-data-nostore/+page.server.js |
+| 1006 | packages/kit/test/apps/basics/src/routes/load/server-data-nostore/+page.svelte |
+| 1007 | packages/kit/test/apps/basics/src/routes/load/server-data-reuse/no-load/+page.svelte |
+| 1008 | packages/kit/test/apps/basics/src/routes/load/server-data-reuse/with-changing-parent/+layout.server.js |
+| 1009 | packages/kit/test/apps/basics/src/routes/load/server-data-reuse/with-changing-parent/+layout.svelte |
+| 1010 | packages/kit/test/apps/basics/src/routes/load/server-data-reuse/with-changing-parent/no-load/+page.svelte |
+| 1011 | packages/kit/test/apps/basics/src/routes/load/server-data-reuse/with-changing-parent/with-server-load/+page.server.js |
+| 1012 | packages/kit/test/apps/basics/src/routes/load/server-data-reuse/with-changing-parent/with-server-load/+page.svelte |
+| 1013 | packages/kit/test/apps/basics/src/routes/load/server-data-reuse/with-server-load/+page.server.js |
+| 1014 | packages/kit/test/apps/basics/src/routes/load/server-data-reuse/with-server-load/+page.svelte |
+| 1015 | packages/kit/test/apps/basics/src/routes/load/server-fetch-request/+page.js |
+| 1016 | packages/kit/test/apps/basics/src/routes/load/server-fetch-request/+page.svelte |
+| 1017 | packages/kit/test/apps/basics/src/routes/load/set-cookie-fetch/a.json/+server.js |
+| 1018 | packages/kit/test/apps/basics/src/routes/load/set-cookie-fetch/b.json/+server.js |
+| 1019 | packages/kit/test/apps/basics/src/routes/load/set-cookie-fetch/+page.js |
+| 1020 | packages/kit/test/apps/basics/src/routes/load/set-cookie-fetch/+page.svelte |
+| 1021 | packages/kit/test/apps/basics/src/routes/load/static-file-with-hash/+page.js |
+| 1022 | packages/kit/test/apps/basics/src/routes/load/static-file-with-hash/+page.svelte |
+| 1023 | packages/kit/test/apps/basics/src/routes/load/unchanged/isolated/[slug]/+page.server.js |
+| 1024 | packages/kit/test/apps/basics/src/routes/load/unchanged/isolated/[slug]/+page.svelte |
+| 1025 | packages/kit/test/apps/basics/src/routes/load/unchanged/+layout.server.js |
+| 1026 | packages/kit/test/apps/basics/src/routes/load/unchanged/+layout.svelte |
+| 1027 | packages/kit/test/apps/basics/src/routes/load/unchanged/+page.svelte |
+| 1028 | packages/kit/test/apps/basics/src/routes/load/unchanged-parent/+layout.server.js |
+| 1029 | packages/kit/test/apps/basics/src/routes/load/unchanged-parent/+layout.svelte |
+| 1030 | packages/kit/test/apps/basics/src/routes/load/unchanged-parent/+page.svelte |
+| 1031 | packages/kit/test/apps/basics/src/routes/load/unchanged-parent/state.js |
+| 1032 | packages/kit/test/apps/basics/src/routes/load/unchanged-parent/uses-parent/[slug]/+page.server.js |
+| 1033 | packages/kit/test/apps/basics/src/routes/load/unchanged-parent/uses-parent/[slug]/+page.svelte |
+| 1034 | packages/kit/test/apps/basics/src/routes/load/unchanged/state.js |
+| 1035 | packages/kit/test/apps/basics/src/routes/load/url-hash/+page.js |
+| 1036 | packages/kit/test/apps/basics/src/routes/load/url-hash/+page.svelte |
+| 1037 | packages/kit/test/apps/basics/src/routes/load/url-query-param/+page.js |
+| 1038 | packages/kit/test/apps/basics/src/routes/load/url-query-param/+page.server.js |
+| 1039 | packages/kit/test/apps/basics/src/routes/load/url-query-param/+page.svelte |
+| 1040 | packages/kit/test/apps/basics/src/routes/load/url-to-string/+page.js |
+| 1041 | packages/kit/test/apps/basics/src/routes/load/url-to-string/+page.svelte |
+| 1042 | packages/kit/test/apps/basics/src/routes/load/window-fetch/correct/+page.js |
+| 1043 | packages/kit/test/apps/basics/src/routes/load/window-fetch/correct/+page.svelte |
+| 1044 | packages/kit/test/apps/basics/src/routes/load/window-fetch/data.json/+server.js |
+| 1045 | packages/kit/test/apps/basics/src/routes/load/window-fetch/incorrect/+page.js |
+| 1046 | packages/kit/test/apps/basics/src/routes/load/window-fetch/incorrect/+page.svelte |
+| 1047 | packages/kit/test/apps/basics/src/routes/load/window-fetch/outside-load/+page.svelte |
+| 1048 | packages/kit/test/apps/basics/src/routes/load/window-fetch/patching/+page.js |
+| 1049 | packages/kit/test/apps/basics/src/routes/load/window-fetch/patching/+page.svelte |
+| 1050 | packages/kit/test/apps/basics/src/routes/navigation-lifecycle/after-navigate/a/+page.svelte |
+| 1051 | packages/kit/test/apps/basics/src/routes/navigation-lifecycle/after-navigate/b/+page.svelte |
+| 1052 | packages/kit/test/apps/basics/src/routes/navigation-lifecycle/before-navigate/a/+page.svelte |
+| 1053 | packages/kit/test/apps/basics/src/routes/navigation-lifecycle/before-navigate/hash-links/+page.svelte |
+| 1054 | packages/kit/test/apps/basics/src/routes/navigation-lifecycle/before-navigate/prevent-navigation/+page.svelte |
+| 1055 | packages/kit/test/apps/basics/src/routes/navigation-lifecycle/before-navigate/redirect/+page.js |
+| 1056 | packages/kit/test/apps/basics/src/routes/navigation-lifecycle/on-navigate/[x]/+page.svelte |
+| 1057 | packages/kit/test/apps/basics/src/routes/nested-layout/error/+page.js |
+| 1058 | packages/kit/test/apps/basics/src/routes/nested-layout/error/+page.svelte |
+| 1059 | packages/kit/test/apps/basics/src/routes/nested-layout/foo/bar/+error.svelte |
+| 1060 | packages/kit/test/apps/basics/src/routes/nested-layout/foo/bar/+layout.svelte |
+| 1061 | packages/kit/test/apps/basics/src/routes/nested-layout/foo/bar/nope/+page.js |
+| 1062 | packages/kit/test/apps/basics/src/routes/nested-layout/foo/bar/nope/+page.svelte |
+| 1063 | packages/kit/test/apps/basics/src/routes/nested-layout/foo/baz/+page.svelte |
+| 1064 | packages/kit/test/apps/basics/src/routes/nested-layout/foo/+layout.svelte |
+| 1065 | packages/kit/test/apps/basics/src/routes/nested-layout/+layout.svelte |
+| 1066 | packages/kit/test/apps/basics/src/routes/nested-layout/+page.svelte |
+| 1067 | packages/kit/test/apps/basics/src/routes/nested-layout/reset/+layout@.svelte |
+| 1068 | packages/kit/test/apps/basics/src/routes/nested-layout/reset/+page.svelte |
+| 1069 | packages/kit/test/apps/basics/src/routes/no-csr/data.json/+server.js |
+| 1070 | packages/kit/test/apps/basics/src/routes/no-csr/+page.js |
+| 1071 | packages/kit/test/apps/basics/src/routes/no-csr/+page.svelte |
+| 1072 | packages/kit/test/apps/basics/src/routes/no-ssr/browser-only-global/+page.svelte |
+| 1073 | packages/kit/test/apps/basics/src/routes/no-ssr/+layout.js |
+| 1074 | packages/kit/test/apps/basics/src/routes/no-ssr/+layout.svelte |
+| 1075 | packages/kit/test/apps/basics/src/routes/no-ssr/margin/+page.svelte |
+| 1076 | packages/kit/test/apps/basics/src/routes/no-ssr/other/+page.svelte |
+| 1077 | packages/kit/test/apps/basics/src/routes/no-ssr/+page.svelte |
+| 1078 | packages/kit/test/apps/basics/src/routes/no-ssr/ssr-page-config/layout/inherit/+page.svelte |
+| 1079 | packages/kit/test/apps/basics/src/routes/no-ssr/ssr-page-config/layout/+layout.js |
+| 1080 | packages/kit/test/apps/basics/src/routes/no-ssr/ssr-page-config/layout/+layout.svelte |
+| 1081 | packages/kit/test/apps/basics/src/routes/no-ssr/ssr-page-config/layout/overwrite/+page.js |
+| 1082 | packages/kit/test/apps/basics/src/routes/no-ssr/ssr-page-config/layout/overwrite/+page.svelte |
+| 1083 | packages/kit/test/apps/basics/src/routes/no-ssr/ssr-page-config/+page.js |
+| 1084 | packages/kit/test/apps/basics/src/routes/no-ssr/ssr-page-config/+page.svelte |
+| 1085 | packages/kit/test/apps/basics/src/routes/origin/+page.svelte |
+| 1086 | packages/kit/test/apps/basics/src/routes/package.json/+server.js |
+| 1087 | packages/kit/test/apps/basics/src/routes/+page.js |
+| 1088 | packages/kit/test/apps/basics/src/routes/+page.svelte |
+| 1089 | packages/kit/test/apps/basics/src/routes/paths/deeply/nested/+page.svelte |
+| 1090 | packages/kit/test/apps/basics/src/routes/paths/+page.svelte |
+| 1091 | packages/kit/test/apps/basics/src/routes/prerendering/env/dynamic/+page.svelte |
+| 1092 | packages/kit/test/apps/basics/src/routes/prerendering/env/+layout.svelte |
+| 1093 | packages/kit/test/apps/basics/src/routes/prerendering/env/prerendered/+page.js |
+| 1094 | packages/kit/test/apps/basics/src/routes/prerendering/env/prerendered/+page.svelte |
+| 1095 | packages/kit/test/apps/basics/src/routes/prerendering/+error.svelte |
+| 1096 | packages/kit/test/apps/basics/src/routes/prerendering/log-url/+page.js |
+| 1097 | packages/kit/test/apps/basics/src/routes/prerendering/log-url/+page.svelte |
+| 1098 | packages/kit/test/apps/basics/src/routes/prerendering/mutative-endpoint/+page.js |
+| 1099 | packages/kit/test/apps/basics/src/routes/prerendering/mutative-endpoint/+page.server.ts |
+| 1100 | packages/kit/test/apps/basics/src/routes/prerendering/mutative-endpoint/+page.svelte |
+| 1101 | packages/kit/test/apps/basics/src/routes/prerendering/no-ssr/+page.js |
+| 1102 | packages/kit/test/apps/basics/src/routes/prerendering/no-ssr/+page.svelte |
+| 1103 | packages/kit/test/apps/basics/src/routes/prerendering/prerendered-endpoint/api/+server.js |
+| 1104 | packages/kit/test/apps/basics/src/routes/prerendering/prerendered-endpoint/page/+page.server.js |
+| 1105 | packages/kit/test/apps/basics/src/routes/prerendering/prerendered-endpoint/page/+page.svelte |
+| 1106 | packages/kit/test/apps/basics/src/routes/prerendering/prerendered-endpoint/+page.svelte |
+| 1107 | packages/kit/test/apps/basics/src/routes/prerendering/prerendered-endpoint/proxy/+server.js |
+| 1108 | packages/kit/test/apps/basics/src/routes/query/echo/+page.js |
+| 1109 | packages/kit/test/apps/basics/src/routes/query/echo/+page.svelte |
+| 1110 | packages/kit/test/apps/basics/src/routes/query/echo/utils.js |
+| 1111 | packages/kit/test/apps/basics/src/routes/read-file/auto.txt |
+| 1112 | packages/kit/test/apps/basics/src/routes/read-file/+page.server.js |
+| 1113 | packages/kit/test/apps/basics/src/routes/read-file/+page.svelte |
+| 1114 | packages/kit/test/apps/basics/src/routes/read-file/url.txt |
+| 1115 | packages/kit/test/apps/basics/src/routes/redirect/a/+page.js |
+| 1116 | packages/kit/test/apps/basics/src/routes/redirect/a/+page.svelte |
+| 1117 | packages/kit/test/apps/basics/src/routes/redirect/b/+page.js |
+| 1118 | packages/kit/test/apps/basics/src/routes/redirect/b/+page.svelte |
+| 1119 | packages/kit/test/apps/basics/src/routes/redirect/c/+page.svelte |
+| 1120 | packages/kit/test/apps/basics/src/routes/redirect/in-handle/+page.server.js |
+| 1121 | packages/kit/test/apps/basics/src/routes/redirect/in-handle/+page.svelte |
+| 1122 | packages/kit/test/apps/basics/src/routes/redirect/loopy/a/+page.js |
+| 1123 | packages/kit/test/apps/basics/src/routes/redirect/loopy/a/+page.svelte |
+| 1124 | packages/kit/test/apps/basics/src/routes/redirect/loopy/b/+page.js |
+| 1125 | packages/kit/test/apps/basics/src/routes/redirect/loopy/b/+page.svelte |
+| 1126 | packages/kit/test/apps/basics/src/routes/redirect/missing-status/a/+page.js |
+| 1127 | packages/kit/test/apps/basics/src/routes/redirect/missing-status/a/+page.svelte |
+| 1128 | packages/kit/test/apps/basics/src/routes/redirect/missing-status/b/+page.js |
+| 1129 | packages/kit/test/apps/basics/src/routes/redirect/missing-status/b/+page.svelte |
+| 1130 | packages/kit/test/apps/basics/src/routes/redirect-on-load/+page.js |
+| 1131 | packages/kit/test/apps/basics/src/routes/redirect-on-load/+page.svelte |
+| 1132 | packages/kit/test/apps/basics/src/routes/redirect-on-load/redirected/+page.svelte |
+| 1133 | packages/kit/test/apps/basics/src/routes/redirect/+page.svelte |
+| 1134 | packages/kit/test/apps/basics/src/routes/reroute/basic/a/+page.svelte |
+| 1135 | packages/kit/test/apps/basics/src/routes/reroute/basic/b/+page.svelte |
+| 1136 | packages/kit/test/apps/basics/src/routes/reroute/basic/+page.svelte |
+| 1137 | packages/kit/test/apps/basics/src/routes/reroute/client-only-redirect/a/+page.svelte |
+| 1138 | packages/kit/test/apps/basics/src/routes/reroute/client-only-redirect/b/+page.svelte |
+| 1139 | packages/kit/test/apps/basics/src/routes/reroute/client-only-redirect/+page.js |
+| 1140 | packages/kit/test/apps/basics/src/routes/reroute/client-only-redirect/+page.svelte |
+| 1141 | packages/kit/test/apps/basics/src/routes/reroute/error-handling/client-error/+page.svelte |
+| 1142 | packages/kit/test/apps/basics/src/routes/reroute/error-handling/client-error-rewritten/+page.svelte |
+| 1143 | packages/kit/test/apps/basics/src/routes/reroute/error-handling/+page.svelte |
+| 1144 | packages/kit/test/apps/basics/src/routes/reroute/error-handling/server-error/+page.svelte |
+| 1145 | packages/kit/test/apps/basics/src/routes/reroute/external/+page.svelte |
+| 1146 | packages/kit/test/apps/basics/src/routes/reroute/preload-data/a/+page.js |
+| 1147 | packages/kit/test/apps/basics/src/routes/reroute/preload-data/b/+page.js |
+| 1148 | packages/kit/test/apps/basics/src/routes/reroute/preload-data/+page.svelte |
+| 1149 | packages/kit/test/apps/basics/src/routes/routing/ambiguous/[slug].json/+server.js |
+| 1150 | packages/kit/test/apps/basics/src/routes/routing/ambiguous/[slug]/+page.svelte |
+| 1151 | packages/kit/test/apps/basics/src/routes/routing/a/+page.svelte |
+| 1152 | packages/kit/test/apps/basics/src/routes/routing/b.json/+server.js |
+| 1153 | packages/kit/test/apps/basics/src/routes/routing/b/+page.js |
+| 1154 | packages/kit/test/apps/basics/src/routes/routing/b/+page.svelte |
+| 1155 | packages/kit/test/apps/basics/src/routes/routing/cancellation/a/+page.js |
+| 1156 | packages/kit/test/apps/basics/src/routes/routing/cancellation/a/+page.svelte |
+| 1157 | packages/kit/test/apps/basics/src/routes/routing/cancellation/b/+page.svelte |
+| 1158 | packages/kit/test/apps/basics/src/routes/routing/cancellation/+layout.svelte |
+| 1159 | packages/kit/test/apps/basics/src/routes/routing/cancellation/+page.svelte |
+| 1160 | packages/kit/test/apps/basics/src/routes/routing/client/bar/b/+page.svelte |
+| 1161 | packages/kit/test/apps/basics/src/routes/routing/client/bar/+page.svelte |
+| 1162 | packages/kit/test/apps/basics/src/routes/routing/client/foo/+page.svelte |
+| 1163 | packages/kit/test/apps/basics/src/routes/routing/const/+page.svelte |
+| 1164 | packages/kit/test/apps/basics/src/routes/routing/content-negotiation/+page.server.js |
+| 1165 | packages/kit/test/apps/basics/src/routes/routing/content-negotiation/+page.svelte |
+| 1166 | packages/kit/test/apps/basics/src/routes/routing/content-negotiation/+server.js |
+| 1167 | packages/kit/test/apps/basics/src/routes/routing/dirs/bar/[a]/+page.svelte |
+| 1168 | packages/kit/test/apps/basics/src/routes/routing/dirs/bar/+page.svelte |
+| 1169 | packages/kit/test/apps/basics/src/routes/routing/dirs/foo/[b]/+page.svelte |
+| 1170 | packages/kit/test/apps/basics/src/routes/routing/dirs/foo/+page.svelte |
+| 1171 | packages/kit/test/apps/basics/src/routes/routing/external-popstate/+page.svelte |
+| 1172 | packages/kit/test/apps/basics/src/routes/routing/form-get/+page.svelte |
+| 1173 | packages/kit/test/apps/basics/src/routes/routing/hashes/a/+page.svelte |
+| 1174 | packages/kit/test/apps/basics/src/routes/routing/hashes/b/+page.svelte |
+| 1175 | packages/kit/test/apps/basics/src/routes/routing/hashes/pagestore/+page.svelte |
+| 1176 | packages/kit/test/apps/basics/src/routes/routing/hashes/target/+page.svelte |
+| 1177 | packages/kit/test/apps/basics/src/routes/routing/link-outside-app-target/source/+page.svelte |
+| 1178 | packages/kit/test/apps/basics/src/routes/routing/link-outside-app-target/state.js |
+| 1179 | packages/kit/test/apps/basics/src/routes/routing/link-outside-app-target/target/+page.svelte |
+| 1180 | packages/kit/test/apps/basics/src/routes/routing/matched/[fallback]/+page.svelte |
+| 1181 | packages/kit/test/apps/basics/src/routes/routing/matched/+layout.svelte |
+| 1182 | packages/kit/test/apps/basics/src/routes/routing/matched/[letter=lowercase]/+page.svelte |
+| 1183 | packages/kit/test/apps/basics/src/routes/routing/matched/[letter=uppercase]/+page.svelte |
+| 1184 | packages/kit/test/apps/basics/src/routes/routing/matched/[number=numeric]/+page.svelte |
+| 1185 | packages/kit/test/apps/basics/src/routes/routing/matched/+page.svelte |
+| 1186 | packages/kit/test/apps/basics/src/routes/routing/missing-href/+page.svelte |
+| 1187 | packages/kit/test/apps/basics/src/routes/routing/+page.svelte |
+| 1188 | packages/kit/test/apps/basics/src/routes/routing/params-in-handle/[x]/+server.js |
+| 1189 | packages/kit/test/apps/basics/src/routes/routing/preloading/hash-route/+page.js |
+| 1190 | packages/kit/test/apps/basics/src/routes/routing/preloading/hash-route/+page.svelte |
+| 1191 | packages/kit/test/apps/basics/src/routes/routing/preloading/preloaded.json/+server.js |
+| 1192 | packages/kit/test/apps/basics/src/routes/routing/preloading/preloaded/+page.js |
+| 1193 | packages/kit/test/apps/basics/src/routes/routing/preloading/preloaded/+page.svelte |
+| 1194 | packages/kit/test/apps/basics/src/routes/routing/preloading/preload-error/+page.js |
+| 1195 | packages/kit/test/apps/basics/src/routes/routing/preloading/preload-error/+page.svelte |
+| 1196 | packages/kit/test/apps/basics/src/routes/routing/prerendered/+layout.js |
+| 1197 | packages/kit/test/apps/basics/src/routes/routing/prerendered/trailing-slash/always/+page.js |
+| 1198 | packages/kit/test/apps/basics/src/routes/routing/prerendered/trailing-slash/always/+page.svelte |
+| 1199 | packages/kit/test/apps/basics/src/routes/routing/prerendered/trailing-slash/ignore/+page.js |
+| 1200 | packages/kit/test/apps/basics/src/routes/routing/prerendered/trailing-slash/ignore/+page.svelte |
+| 1201 | packages/kit/test/apps/basics/src/routes/routing/prerendered/trailing-slash/never/+page.svelte |
+| 1202 | packages/kit/test/apps/basics/src/routes/routing/rest/complex/[...parts].json/+server.js |
+| 1203 | packages/kit/test/apps/basics/src/routes/routing/rest/complex/prefix-[...parts]/+page.js |
+| 1204 | packages/kit/test/apps/basics/src/routes/routing/rest/complex/prefix-[...parts]/+page.svelte |
+| 1205 | packages/kit/test/apps/basics/src/routes/routing/rest/non-greedy/[dynamic]-bar/[...rest]/+page.svelte |
+| 1206 | packages/kit/test/apps/basics/src/routes/routing/rest/non-greedy/foo/[...rest]/+page.svelte |
+| 1207 | packages/kit/test/apps/basics/src/routes/routing/rest/non-greedy/+layout.svelte |
+| 1208 | packages/kit/test/apps/basics/src/routes/routing/rest/non-greedy/+page.svelte |
+| 1209 | packages/kit/test/apps/basics/src/routes/routing/rest/path/[...ignored]/+page.js |
+| 1210 | packages/kit/test/apps/basics/src/routes/routing/rest/path/[...ignored]/+page.svelte |
+| 1211 | packages/kit/test/apps/basics/src/routes/routing/rest/path/+layout.svelte |
+| 1212 | packages/kit/test/apps/basics/src/routes/routing/rest/[...rest]/deep.json/+server.js |
+| 1213 | packages/kit/test/apps/basics/src/routes/routing/rest/[...rest]/deep/+page.js |
+| 1214 | packages/kit/test/apps/basics/src/routes/routing/rest/[...rest]/deep/+page.svelte |
+| 1215 | packages/kit/test/apps/basics/src/routes/routing/rest/[...rest]/+page.js |
+| 1216 | packages/kit/test/apps/basics/src/routes/routing/rest/[...rest]/+page.svelte |
+| 1217 | packages/kit/test/apps/basics/src/routes/routing/route-id/+page.svelte |
+| 1218 | packages/kit/test/apps/basics/src/routes/routing/route-id/[x]/+page.js |
+| 1219 | packages/kit/test/apps/basics/src/routes/routing/route-id/[x]/+page.svelte |
+| 1220 | packages/kit/test/apps/basics/src/routes/routing/shadow-dom/+page.svelte |
+| 1221 | packages/kit/test/apps/basics/src/routes/routing/skipped/[one]/[two]/+page.js |
+| 1222 | packages/kit/test/apps/basics/src/routes/routing/skipped/[one]/[two]/+page.svelte |
+| 1223 | packages/kit/test/apps/basics/src/routes/routing/slashes/+page.svelte |
+| 1224 | packages/kit/test/apps/basics/src/routes/routing/[slug]/+page.svelte |
+| 1225 | packages/kit/test/apps/basics/src/routes/routing/split-params/[a]-[b]/+page.svelte |
+| 1226 | packages/kit/test/apps/basics/src/routes/routing/split-params/+page.svelte |
+| 1227 | packages/kit/test/apps/basics/src/routes/routing/symlink-to/+page.svelte |
+| 1228 | packages/kit/test/apps/basics/src/routes/routing/trailing-slash/always/+page.js |
+| 1229 | packages/kit/test/apps/basics/src/routes/routing/trailing-slash/always/+page.svelte |
+| 1230 | packages/kit/test/apps/basics/src/routes/routing/trailing-slash/ignore/+page.js |
+| 1231 | packages/kit/test/apps/basics/src/routes/routing/trailing-slash/ignore/+page.svelte |
+| 1232 | packages/kit/test/apps/basics/src/routes/routing/trailing-slash/+layout.js |
+| 1233 | packages/kit/test/apps/basics/src/routes/routing/trailing-slash/+layout.svelte |
+| 1234 | packages/kit/test/apps/basics/src/routes/routing/trailing-slash/never/+page.svelte |
+| 1235 | packages/kit/test/apps/basics/src/routes/routing/trailing-slash/+page.svelte |
+| 1236 | packages/kit/test/apps/basics/src/routes/routing/trailing-slash-server/always/+page.server.js |
+| 1237 | packages/kit/test/apps/basics/src/routes/routing/trailing-slash-server/always/+page.svelte |
+| 1238 | packages/kit/test/apps/basics/src/routes/routing/trailing-slash-server/ignore/+page.server.js |
+| 1239 | packages/kit/test/apps/basics/src/routes/routing/trailing-slash-server/ignore/+page.svelte |
+| 1240 | packages/kit/test/apps/basics/src/routes/routing/trailing-slash-server/+layout.server.js |
+| 1241 | packages/kit/test/apps/basics/src/routes/routing/trailing-slash-server/+layout.svelte |
+| 1242 | packages/kit/test/apps/basics/src/routes/routing/trailing-slash-server/never/+page.svelte |
+| 1243 | packages/kit/test/apps/basics/src/routes/routing/trailing-slash-server/+page.svelte |
+| 1244 | packages/kit/test/apps/basics/src/routes/scroll/cross-document/a/+page.svelte |
+| 1245 | packages/kit/test/apps/basics/src/routes/scroll/cross-document/b/+page.svelte |
+| 1246 | packages/kit/test/apps/basics/src/routes/scroll/cross-document/c/+page.svelte |
+| 1247 | packages/kit/test/apps/basics/src/routes/scroll/push-state/a/+page.svelte |
+| 1248 | packages/kit/test/apps/basics/src/routes/scroll/push-state/+page.svelte |
+| 1249 | packages/kit/test/apps/basics/src/routes/scroll/top/+page.svelte |
+| 1250 | packages/kit/test/apps/basics/src/routes/selection/a/+page.svelte |
+| 1251 | packages/kit/test/apps/basics/src/routes/selection/b/+page.svelte |
+| 1252 | packages/kit/test/apps/basics/src/routes/selection/+layout.svelte |
+| 1253 | packages/kit/test/apps/basics/src/routes/set-cookie/+server.js |
+| 1254 | packages/kit/test/apps/basics/src/routes/shadowed/dynamic/[slug]/+page.server.js |
+| 1255 | packages/kit/test/apps/basics/src/routes/shadowed/dynamic/[slug]/+page.svelte |
+| 1256 | packages/kit/test/apps/basics/src/routes/shadowed/error-get/+page.server.js |
+| 1257 | packages/kit/test/apps/basics/src/routes/shadowed/error-get/+page.svelte |
+| 1258 | packages/kit/test/apps/basics/src/routes/shadowed/error-post/+page.server.js |
+| 1259 | packages/kit/test/apps/basics/src/routes/shadowed/error-post/+page.svelte |
+| 1260 | packages/kit/test/apps/basics/src/routes/shadowed/missing-get/+page.server.js |
+| 1261 | packages/kit/test/apps/basics/src/routes/shadowed/missing-get/+page.svelte |
+| 1262 | packages/kit/test/apps/basics/src/routes/shadowed/no-get/+page.server.js |
+| 1263 | packages/kit/test/apps/basics/src/routes/shadowed/no-get/+page.svelte |
+| 1264 | packages/kit/test/apps/basics/src/routes/shadowed/+page.svelte |
+| 1265 | packages/kit/test/apps/basics/src/routes/shadowed/parent/+layout.server.js |
+| 1266 | packages/kit/test/apps/basics/src/routes/shadowed/parent/+layout.svelte |
+| 1267 | packages/kit/test/apps/basics/src/routes/shadowed/parent/+page.server.js |
+| 1268 | packages/kit/test/apps/basics/src/routes/shadowed/parent/+page.svelte |
+| 1269 | packages/kit/test/apps/basics/src/routes/shadowed/parent/sub/+page.server.js |
+| 1270 | packages/kit/test/apps/basics/src/routes/shadowed/parent/sub/+page.svelte |
+| 1271 | packages/kit/test/apps/basics/src/routes/shadowed/post-success-redirect/+page.server.js |
+| 1272 | packages/kit/test/apps/basics/src/routes/shadowed/post-success-redirect/+page.svelte |
+| 1273 | packages/kit/test/apps/basics/src/routes/shadowed/post-success-redirect/redirected/+page.svelte |
+| 1274 | packages/kit/test/apps/basics/src/routes/shadowed/redirect/[a]/+page.server.js |
+| 1275 | packages/kit/test/apps/basics/src/routes/shadowed/redirect/[a]/+page.svelte |
+| 1276 | packages/kit/test/apps/basics/src/routes/shadowed/redirect/b/+page.svelte |
+| 1277 | packages/kit/test/apps/basics/src/routes/shadowed/redirected/+page.server.js |
+| 1278 | packages/kit/test/apps/basics/src/routes/shadowed/redirected/+page.svelte |
+| 1279 | packages/kit/test/apps/basics/src/routes/shadowed/redirect-get/+page.server.js |
+| 1280 | packages/kit/test/apps/basics/src/routes/shadowed/redirect-get/+page.svelte |
+| 1281 | packages/kit/test/apps/basics/src/routes/shadowed/redirect-get-with-cookie-from-fetch/endpoint/+server.js |
+| 1282 | packages/kit/test/apps/basics/src/routes/shadowed/redirect-get-with-cookie-from-fetch/+page.js |
+| 1283 | packages/kit/test/apps/basics/src/routes/shadowed/redirect-get-with-cookie-from-fetch/+page.svelte |
+| 1284 | packages/kit/test/apps/basics/src/routes/shadowed/redirect-get-with-cookie/+page.server.js |
+| 1285 | packages/kit/test/apps/basics/src/routes/shadowed/redirect-get-with-cookie/+page.svelte |
+| 1286 | packages/kit/test/apps/basics/src/routes/shadowed/redirect/+page.svelte |
+| 1287 | packages/kit/test/apps/basics/src/routes/shadowed/redirect-post/+page.server.js |
+| 1288 | packages/kit/test/apps/basics/src/routes/shadowed/redirect-post/+page.svelte |
+| 1289 | packages/kit/test/apps/basics/src/routes/shadowed/redirect-post-with-cookie/+page.server.js |
+| 1290 | packages/kit/test/apps/basics/src/routes/shadowed/redirect-post-with-cookie/+page.svelte |
+| 1291 | packages/kit/test/apps/basics/src/routes/shadowed/same-render-entry/+page.svelte |
+| 1292 | packages/kit/test/apps/basics/src/routes/shadowed/same-render/+page.server.js |
+| 1293 | packages/kit/test/apps/basics/src/routes/shadowed/same-render/+page.svelte |
+| 1294 | packages/kit/test/apps/basics/src/routes/shadowed/serialization/+page.server.js |
+| 1295 | packages/kit/test/apps/basics/src/routes/shadowed/serialization/+page.svelte |
+| 1296 | packages/kit/test/apps/basics/src/routes/shadowed/simple/+page.server.js |
+| 1297 | packages/kit/test/apps/basics/src/routes/shadowed/simple/+page.svelte |
+| 1298 | packages/kit/test/apps/basics/src/routes/shadowed/simple/post/+page.server.js |
+| 1299 | packages/kit/test/apps/basics/src/routes/shadowed/simple/post/+page.svelte |
+| 1300 | packages/kit/test/apps/basics/src/routes/shallow-routing/push-state/a/+page.svelte |
+| 1301 | packages/kit/test/apps/basics/src/routes/shallow-routing/push-state/b/+page.svelte |
+| 1302 | packages/kit/test/apps/basics/src/routes/shallow-routing/push-state/+layout.svelte |
+| 1303 | packages/kit/test/apps/basics/src/routes/shallow-routing/push-state/+page.js |
+| 1304 | packages/kit/test/apps/basics/src/routes/shallow-routing/push-state/+page.svelte |
+| 1305 | packages/kit/test/apps/basics/src/routes/shallow-routing/replace-state/a/+page.svelte |
+| 1306 | packages/kit/test/apps/basics/src/routes/shallow-routing/replace-state/b/+page.svelte |
+| 1307 | packages/kit/test/apps/basics/src/routes/shallow-routing/replace-state/+layout.svelte |
+| 1308 | packages/kit/test/apps/basics/src/routes/shallow-routing/replace-state/+page.svelte |
+| 1309 | packages/kit/test/apps/basics/src/routes/snapshot/a/+page.svelte |
+| 1310 | packages/kit/test/apps/basics/src/routes/snapshot/b/+page.svelte |
+| 1311 | packages/kit/test/apps/basics/src/routes/snapshot/c/+page.svelte |
+| 1312 | packages/kit/test/apps/basics/src/routes/snapshot/+layout.svelte |
+| 1313 | packages/kit/test/apps/basics/src/routes/src/[...anything]/+server.js |
+| 1314 | packages/kit/test/apps/basics/src/routes/static/+page.svelte |
+| 1315 | packages/kit/test/apps/basics/src/routes/store/client-access/+page.svelte |
+| 1316 | packages/kit/test/apps/basics/src/routes/store/data/+error.svelte |
+| 1317 | packages/kit/test/apps/basics/src/routes/store/data/foo/+page.js |
+| 1318 | packages/kit/test/apps/basics/src/routes/store/data/foo/+page.svelte |
+| 1319 | packages/kit/test/apps/basics/src/routes/store/data/[item]/+page.js |
+| 1320 | packages/kit/test/apps/basics/src/routes/store/data/[item]/+page.svelte |
+| 1321 | packages/kit/test/apps/basics/src/routes/store/data/+layout.js |
+| 1322 | packages/kit/test/apps/basics/src/routes/store/data/+layout.svelte |
+| 1323 | packages/kit/test/apps/basics/src/routes/store/data/store-update/a/+page.svelte |
+| 1324 | packages/kit/test/apps/basics/src/routes/store/data/store-update/b/+page.svelte |
+| 1325 | packages/kit/test/apps/basics/src/routes/store/data/store-update/+layout.svelte |
+| 1326 | packages/kit/test/apps/basics/src/routes/store/data/store-update/same-keys/+layout.js |
+| 1327 | packages/kit/test/apps/basics/src/routes/store/data/store-update/same-keys/+page.svelte |
+| 1328 | packages/kit/test/apps/basics/src/routes/store/data/store-update/same-keys/same-deep/nested/+page.js |
+| 1329 | packages/kit/test/apps/basics/src/routes/store/data/store-update/same-keys/same-deep/nested/+page.svelte |
+| 1330 | packages/kit/test/apps/basics/src/routes/store/data/store-update/same-keys/same/+page.js |
+| 1331 | packages/kit/test/apps/basics/src/routes/store/data/store-update/same-keys/same/+page.svelte |
+| 1332 | packages/kit/test/apps/basics/src/routes/store/navigating/a/+page.js |
+| 1333 | packages/kit/test/apps/basics/src/routes/store/navigating/a/+page.svelte |
+| 1334 | packages/kit/test/apps/basics/src/routes/store/navigating/b/+page.js |
+| 1335 | packages/kit/test/apps/basics/src/routes/store/navigating/b/+page.svelte |
+| 1336 | packages/kit/test/apps/basics/src/routes/store/navigating/c/+page.js |
+| 1337 | packages/kit/test/apps/basics/src/routes/store/navigating/c/+page.svelte |
+| 1338 | packages/kit/test/apps/basics/src/routes/store/navigating/+layout.svelte |
+| 1339 | packages/kit/test/apps/basics/src/routes/streaming/+page.svelte |
+| 1340 | packages/kit/test/apps/basics/src/routes/streaming/server-error/+page.server.js |
+| 1341 | packages/kit/test/apps/basics/src/routes/streaming/server-error/+page.svelte |
+| 1342 | packages/kit/test/apps/basics/src/routes/streaming/server/+page.server.js |
+| 1343 | packages/kit/test/apps/basics/src/routes/streaming/server/+page.svelte |
+| 1344 | packages/kit/test/apps/basics/src/routes/streaming/universal/+page.js |
+| 1345 | packages/kit/test/apps/basics/src/routes/streaming/universal/+page.svelte |
+| 1346 | packages/kit/test/apps/basics/src/routes/transform-page-chunk/+page.svelte |
+| 1347 | packages/kit/test/apps/basics/src/routes/unsafe-replacement/+page.js |
+| 1348 | packages/kit/test/apps/basics/src/routes/unsafe-replacement/+page.svelte |
+| 1349 | packages/kit/test/apps/basics/src/routes/untrack/server/+layout.server.js |
+| 1350 | packages/kit/test/apps/basics/src/routes/untrack/server/[x]/+page.server.js |
+| 1351 | packages/kit/test/apps/basics/src/routes/untrack/server/[x]/+page.svelte |
+| 1352 | packages/kit/test/apps/basics/src/routes/untrack/universal/+layout.js |
+| 1353 | packages/kit/test/apps/basics/src/routes/untrack/universal/[x]/+page.js |
+| 1354 | packages/kit/test/apps/basics/src/routes/untrack/universal/[x]/+page.svelte |
+| 1355 | packages/kit/test/apps/basics/src/routes/use-action/focus-and-scroll/+page.svelte |
+| 1356 | packages/kit/test/apps/basics/src/routes/use-action/+page.svelte |
+| 1357 | packages/kit/test/apps/basics/src/routes/xss.json/+server.js |
+| 1358 | packages/kit/test/apps/basics/src/routes/xss/+page.js |
+| 1359 | packages/kit/test/apps/basics/src/routes/xss/+page.svelte |
+| 1360 | packages/kit/test/apps/basics/src/routes/xss/[path]/+page.svelte |
+| 1361 | packages/kit/test/apps/basics/src/routes/xss/query/+page.js |
+| 1362 | packages/kit/test/apps/basics/src/routes/xss/query/+page.svelte |
+| 1363 | packages/kit/test/apps/basics/src/routes/xss/query/utils.js |
+| 1364 | packages/kit/test/apps/basics/src/routes/xss/shadow/+page.server.js |
+| 1365 | packages/kit/test/apps/basics/src/routes/xss/shadow/+page.svelte |
+| 1366 | packages/kit/test/apps/basics/src/service-worker.js |
+| 1367 | packages/kit/test/apps/basics/static/empty.js |
+| 1368 | packages/kit/test/apps/basics/static/load/assets/a#b.txt |
+| 1369 | packages/kit/test/apps/basics/static/load/foo.json |
+| 1370 | packages/kit/test/apps/basics/static/static.json |
+| 1371 | packages/kit/test/apps/basics/static/subdirectory/static.json |
+| 1372 | packages/kit/test/apps/basics/static/symlink-to/hello.txt |
+| 1373 | packages/kit/test/apps/basics/svelte.config.js |
+| 1374 | packages/kit/test/apps/basics/test/client.test.js |
+| 1375 | packages/kit/test/apps/basics/test/cross-platform/client.test.js |
+| 1376 | packages/kit/test/apps/basics/test/cross-platform/server.test.js |
+| 1377 | packages/kit/test/apps/basics/test/cross-platform/test.js |
+| 1378 | packages/kit/test/apps/basics/test/server.test.js |
+| 1379 | packages/kit/test/apps/basics/test/setup.js |
+| 1380 | packages/kit/test/apps/basics/test/test.js |
+| 1381 | packages/kit/test/apps/basics/tsconfig.json |
+| 1382 | packages/kit/test/apps/basics/vite.config.js |
+| 1383 | packages/kit/test/apps/dev-only/package.json |
+| 1384 | packages/kit/test/apps/dev-only/playwright.config.js |
+| 1385 | packages/kit/test/apps/dev-only/src/app.html |
+| 1386 | packages/kit/test/apps/dev-only/src/hooks.server.js |
+| 1387 | packages/kit/test/apps/dev-only/src/lib/server/blah/private.js |
+| 1388 | packages/kit/test/apps/dev-only/src/lib/test.server.js |
+| 1389 | packages/kit/test/apps/dev-only/src/routes/+error.svelte |
+| 1390 | packages/kit/test/apps/dev-only/src/routes/illegal-imports/env/dynamic-private-dynamic-import/+page.svelte |
+| 1391 | packages/kit/test/apps/dev-only/src/routes/illegal-imports/env/dynamic-private/+page.svelte |
+| 1392 | packages/kit/test/apps/dev-only/src/routes/illegal-imports/env/static-private-dynamic-import/+page.svelte |
+| 1393 | packages/kit/test/apps/dev-only/src/routes/illegal-imports/env/static-private/+page.svelte |
+| 1394 | packages/kit/test/apps/dev-only/src/routes/illegal-imports/server-only-folder/dynamic-import/+page.svelte |
+| 1395 | packages/kit/test/apps/dev-only/src/routes/illegal-imports/server-only-folder/static-import/+page.svelte |
+| 1396 | packages/kit/test/apps/dev-only/src/routes/illegal-imports/server-only-modules/dynamic-import/+page.svelte |
+| 1397 | packages/kit/test/apps/dev-only/src/routes/illegal-imports/server-only-modules/illegal.server.js |
+| 1398 | packages/kit/test/apps/dev-only/src/routes/illegal-imports/server-only-modules/static-import/+page.svelte |
+| 1399 | packages/kit/test/apps/dev-only/src/routes/+layout.svelte |
+| 1400 | packages/kit/test/apps/dev-only/svelte.config.js |
+| 1401 | packages/kit/test/apps/dev-only/test/test.js |
+| 1402 | packages/kit/test/apps/dev-only/tsconfig.json |
+| 1403 | packages/kit/test/apps/dev-only/vite.config.js |
+| 1404 | packages/kit/test/apps/embed/package.json |
+| 1405 | packages/kit/test/apps/embed/playwright.config.js |
+| 1406 | packages/kit/test/apps/embed/src/app.html |
+| 1407 | packages/kit/test/apps/embed/src/routes/embed/a/+page.svelte |
+| 1408 | packages/kit/test/apps/embed/src/routes/embed/b/+page.svelte |
+| 1409 | packages/kit/test/apps/embed/src/routes/embed/+page.js |
+| 1410 | packages/kit/test/apps/embed/src/routes/embed/+page.svelte |
+| 1411 | packages/kit/test/apps/embed/src/routes/+layout.svelte |
+| 1412 | packages/kit/test/apps/embed/svelte.config.js |
+| 1413 | packages/kit/test/apps/embed/test/test.js |
+| 1414 | packages/kit/test/apps/embed/tsconfig.json |
+| 1415 | packages/kit/test/apps/embed/vite.config.js |
+| 1416 | packages/kit/test/apps/no-ssr/package.json |
+| 1417 | packages/kit/test/apps/no-ssr/playwright.config.js |
+| 1418 | packages/kit/test/apps/no-ssr/src/app.html |
+| 1419 | packages/kit/test/apps/no-ssr/src/routes/+layout.js |
+| 1420 | packages/kit/test/apps/no-ssr/src/routes/+layout.server.js |
+| 1421 | packages/kit/test/apps/no-ssr/src/routes/+layout.svelte |
+| 1422 | packages/kit/test/apps/no-ssr/src/routes/+page.svelte |
+| 1423 | packages/kit/test/apps/no-ssr/svelte.config.js |
+| 1424 | packages/kit/test/apps/no-ssr/test/test.js |
+| 1425 | packages/kit/test/apps/no-ssr/tsconfig.json |
+| 1426 | packages/kit/test/apps/no-ssr/vite.config.js |
+| 1427 | packages/kit/test/apps/options-2/package.json |
+| 1428 | packages/kit/test/apps/options-2/playwright.config.js |
+| 1429 | packages/kit/test/apps/options-2/README.md |
+| 1430 | packages/kit/test/apps/options-2/src/app.html |
+| 1431 | packages/kit/test/apps/options-2/src/routes/deeply/nested/page/+page.svelte |
+| 1432 | packages/kit/test/apps/options-2/src/routes/env/+page.svelte |
+| 1433 | packages/kit/test/apps/options-2/src/routes/hello/+page.js |
+| 1434 | packages/kit/test/apps/options-2/src/routes/hello/+page.svelte |
+| 1435 | packages/kit/test/apps/options-2/src/routes/+layout.svelte |
+| 1436 | packages/kit/test/apps/options-2/src/routes/+page.svelte |
+| 1437 | packages/kit/test/apps/options-2/src/service-worker.js |
+| 1438 | packages/kit/test/apps/options-2/static/answer.txt |
+| 1439 | packages/kit/test/apps/options-2/svelte.config.js |
+| 1440 | packages/kit/test/apps/options-2/test/test.js |
+| 1441 | packages/kit/test/apps/options-2/tsconfig.json |
+| 1442 | packages/kit/test/apps/options-2/vite.config.js |
+| 1443 | packages/kit/test/apps/options/package.json |
+| 1444 | packages/kit/test/apps/options/playwright.config.js |
+| 1445 | packages/kit/test/apps/options/public/answer.html |
+| 1446 | packages/kit/test/apps/options/source/components/Message.svelte |
+| 1447 | packages/kit/test/apps/options/source/components/SvelteLogo.svelte |
+| 1448 | packages/kit/test/apps/options/source/hooks.client.js |
+| 1449 | packages/kit/test/apps/options/source/hooks.server.js |
+| 1450 | packages/kit/test/apps/options/source/pages/base/+page.js |
+| 1451 | packages/kit/test/apps/options/source/pages/base/+page.svelte |
+| 1452 | packages/kit/test/apps/options/source/pages/base/[slug]/+page.svelte |
+| 1453 | packages/kit/test/apps/options/source/pages/csp/+page.svelte |
+| 1454 | packages/kit/test/apps/options/source/pages/custom-extensions/a/+page.svelte |
+| 1455 | packages/kit/test/apps/options/source/pages/custom-extensions/const/+page.whokilledthemuffinman |
+| 1456 | packages/kit/test/apps/options/source/pages/custom-extensions/+layout.svelte |
+| 1457 | packages/kit/test/apps/options/source/pages/custom-extensions/+page.jesuslivesineveryone |
+| 1458 | packages/kit/test/apps/options/source/pages/custom-extensions/[slug]/+page.svelte.md |
+| 1459 | packages/kit/test/apps/options/source/pages/custom-extensions/unsafe-replacement/+page.svelte |
+| 1460 | packages/kit/test/apps/options/source/pages/endpoint/+server.js |
+| 1461 | packages/kit/test/apps/options/source/pages/endpoint-with-slash/+server.js |
+| 1462 | packages/kit/test/apps/options/source/pages/env/+page.server.js |
+| 1463 | packages/kit/test/apps/options/source/pages/env/+page.svelte |
+| 1464 | packages/kit/test/apps/options/source/pages/error/+page.svelte |
+| 1465 | packages/kit/test/apps/options/source/pages/+layout.server.js |
+| 1466 | packages/kit/test/apps/options/source/pages/+layout.svelte |
+| 1467 | packages/kit/test/apps/options/source/pages/mode/+page.server.js |
+| 1468 | packages/kit/test/apps/options/source/pages/mode/+page.svelte |
+| 1469 | packages/kit/test/apps/options/source/pages/page-endpoint/+page.server.js |
+| 1470 | packages/kit/test/apps/options/source/pages/page-endpoint/+page.svelte |
+| 1471 | packages/kit/test/apps/options/source/pages/+page.svelte |
+| 1472 | packages/kit/test/apps/options/source/pages/preloading/code/+page.svelte |
+| 1473 | packages/kit/test/apps/options/source/pages/preloading/+page.svelte |
+| 1474 | packages/kit/test/apps/options/source/pages/preloading/preloaded/+page.server.js |
+| 1475 | packages/kit/test/apps/options/source/pages/preloading/preloaded/+page.svelte |
+| 1476 | packages/kit/test/apps/options/source/pages/resolve-route/[foo]/+page.svelte |
+| 1477 | packages/kit/test/apps/options/source/pages/resolve-route/+page.svelte |
+| 1478 | packages/kit/test/apps/options/source/pages/routing/link-outside-app-target/source/+page.svelte |
+| 1479 | packages/kit/test/apps/options/source/pages/routing/link-outside-app-target/state.js |
+| 1480 | packages/kit/test/apps/options/source/pages/routing/link-outside-app-target/target/+page.svelte |
+| 1481 | packages/kit/test/apps/options/source/pages/slash/child/+page.svelte |
+| 1482 | packages/kit/test/apps/options/source/pages/slash/+page.svelte |
+| 1483 | packages/kit/test/apps/options/source/pages/test.txt |
+| 1484 | packages/kit/test/apps/options/source/template.html |
+| 1485 | packages/kit/test/apps/options/svelte.config.js |
+| 1486 | packages/kit/test/apps/options/test/test.js |
+| 1487 | packages/kit/test/apps/options/tsconfig.json |
+| 1488 | packages/kit/test/apps/options/vite.custom.config.js |
+| 1489 | packages/kit/test/apps/read-file-test.txt |
+| 1490 | packages/kit/test/apps/writes/package.json |
+| 1491 | packages/kit/test/apps/writes/playwright.config.js |
+| 1492 | packages/kit/test/apps/writes/src/app.html |
+| 1493 | packages/kit/test/apps/writes/src/global.d.ts |
+| 1494 | packages/kit/test/apps/writes/src/routes/double-mount/+page.svelte |
+| 1495 | packages/kit/test/apps/writes/src/routes/+layout.svelte |
+| 1496 | packages/kit/test/apps/writes/src/routes/new-route/+page.svelte |
+| 1497 | packages/kit/test/apps/writes/src/routes/new-route/zzzz1662642734866/+page.svelte |
+| 1498 | packages/kit/test/apps/writes/svelte.config.js |
+| 1499 | packages/kit/test/apps/writes/test/test.js |
+| 1500 | packages/kit/test/apps/writes/tsconfig.json |
+| 1501 | packages/kit/test/apps/writes/vite.config.js |
+| 1502 | packages/kit/test/build-errors/apps/prerenderable-incorrect-fragment/package.json |
+| 1503 | packages/kit/test/build-errors/apps/prerenderable-incorrect-fragment/src/app.html |
+| 1504 | packages/kit/test/build-errors/apps/prerenderable-incorrect-fragment/src/routes/foo/+page.svelte |
+| 1505 | packages/kit/test/build-errors/apps/prerenderable-incorrect-fragment/src/routes/+layout.js |
+| 1506 | packages/kit/test/build-errors/apps/prerenderable-incorrect-fragment/src/routes/+page.svelte |
+| 1507 | packages/kit/test/build-errors/apps/prerenderable-incorrect-fragment/svelte.config.js |
+| 1508 | packages/kit/test/build-errors/apps/prerenderable-incorrect-fragment/tsconfig.json |
+| 1509 | packages/kit/test/build-errors/apps/prerenderable-incorrect-fragment/vite.config.js |
+| 1510 | packages/kit/test/build-errors/apps/prerenderable-not-prerendered/package.json |
+| 1511 | packages/kit/test/build-errors/apps/prerenderable-not-prerendered/src/app.html |
+| 1512 | packages/kit/test/build-errors/apps/prerenderable-not-prerendered/src/routes/+page.svelte |
+| 1513 | packages/kit/test/build-errors/apps/prerenderable-not-prerendered/src/routes/[x]/+page.js |
+| 1514 | packages/kit/test/build-errors/apps/prerenderable-not-prerendered/src/routes/[x]/+page.svelte |
+| 1515 | packages/kit/test/build-errors/apps/prerenderable-not-prerendered/svelte.config.js |
+| 1516 | packages/kit/test/build-errors/apps/prerenderable-not-prerendered/tsconfig.json |
+| 1517 | packages/kit/test/build-errors/apps/prerenderable-not-prerendered/vite.config.js |
+| 1518 | packages/kit/test/build-errors/apps/prerender-entry-generator-mismatch/package.json |
+| 1519 | packages/kit/test/build-errors/apps/prerender-entry-generator-mismatch/src/app.html |
+| 1520 | packages/kit/test/build-errors/apps/prerender-entry-generator-mismatch/src/routes/+layout.js |
+| 1521 | packages/kit/test/build-errors/apps/prerender-entry-generator-mismatch/src/routes/[slug]/[notSpecific]/+page.ts |
+| 1522 | packages/kit/test/build-errors/apps/prerender-entry-generator-mismatch/src/routes/[slug]/specific/+page.svelte |
+| 1523 | packages/kit/test/build-errors/apps/prerender-entry-generator-mismatch/svelte.config.js |
+| 1524 | packages/kit/test/build-errors/apps/prerender-entry-generator-mismatch/tsconfig.json |
+| 1525 | packages/kit/test/build-errors/apps/prerender-entry-generator-mismatch/vite.config.js |
+| 1526 | packages/kit/test/build-errors/apps/private-dynamic-env-dynamic-import/package.json |
+| 1527 | packages/kit/test/build-errors/apps/private-dynamic-env-dynamic-import/src/app.html |
+| 1528 | packages/kit/test/build-errors/apps/private-dynamic-env-dynamic-import/src/routes/+page.svelte |
+| 1529 | packages/kit/test/build-errors/apps/private-dynamic-env-dynamic-import/svelte.config.js |
+| 1530 | packages/kit/test/build-errors/apps/private-dynamic-env-dynamic-import/tsconfig.json |
+| 1531 | packages/kit/test/build-errors/apps/private-dynamic-env-dynamic-import/vite.config.js |
+| 1532 | packages/kit/test/build-errors/apps/private-dynamic-env/package.json |
+| 1533 | packages/kit/test/build-errors/apps/private-dynamic-env/src/app.html |
+| 1534 | packages/kit/test/build-errors/apps/private-dynamic-env/src/routes/+page.svelte |
+| 1535 | packages/kit/test/build-errors/apps/private-dynamic-env/svelte.config.js |
+| 1536 | packages/kit/test/build-errors/apps/private-dynamic-env/tsconfig.json |
+| 1537 | packages/kit/test/build-errors/apps/private-dynamic-env/vite.config.js |
+| 1538 | packages/kit/test/build-errors/apps/private-static-env-dynamic-import/package.json |
+| 1539 | packages/kit/test/build-errors/apps/private-static-env-dynamic-import/src/app.html |
+| 1540 | packages/kit/test/build-errors/apps/private-static-env-dynamic-import/src/routes/+page.svelte |
+| 1541 | packages/kit/test/build-errors/apps/private-static-env-dynamic-import/svelte.config.js |
+| 1542 | packages/kit/test/build-errors/apps/private-static-env-dynamic-import/tsconfig.json |
+| 1543 | packages/kit/test/build-errors/apps/private-static-env-dynamic-import/vite.config.js |
+| 1544 | packages/kit/test/build-errors/apps/private-static-env/package.json |
+| 1545 | packages/kit/test/build-errors/apps/private-static-env/src/app.html |
+| 1546 | packages/kit/test/build-errors/apps/private-static-env/src/routes/+page.svelte |
+| 1547 | packages/kit/test/build-errors/apps/private-static-env/svelte.config.js |
+| 1548 | packages/kit/test/build-errors/apps/private-static-env/tsconfig.json |
+| 1549 | packages/kit/test/build-errors/apps/private-static-env/vite.config.js |
+| 1550 | packages/kit/test/build-errors/apps/server-only-folder-dynamic-import/package.json |
+| 1551 | packages/kit/test/build-errors/apps/server-only-folder-dynamic-import/src/app.html |
+| 1552 | packages/kit/test/build-errors/apps/server-only-folder-dynamic-import/src/lib/server/something/private.js |
+| 1553 | packages/kit/test/build-errors/apps/server-only-folder-dynamic-import/src/routes/+page.svelte |
+| 1554 | packages/kit/test/build-errors/apps/server-only-folder-dynamic-import/svelte.config.js |
+| 1555 | packages/kit/test/build-errors/apps/server-only-folder-dynamic-import/tsconfig.json |
+| 1556 | packages/kit/test/build-errors/apps/server-only-folder-dynamic-import/vite.config.js |
+| 1557 | packages/kit/test/build-errors/apps/server-only-folder/package.json |
+| 1558 | packages/kit/test/build-errors/apps/server-only-folder/src/app.html |
+| 1559 | packages/kit/test/build-errors/apps/server-only-folder/src/lib/server/something/private.js |
+| 1560 | packages/kit/test/build-errors/apps/server-only-folder/src/routes/+page.svelte |
+| 1561 | packages/kit/test/build-errors/apps/server-only-folder/svelte.config.js |
+| 1562 | packages/kit/test/build-errors/apps/server-only-folder/tsconfig.json |
+| 1563 | packages/kit/test/build-errors/apps/server-only-folder/vite.config.js |
+| 1564 | packages/kit/test/build-errors/apps/server-only-module-dynamic-import/package.json |
+| 1565 | packages/kit/test/build-errors/apps/server-only-module-dynamic-import/src/app.html |
+| 1566 | packages/kit/test/build-errors/apps/server-only-module-dynamic-import/src/lib/test.server.js |
+| 1567 | packages/kit/test/build-errors/apps/server-only-module-dynamic-import/src/routes/+page.svelte |
+| 1568 | packages/kit/test/build-errors/apps/server-only-module-dynamic-import/svelte.config.js |
+| 1569 | packages/kit/test/build-errors/apps/server-only-module-dynamic-import/tsconfig.json |
+| 1570 | packages/kit/test/build-errors/apps/server-only-module-dynamic-import/vite.config.js |
+| 1571 | packages/kit/test/build-errors/apps/server-only-module/package.json |
+| 1572 | packages/kit/test/build-errors/apps/server-only-module/src/app.html |
+| 1573 | packages/kit/test/build-errors/apps/server-only-module/src/lib/test.server.js |
+| 1574 | packages/kit/test/build-errors/apps/server-only-module/src/routes/+page.svelte |
+| 1575 | packages/kit/test/build-errors/apps/server-only-module/svelte.config.js |
+| 1576 | packages/kit/test/build-errors/apps/server-only-module/tsconfig.json |
+| 1577 | packages/kit/test/build-errors/apps/server-only-module/vite.config.js |
+| 1578 | packages/kit/test/build-errors/apps/service-worker-dynamic-public-env/package.json |
+| 1579 | packages/kit/test/build-errors/apps/service-worker-dynamic-public-env/src/app.html |
+| 1580 | packages/kit/test/build-errors/apps/service-worker-dynamic-public-env/src/routes/+page.svelte |
+| 1581 | packages/kit/test/build-errors/apps/service-worker-dynamic-public-env/src/service-worker.js |
+| 1582 | packages/kit/test/build-errors/apps/service-worker-dynamic-public-env/svelte.config.js |
+| 1583 | packages/kit/test/build-errors/apps/service-worker-dynamic-public-env/tsconfig.json |
+| 1584 | packages/kit/test/build-errors/apps/service-worker-dynamic-public-env/vite.config.js |
+| 1585 | packages/kit/test/build-errors/apps/service-worker-private-env/package.json |
+| 1586 | packages/kit/test/build-errors/apps/service-worker-private-env/src/app.html |
+| 1587 | packages/kit/test/build-errors/apps/service-worker-private-env/src/routes/+page.svelte |
+| 1588 | packages/kit/test/build-errors/apps/service-worker-private-env/src/service-worker.js |
+| 1589 | packages/kit/test/build-errors/apps/service-worker-private-env/svelte.config.js |
+| 1590 | packages/kit/test/build-errors/apps/service-worker-private-env/tsconfig.json |
+| 1591 | packages/kit/test/build-errors/apps/service-worker-private-env/vite.config.js |
+| 1592 | packages/kit/test/build-errors/apps/syntax-error/package.json |
+| 1593 | packages/kit/test/build-errors/apps/syntax-error/src/app.html |
+| 1594 | packages/kit/test/build-errors/apps/syntax-error/src/lib/test.server.js |
+| 1595 | packages/kit/test/build-errors/apps/syntax-error/src/routes/+page.svelte |
+| 1596 | packages/kit/test/build-errors/apps/syntax-error/svelte.config.js |
+| 1597 | packages/kit/test/build-errors/apps/syntax-error/tsconfig.json |
+| 1598 | packages/kit/test/build-errors/apps/syntax-error/vite.config.js |
+| 1599 | packages/kit/test/build-errors/env.spec.js |
+| 1600 | packages/kit/test/build-errors/package.json |
+| 1601 | packages/kit/test/build-errors/prerender.spec.js |
+| 1602 | packages/kit/test/build-errors/server-only.spec.js |
+| 1603 | packages/kit/test/build-errors/syntax-error.spec.js |
+| 1604 | packages/kit/test/github-flaky-warning-reporter.js |
+| 1605 | packages/kit/test/prerendering/basics/package.json |
+| 1606 | packages/kit/test/prerendering/basics/src/app.d.ts |
+| 1607 | packages/kit/test/prerendering/basics/src/app.html |
+| 1608 | packages/kit/test/prerendering/basics/src/hooks.server.js |
+| 1609 | packages/kit/test/prerendering/basics/src/routes/encöded-hash-link/+page.svelte |
+| 1610 | packages/kit/test/prerendering/basics/src/routes/encoding/[path].json/+server.js |
+| 1611 | packages/kit/test/prerendering/basics/src/routes/encoding/[path]/+page.svelte |
+| 1612 | packages/kit/test/prerendering/basics/src/routes/encoding/path with spaces/+page.js |
+| 1613 | packages/kit/test/prerendering/basics/src/routes/encoding/path with spaces/+page.svelte |
+| 1614 | packages/kit/test/prerendering/basics/src/routes/encoding/redirect/+page.js |
+| 1615 | packages/kit/test/prerendering/basics/src/routes/encoding/redirect/+page.svelte |
+| 1616 | packages/kit/test/prerendering/basics/src/routes/env/+page.server.js |
+| 1617 | packages/kit/test/prerendering/basics/src/routes/env/+page.svelte |
+| 1618 | packages/kit/test/prerendering/basics/src/routes/fetch-404/+page.js |
+| 1619 | packages/kit/test/prerendering/basics/src/routes/fetch-404/+page.svelte |
+| 1620 | packages/kit/test/prerendering/basics/src/routes/fetch-endpoint/also-not-buffered/+page.js |
+| 1621 | packages/kit/test/prerendering/basics/src/routes/fetch-endpoint/also-not-buffered/+page.svelte |
+| 1622 | packages/kit/test/prerendering/basics/src/routes/fetch-endpoint/buffered.json/+server.js |
+| 1623 | packages/kit/test/prerendering/basics/src/routes/fetch-endpoint/buffered/+page.js |
+| 1624 | packages/kit/test/prerendering/basics/src/routes/fetch-endpoint/buffered/+page.svelte |
+| 1625 | packages/kit/test/prerendering/basics/src/routes/fetch-endpoint/not-buffered.json/+server.js |
+| 1626 | packages/kit/test/prerendering/basics/src/routes/fetch-endpoint/not-buffered/+page.js |
+| 1627 | packages/kit/test/prerendering/basics/src/routes/fetch-endpoint/not-buffered/+page.svelte |
+| 1628 | packages/kit/test/prerendering/basics/src/routes/fetch-image/+page.svelte |
+| 1629 | packages/kit/test/prerendering/basics/src/routes/fetch-image/[...slug]/+server.js |
+| 1630 | packages/kit/test/prerendering/basics/src/routes/(grouped)/grouped/+page.svelte |
+| 1631 | packages/kit/test/prerendering/basics/src/routes/immutable-headers/+server.js |
+| 1632 | packages/kit/test/prerendering/basics/src/routes/+layout.js |
+| 1633 | packages/kit/test/prerendering/basics/src/routes/+layout.svelte |
+| 1634 | packages/kit/test/prerendering/basics/src/routes/load-file-with-spaces/+page.js |
+| 1635 | packages/kit/test/prerendering/basics/src/routes/load-file-with-spaces/+page.svelte |
+| 1636 | packages/kit/test/prerendering/basics/src/routes/max-age/+page.js |
+| 1637 | packages/kit/test/prerendering/basics/src/routes/max-age/+page.svelte |
+| 1638 | packages/kit/test/prerendering/basics/src/routes/optional-params/[[optional]]/+page.svelte |
+| 1639 | packages/kit/test/prerendering/basics/src/routes/origin/message.json/+server.js |
+| 1640 | packages/kit/test/prerendering/basics/src/routes/origin/+page.server.js |
+| 1641 | packages/kit/test/prerendering/basics/src/routes/origin/+page.svelte |
+| 1642 | packages/kit/test/prerendering/basics/src/routes/page.html/+page.server.js |
+| 1643 | packages/kit/test/prerendering/basics/src/routes/page.html/+page.svelte |
+| 1644 | packages/kit/test/prerendering/basics/src/routes/+page.server.js |
+| 1645 | packages/kit/test/prerendering/basics/src/routes/+page.svelte |
+| 1646 | packages/kit/test/prerendering/basics/src/routes/prerendering-true/+page.svelte |
+| 1647 | packages/kit/test/prerendering/basics/src/routes/redirect-encoded/+page.js |
+| 1648 | packages/kit/test/prerendering/basics/src/routes/redirect-malicious/+page.js |
+| 1649 | packages/kit/test/prerendering/basics/src/routes/redirect/+page.js |
+| 1650 | packages/kit/test/prerendering/basics/src/routes/redirect-relative/+page.js |
+| 1651 | packages/kit/test/prerendering/basics/src/routes/redirect-server/+page.server.js |
+| 1652 | packages/kit/test/prerendering/basics/src/routes/shadowed-get/+page.server.js |
+| 1653 | packages/kit/test/prerendering/basics/src/routes/shadowed-get/+page.svelte |
+| 1654 | packages/kit/test/prerendering/basics/src/routes/shadowed-get/ssr-off/+page.server.js |
+| 1655 | packages/kit/test/prerendering/basics/src/routes/shadowed-get/ssr-off/+page.svelte |
+| 1656 | packages/kit/test/prerendering/basics/src/routes/shadowed-post/+page.server.js |
+| 1657 | packages/kit/test/prerendering/basics/src/routes/shadowed-post/+page.svelte |
+| 1658 | packages/kit/test/prerendering/basics/src/routes/spa-shell/+page.js |
+| 1659 | packages/kit/test/prerendering/basics/src/routes/spa-shell/+page.server.js |
+| 1660 | packages/kit/test/prerendering/basics/src/routes/spa-shell/+page.svelte |
+| 1661 | packages/kit/test/prerendering/basics/src/routes/trailing-slash/+layout.js |
+| 1662 | packages/kit/test/prerendering/basics/src/routes/trailing-slash/+layout.svelte |
+| 1663 | packages/kit/test/prerendering/basics/src/routes/trailing-slash/page/+page.server.js |
+| 1664 | packages/kit/test/prerendering/basics/src/routes/trailing-slash/page/+page.svelte |
+| 1665 | packages/kit/test/prerendering/basics/src/routes/trailing-slash/+page.svelte |
+| 1666 | packages/kit/test/prerendering/basics/src/routes/trailing-slash/standalone-endpoint.json/+server.js |
+| 1667 | packages/kit/test/prerendering/basics/src/routes/初めまして/+page.svelte |
+| 1668 | packages/kit/test/prerendering/basics/src/service-worker.js |
+| 1669 | packages/kit/test/prerendering/basics/static/file with spaces.json |
+| 1670 | packages/kit/test/prerendering/basics/svelte.config.js |
+| 1671 | packages/kit/test/prerendering/basics/test/tests.spec.js |
+| 1672 | packages/kit/test/prerendering/basics/tsconfig.json |
+| 1673 | packages/kit/test/prerendering/basics/vite.config.js |
+| 1674 | packages/kit/test/prerendering/options/package.json |
+| 1675 | packages/kit/test/prerendering/options/public/robots.txt |
+| 1676 | packages/kit/test/prerendering/options/src/app.html |
+| 1677 | packages/kit/test/prerendering/options/src/routes/(group)/+page.svelte |
+| 1678 | packages/kit/test/prerendering/options/src/routes/+layout.js |
+| 1679 | packages/kit/test/prerendering/options/src/routes/+layout.svelte |
+| 1680 | packages/kit/test/prerendering/options/src/routes/nested/+page.svelte |
+| 1681 | packages/kit/test/prerendering/options/src/routes/rss.xml/+server.js |
+| 1682 | packages/kit/test/prerendering/options/svelte.config.js |
+| 1683 | packages/kit/test/prerendering/options/test/tests.spec.js |
+| 1684 | packages/kit/test/prerendering/options/tsconfig.json |
+| 1685 | packages/kit/test/prerendering/options/vite.config.js |
+| 1686 | packages/kit/test/prerendering/paths-base/package.json |
+| 1687 | packages/kit/test/prerendering/paths-base/src/app.d.ts |
+| 1688 | packages/kit/test/prerendering/paths-base/src/app.html |
+| 1689 | packages/kit/test/prerendering/paths-base/src/hooks.server.js |
+| 1690 | packages/kit/test/prerendering/paths-base/src/routes/a/b/c/+page.svelte |
+| 1691 | packages/kit/test/prerendering/paths-base/src/routes/a/b/d/+page.svelte |
+| 1692 | packages/kit/test/prerendering/paths-base/src/routes/assets/+page.svelte |
+| 1693 | packages/kit/test/prerendering/paths-base/src/routes/dynamic/[slug]/+page.svelte |
+| 1694 | packages/kit/test/prerendering/paths-base/src/routes/+layout.js |
+| 1695 | packages/kit/test/prerendering/paths-base/src/routes/+layout.svelte |
+| 1696 | packages/kit/test/prerendering/paths-base/src/routes/nested/+page.svelte |
+| 1697 | packages/kit/test/prerendering/paths-base/src/routes/+page.svelte |
+| 1698 | packages/kit/test/prerendering/paths-base/src/routes/redirect/+page.js |
+| 1699 | packages/kit/test/prerendering/paths-base/svelte.config.js |
+| 1700 | packages/kit/test/prerendering/paths-base/test/tests.spec.js |
+| 1701 | packages/kit/test/prerendering/paths-base/tsconfig.json |
+| 1702 | packages/kit/test/prerendering/paths-base/vite.config.js |
+| 1703 | packages/kit/test/prerendering/test-utils.js |
+| 1704 | packages/kit/test/setup.js |
+| 1705 | packages/kit/test/tsconfig.json |
+| 1706 | packages/kit/test/types/actions.test.ts |
+| 1707 | packages/kit/test/types/load.test.ts |
+| 1708 | packages/kit/test/types/tsconfig.json |
+| 1709 | packages/kit/test/utils.d.ts |
+| 1710 | packages/kit/test/utils.js |
+| 1711 | packages/kit/tsconfig.json |
+| 1712 | packages/kit/types/index.d.ts |
+| 1713 | packages/migrate/bin.js |
+| 1714 | packages/migrate/CHANGELOG.md |
+| 1715 | packages/migrate/migrations/package/index.js |
+| 1716 | packages/migrate/migrations/package/migrate_config.js |
+| 1717 | packages/migrate/migrations/package/migrate_config.spec.js |
+| 1718 | packages/migrate/migrations/package/migrate_pkg.js |
+| 1719 | packages/migrate/migrations/package/migrate_pkg.spec.js |
+| 1720 | packages/migrate/migrations/routes/index.js |
+| 1721 | packages/migrate/migrations/routes/migrate_page_js/index.js |
+| 1722 | packages/migrate/migrations/routes/migrate_page_js/index.spec.js |
+| 1723 | packages/migrate/migrations/routes/migrate_page_js/samples.md |
+| 1724 | packages/migrate/migrations/routes/migrate_page_server/index.js |
+| 1725 | packages/migrate/migrations/routes/migrate_page_server/index.spec.js |
+| 1726 | packages/migrate/migrations/routes/migrate_page_server/samples.md |
+| 1727 | packages/migrate/migrations/routes/migrate_scripts/index.js |
+| 1728 | packages/migrate/migrations/routes/migrate_scripts/index.spec.js |
+| 1729 | packages/migrate/migrations/routes/migrate_scripts/samples.md |
+| 1730 | packages/migrate/migrations/routes/migrate_server/index.js |
+| 1731 | packages/migrate/migrations/routes/migrate_server/index.spec.js |
+| 1732 | packages/migrate/migrations/routes/migrate_server/samples.md |
+| 1733 | packages/migrate/migrations/routes/tasks.js |
+| 1734 | packages/migrate/migrations/routes/utils.js |
+| 1735 | packages/migrate/migrations/self-closing-tags/index.js |
+| 1736 | packages/migrate/migrations/self-closing-tags/migrate.js |
+| 1737 | packages/migrate/migrations/self-closing-tags/migrate.spec.js |
+| 1738 | packages/migrate/migrations/svelte-4/index.js |
+| 1739 | packages/migrate/migrations/svelte-4/migrate.js |
+| 1740 | packages/migrate/migrations/svelte-4/migrate.spec.js |
+| 1741 | packages/migrate/migrations/sveltekit-2/index.js |
+| 1742 | packages/migrate/migrations/sveltekit-2/migrate.js |
+| 1743 | packages/migrate/migrations/sveltekit-2/migrate.spec.js |
+| 1744 | packages/migrate/migrations/sveltekit-2/svelte-config-samples.md |
+| 1745 | packages/migrate/migrations/sveltekit-2/tsconfig-samples.md |
+| 1746 | packages/migrate/migrations/sveltekit-2/tsjs-samples.md |
+| 1747 | packages/migrate/package.json |
+| 1748 | packages/migrate/README.md |
+| 1749 | packages/migrate/tsconfig.json |
+| 1750 | packages/migrate/utils.js |
+| 1751 | packages/migrate/utils.spec.js |
+| 1752 | packages/package/CHANGELOG.md |
+| 1753 | packages/package/package.json |
+| 1754 | packages/package/README.md |
+| 1755 | packages/package/src/cli.js |
+| 1756 | packages/package/src/config.js |
+| 1757 | packages/package/src/filesystem.js |
+| 1758 | packages/package/src/index.js |
+| 1759 | packages/package/src/typescript.js |
+| 1760 | packages/package/src/types.d.ts |
+| 1761 | packages/package/src/utils.js |
+| 1762 | packages/package/src/validate.js |
+| 1763 | packages/package/svelte-package.js |
+| 1764 | packages/package/test/errors/no-lib-folder/package.json |
+| 1765 | packages/package/test/errors/no-lib-folder/svelte.config.js |
+| 1766 | packages/package/test/errors/no-lib-folder/tsconfig.json |
+| 1767 | packages/package/test/fixtures/assets/jsconfig.json |
+| 1768 | packages/package/test/fixtures/assets/package.json |
+| 1769 | packages/package/test/fixtures/assets/svelte.config.js |
+| 1770 | packages/package/test/fixtures/emitTypes-false/expected/foo.d.ts |
+| 1771 | packages/package/test/fixtures/emitTypes-false/expected/index.js |
+| 1772 | packages/package/test/fixtures/emitTypes-false/expected/Test2.svelte |
+| 1773 | packages/package/test/fixtures/emitTypes-false/expected/Test.svelte |
+| 1774 | packages/package/test/fixtures/emitTypes-false/package.json |
+| 1775 | packages/package/test/fixtures/emitTypes-false/src/lib/foo.d.ts |
+| 1776 | packages/package/test/fixtures/emitTypes-false/src/lib/index.js |
+| 1777 | packages/package/test/fixtures/emitTypes-false/src/lib/Test2.svelte |
+| 1778 | packages/package/test/fixtures/emitTypes-false/src/lib/Test.svelte |
+| 1779 | packages/package/test/fixtures/emitTypes-false/svelte.config.js |
+| 1780 | packages/package/test/fixtures/javascript/expected/foo.d.ts |
+| 1781 | packages/package/test/fixtures/javascript/expected/index.d.ts |
+| 1782 | packages/package/test/fixtures/javascript/expected/index.js |
+| 1783 | packages/package/test/fixtures/javascript/expected/internal/foo.d.ts |
+| 1784 | packages/package/test/fixtures/javascript/expected/internal/index.d.ts |
+| 1785 | packages/package/test/fixtures/javascript/expected/internal/index.js |
+| 1786 | packages/package/test/fixtures/javascript/expected/internal/runes.svelte.d.ts |
+| 1787 | packages/package/test/fixtures/javascript/expected/internal/runes.svelte.js |
+| 1788 | packages/package/test/fixtures/javascript/expected/internal/Test.svelte |
+| 1789 | packages/package/test/fixtures/javascript/expected/internal/Test.svelte.d.ts |
+| 1790 | packages/package/test/fixtures/javascript/expected/Test2.svelte |
+| 1791 | packages/package/test/fixtures/javascript/expected/Test2.svelte.d.ts |
+| 1792 | packages/package/test/fixtures/javascript/expected/Test.svelte |
+| 1793 | packages/package/test/fixtures/javascript/expected/Test.svelte.d.ts |
+| 1794 | packages/package/test/fixtures/javascript/expected/utils.d.ts |
+| 1795 | packages/package/test/fixtures/javascript/expected/utils.js |
+| 1796 | packages/package/test/fixtures/javascript/jsconfig.json |
+| 1797 | packages/package/test/fixtures/javascript/package.json |
+| 1798 | packages/package/test/fixtures/javascript/ReadMe.md |
+| 1799 | packages/package/test/fixtures/javascript/src/lib/foo.d.ts |
+| 1800 | packages/package/test/fixtures/javascript/src/lib/index.js |
+| 1801 | packages/package/test/fixtures/javascript/src/lib/internal/foo.d.ts |
+| 1802 | packages/package/test/fixtures/javascript/src/lib/internal/index.js |
+| 1803 | packages/package/test/fixtures/javascript/src/lib/internal/runes.svelte.js |
+| 1804 | packages/package/test/fixtures/javascript/src/lib/internal/Test.svelte |
+| 1805 | packages/package/test/fixtures/javascript/src/lib/Test2.svelte |
+| 1806 | packages/package/test/fixtures/javascript/src/lib/Test.svelte |
+| 1807 | packages/package/test/fixtures/javascript/src/lib/utils.js |
+| 1808 | packages/package/test/fixtures/javascript/svelte.config.js |
+| 1809 | packages/package/test/fixtures/resolve-alias/expected/baz.d.ts |
+| 1810 | packages/package/test/fixtures/resolve-alias/expected/baz.js |
+| 1811 | packages/package/test/fixtures/resolve-alias/expected/index.d.ts |
+| 1812 | packages/package/test/fixtures/resolve-alias/expected/index.js |
+| 1813 | packages/package/test/fixtures/resolve-alias/expected/sub/bar.d.ts |
+| 1814 | packages/package/test/fixtures/resolve-alias/expected/sub/bar.js |
+| 1815 | packages/package/test/fixtures/resolve-alias/expected/sub/foo.d.ts |
+| 1816 | packages/package/test/fixtures/resolve-alias/expected/sub/foo.js |
+| 1817 | packages/package/test/fixtures/resolve-alias/expected/Test.svelte |
+| 1818 | packages/package/test/fixtures/resolve-alias/expected/Test.svelte.d.ts |
+| 1819 | packages/package/test/fixtures/resolve-alias/expected/utils/index.d.ts |
+| 1820 | packages/package/test/fixtures/resolve-alias/expected/utils/index.js |
+| 1821 | packages/package/test/fixtures/resolve-alias/package.json |
+| 1822 | packages/package/test/fixtures/resolve-alias/src/lib/baz.ts |
+| 1823 | packages/package/test/fixtures/resolve-alias/src/lib/index.ts |
+| 1824 | packages/package/test/fixtures/resolve-alias/src/lib/sub/bar.ts |
+| 1825 | packages/package/test/fixtures/resolve-alias/src/lib/sub/foo.ts |
+| 1826 | packages/package/test/fixtures/resolve-alias/src/lib/Test.svelte |
+| 1827 | packages/package/test/fixtures/resolve-alias/src/lib/utils/index.ts |
+| 1828 | packages/package/test/fixtures/resolve-alias/svelte.config.js |
+| 1829 | packages/package/test/fixtures/resolve-alias/tsconfig.json |
+| 1830 | packages/package/test/fixtures/svelte-3-types/expected/index.d.ts |
+| 1831 | packages/package/test/fixtures/svelte-3-types/expected/index.js |
+| 1832 | packages/package/test/fixtures/svelte-3-types/expected/Test.svelte |
+| 1833 | packages/package/test/fixtures/svelte-3-types/expected/Test.svelte.d.ts |
+| 1834 | packages/package/test/fixtures/svelte-3-types/package.json |
+| 1835 | packages/package/test/fixtures/svelte-3-types/src/lib/index.ts |
+| 1836 | packages/package/test/fixtures/svelte-3-types/src/lib/Test.svelte |
+| 1837 | packages/package/test/fixtures/svelte-3-types/svelte.config.js |
+| 1838 | packages/package/test/fixtures/svelte-3-types/tsconfig.json |
+| 1839 | packages/package/test/fixtures/svelte-kit/expected/foo.d.ts |
+| 1840 | packages/package/test/fixtures/svelte-kit/expected/index.d.ts |
+| 1841 | packages/package/test/fixtures/svelte-kit/expected/index.js |
+| 1842 | packages/package/test/fixtures/svelte-kit/expected/Test.svelte |
+| 1843 | packages/package/test/fixtures/svelte-kit/expected/Test.svelte.d.ts |
+| 1844 | packages/package/test/fixtures/svelte-kit/jsconfig.json |
+| 1845 | packages/package/test/fixtures/svelte-kit/package.json |
+| 1846 | packages/package/test/fixtures/svelte-kit/src/kitlib/foo.d.ts |
+| 1847 | packages/package/test/fixtures/svelte-kit/src/kitlib/index.js |
+| 1848 | packages/package/test/fixtures/svelte-kit/src/kitlib/Test.svelte |
+| 1849 | packages/package/test/fixtures/svelte-kit/svelte.config.js |
+| 1850 | packages/package/test/fixtures/tsconfig-specified/expected/runes.svelte.d.ts |
+| 1851 | packages/package/test/fixtures/tsconfig-specified/expected/runes.svelte.js |
+| 1852 | packages/package/test/fixtures/tsconfig-specified/package.json |
+| 1853 | packages/package/test/fixtures/tsconfig-specified/src/lib/runes.svelte.ts |
+| 1854 | packages/package/test/fixtures/tsconfig-specified/svelte.config.js |
+| 1855 | packages/package/test/fixtures/tsconfig-specified/tsconfig.build.json |
+| 1856 | packages/package/test/fixtures/tsconfig-specified/tsconfig.json |
+| 1857 | packages/package/test/fixtures/typescript-esnext/expected/foo.d.ts |
+| 1858 | packages/package/test/fixtures/typescript-esnext/expected/index.d.ts |
+| 1859 | packages/package/test/fixtures/typescript-esnext/expected/index.js |
+| 1860 | packages/package/test/fixtures/typescript-esnext/expected/Plain.svelte |
+| 1861 | packages/package/test/fixtures/typescript-esnext/expected/Plain.svelte.d.ts |
+| 1862 | packages/package/test/fixtures/typescript-esnext/expected/runes.svelte.d.ts |
+| 1863 | packages/package/test/fixtures/typescript-esnext/expected/runes.svelte.js |
+| 1864 | packages/package/test/fixtures/typescript-esnext/expected/Test2.svelte |
+| 1865 | packages/package/test/fixtures/typescript-esnext/expected/Test2.svelte.d.ts |
+| 1866 | packages/package/test/fixtures/typescript-esnext/expected/Test.svelte |
+| 1867 | packages/package/test/fixtures/typescript-esnext/expected/Test.svelte.d.ts |
+| 1868 | packages/package/test/fixtures/typescript-esnext/expected/utils.d.ts |
+| 1869 | packages/package/test/fixtures/typescript-esnext/expected/utils.js |
+| 1870 | packages/package/test/fixtures/typescript-esnext/package.json |
+| 1871 | packages/package/test/fixtures/typescript-esnext/src/lib/foo.d.ts |
+| 1872 | packages/package/test/fixtures/typescript-esnext/src/lib/index.ts |
+| 1873 | packages/package/test/fixtures/typescript-esnext/src/lib/Plain.svelte |
+| 1874 | packages/package/test/fixtures/typescript-esnext/src/lib/runes.svelte.ts |
+| 1875 | packages/package/test/fixtures/typescript-esnext/src/lib/Test2.svelte |
+| 1876 | packages/package/test/fixtures/typescript-esnext/src/lib/Test.svelte |
+| 1877 | packages/package/test/fixtures/typescript-esnext/src/lib/utils.ts |
+| 1878 | packages/package/test/fixtures/typescript-esnext/svelte.config.js |
+| 1879 | packages/package/test/fixtures/typescript-esnext/tsconfig.json |
+| 1880 | packages/package/test/fixtures/typescript-nodenext/expected/index.d.ts |
+| 1881 | packages/package/test/fixtures/typescript-nodenext/expected/index.js |
+| 1882 | packages/package/test/fixtures/typescript-nodenext/expected/runes.svelte.d.ts |
+| 1883 | packages/package/test/fixtures/typescript-nodenext/expected/runes.svelte.js |
+| 1884 | packages/package/test/fixtures/typescript-nodenext/expected/Test.svelte |
+| 1885 | packages/package/test/fixtures/typescript-nodenext/expected/Test.svelte.d.ts |
+| 1886 | packages/package/test/fixtures/typescript-nodenext/package.json |
+| 1887 | packages/package/test/fixtures/typescript-nodenext/src/lib/index.ts |
+| 1888 | packages/package/test/fixtures/typescript-nodenext/src/lib/runes.svelte.ts |
+| 1889 | packages/package/test/fixtures/typescript-nodenext/src/lib/Test.svelte |
+| 1890 | packages/package/test/fixtures/typescript-nodenext/svelte.config.js |
+| 1891 | packages/package/test/fixtures/typescript-nodenext/tsconfig.json |
+| 1892 | packages/package/test/index.js |
+| 1893 | packages/package/test/watch/expected/a.d.ts |
+| 1894 | packages/package/test/watch/expected/a.js |
+| 1895 | packages/package/test/watch/expected/b.d.ts |
+| 1896 | packages/package/test/watch/expected/b.js |
+| 1897 | packages/package/test/watch/expected/index.js |
+| 1898 | packages/package/test/watch/expected/package.json |
+| 1899 | packages/package/test/watch/expected/post-error.svelte |
+| 1900 | packages/package/test/watch/expected/Test.svelte |
+| 1901 | packages/package/test/watch/expected/Test.svelte.d.ts |
+| 1902 | packages/package/test/watch/package.json |
+| 1903 | packages/package/test/watch/src/lib/index.js |
+| 1904 | packages/package/test/watch/svelte.config.js |
+| 1905 | packages/package/test/watch/tsconfig.json |
+| 1906 | packages/package/tsconfig.json |
+| 1907 | playgrounds/basic/jsconfig.json |
+| 1908 | playgrounds/basic/package.json |
+| 1909 | playgrounds/basic/src/app.d.ts |
+| 1910 | playgrounds/basic/src/app.html |
+| 1911 | playgrounds/basic/src/lib/index.js |
+| 1912 | playgrounds/basic/src/routes/+page.svelte |
+| 1913 | playgrounds/basic/svelte.config.js |
+| 1914 | playgrounds/basic/vite.config.js |
+| 1915 | playgrounds/README.md |
+| 1916 | pnpm-lock.yaml |
+| 1917 | pnpm-workspace.yaml |
+| 1918 | README.md |
+| 1919 | renovate.json |
+| 1920 | scripts/check-dependencies.js |
+| 1921 | script.sh |
+| 1922 | scripts/sync-all.js |
+| 1923 | sites/kit.svelte.dev/package.json |
+| 1924 | sites/kit.svelte.dev/README.md |
+| 1925 | sites/kit.svelte.dev/scripts/tsconfig.json |
+| 1926 | sites/kit.svelte.dev/scripts/types/index.js |
+| 1927 | sites/kit.svelte.dev/src/app.d.ts |
+| 1928 | sites/kit.svelte.dev/src/app.html |
+| 1929 | sites/kit.svelte.dev/src/hooks.server.js |
+| 1930 | sites/kit.svelte.dev/src/lib/server/docs/index.js |
+| 1931 | sites/kit.svelte.dev/src/lib/server/docs/types.d.ts |
+| 1932 | sites/kit.svelte.dev/src/lib/server/renderer.js |
+| 1933 | sites/kit.svelte.dev/src/routes/content.json/content.server.js |
+| 1934 | sites/kit.svelte.dev/src/routes/content.json/+server.js |
+| 1935 | sites/kit.svelte.dev/src/routes/docs/+layout.server.js |
+| 1936 | sites/kit.svelte.dev/src/routes/docs/+layout.svelte |
+| 1937 | sites/kit.svelte.dev/src/routes/docs/+page.js |
+| 1938 | sites/kit.svelte.dev/src/routes/docs/[slug]/+page.server.js |
+| 1939 | sites/kit.svelte.dev/src/routes/docs/[slug]/+page.svelte |
+| 1940 | sites/kit.svelte.dev/src/routes/edge.svg/countries.json |
+| 1941 | sites/kit.svelte.dev/src/routes/edge.svg/land-110m.json |
+| 1942 | sites/kit.svelte.dev/src/routes/edge.svg/+server.js |
+| 1943 | sites/kit.svelte.dev/src/routes/+error.svelte |
+| 1944 | sites/kit.svelte.dev/src/routes/faq/+page.js |
+| 1945 | sites/kit.svelte.dev/src/routes/home/common.css |
+| 1946 | sites/kit.svelte.dev/src/routes/home/Deployment.svelte |
+| 1947 | sites/kit.svelte.dev/src/routes/home/Features.svelte |
+| 1948 | sites/kit.svelte.dev/src/routes/home/Hero.svelte |
+| 1949 | sites/kit.svelte.dev/src/routes/home/Intro.svelte |
+| 1950 | sites/kit.svelte.dev/src/routes/home/Showcase.svelte |
+| 1951 | sites/kit.svelte.dev/src/routes/home/subtitles.vtt |
+| 1952 | sites/kit.svelte.dev/src/routes/home/svelte-kit-logotype.svg.svelte |
+| 1953 | sites/kit.svelte.dev/src/routes/home/Svelte.svelte |
+| 1954 | sites/kit.svelte.dev/src/routes/home/Video.svelte |
+| 1955 | sites/kit.svelte.dev/src/routes/+layout.server.js |
+| 1956 | sites/kit.svelte.dev/src/routes/+layout.svelte |
+| 1957 | sites/kit.svelte.dev/src/routes/nav.json/+server.js |
+| 1958 | sites/kit.svelte.dev/src/routes/+page.js |
+| 1959 | sites/kit.svelte.dev/src/routes/+page.svelte |
+| 1960 | sites/kit.svelte.dev/src/routes/schema.json |
+| 1961 | sites/kit.svelte.dev/src/routes/search/+page.js |
+| 1962 | sites/kit.svelte.dev/src/routes/search/+page.server.js |
+| 1963 | sites/kit.svelte.dev/src/routes/search/+page.svelte |
+| 1964 | sites/kit.svelte.dev/static/manifest.json |
+| 1965 | sites/kit.svelte.dev/static/opensearch.xml |
+| 1966 | sites/kit.svelte.dev/static/robots.txt |
+| 1967 | sites/kit.svelte.dev/svelte.config.js |
+| 1968 | sites/kit.svelte.dev/tsconfig.json |
+| 1969 | sites/kit.svelte.dev/vercel.json |
+| 1970 | sites/kit.svelte.dev/vite.config.js |
 
 ####### CONTRIBUTING.md #######
 
@@ -120370,6 +120380,58 @@ for (const pkg of packages) {
 const duplicates = new Map([...deps].filter(([, versions]) => versions.size > 1));
 console.log(duplicates);
 
+```
+
+
+####### script.sh #######
+
+```
+
+#!/bin/bash
+
+# Check if a Readme.md or README.md file exists and use the existing file name
+if [[ -f "Readme.md" ]]; then
+    readme_file="Readme.md"
+elif [[ -f "README.md" ]]; then
+    readme_file="README.md"
+else
+    readme_file="README.md"
+fi
+
+# Append the output of the tree command to the end of the readme file
+echo -e "\n" >> $readme_file
+echo -e "\n########## Project Structure ##########\n" >> $readme_file
+echo -e '```\n' >> $readme_file
+tree >> $readme_file
+echo -e '\n```\n' >> $readme_file
+
+# Append the output of the find command to the end of the readme file
+echo -e "\n########## File List ##########\n" >> $readme_file
+file_list=$(find . -not -path '*/\.*' -type f ! -name "*.jpg" ! -name "*.jpeg" ! -name "*.png" ! -name "*.gif" ! -name "*.bmp" ! -name "*.tif" ! -name "*.tiff" ! -name "*.ico" ! -name "*.svg" ! -name "*.webp" ! -name "*.raw" ! -name "*.indd" ! -name "*.ai" ! -name "*.eps" ! -name "*.pdf" ! -name "*.mp4" ! -name "*.mkv" ! -name "*.flv" ! -name "*.avi" ! -name "*.mov" ! -name "*.wmv" ! -name "*.rm" ! -name "*.rmvb" ! -name "*.m4v" ! -name "*.mpg" ! -name "*.mpeg" ! -name "*.vob" ! -name "*.3gp" ! -name "*.mp3" ! -name "*.wav" ! -name "*.ogg" ! -name "*.flac" ! -name "*.aac" ! -name "*.wma" ! -name "*.m4a" ! -name "*.amr" ! -name "*.aiff" ! -name "*.caf" ! -name "*.midi" ! -name "*.mid" ! -name "*.ttf" ! -name "*.otf" ! -name "*.woff" ! -name "*.woff2" ! -name "*.eot" ! -name "*.pfa" ! -name "*.pfb" ! -name "*.sfd" ! -name "*.fon" ! -name "*.dfont" ! -name "*.pt3" ! -name "*.cff" ! -name "*.std" ! -name "*.pro" ! -name "*.gai" -print | sed 's|./||' | sort)
+
+# Generate a table with the file list
+echo "| Index | File name |" >> $readme_file
+echo "|-------|-----------|" >> $readme_file
+index=1
+while IFS= read -r file
+do
+    echo "| $index | $file |" >> $readme_file
+    ((index++))
+done <<< "$file_list"
+
+# Loop through each file and append its content to the readme file
+while IFS= read -r file
+do
+    echo "Processing $file"
+    echo -e "\n####### $file #######\n" >> $readme_file
+    if [[ $file == *.md || $file == *.txt ]]; then
+        cat "$file" >> $readme_file
+    else
+        echo -e '```\n' >> $readme_file
+        cat "$file" >> $readme_file
+        echo -e '\n```\n' >> $readme_file
+    fi
+done <<< "$file_list"
 ```
 
 
