@@ -2001,834 +2001,836 @@ Bump the dependency (for example Svelte) in both the root and the `content/commo
 
 ########## File List ##########
 
-1     	content/tutorial/01-svelte/01-introduction/01-welcome-to-svelte/app-a/src/lib/App.svelte
-2     	content/tutorial/01-svelte/01-introduction/01-welcome-to-svelte/README.md
-3     	content/tutorial/01-svelte/01-introduction/02-your-first-component/app-a/src/lib/App.svelte
-4     	content/tutorial/01-svelte/01-introduction/02-your-first-component/app-b/src/lib/App.svelte
-5     	content/tutorial/01-svelte/01-introduction/02-your-first-component/README.md
-6     	content/tutorial/01-svelte/01-introduction/03-dynamic-attributes/app-a/src/lib/App.svelte
-7     	content/tutorial/01-svelte/01-introduction/03-dynamic-attributes/app-b/src/lib/App.svelte
-8     	content/tutorial/01-svelte/01-introduction/03-dynamic-attributes/README.md
-9     	content/tutorial/01-svelte/01-introduction/04-styling/app-a/src/lib/App.svelte
-10    	content/tutorial/01-svelte/01-introduction/04-styling/app-b/src/lib/App.svelte
-11    	content/tutorial/01-svelte/01-introduction/04-styling/README.md
-12    	content/tutorial/01-svelte/01-introduction/05-nested-components/app-a/src/lib/App.svelte
-13    	content/tutorial/01-svelte/01-introduction/05-nested-components/app-a/src/lib/Nested.svelte
-14    	content/tutorial/01-svelte/01-introduction/05-nested-components/app-b/src/lib/App.svelte
-15    	content/tutorial/01-svelte/01-introduction/05-nested-components/README.md
-16    	content/tutorial/01-svelte/01-introduction/06-html-tags/app-a/src/lib/App.svelte
-17    	content/tutorial/01-svelte/01-introduction/06-html-tags/app-b/src/lib/App.svelte
-18    	content/tutorial/01-svelte/01-introduction/06-html-tags/README.md
-19    	content/tutorial/01-svelte/01-introduction/meta.json
-20    	content/tutorial/01-svelte/02-reactivity/01-reactive-assignments/app-a/src/lib/App.svelte
-21    	content/tutorial/01-svelte/02-reactivity/01-reactive-assignments/app-b/src/lib/App.svelte
-22    	content/tutorial/01-svelte/02-reactivity/01-reactive-assignments/README.md
-23    	content/tutorial/01-svelte/02-reactivity/02-reactive-declarations/app-b/src/lib/App.svelte
-24    	content/tutorial/01-svelte/02-reactivity/02-reactive-declarations/README.md
-25    	content/tutorial/01-svelte/02-reactivity/03-reactive-statements/app-a/src/lib/App.svelte
-26    	content/tutorial/01-svelte/02-reactivity/03-reactive-statements/app-b/src/lib/App.svelte
-27    	content/tutorial/01-svelte/02-reactivity/03-reactive-statements/README.md
-28    	content/tutorial/01-svelte/02-reactivity/04-updating-arrays-and-objects/app-a/src/lib/App.svelte
-29    	content/tutorial/01-svelte/02-reactivity/04-updating-arrays-and-objects/app-b/src/lib/App.svelte
-30    	content/tutorial/01-svelte/02-reactivity/04-updating-arrays-and-objects/README.md
-31    	content/tutorial/01-svelte/02-reactivity/meta.json
-32    	content/tutorial/01-svelte/03-props/01-declaring-props/app-a/src/lib/App.svelte
-33    	content/tutorial/01-svelte/03-props/01-declaring-props/app-a/src/lib/Nested.svelte
-34    	content/tutorial/01-svelte/03-props/01-declaring-props/app-b/src/lib/Nested.svelte
-35    	content/tutorial/01-svelte/03-props/01-declaring-props/README.md
-36    	content/tutorial/01-svelte/03-props/02-default-values/app-a/src/lib/App.svelte
-37    	content/tutorial/01-svelte/03-props/02-default-values/app-a/src/lib/Nested.svelte
-38    	content/tutorial/01-svelte/03-props/02-default-values/app-b/src/lib/App.svelte
-39    	content/tutorial/01-svelte/03-props/02-default-values/app-b/src/lib/Nested.svelte
-40    	content/tutorial/01-svelte/03-props/02-default-values/README.md
-41    	content/tutorial/01-svelte/03-props/03-spread-props/app-a/src/lib/App.svelte
-42    	content/tutorial/01-svelte/03-props/03-spread-props/app-a/src/lib/PackageInfo.svelte
-43    	content/tutorial/01-svelte/03-props/03-spread-props/app-b/src/lib/App.svelte
-44    	content/tutorial/01-svelte/03-props/03-spread-props/README.md
-45    	content/tutorial/01-svelte/03-props/meta.json
-46    	content/tutorial/01-svelte/04-logic/01-if-blocks/app-a/src/lib/App.svelte
-47    	content/tutorial/01-svelte/04-logic/01-if-blocks/app-b/src/lib/App.svelte
-48    	content/tutorial/01-svelte/04-logic/01-if-blocks/README.md
-49    	content/tutorial/01-svelte/04-logic/02-else-blocks/app-b/src/lib/App.svelte
-50    	content/tutorial/01-svelte/04-logic/02-else-blocks/README.md
-51    	content/tutorial/01-svelte/04-logic/03-else-if-blocks/app-b/src/lib/App.svelte
-52    	content/tutorial/01-svelte/04-logic/03-else-if-blocks/README.md
-53    	content/tutorial/01-svelte/04-logic/04-each-blocks/app-a/src/lib/App.svelte
-54    	content/tutorial/01-svelte/04-logic/04-each-blocks/app-b/src/lib/App.svelte
-55    	content/tutorial/01-svelte/04-logic/04-each-blocks/README.md
-56    	content/tutorial/01-svelte/04-logic/05-keyed-each-blocks/app-a/src/lib/App.svelte
-57    	content/tutorial/01-svelte/04-logic/05-keyed-each-blocks/app-a/src/lib/Thing.svelte
-58    	content/tutorial/01-svelte/04-logic/05-keyed-each-blocks/app-b/src/lib/App.svelte
-59    	content/tutorial/01-svelte/04-logic/05-keyed-each-blocks/README.md
-60    	content/tutorial/01-svelte/04-logic/06-await-blocks/app-a/src/lib/App.svelte
-61    	content/tutorial/01-svelte/04-logic/06-await-blocks/app-a/src/lib/utils.js
-62    	content/tutorial/01-svelte/04-logic/06-await-blocks/app-a/src/routes/random-number/+server.js
-63    	content/tutorial/01-svelte/04-logic/06-await-blocks/app-b/src/lib/App.svelte
-64    	content/tutorial/01-svelte/04-logic/06-await-blocks/README.md
-65    	content/tutorial/01-svelte/04-logic/meta.json
-66    	content/tutorial/01-svelte/05-events/01-dom-events/app-a/src/lib/App.svelte
-67    	content/tutorial/01-svelte/05-events/01-dom-events/app-b/src/lib/App.svelte
-68    	content/tutorial/01-svelte/05-events/01-dom-events/README.md
-69    	content/tutorial/01-svelte/05-events/02-inline-handlers/app-b/src/lib/App.svelte
-70    	content/tutorial/01-svelte/05-events/02-inline-handlers/README.md
-71    	content/tutorial/01-svelte/05-events/03-event-modifiers/app-a/src/lib/App.svelte
-72    	content/tutorial/01-svelte/05-events/03-event-modifiers/app-b/src/lib/App.svelte
-73    	content/tutorial/01-svelte/05-events/03-event-modifiers/README.md
-74    	content/tutorial/01-svelte/05-events/04-component-events/app-a/src/lib/App.svelte
-75    	content/tutorial/01-svelte/05-events/04-component-events/app-a/src/lib/Inner.svelte
-76    	content/tutorial/01-svelte/05-events/04-component-events/app-b/src/lib/App.svelte
-77    	content/tutorial/01-svelte/05-events/04-component-events/app-b/src/lib/Inner.svelte
-78    	content/tutorial/01-svelte/05-events/04-component-events/README.md
-79    	content/tutorial/01-svelte/05-events/05-event-forwarding/app-a/src/lib/App.svelte
-80    	content/tutorial/01-svelte/05-events/05-event-forwarding/app-a/src/lib/Inner.svelte
-81    	content/tutorial/01-svelte/05-events/05-event-forwarding/app-a/src/lib/Outer.svelte
-82    	content/tutorial/01-svelte/05-events/05-event-forwarding/app-b/src/lib/Outer.svelte
-83    	content/tutorial/01-svelte/05-events/05-event-forwarding/README.md
-84    	content/tutorial/01-svelte/05-events/06-dom-event-forwarding/app-a/src/lib/App.svelte
-85    	content/tutorial/01-svelte/05-events/06-dom-event-forwarding/app-a/src/lib/BigRedButton.svelte
-86    	content/tutorial/01-svelte/05-events/06-dom-event-forwarding/app-b/src/lib/BigRedButton.svelte
-87    	content/tutorial/01-svelte/05-events/06-dom-event-forwarding/README.md
-88    	content/tutorial/01-svelte/05-events/meta.json
-89    	content/tutorial/01-svelte/06-bindings/01-text-inputs/app-a/src/lib/App.svelte
-90    	content/tutorial/01-svelte/06-bindings/01-text-inputs/app-b/src/lib/App.svelte
-91    	content/tutorial/01-svelte/06-bindings/01-text-inputs/README.md
-92    	content/tutorial/01-svelte/06-bindings/02-numeric-inputs/app-a/src/lib/App.svelte
-93    	content/tutorial/01-svelte/06-bindings/02-numeric-inputs/app-b/src/lib/App.svelte
-94    	content/tutorial/01-svelte/06-bindings/02-numeric-inputs/README.md
-95    	content/tutorial/01-svelte/06-bindings/03-checkbox-inputs/app-a/src/lib/App.svelte
-96    	content/tutorial/01-svelte/06-bindings/03-checkbox-inputs/app-b/src/lib/App.svelte
-97    	content/tutorial/01-svelte/06-bindings/03-checkbox-inputs/README.md
-98    	content/tutorial/01-svelte/06-bindings/04-select-bindings/app-a/src/lib/App.svelte
-99    	content/tutorial/01-svelte/06-bindings/04-select-bindings/app-b/src/lib/App.svelte
-100   	content/tutorial/01-svelte/06-bindings/04-select-bindings/README.md
-101   	content/tutorial/01-svelte/06-bindings/05-group-inputs/app-a/src/lib/App.svelte
-102   	content/tutorial/01-svelte/06-bindings/05-group-inputs/app-b/src/lib/App.svelte
-103   	content/tutorial/01-svelte/06-bindings/05-group-inputs/README.md
-104   	content/tutorial/01-svelte/06-bindings/06-multiple-select-bindings/app-b/src/lib/App.svelte
-105   	content/tutorial/01-svelte/06-bindings/06-multiple-select-bindings/README.md
-106   	content/tutorial/01-svelte/06-bindings/07-textarea-inputs/app-a/node_modules/marked/bin/marked.js
-107   	content/tutorial/01-svelte/06-bindings/07-textarea-inputs/app-a/node_modules/marked/lib/marked.cjs
-108   	content/tutorial/01-svelte/06-bindings/07-textarea-inputs/app-a/node_modules/marked/lib/marked.esm.js
-109   	content/tutorial/01-svelte/06-bindings/07-textarea-inputs/app-a/node_modules/marked/lib/marked.umd.js
-110   	content/tutorial/01-svelte/06-bindings/07-textarea-inputs/app-a/node_modules/marked/LICENSE.md
-111   	content/tutorial/01-svelte/06-bindings/07-textarea-inputs/app-a/node_modules/marked/man/marked.1
-112   	content/tutorial/01-svelte/06-bindings/07-textarea-inputs/app-a/node_modules/marked/man/marked.1.txt
-113   	content/tutorial/01-svelte/06-bindings/07-textarea-inputs/app-a/node_modules/marked/marked.min.js
-114   	content/tutorial/01-svelte/06-bindings/07-textarea-inputs/app-a/node_modules/marked/package.json
-115   	content/tutorial/01-svelte/06-bindings/07-textarea-inputs/app-a/node_modules/marked/README.md
-116   	content/tutorial/01-svelte/06-bindings/07-textarea-inputs/app-a/node_modules/marked/src/defaults.js
-117   	content/tutorial/01-svelte/06-bindings/07-textarea-inputs/app-a/node_modules/marked/src/helpers.js
-118   	content/tutorial/01-svelte/06-bindings/07-textarea-inputs/app-a/node_modules/marked/src/Lexer.js
-119   	content/tutorial/01-svelte/06-bindings/07-textarea-inputs/app-a/node_modules/marked/src/marked.js
-120   	content/tutorial/01-svelte/06-bindings/07-textarea-inputs/app-a/node_modules/marked/src/Parser.js
-121   	content/tutorial/01-svelte/06-bindings/07-textarea-inputs/app-a/node_modules/marked/src/Renderer.js
-122   	content/tutorial/01-svelte/06-bindings/07-textarea-inputs/app-a/node_modules/marked/src/rules.js
-123   	content/tutorial/01-svelte/06-bindings/07-textarea-inputs/app-a/node_modules/marked/src/Slugger.js
-124   	content/tutorial/01-svelte/06-bindings/07-textarea-inputs/app-a/node_modules/marked/src/TextRenderer.js
-125   	content/tutorial/01-svelte/06-bindings/07-textarea-inputs/app-a/node_modules/marked/src/Tokenizer.js
-126   	content/tutorial/01-svelte/06-bindings/07-textarea-inputs/app-a/package.json
-127   	content/tutorial/01-svelte/06-bindings/07-textarea-inputs/app-a/src/lib/App.svelte
-128   	content/tutorial/01-svelte/06-bindings/07-textarea-inputs/app-b/src/lib/App.svelte
-129   	content/tutorial/01-svelte/06-bindings/07-textarea-inputs/README.md
-130   	content/tutorial/01-svelte/06-bindings/meta.json
-131   	content/tutorial/01-svelte/07-lifecycle/01-onmount/app-a/src/lib/App.svelte
-132   	content/tutorial/01-svelte/07-lifecycle/01-onmount/app-a/src/lib/gradient.js
-133   	content/tutorial/01-svelte/07-lifecycle/01-onmount/app-b/src/lib/App.svelte
-134   	content/tutorial/01-svelte/07-lifecycle/01-onmount/README.md
-135   	content/tutorial/01-svelte/07-lifecycle/02-update/app-a/node_modules/elizabot/elizabot.js
-136   	content/tutorial/01-svelte/07-lifecycle/02-update/app-a/node_modules/elizabot/elizadata.js
-137   	content/tutorial/01-svelte/07-lifecycle/02-update/app-a/node_modules/elizabot/package.json
-138   	content/tutorial/01-svelte/07-lifecycle/02-update/app-a/node_modules/elizabot/README.md
-139   	content/tutorial/01-svelte/07-lifecycle/02-update/app-a/package.json
-140   	content/tutorial/01-svelte/07-lifecycle/02-update/app-a/package-lock.json
-141   	content/tutorial/01-svelte/07-lifecycle/02-update/app-a/src/lib/App.svelte
-142   	content/tutorial/01-svelte/07-lifecycle/02-update/app-b/src/lib/App.svelte
-143   	content/tutorial/01-svelte/07-lifecycle/02-update/README.md
-144   	content/tutorial/01-svelte/07-lifecycle/03-tick/app-a/src/lib/App.svelte
-145   	content/tutorial/01-svelte/07-lifecycle/03-tick/app-b/src/lib/App.svelte
-146   	content/tutorial/01-svelte/07-lifecycle/03-tick/README.md
-147   	content/tutorial/01-svelte/07-lifecycle/meta.json
-148   	content/tutorial/01-svelte/08-stores/01-writable-stores/app-a/src/lib/App.svelte
-149   	content/tutorial/01-svelte/08-stores/01-writable-stores/app-a/src/lib/Decrementer.svelte
-150   	content/tutorial/01-svelte/08-stores/01-writable-stores/app-a/src/lib/Incrementer.svelte
-151   	content/tutorial/01-svelte/08-stores/01-writable-stores/app-a/src/lib/Resetter.svelte
-152   	content/tutorial/01-svelte/08-stores/01-writable-stores/app-a/src/lib/stores.js
-153   	content/tutorial/01-svelte/08-stores/01-writable-stores/app-b/src/lib/Decrementer.svelte
-154   	content/tutorial/01-svelte/08-stores/01-writable-stores/app-b/src/lib/Incrementer.svelte
-155   	content/tutorial/01-svelte/08-stores/01-writable-stores/app-b/src/lib/Resetter.svelte
-156   	content/tutorial/01-svelte/08-stores/01-writable-stores/README.md
-157   	content/tutorial/01-svelte/08-stores/02-auto-subscriptions/app-b/src/lib/App.svelte
-158   	content/tutorial/01-svelte/08-stores/02-auto-subscriptions/README.md
-159   	content/tutorial/01-svelte/08-stores/03-readable-stores/app-a/src/lib/App.svelte
-160   	content/tutorial/01-svelte/08-stores/03-readable-stores/app-a/src/lib/stores.js
-161   	content/tutorial/01-svelte/08-stores/03-readable-stores/app-b/src/lib/stores.js
-162   	content/tutorial/01-svelte/08-stores/03-readable-stores/README.md
-163   	content/tutorial/01-svelte/08-stores/04-derived-stores/app-a/src/lib/App.svelte
-164   	content/tutorial/01-svelte/08-stores/04-derived-stores/app-a/src/lib/stores.js
-165   	content/tutorial/01-svelte/08-stores/04-derived-stores/app-b/src/lib/stores.js
-166   	content/tutorial/01-svelte/08-stores/04-derived-stores/README.md
-167   	content/tutorial/01-svelte/08-stores/05-custom-stores/app-a/src/lib/App.svelte
-168   	content/tutorial/01-svelte/08-stores/05-custom-stores/app-a/src/lib/stores.js
-169   	content/tutorial/01-svelte/08-stores/05-custom-stores/app-b/src/lib/stores.js
-170   	content/tutorial/01-svelte/08-stores/05-custom-stores/README.md
-171   	content/tutorial/01-svelte/08-stores/06-store-bindings/app-a/src/lib/App.svelte
-172   	content/tutorial/01-svelte/08-stores/06-store-bindings/app-a/src/lib/stores.js
-173   	content/tutorial/01-svelte/08-stores/06-store-bindings/app-b/src/lib/App.svelte
-174   	content/tutorial/01-svelte/08-stores/06-store-bindings/README.md
-175   	content/tutorial/01-svelte/08-stores/meta.json
-176   	content/tutorial/01-svelte/common/src/routes/+error.svelte
-177   	content/tutorial/01-svelte/common/src/routes/+layout.js
-178   	content/tutorial/01-svelte/common/src/routes/+page.svelte
-179   	content/tutorial/01-svelte/meta.json
-180   	content/tutorial/02-advanced-svelte/01-motion/01-tweens/app-a/src/lib/App.svelte
-181   	content/tutorial/02-advanced-svelte/01-motion/01-tweens/app-b/src/lib/App.svelte
-182   	content/tutorial/02-advanced-svelte/01-motion/01-tweens/README.md
-183   	content/tutorial/02-advanced-svelte/01-motion/02-springs/app-a/src/lib/App.svelte
-184   	content/tutorial/02-advanced-svelte/01-motion/02-springs/app-b/src/lib/App.svelte
-185   	content/tutorial/02-advanced-svelte/01-motion/02-springs/README.md
-186   	content/tutorial/02-advanced-svelte/01-motion/meta.json
-187   	content/tutorial/02-advanced-svelte/02-transitions/01-transition/app-a/src/lib/App.svelte
-188   	content/tutorial/02-advanced-svelte/02-transitions/01-transition/app-b/src/lib/App.svelte
-189   	content/tutorial/02-advanced-svelte/02-transitions/01-transition/README.md
-190   	content/tutorial/02-advanced-svelte/02-transitions/02-adding-parameters-to-transitions/app-b/src/lib/App.svelte
-191   	content/tutorial/02-advanced-svelte/02-transitions/02-adding-parameters-to-transitions/README.md
-192   	content/tutorial/02-advanced-svelte/02-transitions/03-in-and-out/app-b/src/lib/App.svelte
-193   	content/tutorial/02-advanced-svelte/02-transitions/03-in-and-out/README.md
-194   	content/tutorial/02-advanced-svelte/02-transitions/04-custom-css-transitions/app-a/src/lib/App.svelte
-195   	content/tutorial/02-advanced-svelte/02-transitions/04-custom-css-transitions/app-b/src/lib/App.svelte
-196   	content/tutorial/02-advanced-svelte/02-transitions/04-custom-css-transitions/README.md
-197   	content/tutorial/02-advanced-svelte/02-transitions/05-custom-js-transitions/app-a/src/lib/App.svelte
-198   	content/tutorial/02-advanced-svelte/02-transitions/05-custom-js-transitions/app-b/src/lib/App.svelte
-199   	content/tutorial/02-advanced-svelte/02-transitions/05-custom-js-transitions/README.md
-200   	content/tutorial/02-advanced-svelte/02-transitions/06-transition-events/app-a/src/lib/App.svelte
-201   	content/tutorial/02-advanced-svelte/02-transitions/06-transition-events/app-b/src/lib/App.svelte
-202   	content/tutorial/02-advanced-svelte/02-transitions/06-transition-events/README.md
-203   	content/tutorial/02-advanced-svelte/02-transitions/07-global-transitions/app-a/src/lib/App.svelte
-204   	content/tutorial/02-advanced-svelte/02-transitions/07-global-transitions/app-b/src/lib/App.svelte
-205   	content/tutorial/02-advanced-svelte/02-transitions/07-global-transitions/README.md
-206   	content/tutorial/02-advanced-svelte/02-transitions/08-key-blocks/app-a/src/lib/App.svelte
-207   	content/tutorial/02-advanced-svelte/02-transitions/08-key-blocks/app-a/src/lib/loading-messages.js
-208   	content/tutorial/02-advanced-svelte/02-transitions/08-key-blocks/app-a/src/lib/transition.js
-209   	content/tutorial/02-advanced-svelte/02-transitions/08-key-blocks/app-b/src/lib/App.svelte
-210   	content/tutorial/02-advanced-svelte/02-transitions/08-key-blocks/README.md
-211   	content/tutorial/02-advanced-svelte/02-transitions/09-deferred-transitions/app-a/src/lib/App.svelte
-212   	content/tutorial/02-advanced-svelte/02-transitions/09-deferred-transitions/app-a/src/lib/TodoList.svelte
-213   	content/tutorial/02-advanced-svelte/02-transitions/09-deferred-transitions/app-a/src/lib/todos.js
-214   	content/tutorial/02-advanced-svelte/02-transitions/09-deferred-transitions/app-a/src/lib/transition.js
-215   	content/tutorial/02-advanced-svelte/02-transitions/09-deferred-transitions/app-b/src/lib/TodoList.svelte
-216   	content/tutorial/02-advanced-svelte/02-transitions/09-deferred-transitions/README.md
-217   	content/tutorial/02-advanced-svelte/02-transitions/meta.json
-218   	content/tutorial/02-advanced-svelte/03-animations/01-animate/app-b/src/lib/TodoList.svelte
-219   	content/tutorial/02-advanced-svelte/03-animations/01-animate/README.md
-220   	content/tutorial/02-advanced-svelte/03-animations/meta.json
-221   	content/tutorial/02-advanced-svelte/04-actions/01-actions/app-a/src/lib/actions.js
-222   	content/tutorial/02-advanced-svelte/04-actions/01-actions/app-a/src/lib/App.svelte
-223   	content/tutorial/02-advanced-svelte/04-actions/01-actions/app-a/src/lib/Canvas.svelte
-224   	content/tutorial/02-advanced-svelte/04-actions/01-actions/app-b/src/lib/actions.js
-225   	content/tutorial/02-advanced-svelte/04-actions/01-actions/app-b/src/lib/App.svelte
-226   	content/tutorial/02-advanced-svelte/04-actions/01-actions/README.md
-227   	content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/index.d.ts
-228   	content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/createPopper.js
-229   	content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/dom-utils/contains.js
-230   	content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/dom-utils/getBoundingClientRect.js
-231   	content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/dom-utils/getClippingRect.js
-232   	content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/dom-utils/getCompositeRect.js
-233   	content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/dom-utils/getComputedStyle.js
-234   	content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/dom-utils/getDocumentElement.js
-235   	content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/dom-utils/getDocumentRect.js
-236   	content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/dom-utils/getHTMLElementScroll.js
-237   	content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/dom-utils/getLayoutRect.js
-238   	content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/dom-utils/getNodeName.js
-239   	content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/dom-utils/getNodeScroll.js
-240   	content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/dom-utils/getOffsetParent.js
-241   	content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/dom-utils/getParentNode.js
-242   	content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/dom-utils/getScrollParent.js
-243   	content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/dom-utils/getViewportRect.js
-244   	content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/dom-utils/getWindow.js
-245   	content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/dom-utils/getWindowScrollBarX.js
-246   	content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/dom-utils/getWindowScroll.js
-247   	content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/dom-utils/instanceOf.js
-248   	content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/dom-utils/isLayoutViewport.js
-249   	content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/dom-utils/isScrollParent.js
-250   	content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/dom-utils/isTableElement.js
-251   	content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/dom-utils/listScrollParents.js
-252   	content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/enums.js
-253   	content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/index.js
-254   	content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/modifiers/applyStyles.js
-255   	content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/modifiers/arrow.js
-256   	content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/modifiers/computeStyles.js
-257   	content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/modifiers/eventListeners.js
-258   	content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/modifiers/flip.js
-259   	content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/modifiers/hide.js
-260   	content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/modifiers/index.js
-261   	content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/modifiers/offset.js
-262   	content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/modifiers/popperOffsets.js
-263   	content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/modifiers/preventOverflow.js
-264   	content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/popper-base.js
-265   	content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/popper.js
-266   	content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/popper-lite.js
-267   	content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/types.js
-268   	content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/utils/computeAutoPlacement.js
-269   	content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/utils/computeOffsets.js
-270   	content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/utils/debounce.js
-271   	content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/utils/detectOverflow.js
-272   	content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/utils/expandToHashMap.js
-273   	content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/utils/format.js
-274   	content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/utils/getAltAxis.js
-275   	content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/utils/getAltLen.js
-276   	content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/utils/getBasePlacement.js
-277   	content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/utils/getFreshSideObject.js
-278   	content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/utils/getMainAxisFromPlacement.js
-279   	content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/utils/getOppositePlacement.js
-280   	content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/utils/getOppositeVariationPlacement.js
-281   	content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/utils/getVariation.js
-282   	content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/utils/math.js
-283   	content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/utils/mergeByName.js
-284   	content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/utils/mergePaddingObject.js
-285   	content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/utils/orderModifiers.js
-286   	content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/utils/rectToClientRect.js
-287   	content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/utils/uniqueBy.js
-288   	content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/utils/userAgent.js
-289   	content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/utils/validateModifiers.js
-290   	content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/utils/within.js
-291   	content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/LICENSE.md
-292   	content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/package.json
-293   	content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/README.md
-294   	content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/tippy.js/dist/tippy.css
-295   	content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/tippy.js/dist/tippy.esm.js
-296   	content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/tippy.js/dist/tippy.esm.js.map
-297   	content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/tippy.js/index.d.ts
-298   	content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/tippy.js/LICENSE
-299   	content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/tippy.js/package.json
-300   	content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/tippy.js/README.md
-301   	content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/tippy.js/themes/light-border.css
-302   	content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/tippy.js/themes/light.css
-303   	content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/tippy.js/themes/material.css
-304   	content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/tippy.js/themes/translucent.css
-305   	content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/package.json
-306   	content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/src/lib/App.svelte
-307   	content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-b/src/lib/App.svelte
-308   	content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/README.md
-309   	content/tutorial/02-advanced-svelte/04-actions/meta.json
-310   	content/tutorial/02-advanced-svelte/05-bindings/01-contenteditable-bindings/app-a/src/lib/App.svelte
-311   	content/tutorial/02-advanced-svelte/05-bindings/01-contenteditable-bindings/app-b/src/lib/App.svelte
-312   	content/tutorial/02-advanced-svelte/05-bindings/01-contenteditable-bindings/README.md
-313   	content/tutorial/02-advanced-svelte/05-bindings/02-each-block-bindings/app-a/src/lib/App.svelte
-314   	content/tutorial/02-advanced-svelte/05-bindings/02-each-block-bindings/app-b/src/lib/App.svelte
-315   	content/tutorial/02-advanced-svelte/05-bindings/02-each-block-bindings/README.md
-316   	content/tutorial/02-advanced-svelte/05-bindings/03-media-elements/app-a/src/lib/App.svelte
-317   	content/tutorial/02-advanced-svelte/05-bindings/03-media-elements/app-a/src/lib/AudioPlayer.svelte
-318   	content/tutorial/02-advanced-svelte/05-bindings/03-media-elements/app-a/src/lib/tracks.js
-319   	content/tutorial/02-advanced-svelte/05-bindings/03-media-elements/app-b/src/lib/AudioPlayer.svelte
-320   	content/tutorial/02-advanced-svelte/05-bindings/03-media-elements/README.md
-321   	content/tutorial/02-advanced-svelte/05-bindings/04-dimensions/app-a/src/lib/App.svelte
-322   	content/tutorial/02-advanced-svelte/05-bindings/04-dimensions/app-b/src/lib/App.svelte
-323   	content/tutorial/02-advanced-svelte/05-bindings/04-dimensions/README.md
-324   	content/tutorial/02-advanced-svelte/05-bindings/05-bind-this/app-a/src/lib/App.svelte
-325   	content/tutorial/02-advanced-svelte/05-bindings/05-bind-this/app-a/src/lib/gradient.js
-326   	content/tutorial/02-advanced-svelte/05-bindings/05-bind-this/app-b/src/lib/App.svelte
-327   	content/tutorial/02-advanced-svelte/05-bindings/05-bind-this/README.md
-328   	content/tutorial/02-advanced-svelte/05-bindings/06-component-bindings/app-a/src/lib/App.svelte
-329   	content/tutorial/02-advanced-svelte/05-bindings/06-component-bindings/app-a/src/lib/Keypad.svelte
-330   	content/tutorial/02-advanced-svelte/05-bindings/06-component-bindings/app-b/src/lib/App.svelte
-331   	content/tutorial/02-advanced-svelte/05-bindings/06-component-bindings/README.md
-332   	content/tutorial/02-advanced-svelte/05-bindings/07-component-this/app-a/src/lib/actions.js
-333   	content/tutorial/02-advanced-svelte/05-bindings/07-component-this/app-a/src/lib/App.svelte
-334   	content/tutorial/02-advanced-svelte/05-bindings/07-component-this/app-a/src/lib/Canvas.svelte
-335   	content/tutorial/02-advanced-svelte/05-bindings/07-component-this/app-b/src/lib/App.svelte
-336   	content/tutorial/02-advanced-svelte/05-bindings/07-component-this/app-b/src/lib/Canvas.svelte
-337   	content/tutorial/02-advanced-svelte/05-bindings/07-component-this/README.md
-338   	content/tutorial/02-advanced-svelte/05-bindings/meta.json
-339   	content/tutorial/02-advanced-svelte/06-classes-and-styles/01-classes/app-a/src/lib/App.svelte
-340   	content/tutorial/02-advanced-svelte/06-classes-and-styles/01-classes/app-b/src/lib/App.svelte
-341   	content/tutorial/02-advanced-svelte/06-classes-and-styles/01-classes/README.md
-342   	content/tutorial/02-advanced-svelte/06-classes-and-styles/02-class-shorthand/app-b/src/lib/App.svelte
-343   	content/tutorial/02-advanced-svelte/06-classes-and-styles/02-class-shorthand/README.md
-344   	content/tutorial/02-advanced-svelte/06-classes-and-styles/03-styles/app-b/src/lib/App.svelte
-345   	content/tutorial/02-advanced-svelte/06-classes-and-styles/03-styles/README.md
-346   	content/tutorial/02-advanced-svelte/06-classes-and-styles/04-component-styles/app-a/src/lib/App.svelte
-347   	content/tutorial/02-advanced-svelte/06-classes-and-styles/04-component-styles/app-a/src/lib/Box.svelte
-348   	content/tutorial/02-advanced-svelte/06-classes-and-styles/04-component-styles/app-b/src/lib/App.svelte
-349   	content/tutorial/02-advanced-svelte/06-classes-and-styles/04-component-styles/app-b/src/lib/Box.svelte
-350   	content/tutorial/02-advanced-svelte/06-classes-and-styles/04-component-styles/README.md
-351   	content/tutorial/02-advanced-svelte/06-classes-and-styles/meta.json
-352   	content/tutorial/02-advanced-svelte/07-composition/01-slots/app-a/src/lib/App.svelte
-353   	content/tutorial/02-advanced-svelte/07-composition/01-slots/app-a/src/lib/Card.svelte
-354   	content/tutorial/02-advanced-svelte/07-composition/01-slots/app-b/src/lib/App.svelte
-355   	content/tutorial/02-advanced-svelte/07-composition/01-slots/app-b/src/lib/Card.svelte
-356   	content/tutorial/02-advanced-svelte/07-composition/01-slots/README.md
-357   	content/tutorial/02-advanced-svelte/07-composition/02-named-slots/app-a/src/lib/App.svelte
-358   	content/tutorial/02-advanced-svelte/07-composition/02-named-slots/app-a/src/lib/Card.svelte
-359   	content/tutorial/02-advanced-svelte/07-composition/02-named-slots/app-b/src/lib/App.svelte
-360   	content/tutorial/02-advanced-svelte/07-composition/02-named-slots/app-b/src/lib/Card.svelte
-361   	content/tutorial/02-advanced-svelte/07-composition/02-named-slots/README.md
-362   	content/tutorial/02-advanced-svelte/07-composition/03-slot-fallbacks/app-a/src/lib/App.svelte
-363   	content/tutorial/02-advanced-svelte/07-composition/03-slot-fallbacks/app-a/src/lib/Card.svelte
-364   	content/tutorial/02-advanced-svelte/07-composition/03-slot-fallbacks/app-b/src/lib/Card.svelte
-365   	content/tutorial/02-advanced-svelte/07-composition/03-slot-fallbacks/README.md
-366   	content/tutorial/02-advanced-svelte/07-composition/04-slot-props/app-a/src/lib/App.svelte
-367   	content/tutorial/02-advanced-svelte/07-composition/04-slot-props/app-a/src/lib/colors.js
-368   	content/tutorial/02-advanced-svelte/07-composition/04-slot-props/app-a/src/lib/FilterableList.svelte
-369   	content/tutorial/02-advanced-svelte/07-composition/04-slot-props/app-b/src/lib/App.svelte
-370   	content/tutorial/02-advanced-svelte/07-composition/04-slot-props/app-b/src/lib/FilterableList.svelte
-371   	content/tutorial/02-advanced-svelte/07-composition/04-slot-props/README.md
-372   	content/tutorial/02-advanced-svelte/07-composition/05-optional-slots/app-b/src/lib/App.svelte
-373   	content/tutorial/02-advanced-svelte/07-composition/05-optional-slots/app-b/src/lib/FilterableList.svelte
-374   	content/tutorial/02-advanced-svelte/07-composition/05-optional-slots/README.md
-375   	content/tutorial/02-advanced-svelte/07-composition/meta.json
-376   	content/tutorial/02-advanced-svelte/08-context/01-context-api/app-a/src/lib/App.svelte
-377   	content/tutorial/02-advanced-svelte/08-context/01-context-api/app-a/src/lib/Canvas.svelte
-378   	content/tutorial/02-advanced-svelte/08-context/01-context-api/app-a/src/lib/Square.svelte
-379   	content/tutorial/02-advanced-svelte/08-context/01-context-api/app-b/src/lib/App.svelte
-380   	content/tutorial/02-advanced-svelte/08-context/01-context-api/app-b/src/lib/Canvas.svelte
-381   	content/tutorial/02-advanced-svelte/08-context/01-context-api/app-b/src/lib/Square.svelte
-382   	content/tutorial/02-advanced-svelte/08-context/01-context-api/README.md
-383   	content/tutorial/02-advanced-svelte/08-context/meta.json
-384   	content/tutorial/02-advanced-svelte/09-special-elements/01-svelte-self/app-a/src/lib/App.svelte
-385   	content/tutorial/02-advanced-svelte/09-special-elements/01-svelte-self/app-a/src/lib/data.js
-386   	content/tutorial/02-advanced-svelte/09-special-elements/01-svelte-self/app-a/src/lib/File.svelte
-387   	content/tutorial/02-advanced-svelte/09-special-elements/01-svelte-self/app-a/src/lib/Folder.svelte
-388   	content/tutorial/02-advanced-svelte/09-special-elements/01-svelte-self/app-b/src/lib/Folder.svelte
-389   	content/tutorial/02-advanced-svelte/09-special-elements/01-svelte-self/README.md
-390   	content/tutorial/02-advanced-svelte/09-special-elements/02-svelte-component/app-a/src/lib/App.svelte
-391   	content/tutorial/02-advanced-svelte/09-special-elements/02-svelte-component/app-a/src/lib/BlueThing.svelte
-392   	content/tutorial/02-advanced-svelte/09-special-elements/02-svelte-component/app-a/src/lib/GreenThing.svelte
-393   	content/tutorial/02-advanced-svelte/09-special-elements/02-svelte-component/app-a/src/lib/RedThing.svelte
-394   	content/tutorial/02-advanced-svelte/09-special-elements/02-svelte-component/app-b/src/lib/App.svelte
-395   	content/tutorial/02-advanced-svelte/09-special-elements/02-svelte-component/README.md
-396   	content/tutorial/02-advanced-svelte/09-special-elements/03-svelte-element/app-a/src/lib/App.svelte
-397   	content/tutorial/02-advanced-svelte/09-special-elements/03-svelte-element/app-b/src/lib/App.svelte
-398   	content/tutorial/02-advanced-svelte/09-special-elements/03-svelte-element/README.md
-399   	content/tutorial/02-advanced-svelte/09-special-elements/04-svelte-window/app-a/src/lib/App.svelte
-400   	content/tutorial/02-advanced-svelte/09-special-elements/04-svelte-window/app-b/src/lib/App.svelte
-401   	content/tutorial/02-advanced-svelte/09-special-elements/04-svelte-window/README.md
-402   	content/tutorial/02-advanced-svelte/09-special-elements/05-svelte-window-bindings/app-a/src/lib/App.svelte
-403   	content/tutorial/02-advanced-svelte/09-special-elements/05-svelte-window-bindings/app-b/src/lib/App.svelte
-404   	content/tutorial/02-advanced-svelte/09-special-elements/05-svelte-window-bindings/README.md
-405   	content/tutorial/02-advanced-svelte/09-special-elements/06-svelte-body/app-a/src/lib/App.svelte
-406   	content/tutorial/02-advanced-svelte/09-special-elements/06-svelte-body/app-b/src/lib/App.svelte
-407   	content/tutorial/02-advanced-svelte/09-special-elements/06-svelte-body/README.md
-408   	content/tutorial/02-advanced-svelte/09-special-elements/07-svelte-document/app-a/src/lib/App.svelte
-409   	content/tutorial/02-advanced-svelte/09-special-elements/07-svelte-document/app-b/src/lib/App.svelte
-410   	content/tutorial/02-advanced-svelte/09-special-elements/07-svelte-document/README.md
-411   	content/tutorial/02-advanced-svelte/09-special-elements/08-svelte-head/app-a/src/lib/App.svelte
-412   	content/tutorial/02-advanced-svelte/09-special-elements/08-svelte-head/app-a/static/stylesheets/halloween.css
-413   	content/tutorial/02-advanced-svelte/09-special-elements/08-svelte-head/app-a/static/stylesheets/margaritaville.css
-414   	content/tutorial/02-advanced-svelte/09-special-elements/08-svelte-head/app-a/static/stylesheets/retrowave.css
-415   	content/tutorial/02-advanced-svelte/09-special-elements/08-svelte-head/app-a/static/stylesheets/spaaaaace.css
-416   	content/tutorial/02-advanced-svelte/09-special-elements/08-svelte-head/app-b/src/lib/App.svelte
-417   	content/tutorial/02-advanced-svelte/09-special-elements/08-svelte-head/README.md
-418   	content/tutorial/02-advanced-svelte/09-special-elements/09-svelte-options/app-a/src/lib/App.svelte
-419   	content/tutorial/02-advanced-svelte/09-special-elements/09-svelte-options/app-a/src/lib/flash.js
-420   	content/tutorial/02-advanced-svelte/09-special-elements/09-svelte-options/app-a/src/lib/Todo.svelte
-421   	content/tutorial/02-advanced-svelte/09-special-elements/09-svelte-options/app-b/src/lib/Todo.svelte
-422   	content/tutorial/02-advanced-svelte/09-special-elements/09-svelte-options/README.md
-423   	content/tutorial/02-advanced-svelte/09-special-elements/10-svelte-fragment/app-a/src/lib/App.svelte
-424   	content/tutorial/02-advanced-svelte/09-special-elements/10-svelte-fragment/app-a/src/lib/Board.svelte
-425   	content/tutorial/02-advanced-svelte/09-special-elements/10-svelte-fragment/app-a/src/lib/utils.js
-426   	content/tutorial/02-advanced-svelte/09-special-elements/10-svelte-fragment/app-b/src/lib/App.svelte
-427   	content/tutorial/02-advanced-svelte/09-special-elements/10-svelte-fragment/README.md
-428   	content/tutorial/02-advanced-svelte/09-special-elements/meta.json
-429   	content/tutorial/02-advanced-svelte/10-module-context/01-sharing-code/app-a/src/lib/App.svelte
-430   	content/tutorial/02-advanced-svelte/10-module-context/01-sharing-code/app-a/src/lib/AudioPlayer.svelte
-431   	content/tutorial/02-advanced-svelte/10-module-context/01-sharing-code/app-a/src/lib/tracks.js
-432   	content/tutorial/02-advanced-svelte/10-module-context/01-sharing-code/app-b/src/lib/AudioPlayer.svelte
-433   	content/tutorial/02-advanced-svelte/10-module-context/01-sharing-code/README.md
-434   	content/tutorial/02-advanced-svelte/10-module-context/02-module-exports/app-b/src/lib/App.svelte
-435   	content/tutorial/02-advanced-svelte/10-module-context/02-module-exports/app-b/src/lib/AudioPlayer.svelte
-436   	content/tutorial/02-advanced-svelte/10-module-context/02-module-exports/README.md
-437   	content/tutorial/02-advanced-svelte/10-module-context/meta.json
-438   	content/tutorial/02-advanced-svelte/11-misc/01-debug/app-a/src/lib/App.svelte
-439   	content/tutorial/02-advanced-svelte/11-misc/01-debug/app-b/src/lib/App.svelte
-440   	content/tutorial/02-advanced-svelte/11-misc/01-debug/README.md
-441   	content/tutorial/02-advanced-svelte/11-misc/meta.json
-442   	content/tutorial/02-advanced-svelte/12-next-steps/01-congratulations/app-a/src/lib/App.svelte
-443   	content/tutorial/02-advanced-svelte/12-next-steps/01-congratulations/README.md
-444   	content/tutorial/02-advanced-svelte/12-next-steps/meta.json
-445   	content/tutorial/02-advanced-svelte/common/src/routes/+error.svelte
-446   	content/tutorial/02-advanced-svelte/common/src/routes/+layout.js
-447   	content/tutorial/02-advanced-svelte/common/src/routes/+page.svelte
-448   	content/tutorial/02-advanced-svelte/meta.json
-449   	content/tutorial/03-sveltekit/01-concepts/01-introducing-sveltekit/app-a/src/routes/+page.svelte
-450   	content/tutorial/03-sveltekit/01-concepts/01-introducing-sveltekit/README.md
-451   	content/tutorial/03-sveltekit/01-concepts/meta.json
-452   	content/tutorial/03-sveltekit/02-routing/01-pages/app-a/src/routes/+page.svelte
-453   	content/tutorial/03-sveltekit/02-routing/01-pages/app-b/src/routes/about/+page.svelte
-454   	content/tutorial/03-sveltekit/02-routing/01-pages/README.md
-455   	content/tutorial/03-sveltekit/02-routing/02-layouts/app-b/src/routes/about/+page.svelte
-456   	content/tutorial/03-sveltekit/02-routing/02-layouts/app-b/src/routes/+layout.svelte
-457   	content/tutorial/03-sveltekit/02-routing/02-layouts/app-b/src/routes/+page.svelte
-458   	content/tutorial/03-sveltekit/02-routing/02-layouts/README.md
-459   	content/tutorial/03-sveltekit/02-routing/03-params/app-a/src/routes/blog/+page.svelte
-460   	content/tutorial/03-sveltekit/02-routing/03-params/app-a/src/routes/+layout.svelte
-461   	content/tutorial/03-sveltekit/02-routing/03-params/app-a/src/routes/+page.svelte
-462   	content/tutorial/03-sveltekit/02-routing/03-params/app-b/src/routes/blog/[slug]/+page.svelte
-463   	content/tutorial/03-sveltekit/02-routing/03-params/README.md
-464   	content/tutorial/03-sveltekit/02-routing/meta.json
-465   	content/tutorial/03-sveltekit/03-loading-data/01-page-data/app-a/src/routes/blog/data.js
-466   	content/tutorial/03-sveltekit/03-loading-data/01-page-data/app-a/src/routes/blog/+page.svelte
-467   	content/tutorial/03-sveltekit/03-loading-data/01-page-data/app-a/src/routes/blog/[slug]/+layout.svelte
-468   	content/tutorial/03-sveltekit/03-loading-data/01-page-data/app-a/src/routes/blog/[slug]/+page.svelte
-469   	content/tutorial/03-sveltekit/03-loading-data/01-page-data/app-a/src/routes/+layout.svelte
-470   	content/tutorial/03-sveltekit/03-loading-data/01-page-data/app-a/src/routes/+page.svelte
-471   	content/tutorial/03-sveltekit/03-loading-data/01-page-data/app-b/src/routes/blog/+page.server.js
-472   	content/tutorial/03-sveltekit/03-loading-data/01-page-data/app-b/src/routes/blog/+page.svelte
-473   	content/tutorial/03-sveltekit/03-loading-data/01-page-data/app-b/src/routes/blog/[slug]/+page.server.js
-474   	content/tutorial/03-sveltekit/03-loading-data/01-page-data/app-b/src/routes/blog/[slug]/+page.svelte
-475   	content/tutorial/03-sveltekit/03-loading-data/01-page-data/README.md
-476   	content/tutorial/03-sveltekit/03-loading-data/02-layout-data/app-b/src/routes/blog/+layout.server.js
-477   	content/tutorial/03-sveltekit/03-loading-data/02-layout-data/app-b/src/routes/blog/+page.server.js
-478   	content/tutorial/03-sveltekit/03-loading-data/02-layout-data/app-b/src/routes/blog/[slug]/+layout.svelte
-479   	content/tutorial/03-sveltekit/03-loading-data/02-layout-data/README.md
-480   	content/tutorial/03-sveltekit/03-loading-data/meta.json
-481   	content/tutorial/03-sveltekit/04-headers-and-cookies/01-headers/app-a/src/routes/+page.server.js
-482   	content/tutorial/03-sveltekit/04-headers-and-cookies/01-headers/app-a/src/routes/+page.svelte
-483   	content/tutorial/03-sveltekit/04-headers-and-cookies/01-headers/app-b/src/routes/+page.server.js
-484   	content/tutorial/03-sveltekit/04-headers-and-cookies/01-headers/README.md
-485   	content/tutorial/03-sveltekit/04-headers-and-cookies/02-cookies/app-a/src/routes/+page.server.js
-486   	content/tutorial/03-sveltekit/04-headers-and-cookies/02-cookies/app-a/src/routes/+page.svelte
-487   	content/tutorial/03-sveltekit/04-headers-and-cookies/02-cookies/app-b/src/routes/+page.server.js
-488   	content/tutorial/03-sveltekit/04-headers-and-cookies/02-cookies/README.md
-489   	content/tutorial/03-sveltekit/04-headers-and-cookies/meta.json
-490   	content/tutorial/03-sveltekit/05-shared-modules/01-lib/app-a/src/lib/message.js
-491   	content/tutorial/03-sveltekit/05-shared-modules/01-lib/app-a/src/routes/a/deeply/nested/route/+page.svelte
-492   	content/tutorial/03-sveltekit/05-shared-modules/01-lib/app-a/src/routes/+layout.svelte
-493   	content/tutorial/03-sveltekit/05-shared-modules/01-lib/app-a/src/routes/+page.svelte
-494   	content/tutorial/03-sveltekit/05-shared-modules/01-lib/app-b/src/routes/a/deeply/nested/route/+page.svelte
-495   	content/tutorial/03-sveltekit/05-shared-modules/01-lib/app-b/src/routes/+page.svelte
-496   	content/tutorial/03-sveltekit/05-shared-modules/01-lib/README.md
-497   	content/tutorial/03-sveltekit/05-shared-modules/meta.json
-498   	content/tutorial/03-sveltekit/06-forms/01-the-form-element/app-a/src/lib/server/database.js
-499   	content/tutorial/03-sveltekit/06-forms/01-the-form-element/app-a/src/routes/+page.server.js
-500   	content/tutorial/03-sveltekit/06-forms/01-the-form-element/app-a/src/routes/+page.svelte
-501   	content/tutorial/03-sveltekit/06-forms/01-the-form-element/app-b/src/routes/+page.server.js
-502   	content/tutorial/03-sveltekit/06-forms/01-the-form-element/app-b/src/routes/+page.svelte
-503   	content/tutorial/03-sveltekit/06-forms/01-the-form-element/README.md
-504   	content/tutorial/03-sveltekit/06-forms/02-named-form-actions/app-b/src/routes/+page.server.js
-505   	content/tutorial/03-sveltekit/06-forms/02-named-form-actions/app-b/src/routes/+page.svelte
-506   	content/tutorial/03-sveltekit/06-forms/02-named-form-actions/README.md
-507   	content/tutorial/03-sveltekit/06-forms/03-form-validation/app-b/src/lib/server/database.js
-508   	content/tutorial/03-sveltekit/06-forms/03-form-validation/app-b/src/routes/+page.server.js
-509   	content/tutorial/03-sveltekit/06-forms/03-form-validation/app-b/src/routes/+page.svelte
-510   	content/tutorial/03-sveltekit/06-forms/03-form-validation/README.md
-511   	content/tutorial/03-sveltekit/06-forms/04-progressive-enhancement/app-b/src/routes/+page.svelte
-512   	content/tutorial/03-sveltekit/06-forms/04-progressive-enhancement/README.md
-513   	content/tutorial/03-sveltekit/06-forms/05-customizing-use-enhance/app-b/src/routes/+page.server.js
-514   	content/tutorial/03-sveltekit/06-forms/05-customizing-use-enhance/app-b/src/routes/+page.svelte
-515   	content/tutorial/03-sveltekit/06-forms/05-customizing-use-enhance/README.md
-516   	content/tutorial/03-sveltekit/06-forms/meta.json
-517   	content/tutorial/03-sveltekit/07-api-routes/01-get-handlers/app-a/src/routes/+page.svelte
-518   	content/tutorial/03-sveltekit/07-api-routes/01-get-handlers/app-b/src/routes/roll/+server.js
-519   	content/tutorial/03-sveltekit/07-api-routes/01-get-handlers/README.md
-520   	content/tutorial/03-sveltekit/07-api-routes/02-post-handlers/app-a/src/lib/server/database.js
-521   	content/tutorial/03-sveltekit/07-api-routes/02-post-handlers/app-a/src/routes/+page.server.js
-522   	content/tutorial/03-sveltekit/07-api-routes/02-post-handlers/app-a/src/routes/+page.svelte
-523   	content/tutorial/03-sveltekit/07-api-routes/02-post-handlers/app-b/src/routes/+page.svelte
-524   	content/tutorial/03-sveltekit/07-api-routes/02-post-handlers/app-b/src/routes/todo/+server.js
-525   	content/tutorial/03-sveltekit/07-api-routes/02-post-handlers/README.md
-526   	content/tutorial/03-sveltekit/07-api-routes/03-other-handlers/app-b/src/routes/+page.svelte
-527   	content/tutorial/03-sveltekit/07-api-routes/03-other-handlers/app-b/src/routes/todo/[id]/+server.js
-528   	content/tutorial/03-sveltekit/07-api-routes/03-other-handlers/README.md
-529   	content/tutorial/03-sveltekit/07-api-routes/meta.json
-530   	content/tutorial/03-sveltekit/08-stores/01-page-store/app-a/src/routes/about/+page.svelte
-531   	content/tutorial/03-sveltekit/08-stores/01-page-store/app-a/src/routes/+layout.svelte
-532   	content/tutorial/03-sveltekit/08-stores/01-page-store/app-a/src/routes/+page.svelte
-533   	content/tutorial/03-sveltekit/08-stores/01-page-store/app-b/src/routes/+layout.svelte
-534   	content/tutorial/03-sveltekit/08-stores/01-page-store/README.md
-535   	content/tutorial/03-sveltekit/08-stores/02-navigating-store/app-a/src/routes/about/+page.server.js
-536   	content/tutorial/03-sveltekit/08-stores/02-navigating-store/app-a/src/routes/about/+page.svelte
-537   	content/tutorial/03-sveltekit/08-stores/02-navigating-store/app-a/src/routes/+layout.svelte
-538   	content/tutorial/03-sveltekit/08-stores/02-navigating-store/app-a/src/routes/+page.server.js
-539   	content/tutorial/03-sveltekit/08-stores/02-navigating-store/app-a/src/routes/+page.svelte
-540   	content/tutorial/03-sveltekit/08-stores/02-navigating-store/app-b/src/routes/+layout.svelte
-541   	content/tutorial/03-sveltekit/08-stores/02-navigating-store/README.md
-542   	content/tutorial/03-sveltekit/08-stores/03-updated-store/app-a/src/routes/about/+page.server.js
-543   	content/tutorial/03-sveltekit/08-stores/03-updated-store/app-a/src/routes/about/+page.svelte
-544   	content/tutorial/03-sveltekit/08-stores/03-updated-store/app-a/src/routes/+layout.svelte
-545   	content/tutorial/03-sveltekit/08-stores/03-updated-store/app-a/src/routes/+page.server.js
-546   	content/tutorial/03-sveltekit/08-stores/03-updated-store/app-a/src/routes/+page.svelte
-547   	content/tutorial/03-sveltekit/08-stores/03-updated-store/app-a/svelte.config.js
-548   	content/tutorial/03-sveltekit/08-stores/03-updated-store/app-b/src/routes/+layout.svelte
-549   	content/tutorial/03-sveltekit/08-stores/03-updated-store/README.md
-550   	content/tutorial/03-sveltekit/08-stores/meta.json
-551   	content/tutorial/03-sveltekit/09-errors-and-redirects/01-error-basics/app-a/src/routes/emojis.js
-552   	content/tutorial/03-sveltekit/09-errors-and-redirects/01-error-basics/app-a/src/routes/expected/+page.server.js
-553   	content/tutorial/03-sveltekit/09-errors-and-redirects/01-error-basics/app-a/src/routes/expected/+page.svelte
-554   	content/tutorial/03-sveltekit/09-errors-and-redirects/01-error-basics/app-a/src/routes/+layout.svelte
-555   	content/tutorial/03-sveltekit/09-errors-and-redirects/01-error-basics/app-a/src/routes/+page.svelte
-556   	content/tutorial/03-sveltekit/09-errors-and-redirects/01-error-basics/app-a/src/routes/unexpected/+page.server.js
-557   	content/tutorial/03-sveltekit/09-errors-and-redirects/01-error-basics/app-a/src/routes/unexpected/+page.svelte
-558   	content/tutorial/03-sveltekit/09-errors-and-redirects/01-error-basics/README.md
-559   	content/tutorial/03-sveltekit/09-errors-and-redirects/02-error-pages/app-b/src/routes/+error.svelte
-560   	content/tutorial/03-sveltekit/09-errors-and-redirects/02-error-pages/app-b/src/routes/expected/+error.svelte
-561   	content/tutorial/03-sveltekit/09-errors-and-redirects/02-error-pages/README.md
-562   	content/tutorial/03-sveltekit/09-errors-and-redirects/03-fallback-errors/app-b/src/error.html
-563   	content/tutorial/03-sveltekit/09-errors-and-redirects/03-fallback-errors/app-b/src/routes/+layout.server.js
-564   	content/tutorial/03-sveltekit/09-errors-and-redirects/03-fallback-errors/README.md
-565   	content/tutorial/03-sveltekit/09-errors-and-redirects/04-redirects/app-a/src/routes/a/+page.svelte
-566   	content/tutorial/03-sveltekit/09-errors-and-redirects/04-redirects/app-a/src/routes/b/+page.svelte
-567   	content/tutorial/03-sveltekit/09-errors-and-redirects/04-redirects/app-a/src/routes/+layout.svelte
-568   	content/tutorial/03-sveltekit/09-errors-and-redirects/04-redirects/app-a/src/routes/+page.svelte
-569   	content/tutorial/03-sveltekit/09-errors-and-redirects/04-redirects/app-b/src/routes/a/+page.server.js
-570   	content/tutorial/03-sveltekit/09-errors-and-redirects/04-redirects/README.md
-571   	content/tutorial/03-sveltekit/09-errors-and-redirects/meta.json
-572   	content/tutorial/03-sveltekit/09-errors-and-redirects/xx-custom-error-messages/app-a/src/hooks.client.js
-573   	content/tutorial/03-sveltekit/09-errors-and-redirects/xx-custom-error-messages/app-a/src/hooks.server.js
-574   	content/tutorial/03-sveltekit/09-errors-and-redirects/xx-custom-error-messages/app-a/src/routes/about/+page.server.js
-575   	content/tutorial/03-sveltekit/09-errors-and-redirects/xx-custom-error-messages/app-a/src/routes/about/+page.svelte
-576   	content/tutorial/03-sveltekit/09-errors-and-redirects/xx-custom-error-messages/app-a/src/routes/+error.svelte
-577   	content/tutorial/03-sveltekit/09-errors-and-redirects/xx-custom-error-messages/app-a/src/routes/+layout.svelte
-578   	content/tutorial/03-sveltekit/09-errors-and-redirects/xx-custom-error-messages/app-a/src/routes/+page.svelte
-579   	content/tutorial/03-sveltekit/09-errors-and-redirects/xx-custom-error-messages/app-b/src/hooks.client.js
-580   	content/tutorial/03-sveltekit/09-errors-and-redirects/xx-custom-error-messages/app-b/src/hooks.server.js
-581   	content/tutorial/03-sveltekit/09-errors-and-redirects/xx-custom-error-messages/app-b/src/routes/+error.svelte
-582   	content/tutorial/03-sveltekit/09-errors-and-redirects/xx-custom-error-messages/README.md
-583   	content/tutorial/03-sveltekit/meta.json
-584   	content/tutorial/04-advanced-sveltekit/01-hooks/01-handle/app-a/src/hooks.server.js
-585   	content/tutorial/04-advanced-sveltekit/01-hooks/01-handle/app-a/src/routes/+page.svelte
-586   	content/tutorial/04-advanced-sveltekit/01-hooks/01-handle/app-b/src/hooks.server.js
-587   	content/tutorial/04-advanced-sveltekit/01-hooks/01-handle/README.md
-588   	content/tutorial/04-advanced-sveltekit/01-hooks/02-event/app-a/src/hooks.server.js
-589   	content/tutorial/04-advanced-sveltekit/01-hooks/02-event/app-a/src/routes/+page.server.js
-590   	content/tutorial/04-advanced-sveltekit/01-hooks/02-event/app-a/src/routes/+page.svelte
-591   	content/tutorial/04-advanced-sveltekit/01-hooks/02-event/app-b/src/hooks.server.js
-592   	content/tutorial/04-advanced-sveltekit/01-hooks/02-event/app-b/src/routes/+page.server.js
-593   	content/tutorial/04-advanced-sveltekit/01-hooks/02-event/README.md
-594   	content/tutorial/04-advanced-sveltekit/01-hooks/03-handlefetch/app-a/src/hooks.server.js
-595   	content/tutorial/04-advanced-sveltekit/01-hooks/03-handlefetch/app-a/src/routes/a/+server.js
-596   	content/tutorial/04-advanced-sveltekit/01-hooks/03-handlefetch/app-a/src/routes/b/+server.js
-597   	content/tutorial/04-advanced-sveltekit/01-hooks/03-handlefetch/app-a/src/routes/+page.server.js
-598   	content/tutorial/04-advanced-sveltekit/01-hooks/03-handlefetch/app-a/src/routes/+page.svelte
-599   	content/tutorial/04-advanced-sveltekit/01-hooks/03-handlefetch/app-b/src/hooks.server.js
-600   	content/tutorial/04-advanced-sveltekit/01-hooks/03-handlefetch/README.md
-601   	content/tutorial/04-advanced-sveltekit/01-hooks/04-handleerror/app-a/src/hooks.server.js
-602   	content/tutorial/04-advanced-sveltekit/01-hooks/04-handleerror/app-a/src/routes/+layout.svelte
-603   	content/tutorial/04-advanced-sveltekit/01-hooks/04-handleerror/app-a/src/routes/+page.svelte
-604   	content/tutorial/04-advanced-sveltekit/01-hooks/04-handleerror/app-a/src/routes/the-bad-place/+page.server.js
-605   	content/tutorial/04-advanced-sveltekit/01-hooks/04-handleerror/app-a/src/routes/the-bad-place/+page.svelte
-606   	content/tutorial/04-advanced-sveltekit/01-hooks/04-handleerror/app-a/src/routes/the-good-place/+page.svelte
-607   	content/tutorial/04-advanced-sveltekit/01-hooks/04-handleerror/app-b/src/hooks.server.js
-608   	content/tutorial/04-advanced-sveltekit/01-hooks/04-handleerror/app-b/src/routes/+error.svelte
-609   	content/tutorial/04-advanced-sveltekit/01-hooks/04-handleerror/README.md
-610   	content/tutorial/04-advanced-sveltekit/01-hooks/meta.json
-611   	content/tutorial/04-advanced-sveltekit/02-page-options/01-page-options/app-a/src/routes/+page.svelte
-612   	content/tutorial/04-advanced-sveltekit/02-page-options/01-page-options/README.md
-613   	content/tutorial/04-advanced-sveltekit/02-page-options/02-ssr/app-a/src/routes/+page.svelte
-614   	content/tutorial/04-advanced-sveltekit/02-page-options/02-ssr/app-b/src/routes/+page.server.js
-615   	content/tutorial/04-advanced-sveltekit/02-page-options/02-ssr/README.md
-616   	content/tutorial/04-advanced-sveltekit/02-page-options/03-csr/app-a/src/routes/+page.svelte
-617   	content/tutorial/04-advanced-sveltekit/02-page-options/03-csr/app-b/src/routes/+page.server.js
-618   	content/tutorial/04-advanced-sveltekit/02-page-options/03-csr/README.md
-619   	content/tutorial/04-advanced-sveltekit/02-page-options/04-prerender/app-a/src/routes/+page.svelte
-620   	content/tutorial/04-advanced-sveltekit/02-page-options/04-prerender/app-b/src/routes/+page.server.js
-621   	content/tutorial/04-advanced-sveltekit/02-page-options/04-prerender/README.md
-622   	content/tutorial/04-advanced-sveltekit/02-page-options/05-trailingslash/app-a/src/routes/always/+page.svelte
-623   	content/tutorial/04-advanced-sveltekit/02-page-options/05-trailingslash/app-a/src/routes/ignore/+page.svelte
-624   	content/tutorial/04-advanced-sveltekit/02-page-options/05-trailingslash/app-a/src/routes/+layout.svelte
-625   	content/tutorial/04-advanced-sveltekit/02-page-options/05-trailingslash/app-a/src/routes/never/+page.svelte
-626   	content/tutorial/04-advanced-sveltekit/02-page-options/05-trailingslash/app-a/src/routes/+page.svelte
-627   	content/tutorial/04-advanced-sveltekit/02-page-options/05-trailingslash/app-b/src/routes/always/+page.server.js
-628   	content/tutorial/04-advanced-sveltekit/02-page-options/05-trailingslash/app-b/src/routes/ignore/+page.server.js
-629   	content/tutorial/04-advanced-sveltekit/02-page-options/05-trailingslash/README.md
-630   	content/tutorial/04-advanced-sveltekit/02-page-options/meta.json
-631   	content/tutorial/04-advanced-sveltekit/03-link-options/01-preload/app-a/src/routes/+layout.svelte
-632   	content/tutorial/04-advanced-sveltekit/03-link-options/01-preload/app-a/src/routes/+page.svelte
-633   	content/tutorial/04-advanced-sveltekit/03-link-options/01-preload/app-a/src/routes/slow-a/+page.server.js
-634   	content/tutorial/04-advanced-sveltekit/03-link-options/01-preload/app-a/src/routes/slow-a/+page.svelte
-635   	content/tutorial/04-advanced-sveltekit/03-link-options/01-preload/app-a/src/routes/slow-b/+page.server.js
-636   	content/tutorial/04-advanced-sveltekit/03-link-options/01-preload/app-a/src/routes/slow-b/+page.svelte
-637   	content/tutorial/04-advanced-sveltekit/03-link-options/01-preload/app-b/src/routes/+layout.svelte
-638   	content/tutorial/04-advanced-sveltekit/03-link-options/01-preload/README.md
-639   	content/tutorial/04-advanced-sveltekit/03-link-options/02-reload/app-a/src/routes/about/+page.svelte
-640   	content/tutorial/04-advanced-sveltekit/03-link-options/02-reload/app-a/src/routes/+layout.svelte
-641   	content/tutorial/04-advanced-sveltekit/03-link-options/02-reload/app-a/src/routes/+page.svelte
-642   	content/tutorial/04-advanced-sveltekit/03-link-options/02-reload/app-b/src/routes/+layout.svelte
-643   	content/tutorial/04-advanced-sveltekit/03-link-options/02-reload/README.md
-644   	content/tutorial/04-advanced-sveltekit/03-link-options/meta.json
-645   	content/tutorial/04-advanced-sveltekit/04-advanced-routing/01-optional-params/app-a/src/routes/[lang]/+page.server.js
-646   	content/tutorial/04-advanced-sveltekit/04-advanced-routing/01-optional-params/app-a/src/routes/[lang]/+page.svelte
-647   	content/tutorial/04-advanced-sveltekit/04-advanced-routing/01-optional-params/app-a/src/routes/+layout.svelte
-648   	content/tutorial/04-advanced-sveltekit/04-advanced-routing/01-optional-params/app-a/src/routes/+page.svelte
-649   	content/tutorial/04-advanced-sveltekit/04-advanced-routing/01-optional-params/app-b/src/routes/[lang]/__delete
-650   	content/tutorial/04-advanced-sveltekit/04-advanced-routing/01-optional-params/app-b/src/routes/[[lang]]/+page.server.js
-651   	content/tutorial/04-advanced-sveltekit/04-advanced-routing/01-optional-params/app-b/src/routes/[[lang]]/+page.svelte
-652   	content/tutorial/04-advanced-sveltekit/04-advanced-routing/01-optional-params/app-b/src/routes/+page.svelte
-653   	content/tutorial/04-advanced-sveltekit/04-advanced-routing/01-optional-params/README.md
-654   	content/tutorial/04-advanced-sveltekit/04-advanced-routing/02-rest-params/app-a/src/routes/+page.svelte
-655   	content/tutorial/04-advanced-sveltekit/04-advanced-routing/02-rest-params/app-a/src/routes/[path]/+page.svelte
-656   	content/tutorial/04-advanced-sveltekit/04-advanced-routing/02-rest-params/app-b/src/routes/[path]/__delete
-657   	content/tutorial/04-advanced-sveltekit/04-advanced-routing/02-rest-params/app-b/src/routes/[...path]/+page.svelte
-658   	content/tutorial/04-advanced-sveltekit/04-advanced-routing/02-rest-params/README.md
-659   	content/tutorial/04-advanced-sveltekit/04-advanced-routing/03-param-matchers/app-a/src/routes/colors/[color]/+page.svelte
-660   	content/tutorial/04-advanced-sveltekit/04-advanced-routing/03-param-matchers/app-a/src/routes/+layout.svelte
-661   	content/tutorial/04-advanced-sveltekit/04-advanced-routing/03-param-matchers/app-a/src/routes/+page.svelte
-662   	content/tutorial/04-advanced-sveltekit/04-advanced-routing/03-param-matchers/app-b/src/params/hex.js
-663   	content/tutorial/04-advanced-sveltekit/04-advanced-routing/03-param-matchers/app-b/src/routes/colors/[color]/__delete
-664   	content/tutorial/04-advanced-sveltekit/04-advanced-routing/03-param-matchers/app-b/src/routes/colors/[color=hex]/+page.svelte
-665   	content/tutorial/04-advanced-sveltekit/04-advanced-routing/03-param-matchers/README.md
-666   	content/tutorial/04-advanced-sveltekit/04-advanced-routing/04-route-groups/app-a/src/routes/about/+page.svelte
-667   	content/tutorial/04-advanced-sveltekit/04-advanced-routing/04-route-groups/app-a/src/routes/account/+page.svelte
-668   	content/tutorial/04-advanced-sveltekit/04-advanced-routing/04-route-groups/app-a/src/routes/app/+page.svelte
-669   	content/tutorial/04-advanced-sveltekit/04-advanced-routing/04-route-groups/app-a/src/routes/+layout.svelte
-670   	content/tutorial/04-advanced-sveltekit/04-advanced-routing/04-route-groups/app-a/src/routes/login/+page.server.js
-671   	content/tutorial/04-advanced-sveltekit/04-advanced-routing/04-route-groups/app-a/src/routes/login/+page.svelte
-672   	content/tutorial/04-advanced-sveltekit/04-advanced-routing/04-route-groups/app-a/src/routes/logout/+page.server.js
-673   	content/tutorial/04-advanced-sveltekit/04-advanced-routing/04-route-groups/app-a/src/routes/+page.svelte
-674   	content/tutorial/04-advanced-sveltekit/04-advanced-routing/04-route-groups/app-b/src/routes/account/__delete
-675   	content/tutorial/04-advanced-sveltekit/04-advanced-routing/04-route-groups/app-b/src/routes/app/__delete
-676   	content/tutorial/04-advanced-sveltekit/04-advanced-routing/04-route-groups/app-b/src/routes/(authed)/account/+page.svelte
-677   	content/tutorial/04-advanced-sveltekit/04-advanced-routing/04-route-groups/app-b/src/routes/(authed)/app/+page.svelte
-678   	content/tutorial/04-advanced-sveltekit/04-advanced-routing/04-route-groups/app-b/src/routes/(authed)/+layout.server.js
-679   	content/tutorial/04-advanced-sveltekit/04-advanced-routing/04-route-groups/app-b/src/routes/(authed)/+layout.svelte
-680   	content/tutorial/04-advanced-sveltekit/04-advanced-routing/04-route-groups/README.md
-681   	content/tutorial/04-advanced-sveltekit/04-advanced-routing/05-breaking-out-of-layouts/app-a/src/routes/a/b/c/+layout.svelte
-682   	content/tutorial/04-advanced-sveltekit/04-advanced-routing/05-breaking-out-of-layouts/app-a/src/routes/a/b/c/+page.svelte
-683   	content/tutorial/04-advanced-sveltekit/04-advanced-routing/05-breaking-out-of-layouts/app-a/src/routes/a/b/+layout.svelte
-684   	content/tutorial/04-advanced-sveltekit/04-advanced-routing/05-breaking-out-of-layouts/app-a/src/routes/a/b/+page.svelte
-685   	content/tutorial/04-advanced-sveltekit/04-advanced-routing/05-breaking-out-of-layouts/app-a/src/routes/a/+layout.svelte
-686   	content/tutorial/04-advanced-sveltekit/04-advanced-routing/05-breaking-out-of-layouts/app-a/src/routes/a/+page.svelte
-687   	content/tutorial/04-advanced-sveltekit/04-advanced-routing/05-breaking-out-of-layouts/app-a/src/routes/+layout.svelte
-688   	content/tutorial/04-advanced-sveltekit/04-advanced-routing/05-breaking-out-of-layouts/app-a/src/routes/+page.svelte
-689   	content/tutorial/04-advanced-sveltekit/04-advanced-routing/05-breaking-out-of-layouts/app-b/src/routes/a/b/c/+page.svelte
-690   	content/tutorial/04-advanced-sveltekit/04-advanced-routing/05-breaking-out-of-layouts/app-b/src/routes/a/b/c/+page@.svelte
-691   	content/tutorial/04-advanced-sveltekit/04-advanced-routing/05-breaking-out-of-layouts/meta.json
-692   	content/tutorial/04-advanced-sveltekit/04-advanced-routing/05-breaking-out-of-layouts/README.md
-693   	content/tutorial/04-advanced-sveltekit/04-advanced-routing/meta.json
-694   	content/tutorial/04-advanced-sveltekit/05-advanced-loading/01-universal-load-functions/app-a/src/routes/blue/blue.svelte
-695   	content/tutorial/04-advanced-sveltekit/05-advanced-loading/01-universal-load-functions/app-a/src/routes/blue/+page.server.js
-696   	content/tutorial/04-advanced-sveltekit/05-advanced-loading/01-universal-load-functions/app-a/src/routes/blue/+page.svelte
-697   	content/tutorial/04-advanced-sveltekit/05-advanced-loading/01-universal-load-functions/app-a/src/routes/green/green.svelte
-698   	content/tutorial/04-advanced-sveltekit/05-advanced-loading/01-universal-load-functions/app-a/src/routes/green/+page.server.js
-699   	content/tutorial/04-advanced-sveltekit/05-advanced-loading/01-universal-load-functions/app-a/src/routes/green/+page.svelte
-700   	content/tutorial/04-advanced-sveltekit/05-advanced-loading/01-universal-load-functions/app-a/src/routes/+layout.svelte
-701   	content/tutorial/04-advanced-sveltekit/05-advanced-loading/01-universal-load-functions/app-a/src/routes/+page.svelte
-702   	content/tutorial/04-advanced-sveltekit/05-advanced-loading/01-universal-load-functions/app-a/src/routes/red/+page.server.js
-703   	content/tutorial/04-advanced-sveltekit/05-advanced-loading/01-universal-load-functions/app-a/src/routes/red/+page.svelte
-704   	content/tutorial/04-advanced-sveltekit/05-advanced-loading/01-universal-load-functions/app-a/src/routes/red/red.svelte
-705   	content/tutorial/04-advanced-sveltekit/05-advanced-loading/01-universal-load-functions/app-b/src/routes/blue/+page.js
-706   	content/tutorial/04-advanced-sveltekit/05-advanced-loading/01-universal-load-functions/app-b/src/routes/blue/+page.server.js
-707   	content/tutorial/04-advanced-sveltekit/05-advanced-loading/01-universal-load-functions/app-b/src/routes/green/+page.js
-708   	content/tutorial/04-advanced-sveltekit/05-advanced-loading/01-universal-load-functions/app-b/src/routes/green/+page.server.js
-709   	content/tutorial/04-advanced-sveltekit/05-advanced-loading/01-universal-load-functions/app-b/src/routes/+layout.svelte
-710   	content/tutorial/04-advanced-sveltekit/05-advanced-loading/01-universal-load-functions/app-b/src/routes/red/+page.js
-711   	content/tutorial/04-advanced-sveltekit/05-advanced-loading/01-universal-load-functions/app-b/src/routes/red/+page.server.js
-712   	content/tutorial/04-advanced-sveltekit/05-advanced-loading/01-universal-load-functions/README.md
-713   	content/tutorial/04-advanced-sveltekit/05-advanced-loading/02-using-both-load-functions/app-a/src/routes/BoringComponent.svelte
-714   	content/tutorial/04-advanced-sveltekit/05-advanced-loading/02-using-both-load-functions/app-a/src/routes/CoolComponent.svelte
-715   	content/tutorial/04-advanced-sveltekit/05-advanced-loading/02-using-both-load-functions/app-a/src/routes/+page.js
-716   	content/tutorial/04-advanced-sveltekit/05-advanced-loading/02-using-both-load-functions/app-a/src/routes/+page.server.js
-717   	content/tutorial/04-advanced-sveltekit/05-advanced-loading/02-using-both-load-functions/app-a/src/routes/+page.svelte
-718   	content/tutorial/04-advanced-sveltekit/05-advanced-loading/02-using-both-load-functions/app-b/src/routes/+page.js
-719   	content/tutorial/04-advanced-sveltekit/05-advanced-loading/02-using-both-load-functions/README.md
-720   	content/tutorial/04-advanced-sveltekit/05-advanced-loading/03-await-parent/app-a/src/routes/+layout.server.js
-721   	content/tutorial/04-advanced-sveltekit/05-advanced-loading/03-await-parent/app-a/src/routes/+page.svelte
-722   	content/tutorial/04-advanced-sveltekit/05-advanced-loading/03-await-parent/app-a/src/routes/sum/+layout.js
-723   	content/tutorial/04-advanced-sveltekit/05-advanced-loading/03-await-parent/app-a/src/routes/sum/+page.js
-724   	content/tutorial/04-advanced-sveltekit/05-advanced-loading/03-await-parent/app-a/src/routes/sum/+page.svelte
-725   	content/tutorial/04-advanced-sveltekit/05-advanced-loading/03-await-parent/app-b/src/routes/+layout.server.js
-726   	content/tutorial/04-advanced-sveltekit/05-advanced-loading/03-await-parent/app-b/src/routes/sum/+layout.js
-727   	content/tutorial/04-advanced-sveltekit/05-advanced-loading/03-await-parent/app-b/src/routes/sum/+page.js
-728   	content/tutorial/04-advanced-sveltekit/05-advanced-loading/03-await-parent/README.md
-729   	content/tutorial/04-advanced-sveltekit/05-advanced-loading/04-invalidation/app-a/src/routes/api/now/+server.js
-730   	content/tutorial/04-advanced-sveltekit/05-advanced-loading/04-invalidation/app-a/src/routes/+layout.js
-731   	content/tutorial/04-advanced-sveltekit/05-advanced-loading/04-invalidation/app-a/src/routes/+layout.svelte
-732   	content/tutorial/04-advanced-sveltekit/05-advanced-loading/04-invalidation/app-a/src/routes/[...timezone]/+page.js
-733   	content/tutorial/04-advanced-sveltekit/05-advanced-loading/04-invalidation/app-a/src/routes/[...timezone]/+page.svelte
-734   	content/tutorial/04-advanced-sveltekit/05-advanced-loading/04-invalidation/app-b/src/routes/[...timezone]/+page.svelte
-735   	content/tutorial/04-advanced-sveltekit/05-advanced-loading/04-invalidation/README.md
-736   	content/tutorial/04-advanced-sveltekit/05-advanced-loading/05-custom-dependencies/app-b/src/routes/+layout.js
-737   	content/tutorial/04-advanced-sveltekit/05-advanced-loading/05-custom-dependencies/app-b/src/routes/[...timezone]/+page.svelte
-738   	content/tutorial/04-advanced-sveltekit/05-advanced-loading/05-custom-dependencies/README.md
-739   	content/tutorial/04-advanced-sveltekit/05-advanced-loading/06-invalidate-all/app-b/src/routes/+layout.js
-740   	content/tutorial/04-advanced-sveltekit/05-advanced-loading/06-invalidate-all/app-b/src/routes/[...timezone]/+page.svelte
-741   	content/tutorial/04-advanced-sveltekit/05-advanced-loading/06-invalidate-all/README.md
-742   	content/tutorial/04-advanced-sveltekit/05-advanced-loading/meta.json
-743   	content/tutorial/04-advanced-sveltekit/06-environment-variables/01-env-static-private/app-a/src/routes/+page.server.js
-744   	content/tutorial/04-advanced-sveltekit/06-environment-variables/01-env-static-private/app-a/src/routes/+page.svelte
-745   	content/tutorial/04-advanced-sveltekit/06-environment-variables/01-env-static-private/app-a/src/routes/welcome/+page.server.js
-746   	content/tutorial/04-advanced-sveltekit/06-environment-variables/01-env-static-private/app-a/src/routes/welcome/+page.svelte
-747   	content/tutorial/04-advanced-sveltekit/06-environment-variables/01-env-static-private/app-b/src/routes/+page.server.js
-748   	content/tutorial/04-advanced-sveltekit/06-environment-variables/01-env-static-private/README.md
-749   	content/tutorial/04-advanced-sveltekit/06-environment-variables/02-env-dynamic-private/app-b/src/routes/+page.server.js
-750   	content/tutorial/04-advanced-sveltekit/06-environment-variables/02-env-dynamic-private/README.md
-751   	content/tutorial/04-advanced-sveltekit/06-environment-variables/03-env-static-public/app-a/src/routes/+page.svelte
-752   	content/tutorial/04-advanced-sveltekit/06-environment-variables/03-env-static-public/app-b/src/routes/+page.svelte
-753   	content/tutorial/04-advanced-sveltekit/06-environment-variables/03-env-static-public/README.md
-754   	content/tutorial/04-advanced-sveltekit/06-environment-variables/04-env-dynamic-public/app-b/src/routes/+page.svelte
-755   	content/tutorial/04-advanced-sveltekit/06-environment-variables/04-env-dynamic-public/README.md
-756   	content/tutorial/04-advanced-sveltekit/06-environment-variables/meta.json
-757   	content/tutorial/04-advanced-sveltekit/07-conclusion/01-next-steps/app-a/src/routes/+page.svelte
-758   	content/tutorial/04-advanced-sveltekit/07-conclusion/01-next-steps/README.md
-759   	content/tutorial/04-advanced-sveltekit/07-conclusion/meta.json
-760   	content/tutorial/04-advanced-sveltekit/meta.json
-761   	content/tutorial/common/package.json
-762   	content/tutorial/common/package-lock.json
-763   	content/tutorial/common/src/app.html
-764   	content/tutorial/common/src/__client.js
-765   	content/tutorial/common/src/routes/+page.svelte
-766   	content/tutorial/common/static/tutorial/dark-theme.css
-767   	content/tutorial/common/svelte.config.js
-768   	content/tutorial/common/vite.config.js
-769   	jsconfig.json
-770   	LICENSE.md
-771   	middleware.js
-772   	package.json
-773   	playwright.config.ts
-774   	pnpm-lock.yaml
-775   	README.md
-776   	scripts/create-common-bundle/index.js
-777   	scripts/create-common-bundle/unzip.js
-778   	script.sh
-779   	src/app.css
-780   	src/app.d.ts
-781   	src/app.html
-782   	src/hooks.server.js
-783   	src/lib/client/adapters/common/index.js
-784   	src/lib/client/adapters/webcontainer/index.js
-785   	src/lib/components/Modal.svelte
-786   	src/lib/server/content.js
-787   	src/lib/server/markdown.js
-788   	src/lib/types/index.d.ts
-789   	src/lib/utils.js
-790   	src/routes/assets/media/[...path]/+server.js
-791   	src/routes/content.json/+server.js
-792   	src/routes/+error.svelte
-793   	src/routes/+layout.server.js
-794   	src/routes/+layout.svelte
-795   	src/routes/nav.json/+server.js
-796   	src/routes/+page.server.js
-797   	src/routes/tutorial/+page.js
-798   	src/routes/tutorial/[slug]/adapter.js
-799   	src/routes/tutorial/[slug]/autocompletionDataProvider.js
-800   	src/routes/tutorial/[slug]/autocompletion.js
-801   	src/routes/tutorial/[slug]/Chrome.svelte
-802   	src/routes/tutorial/[slug]/codemirror.css
-803   	src/routes/tutorial/[slug]/Editor.svelte
-804   	src/routes/tutorial/[slug]/filetree/context.js
-805   	src/routes/tutorial/[slug]/filetree/ContextMenu.svelte
-806   	src/routes/tutorial/[slug]/filetree/File.svelte
-807   	src/routes/tutorial/[slug]/filetree/Filetree.svelte
-808   	src/routes/tutorial/[slug]/filetree/Folder.svelte
-809   	src/routes/tutorial/[slug]/filetree/Item.svelte
-810   	src/routes/tutorial/[slug]/ImageViewer.svelte
-811   	src/routes/tutorial/[slug]/+layout.server.js
-812   	src/routes/tutorial/[slug]/Loading.svelte
-813   	src/routes/tutorial/[slug]/Menu.svelte
-814   	src/routes/tutorial/[slug]/Output.svelte
-815   	src/routes/tutorial/[slug]/+page.server.js
-816   	src/routes/tutorial/[slug]/+page.svelte
-817   	src/routes/tutorial/[slug]/ScreenToggle.svelte
-818   	src/routes/tutorial/[slug]/Sidebar.svelte
-819   	src/routes/tutorial/[slug]/state.js
-820   	src/routes/tutorial/[slug]/ToggleButton.svelte
-821   	static/manifest.json
-822   	static/robots.txt
-823   	static/tutorial/dark-theme.css
-824   	svelte.config.js
-825   	tests/env_file.spec.ts
-826   	tests/focus_management.spec.ts
-827   	vercel.json
-828   	vite.config.js
+| Index | File name |
+|-------|-----------|
+| 1 | content/tutorial/01-svelte/01-introduction/01-welcome-to-svelte/app-a/src/lib/App.svelte |
+| 2 | content/tutorial/01-svelte/01-introduction/01-welcome-to-svelte/README.md |
+| 3 | content/tutorial/01-svelte/01-introduction/02-your-first-component/app-a/src/lib/App.svelte |
+| 4 | content/tutorial/01-svelte/01-introduction/02-your-first-component/app-b/src/lib/App.svelte |
+| 5 | content/tutorial/01-svelte/01-introduction/02-your-first-component/README.md |
+| 6 | content/tutorial/01-svelte/01-introduction/03-dynamic-attributes/app-a/src/lib/App.svelte |
+| 7 | content/tutorial/01-svelte/01-introduction/03-dynamic-attributes/app-b/src/lib/App.svelte |
+| 8 | content/tutorial/01-svelte/01-introduction/03-dynamic-attributes/README.md |
+| 9 | content/tutorial/01-svelte/01-introduction/04-styling/app-a/src/lib/App.svelte |
+| 10 | content/tutorial/01-svelte/01-introduction/04-styling/app-b/src/lib/App.svelte |
+| 11 | content/tutorial/01-svelte/01-introduction/04-styling/README.md |
+| 12 | content/tutorial/01-svelte/01-introduction/05-nested-components/app-a/src/lib/App.svelte |
+| 13 | content/tutorial/01-svelte/01-introduction/05-nested-components/app-a/src/lib/Nested.svelte |
+| 14 | content/tutorial/01-svelte/01-introduction/05-nested-components/app-b/src/lib/App.svelte |
+| 15 | content/tutorial/01-svelte/01-introduction/05-nested-components/README.md |
+| 16 | content/tutorial/01-svelte/01-introduction/06-html-tags/app-a/src/lib/App.svelte |
+| 17 | content/tutorial/01-svelte/01-introduction/06-html-tags/app-b/src/lib/App.svelte |
+| 18 | content/tutorial/01-svelte/01-introduction/06-html-tags/README.md |
+| 19 | content/tutorial/01-svelte/01-introduction/meta.json |
+| 20 | content/tutorial/01-svelte/02-reactivity/01-reactive-assignments/app-a/src/lib/App.svelte |
+| 21 | content/tutorial/01-svelte/02-reactivity/01-reactive-assignments/app-b/src/lib/App.svelte |
+| 22 | content/tutorial/01-svelte/02-reactivity/01-reactive-assignments/README.md |
+| 23 | content/tutorial/01-svelte/02-reactivity/02-reactive-declarations/app-b/src/lib/App.svelte |
+| 24 | content/tutorial/01-svelte/02-reactivity/02-reactive-declarations/README.md |
+| 25 | content/tutorial/01-svelte/02-reactivity/03-reactive-statements/app-a/src/lib/App.svelte |
+| 26 | content/tutorial/01-svelte/02-reactivity/03-reactive-statements/app-b/src/lib/App.svelte |
+| 27 | content/tutorial/01-svelte/02-reactivity/03-reactive-statements/README.md |
+| 28 | content/tutorial/01-svelte/02-reactivity/04-updating-arrays-and-objects/app-a/src/lib/App.svelte |
+| 29 | content/tutorial/01-svelte/02-reactivity/04-updating-arrays-and-objects/app-b/src/lib/App.svelte |
+| 30 | content/tutorial/01-svelte/02-reactivity/04-updating-arrays-and-objects/README.md |
+| 31 | content/tutorial/01-svelte/02-reactivity/meta.json |
+| 32 | content/tutorial/01-svelte/03-props/01-declaring-props/app-a/src/lib/App.svelte |
+| 33 | content/tutorial/01-svelte/03-props/01-declaring-props/app-a/src/lib/Nested.svelte |
+| 34 | content/tutorial/01-svelte/03-props/01-declaring-props/app-b/src/lib/Nested.svelte |
+| 35 | content/tutorial/01-svelte/03-props/01-declaring-props/README.md |
+| 36 | content/tutorial/01-svelte/03-props/02-default-values/app-a/src/lib/App.svelte |
+| 37 | content/tutorial/01-svelte/03-props/02-default-values/app-a/src/lib/Nested.svelte |
+| 38 | content/tutorial/01-svelte/03-props/02-default-values/app-b/src/lib/App.svelte |
+| 39 | content/tutorial/01-svelte/03-props/02-default-values/app-b/src/lib/Nested.svelte |
+| 40 | content/tutorial/01-svelte/03-props/02-default-values/README.md |
+| 41 | content/tutorial/01-svelte/03-props/03-spread-props/app-a/src/lib/App.svelte |
+| 42 | content/tutorial/01-svelte/03-props/03-spread-props/app-a/src/lib/PackageInfo.svelte |
+| 43 | content/tutorial/01-svelte/03-props/03-spread-props/app-b/src/lib/App.svelte |
+| 44 | content/tutorial/01-svelte/03-props/03-spread-props/README.md |
+| 45 | content/tutorial/01-svelte/03-props/meta.json |
+| 46 | content/tutorial/01-svelte/04-logic/01-if-blocks/app-a/src/lib/App.svelte |
+| 47 | content/tutorial/01-svelte/04-logic/01-if-blocks/app-b/src/lib/App.svelte |
+| 48 | content/tutorial/01-svelte/04-logic/01-if-blocks/README.md |
+| 49 | content/tutorial/01-svelte/04-logic/02-else-blocks/app-b/src/lib/App.svelte |
+| 50 | content/tutorial/01-svelte/04-logic/02-else-blocks/README.md |
+| 51 | content/tutorial/01-svelte/04-logic/03-else-if-blocks/app-b/src/lib/App.svelte |
+| 52 | content/tutorial/01-svelte/04-logic/03-else-if-blocks/README.md |
+| 53 | content/tutorial/01-svelte/04-logic/04-each-blocks/app-a/src/lib/App.svelte |
+| 54 | content/tutorial/01-svelte/04-logic/04-each-blocks/app-b/src/lib/App.svelte |
+| 55 | content/tutorial/01-svelte/04-logic/04-each-blocks/README.md |
+| 56 | content/tutorial/01-svelte/04-logic/05-keyed-each-blocks/app-a/src/lib/App.svelte |
+| 57 | content/tutorial/01-svelte/04-logic/05-keyed-each-blocks/app-a/src/lib/Thing.svelte |
+| 58 | content/tutorial/01-svelte/04-logic/05-keyed-each-blocks/app-b/src/lib/App.svelte |
+| 59 | content/tutorial/01-svelte/04-logic/05-keyed-each-blocks/README.md |
+| 60 | content/tutorial/01-svelte/04-logic/06-await-blocks/app-a/src/lib/App.svelte |
+| 61 | content/tutorial/01-svelte/04-logic/06-await-blocks/app-a/src/lib/utils.js |
+| 62 | content/tutorial/01-svelte/04-logic/06-await-blocks/app-a/src/routes/random-number/+server.js |
+| 63 | content/tutorial/01-svelte/04-logic/06-await-blocks/app-b/src/lib/App.svelte |
+| 64 | content/tutorial/01-svelte/04-logic/06-await-blocks/README.md |
+| 65 | content/tutorial/01-svelte/04-logic/meta.json |
+| 66 | content/tutorial/01-svelte/05-events/01-dom-events/app-a/src/lib/App.svelte |
+| 67 | content/tutorial/01-svelte/05-events/01-dom-events/app-b/src/lib/App.svelte |
+| 68 | content/tutorial/01-svelte/05-events/01-dom-events/README.md |
+| 69 | content/tutorial/01-svelte/05-events/02-inline-handlers/app-b/src/lib/App.svelte |
+| 70 | content/tutorial/01-svelte/05-events/02-inline-handlers/README.md |
+| 71 | content/tutorial/01-svelte/05-events/03-event-modifiers/app-a/src/lib/App.svelte |
+| 72 | content/tutorial/01-svelte/05-events/03-event-modifiers/app-b/src/lib/App.svelte |
+| 73 | content/tutorial/01-svelte/05-events/03-event-modifiers/README.md |
+| 74 | content/tutorial/01-svelte/05-events/04-component-events/app-a/src/lib/App.svelte |
+| 75 | content/tutorial/01-svelte/05-events/04-component-events/app-a/src/lib/Inner.svelte |
+| 76 | content/tutorial/01-svelte/05-events/04-component-events/app-b/src/lib/App.svelte |
+| 77 | content/tutorial/01-svelte/05-events/04-component-events/app-b/src/lib/Inner.svelte |
+| 78 | content/tutorial/01-svelte/05-events/04-component-events/README.md |
+| 79 | content/tutorial/01-svelte/05-events/05-event-forwarding/app-a/src/lib/App.svelte |
+| 80 | content/tutorial/01-svelte/05-events/05-event-forwarding/app-a/src/lib/Inner.svelte |
+| 81 | content/tutorial/01-svelte/05-events/05-event-forwarding/app-a/src/lib/Outer.svelte |
+| 82 | content/tutorial/01-svelte/05-events/05-event-forwarding/app-b/src/lib/Outer.svelte |
+| 83 | content/tutorial/01-svelte/05-events/05-event-forwarding/README.md |
+| 84 | content/tutorial/01-svelte/05-events/06-dom-event-forwarding/app-a/src/lib/App.svelte |
+| 85 | content/tutorial/01-svelte/05-events/06-dom-event-forwarding/app-a/src/lib/BigRedButton.svelte |
+| 86 | content/tutorial/01-svelte/05-events/06-dom-event-forwarding/app-b/src/lib/BigRedButton.svelte |
+| 87 | content/tutorial/01-svelte/05-events/06-dom-event-forwarding/README.md |
+| 88 | content/tutorial/01-svelte/05-events/meta.json |
+| 89 | content/tutorial/01-svelte/06-bindings/01-text-inputs/app-a/src/lib/App.svelte |
+| 90 | content/tutorial/01-svelte/06-bindings/01-text-inputs/app-b/src/lib/App.svelte |
+| 91 | content/tutorial/01-svelte/06-bindings/01-text-inputs/README.md |
+| 92 | content/tutorial/01-svelte/06-bindings/02-numeric-inputs/app-a/src/lib/App.svelte |
+| 93 | content/tutorial/01-svelte/06-bindings/02-numeric-inputs/app-b/src/lib/App.svelte |
+| 94 | content/tutorial/01-svelte/06-bindings/02-numeric-inputs/README.md |
+| 95 | content/tutorial/01-svelte/06-bindings/03-checkbox-inputs/app-a/src/lib/App.svelte |
+| 96 | content/tutorial/01-svelte/06-bindings/03-checkbox-inputs/app-b/src/lib/App.svelte |
+| 97 | content/tutorial/01-svelte/06-bindings/03-checkbox-inputs/README.md |
+| 98 | content/tutorial/01-svelte/06-bindings/04-select-bindings/app-a/src/lib/App.svelte |
+| 99 | content/tutorial/01-svelte/06-bindings/04-select-bindings/app-b/src/lib/App.svelte |
+| 100 | content/tutorial/01-svelte/06-bindings/04-select-bindings/README.md |
+| 101 | content/tutorial/01-svelte/06-bindings/05-group-inputs/app-a/src/lib/App.svelte |
+| 102 | content/tutorial/01-svelte/06-bindings/05-group-inputs/app-b/src/lib/App.svelte |
+| 103 | content/tutorial/01-svelte/06-bindings/05-group-inputs/README.md |
+| 104 | content/tutorial/01-svelte/06-bindings/06-multiple-select-bindings/app-b/src/lib/App.svelte |
+| 105 | content/tutorial/01-svelte/06-bindings/06-multiple-select-bindings/README.md |
+| 106 | content/tutorial/01-svelte/06-bindings/07-textarea-inputs/app-a/node_modules/marked/bin/marked.js |
+| 107 | content/tutorial/01-svelte/06-bindings/07-textarea-inputs/app-a/node_modules/marked/lib/marked.cjs |
+| 108 | content/tutorial/01-svelte/06-bindings/07-textarea-inputs/app-a/node_modules/marked/lib/marked.esm.js |
+| 109 | content/tutorial/01-svelte/06-bindings/07-textarea-inputs/app-a/node_modules/marked/lib/marked.umd.js |
+| 110 | content/tutorial/01-svelte/06-bindings/07-textarea-inputs/app-a/node_modules/marked/LICENSE.md |
+| 111 | content/tutorial/01-svelte/06-bindings/07-textarea-inputs/app-a/node_modules/marked/man/marked.1 |
+| 112 | content/tutorial/01-svelte/06-bindings/07-textarea-inputs/app-a/node_modules/marked/man/marked.1.txt |
+| 113 | content/tutorial/01-svelte/06-bindings/07-textarea-inputs/app-a/node_modules/marked/marked.min.js |
+| 114 | content/tutorial/01-svelte/06-bindings/07-textarea-inputs/app-a/node_modules/marked/package.json |
+| 115 | content/tutorial/01-svelte/06-bindings/07-textarea-inputs/app-a/node_modules/marked/README.md |
+| 116 | content/tutorial/01-svelte/06-bindings/07-textarea-inputs/app-a/node_modules/marked/src/defaults.js |
+| 117 | content/tutorial/01-svelte/06-bindings/07-textarea-inputs/app-a/node_modules/marked/src/helpers.js |
+| 118 | content/tutorial/01-svelte/06-bindings/07-textarea-inputs/app-a/node_modules/marked/src/Lexer.js |
+| 119 | content/tutorial/01-svelte/06-bindings/07-textarea-inputs/app-a/node_modules/marked/src/marked.js |
+| 120 | content/tutorial/01-svelte/06-bindings/07-textarea-inputs/app-a/node_modules/marked/src/Parser.js |
+| 121 | content/tutorial/01-svelte/06-bindings/07-textarea-inputs/app-a/node_modules/marked/src/Renderer.js |
+| 122 | content/tutorial/01-svelte/06-bindings/07-textarea-inputs/app-a/node_modules/marked/src/rules.js |
+| 123 | content/tutorial/01-svelte/06-bindings/07-textarea-inputs/app-a/node_modules/marked/src/Slugger.js |
+| 124 | content/tutorial/01-svelte/06-bindings/07-textarea-inputs/app-a/node_modules/marked/src/TextRenderer.js |
+| 125 | content/tutorial/01-svelte/06-bindings/07-textarea-inputs/app-a/node_modules/marked/src/Tokenizer.js |
+| 126 | content/tutorial/01-svelte/06-bindings/07-textarea-inputs/app-a/package.json |
+| 127 | content/tutorial/01-svelte/06-bindings/07-textarea-inputs/app-a/src/lib/App.svelte |
+| 128 | content/tutorial/01-svelte/06-bindings/07-textarea-inputs/app-b/src/lib/App.svelte |
+| 129 | content/tutorial/01-svelte/06-bindings/07-textarea-inputs/README.md |
+| 130 | content/tutorial/01-svelte/06-bindings/meta.json |
+| 131 | content/tutorial/01-svelte/07-lifecycle/01-onmount/app-a/src/lib/App.svelte |
+| 132 | content/tutorial/01-svelte/07-lifecycle/01-onmount/app-a/src/lib/gradient.js |
+| 133 | content/tutorial/01-svelte/07-lifecycle/01-onmount/app-b/src/lib/App.svelte |
+| 134 | content/tutorial/01-svelte/07-lifecycle/01-onmount/README.md |
+| 135 | content/tutorial/01-svelte/07-lifecycle/02-update/app-a/node_modules/elizabot/elizabot.js |
+| 136 | content/tutorial/01-svelte/07-lifecycle/02-update/app-a/node_modules/elizabot/elizadata.js |
+| 137 | content/tutorial/01-svelte/07-lifecycle/02-update/app-a/node_modules/elizabot/package.json |
+| 138 | content/tutorial/01-svelte/07-lifecycle/02-update/app-a/node_modules/elizabot/README.md |
+| 139 | content/tutorial/01-svelte/07-lifecycle/02-update/app-a/package.json |
+| 140 | content/tutorial/01-svelte/07-lifecycle/02-update/app-a/package-lock.json |
+| 141 | content/tutorial/01-svelte/07-lifecycle/02-update/app-a/src/lib/App.svelte |
+| 142 | content/tutorial/01-svelte/07-lifecycle/02-update/app-b/src/lib/App.svelte |
+| 143 | content/tutorial/01-svelte/07-lifecycle/02-update/README.md |
+| 144 | content/tutorial/01-svelte/07-lifecycle/03-tick/app-a/src/lib/App.svelte |
+| 145 | content/tutorial/01-svelte/07-lifecycle/03-tick/app-b/src/lib/App.svelte |
+| 146 | content/tutorial/01-svelte/07-lifecycle/03-tick/README.md |
+| 147 | content/tutorial/01-svelte/07-lifecycle/meta.json |
+| 148 | content/tutorial/01-svelte/08-stores/01-writable-stores/app-a/src/lib/App.svelte |
+| 149 | content/tutorial/01-svelte/08-stores/01-writable-stores/app-a/src/lib/Decrementer.svelte |
+| 150 | content/tutorial/01-svelte/08-stores/01-writable-stores/app-a/src/lib/Incrementer.svelte |
+| 151 | content/tutorial/01-svelte/08-stores/01-writable-stores/app-a/src/lib/Resetter.svelte |
+| 152 | content/tutorial/01-svelte/08-stores/01-writable-stores/app-a/src/lib/stores.js |
+| 153 | content/tutorial/01-svelte/08-stores/01-writable-stores/app-b/src/lib/Decrementer.svelte |
+| 154 | content/tutorial/01-svelte/08-stores/01-writable-stores/app-b/src/lib/Incrementer.svelte |
+| 155 | content/tutorial/01-svelte/08-stores/01-writable-stores/app-b/src/lib/Resetter.svelte |
+| 156 | content/tutorial/01-svelte/08-stores/01-writable-stores/README.md |
+| 157 | content/tutorial/01-svelte/08-stores/02-auto-subscriptions/app-b/src/lib/App.svelte |
+| 158 | content/tutorial/01-svelte/08-stores/02-auto-subscriptions/README.md |
+| 159 | content/tutorial/01-svelte/08-stores/03-readable-stores/app-a/src/lib/App.svelte |
+| 160 | content/tutorial/01-svelte/08-stores/03-readable-stores/app-a/src/lib/stores.js |
+| 161 | content/tutorial/01-svelte/08-stores/03-readable-stores/app-b/src/lib/stores.js |
+| 162 | content/tutorial/01-svelte/08-stores/03-readable-stores/README.md |
+| 163 | content/tutorial/01-svelte/08-stores/04-derived-stores/app-a/src/lib/App.svelte |
+| 164 | content/tutorial/01-svelte/08-stores/04-derived-stores/app-a/src/lib/stores.js |
+| 165 | content/tutorial/01-svelte/08-stores/04-derived-stores/app-b/src/lib/stores.js |
+| 166 | content/tutorial/01-svelte/08-stores/04-derived-stores/README.md |
+| 167 | content/tutorial/01-svelte/08-stores/05-custom-stores/app-a/src/lib/App.svelte |
+| 168 | content/tutorial/01-svelte/08-stores/05-custom-stores/app-a/src/lib/stores.js |
+| 169 | content/tutorial/01-svelte/08-stores/05-custom-stores/app-b/src/lib/stores.js |
+| 170 | content/tutorial/01-svelte/08-stores/05-custom-stores/README.md |
+| 171 | content/tutorial/01-svelte/08-stores/06-store-bindings/app-a/src/lib/App.svelte |
+| 172 | content/tutorial/01-svelte/08-stores/06-store-bindings/app-a/src/lib/stores.js |
+| 173 | content/tutorial/01-svelte/08-stores/06-store-bindings/app-b/src/lib/App.svelte |
+| 174 | content/tutorial/01-svelte/08-stores/06-store-bindings/README.md |
+| 175 | content/tutorial/01-svelte/08-stores/meta.json |
+| 176 | content/tutorial/01-svelte/common/src/routes/+error.svelte |
+| 177 | content/tutorial/01-svelte/common/src/routes/+layout.js |
+| 178 | content/tutorial/01-svelte/common/src/routes/+page.svelte |
+| 179 | content/tutorial/01-svelte/meta.json |
+| 180 | content/tutorial/02-advanced-svelte/01-motion/01-tweens/app-a/src/lib/App.svelte |
+| 181 | content/tutorial/02-advanced-svelte/01-motion/01-tweens/app-b/src/lib/App.svelte |
+| 182 | content/tutorial/02-advanced-svelte/01-motion/01-tweens/README.md |
+| 183 | content/tutorial/02-advanced-svelte/01-motion/02-springs/app-a/src/lib/App.svelte |
+| 184 | content/tutorial/02-advanced-svelte/01-motion/02-springs/app-b/src/lib/App.svelte |
+| 185 | content/tutorial/02-advanced-svelte/01-motion/02-springs/README.md |
+| 186 | content/tutorial/02-advanced-svelte/01-motion/meta.json |
+| 187 | content/tutorial/02-advanced-svelte/02-transitions/01-transition/app-a/src/lib/App.svelte |
+| 188 | content/tutorial/02-advanced-svelte/02-transitions/01-transition/app-b/src/lib/App.svelte |
+| 189 | content/tutorial/02-advanced-svelte/02-transitions/01-transition/README.md |
+| 190 | content/tutorial/02-advanced-svelte/02-transitions/02-adding-parameters-to-transitions/app-b/src/lib/App.svelte |
+| 191 | content/tutorial/02-advanced-svelte/02-transitions/02-adding-parameters-to-transitions/README.md |
+| 192 | content/tutorial/02-advanced-svelte/02-transitions/03-in-and-out/app-b/src/lib/App.svelte |
+| 193 | content/tutorial/02-advanced-svelte/02-transitions/03-in-and-out/README.md |
+| 194 | content/tutorial/02-advanced-svelte/02-transitions/04-custom-css-transitions/app-a/src/lib/App.svelte |
+| 195 | content/tutorial/02-advanced-svelte/02-transitions/04-custom-css-transitions/app-b/src/lib/App.svelte |
+| 196 | content/tutorial/02-advanced-svelte/02-transitions/04-custom-css-transitions/README.md |
+| 197 | content/tutorial/02-advanced-svelte/02-transitions/05-custom-js-transitions/app-a/src/lib/App.svelte |
+| 198 | content/tutorial/02-advanced-svelte/02-transitions/05-custom-js-transitions/app-b/src/lib/App.svelte |
+| 199 | content/tutorial/02-advanced-svelte/02-transitions/05-custom-js-transitions/README.md |
+| 200 | content/tutorial/02-advanced-svelte/02-transitions/06-transition-events/app-a/src/lib/App.svelte |
+| 201 | content/tutorial/02-advanced-svelte/02-transitions/06-transition-events/app-b/src/lib/App.svelte |
+| 202 | content/tutorial/02-advanced-svelte/02-transitions/06-transition-events/README.md |
+| 203 | content/tutorial/02-advanced-svelte/02-transitions/07-global-transitions/app-a/src/lib/App.svelte |
+| 204 | content/tutorial/02-advanced-svelte/02-transitions/07-global-transitions/app-b/src/lib/App.svelte |
+| 205 | content/tutorial/02-advanced-svelte/02-transitions/07-global-transitions/README.md |
+| 206 | content/tutorial/02-advanced-svelte/02-transitions/08-key-blocks/app-a/src/lib/App.svelte |
+| 207 | content/tutorial/02-advanced-svelte/02-transitions/08-key-blocks/app-a/src/lib/loading-messages.js |
+| 208 | content/tutorial/02-advanced-svelte/02-transitions/08-key-blocks/app-a/src/lib/transition.js |
+| 209 | content/tutorial/02-advanced-svelte/02-transitions/08-key-blocks/app-b/src/lib/App.svelte |
+| 210 | content/tutorial/02-advanced-svelte/02-transitions/08-key-blocks/README.md |
+| 211 | content/tutorial/02-advanced-svelte/02-transitions/09-deferred-transitions/app-a/src/lib/App.svelte |
+| 212 | content/tutorial/02-advanced-svelte/02-transitions/09-deferred-transitions/app-a/src/lib/TodoList.svelte |
+| 213 | content/tutorial/02-advanced-svelte/02-transitions/09-deferred-transitions/app-a/src/lib/todos.js |
+| 214 | content/tutorial/02-advanced-svelte/02-transitions/09-deferred-transitions/app-a/src/lib/transition.js |
+| 215 | content/tutorial/02-advanced-svelte/02-transitions/09-deferred-transitions/app-b/src/lib/TodoList.svelte |
+| 216 | content/tutorial/02-advanced-svelte/02-transitions/09-deferred-transitions/README.md |
+| 217 | content/tutorial/02-advanced-svelte/02-transitions/meta.json |
+| 218 | content/tutorial/02-advanced-svelte/03-animations/01-animate/app-b/src/lib/TodoList.svelte |
+| 219 | content/tutorial/02-advanced-svelte/03-animations/01-animate/README.md |
+| 220 | content/tutorial/02-advanced-svelte/03-animations/meta.json |
+| 221 | content/tutorial/02-advanced-svelte/04-actions/01-actions/app-a/src/lib/actions.js |
+| 222 | content/tutorial/02-advanced-svelte/04-actions/01-actions/app-a/src/lib/App.svelte |
+| 223 | content/tutorial/02-advanced-svelte/04-actions/01-actions/app-a/src/lib/Canvas.svelte |
+| 224 | content/tutorial/02-advanced-svelte/04-actions/01-actions/app-b/src/lib/actions.js |
+| 225 | content/tutorial/02-advanced-svelte/04-actions/01-actions/app-b/src/lib/App.svelte |
+| 226 | content/tutorial/02-advanced-svelte/04-actions/01-actions/README.md |
+| 227 | content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/index.d.ts |
+| 228 | content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/createPopper.js |
+| 229 | content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/dom-utils/contains.js |
+| 230 | content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/dom-utils/getBoundingClientRect.js |
+| 231 | content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/dom-utils/getClippingRect.js |
+| 232 | content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/dom-utils/getCompositeRect.js |
+| 233 | content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/dom-utils/getComputedStyle.js |
+| 234 | content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/dom-utils/getDocumentElement.js |
+| 235 | content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/dom-utils/getDocumentRect.js |
+| 236 | content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/dom-utils/getHTMLElementScroll.js |
+| 237 | content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/dom-utils/getLayoutRect.js |
+| 238 | content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/dom-utils/getNodeName.js |
+| 239 | content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/dom-utils/getNodeScroll.js |
+| 240 | content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/dom-utils/getOffsetParent.js |
+| 241 | content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/dom-utils/getParentNode.js |
+| 242 | content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/dom-utils/getScrollParent.js |
+| 243 | content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/dom-utils/getViewportRect.js |
+| 244 | content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/dom-utils/getWindow.js |
+| 245 | content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/dom-utils/getWindowScrollBarX.js |
+| 246 | content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/dom-utils/getWindowScroll.js |
+| 247 | content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/dom-utils/instanceOf.js |
+| 248 | content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/dom-utils/isLayoutViewport.js |
+| 249 | content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/dom-utils/isScrollParent.js |
+| 250 | content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/dom-utils/isTableElement.js |
+| 251 | content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/dom-utils/listScrollParents.js |
+| 252 | content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/enums.js |
+| 253 | content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/index.js |
+| 254 | content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/modifiers/applyStyles.js |
+| 255 | content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/modifiers/arrow.js |
+| 256 | content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/modifiers/computeStyles.js |
+| 257 | content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/modifiers/eventListeners.js |
+| 258 | content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/modifiers/flip.js |
+| 259 | content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/modifiers/hide.js |
+| 260 | content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/modifiers/index.js |
+| 261 | content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/modifiers/offset.js |
+| 262 | content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/modifiers/popperOffsets.js |
+| 263 | content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/modifiers/preventOverflow.js |
+| 264 | content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/popper-base.js |
+| 265 | content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/popper.js |
+| 266 | content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/popper-lite.js |
+| 267 | content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/types.js |
+| 268 | content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/utils/computeAutoPlacement.js |
+| 269 | content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/utils/computeOffsets.js |
+| 270 | content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/utils/debounce.js |
+| 271 | content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/utils/detectOverflow.js |
+| 272 | content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/utils/expandToHashMap.js |
+| 273 | content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/utils/format.js |
+| 274 | content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/utils/getAltAxis.js |
+| 275 | content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/utils/getAltLen.js |
+| 276 | content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/utils/getBasePlacement.js |
+| 277 | content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/utils/getFreshSideObject.js |
+| 278 | content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/utils/getMainAxisFromPlacement.js |
+| 279 | content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/utils/getOppositePlacement.js |
+| 280 | content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/utils/getOppositeVariationPlacement.js |
+| 281 | content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/utils/getVariation.js |
+| 282 | content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/utils/math.js |
+| 283 | content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/utils/mergeByName.js |
+| 284 | content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/utils/mergePaddingObject.js |
+| 285 | content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/utils/orderModifiers.js |
+| 286 | content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/utils/rectToClientRect.js |
+| 287 | content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/utils/uniqueBy.js |
+| 288 | content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/utils/userAgent.js |
+| 289 | content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/utils/validateModifiers.js |
+| 290 | content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/lib/utils/within.js |
+| 291 | content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/LICENSE.md |
+| 292 | content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/package.json |
+| 293 | content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/@popperjs/core/README.md |
+| 294 | content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/tippy.js/dist/tippy.css |
+| 295 | content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/tippy.js/dist/tippy.esm.js |
+| 296 | content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/tippy.js/dist/tippy.esm.js.map |
+| 297 | content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/tippy.js/index.d.ts |
+| 298 | content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/tippy.js/LICENSE |
+| 299 | content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/tippy.js/package.json |
+| 300 | content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/tippy.js/README.md |
+| 301 | content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/tippy.js/themes/light-border.css |
+| 302 | content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/tippy.js/themes/light.css |
+| 303 | content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/tippy.js/themes/material.css |
+| 304 | content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/node_modules/tippy.js/themes/translucent.css |
+| 305 | content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/package.json |
+| 306 | content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-a/src/lib/App.svelte |
+| 307 | content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/app-b/src/lib/App.svelte |
+| 308 | content/tutorial/02-advanced-svelte/04-actions/02-adding-parameters-to-actions/README.md |
+| 309 | content/tutorial/02-advanced-svelte/04-actions/meta.json |
+| 310 | content/tutorial/02-advanced-svelte/05-bindings/01-contenteditable-bindings/app-a/src/lib/App.svelte |
+| 311 | content/tutorial/02-advanced-svelte/05-bindings/01-contenteditable-bindings/app-b/src/lib/App.svelte |
+| 312 | content/tutorial/02-advanced-svelte/05-bindings/01-contenteditable-bindings/README.md |
+| 313 | content/tutorial/02-advanced-svelte/05-bindings/02-each-block-bindings/app-a/src/lib/App.svelte |
+| 314 | content/tutorial/02-advanced-svelte/05-bindings/02-each-block-bindings/app-b/src/lib/App.svelte |
+| 315 | content/tutorial/02-advanced-svelte/05-bindings/02-each-block-bindings/README.md |
+| 316 | content/tutorial/02-advanced-svelte/05-bindings/03-media-elements/app-a/src/lib/App.svelte |
+| 317 | content/tutorial/02-advanced-svelte/05-bindings/03-media-elements/app-a/src/lib/AudioPlayer.svelte |
+| 318 | content/tutorial/02-advanced-svelte/05-bindings/03-media-elements/app-a/src/lib/tracks.js |
+| 319 | content/tutorial/02-advanced-svelte/05-bindings/03-media-elements/app-b/src/lib/AudioPlayer.svelte |
+| 320 | content/tutorial/02-advanced-svelte/05-bindings/03-media-elements/README.md |
+| 321 | content/tutorial/02-advanced-svelte/05-bindings/04-dimensions/app-a/src/lib/App.svelte |
+| 322 | content/tutorial/02-advanced-svelte/05-bindings/04-dimensions/app-b/src/lib/App.svelte |
+| 323 | content/tutorial/02-advanced-svelte/05-bindings/04-dimensions/README.md |
+| 324 | content/tutorial/02-advanced-svelte/05-bindings/05-bind-this/app-a/src/lib/App.svelte |
+| 325 | content/tutorial/02-advanced-svelte/05-bindings/05-bind-this/app-a/src/lib/gradient.js |
+| 326 | content/tutorial/02-advanced-svelte/05-bindings/05-bind-this/app-b/src/lib/App.svelte |
+| 327 | content/tutorial/02-advanced-svelte/05-bindings/05-bind-this/README.md |
+| 328 | content/tutorial/02-advanced-svelte/05-bindings/06-component-bindings/app-a/src/lib/App.svelte |
+| 329 | content/tutorial/02-advanced-svelte/05-bindings/06-component-bindings/app-a/src/lib/Keypad.svelte |
+| 330 | content/tutorial/02-advanced-svelte/05-bindings/06-component-bindings/app-b/src/lib/App.svelte |
+| 331 | content/tutorial/02-advanced-svelte/05-bindings/06-component-bindings/README.md |
+| 332 | content/tutorial/02-advanced-svelte/05-bindings/07-component-this/app-a/src/lib/actions.js |
+| 333 | content/tutorial/02-advanced-svelte/05-bindings/07-component-this/app-a/src/lib/App.svelte |
+| 334 | content/tutorial/02-advanced-svelte/05-bindings/07-component-this/app-a/src/lib/Canvas.svelte |
+| 335 | content/tutorial/02-advanced-svelte/05-bindings/07-component-this/app-b/src/lib/App.svelte |
+| 336 | content/tutorial/02-advanced-svelte/05-bindings/07-component-this/app-b/src/lib/Canvas.svelte |
+| 337 | content/tutorial/02-advanced-svelte/05-bindings/07-component-this/README.md |
+| 338 | content/tutorial/02-advanced-svelte/05-bindings/meta.json |
+| 339 | content/tutorial/02-advanced-svelte/06-classes-and-styles/01-classes/app-a/src/lib/App.svelte |
+| 340 | content/tutorial/02-advanced-svelte/06-classes-and-styles/01-classes/app-b/src/lib/App.svelte |
+| 341 | content/tutorial/02-advanced-svelte/06-classes-and-styles/01-classes/README.md |
+| 342 | content/tutorial/02-advanced-svelte/06-classes-and-styles/02-class-shorthand/app-b/src/lib/App.svelte |
+| 343 | content/tutorial/02-advanced-svelte/06-classes-and-styles/02-class-shorthand/README.md |
+| 344 | content/tutorial/02-advanced-svelte/06-classes-and-styles/03-styles/app-b/src/lib/App.svelte |
+| 345 | content/tutorial/02-advanced-svelte/06-classes-and-styles/03-styles/README.md |
+| 346 | content/tutorial/02-advanced-svelte/06-classes-and-styles/04-component-styles/app-a/src/lib/App.svelte |
+| 347 | content/tutorial/02-advanced-svelte/06-classes-and-styles/04-component-styles/app-a/src/lib/Box.svelte |
+| 348 | content/tutorial/02-advanced-svelte/06-classes-and-styles/04-component-styles/app-b/src/lib/App.svelte |
+| 349 | content/tutorial/02-advanced-svelte/06-classes-and-styles/04-component-styles/app-b/src/lib/Box.svelte |
+| 350 | content/tutorial/02-advanced-svelte/06-classes-and-styles/04-component-styles/README.md |
+| 351 | content/tutorial/02-advanced-svelte/06-classes-and-styles/meta.json |
+| 352 | content/tutorial/02-advanced-svelte/07-composition/01-slots/app-a/src/lib/App.svelte |
+| 353 | content/tutorial/02-advanced-svelte/07-composition/01-slots/app-a/src/lib/Card.svelte |
+| 354 | content/tutorial/02-advanced-svelte/07-composition/01-slots/app-b/src/lib/App.svelte |
+| 355 | content/tutorial/02-advanced-svelte/07-composition/01-slots/app-b/src/lib/Card.svelte |
+| 356 | content/tutorial/02-advanced-svelte/07-composition/01-slots/README.md |
+| 357 | content/tutorial/02-advanced-svelte/07-composition/02-named-slots/app-a/src/lib/App.svelte |
+| 358 | content/tutorial/02-advanced-svelte/07-composition/02-named-slots/app-a/src/lib/Card.svelte |
+| 359 | content/tutorial/02-advanced-svelte/07-composition/02-named-slots/app-b/src/lib/App.svelte |
+| 360 | content/tutorial/02-advanced-svelte/07-composition/02-named-slots/app-b/src/lib/Card.svelte |
+| 361 | content/tutorial/02-advanced-svelte/07-composition/02-named-slots/README.md |
+| 362 | content/tutorial/02-advanced-svelte/07-composition/03-slot-fallbacks/app-a/src/lib/App.svelte |
+| 363 | content/tutorial/02-advanced-svelte/07-composition/03-slot-fallbacks/app-a/src/lib/Card.svelte |
+| 364 | content/tutorial/02-advanced-svelte/07-composition/03-slot-fallbacks/app-b/src/lib/Card.svelte |
+| 365 | content/tutorial/02-advanced-svelte/07-composition/03-slot-fallbacks/README.md |
+| 366 | content/tutorial/02-advanced-svelte/07-composition/04-slot-props/app-a/src/lib/App.svelte |
+| 367 | content/tutorial/02-advanced-svelte/07-composition/04-slot-props/app-a/src/lib/colors.js |
+| 368 | content/tutorial/02-advanced-svelte/07-composition/04-slot-props/app-a/src/lib/FilterableList.svelte |
+| 369 | content/tutorial/02-advanced-svelte/07-composition/04-slot-props/app-b/src/lib/App.svelte |
+| 370 | content/tutorial/02-advanced-svelte/07-composition/04-slot-props/app-b/src/lib/FilterableList.svelte |
+| 371 | content/tutorial/02-advanced-svelte/07-composition/04-slot-props/README.md |
+| 372 | content/tutorial/02-advanced-svelte/07-composition/05-optional-slots/app-b/src/lib/App.svelte |
+| 373 | content/tutorial/02-advanced-svelte/07-composition/05-optional-slots/app-b/src/lib/FilterableList.svelte |
+| 374 | content/tutorial/02-advanced-svelte/07-composition/05-optional-slots/README.md |
+| 375 | content/tutorial/02-advanced-svelte/07-composition/meta.json |
+| 376 | content/tutorial/02-advanced-svelte/08-context/01-context-api/app-a/src/lib/App.svelte |
+| 377 | content/tutorial/02-advanced-svelte/08-context/01-context-api/app-a/src/lib/Canvas.svelte |
+| 378 | content/tutorial/02-advanced-svelte/08-context/01-context-api/app-a/src/lib/Square.svelte |
+| 379 | content/tutorial/02-advanced-svelte/08-context/01-context-api/app-b/src/lib/App.svelte |
+| 380 | content/tutorial/02-advanced-svelte/08-context/01-context-api/app-b/src/lib/Canvas.svelte |
+| 381 | content/tutorial/02-advanced-svelte/08-context/01-context-api/app-b/src/lib/Square.svelte |
+| 382 | content/tutorial/02-advanced-svelte/08-context/01-context-api/README.md |
+| 383 | content/tutorial/02-advanced-svelte/08-context/meta.json |
+| 384 | content/tutorial/02-advanced-svelte/09-special-elements/01-svelte-self/app-a/src/lib/App.svelte |
+| 385 | content/tutorial/02-advanced-svelte/09-special-elements/01-svelte-self/app-a/src/lib/data.js |
+| 386 | content/tutorial/02-advanced-svelte/09-special-elements/01-svelte-self/app-a/src/lib/File.svelte |
+| 387 | content/tutorial/02-advanced-svelte/09-special-elements/01-svelte-self/app-a/src/lib/Folder.svelte |
+| 388 | content/tutorial/02-advanced-svelte/09-special-elements/01-svelte-self/app-b/src/lib/Folder.svelte |
+| 389 | content/tutorial/02-advanced-svelte/09-special-elements/01-svelte-self/README.md |
+| 390 | content/tutorial/02-advanced-svelte/09-special-elements/02-svelte-component/app-a/src/lib/App.svelte |
+| 391 | content/tutorial/02-advanced-svelte/09-special-elements/02-svelte-component/app-a/src/lib/BlueThing.svelte |
+| 392 | content/tutorial/02-advanced-svelte/09-special-elements/02-svelte-component/app-a/src/lib/GreenThing.svelte |
+| 393 | content/tutorial/02-advanced-svelte/09-special-elements/02-svelte-component/app-a/src/lib/RedThing.svelte |
+| 394 | content/tutorial/02-advanced-svelte/09-special-elements/02-svelte-component/app-b/src/lib/App.svelte |
+| 395 | content/tutorial/02-advanced-svelte/09-special-elements/02-svelte-component/README.md |
+| 396 | content/tutorial/02-advanced-svelte/09-special-elements/03-svelte-element/app-a/src/lib/App.svelte |
+| 397 | content/tutorial/02-advanced-svelte/09-special-elements/03-svelte-element/app-b/src/lib/App.svelte |
+| 398 | content/tutorial/02-advanced-svelte/09-special-elements/03-svelte-element/README.md |
+| 399 | content/tutorial/02-advanced-svelte/09-special-elements/04-svelte-window/app-a/src/lib/App.svelte |
+| 400 | content/tutorial/02-advanced-svelte/09-special-elements/04-svelte-window/app-b/src/lib/App.svelte |
+| 401 | content/tutorial/02-advanced-svelte/09-special-elements/04-svelte-window/README.md |
+| 402 | content/tutorial/02-advanced-svelte/09-special-elements/05-svelte-window-bindings/app-a/src/lib/App.svelte |
+| 403 | content/tutorial/02-advanced-svelte/09-special-elements/05-svelte-window-bindings/app-b/src/lib/App.svelte |
+| 404 | content/tutorial/02-advanced-svelte/09-special-elements/05-svelte-window-bindings/README.md |
+| 405 | content/tutorial/02-advanced-svelte/09-special-elements/06-svelte-body/app-a/src/lib/App.svelte |
+| 406 | content/tutorial/02-advanced-svelte/09-special-elements/06-svelte-body/app-b/src/lib/App.svelte |
+| 407 | content/tutorial/02-advanced-svelte/09-special-elements/06-svelte-body/README.md |
+| 408 | content/tutorial/02-advanced-svelte/09-special-elements/07-svelte-document/app-a/src/lib/App.svelte |
+| 409 | content/tutorial/02-advanced-svelte/09-special-elements/07-svelte-document/app-b/src/lib/App.svelte |
+| 410 | content/tutorial/02-advanced-svelte/09-special-elements/07-svelte-document/README.md |
+| 411 | content/tutorial/02-advanced-svelte/09-special-elements/08-svelte-head/app-a/src/lib/App.svelte |
+| 412 | content/tutorial/02-advanced-svelte/09-special-elements/08-svelte-head/app-a/static/stylesheets/halloween.css |
+| 413 | content/tutorial/02-advanced-svelte/09-special-elements/08-svelte-head/app-a/static/stylesheets/margaritaville.css |
+| 414 | content/tutorial/02-advanced-svelte/09-special-elements/08-svelte-head/app-a/static/stylesheets/retrowave.css |
+| 415 | content/tutorial/02-advanced-svelte/09-special-elements/08-svelte-head/app-a/static/stylesheets/spaaaaace.css |
+| 416 | content/tutorial/02-advanced-svelte/09-special-elements/08-svelte-head/app-b/src/lib/App.svelte |
+| 417 | content/tutorial/02-advanced-svelte/09-special-elements/08-svelte-head/README.md |
+| 418 | content/tutorial/02-advanced-svelte/09-special-elements/09-svelte-options/app-a/src/lib/App.svelte |
+| 419 | content/tutorial/02-advanced-svelte/09-special-elements/09-svelte-options/app-a/src/lib/flash.js |
+| 420 | content/tutorial/02-advanced-svelte/09-special-elements/09-svelte-options/app-a/src/lib/Todo.svelte |
+| 421 | content/tutorial/02-advanced-svelte/09-special-elements/09-svelte-options/app-b/src/lib/Todo.svelte |
+| 422 | content/tutorial/02-advanced-svelte/09-special-elements/09-svelte-options/README.md |
+| 423 | content/tutorial/02-advanced-svelte/09-special-elements/10-svelte-fragment/app-a/src/lib/App.svelte |
+| 424 | content/tutorial/02-advanced-svelte/09-special-elements/10-svelte-fragment/app-a/src/lib/Board.svelte |
+| 425 | content/tutorial/02-advanced-svelte/09-special-elements/10-svelte-fragment/app-a/src/lib/utils.js |
+| 426 | content/tutorial/02-advanced-svelte/09-special-elements/10-svelte-fragment/app-b/src/lib/App.svelte |
+| 427 | content/tutorial/02-advanced-svelte/09-special-elements/10-svelte-fragment/README.md |
+| 428 | content/tutorial/02-advanced-svelte/09-special-elements/meta.json |
+| 429 | content/tutorial/02-advanced-svelte/10-module-context/01-sharing-code/app-a/src/lib/App.svelte |
+| 430 | content/tutorial/02-advanced-svelte/10-module-context/01-sharing-code/app-a/src/lib/AudioPlayer.svelte |
+| 431 | content/tutorial/02-advanced-svelte/10-module-context/01-sharing-code/app-a/src/lib/tracks.js |
+| 432 | content/tutorial/02-advanced-svelte/10-module-context/01-sharing-code/app-b/src/lib/AudioPlayer.svelte |
+| 433 | content/tutorial/02-advanced-svelte/10-module-context/01-sharing-code/README.md |
+| 434 | content/tutorial/02-advanced-svelte/10-module-context/02-module-exports/app-b/src/lib/App.svelte |
+| 435 | content/tutorial/02-advanced-svelte/10-module-context/02-module-exports/app-b/src/lib/AudioPlayer.svelte |
+| 436 | content/tutorial/02-advanced-svelte/10-module-context/02-module-exports/README.md |
+| 437 | content/tutorial/02-advanced-svelte/10-module-context/meta.json |
+| 438 | content/tutorial/02-advanced-svelte/11-misc/01-debug/app-a/src/lib/App.svelte |
+| 439 | content/tutorial/02-advanced-svelte/11-misc/01-debug/app-b/src/lib/App.svelte |
+| 440 | content/tutorial/02-advanced-svelte/11-misc/01-debug/README.md |
+| 441 | content/tutorial/02-advanced-svelte/11-misc/meta.json |
+| 442 | content/tutorial/02-advanced-svelte/12-next-steps/01-congratulations/app-a/src/lib/App.svelte |
+| 443 | content/tutorial/02-advanced-svelte/12-next-steps/01-congratulations/README.md |
+| 444 | content/tutorial/02-advanced-svelte/12-next-steps/meta.json |
+| 445 | content/tutorial/02-advanced-svelte/common/src/routes/+error.svelte |
+| 446 | content/tutorial/02-advanced-svelte/common/src/routes/+layout.js |
+| 447 | content/tutorial/02-advanced-svelte/common/src/routes/+page.svelte |
+| 448 | content/tutorial/02-advanced-svelte/meta.json |
+| 449 | content/tutorial/03-sveltekit/01-concepts/01-introducing-sveltekit/app-a/src/routes/+page.svelte |
+| 450 | content/tutorial/03-sveltekit/01-concepts/01-introducing-sveltekit/README.md |
+| 451 | content/tutorial/03-sveltekit/01-concepts/meta.json |
+| 452 | content/tutorial/03-sveltekit/02-routing/01-pages/app-a/src/routes/+page.svelte |
+| 453 | content/tutorial/03-sveltekit/02-routing/01-pages/app-b/src/routes/about/+page.svelte |
+| 454 | content/tutorial/03-sveltekit/02-routing/01-pages/README.md |
+| 455 | content/tutorial/03-sveltekit/02-routing/02-layouts/app-b/src/routes/about/+page.svelte |
+| 456 | content/tutorial/03-sveltekit/02-routing/02-layouts/app-b/src/routes/+layout.svelte |
+| 457 | content/tutorial/03-sveltekit/02-routing/02-layouts/app-b/src/routes/+page.svelte |
+| 458 | content/tutorial/03-sveltekit/02-routing/02-layouts/README.md |
+| 459 | content/tutorial/03-sveltekit/02-routing/03-params/app-a/src/routes/blog/+page.svelte |
+| 460 | content/tutorial/03-sveltekit/02-routing/03-params/app-a/src/routes/+layout.svelte |
+| 461 | content/tutorial/03-sveltekit/02-routing/03-params/app-a/src/routes/+page.svelte |
+| 462 | content/tutorial/03-sveltekit/02-routing/03-params/app-b/src/routes/blog/[slug]/+page.svelte |
+| 463 | content/tutorial/03-sveltekit/02-routing/03-params/README.md |
+| 464 | content/tutorial/03-sveltekit/02-routing/meta.json |
+| 465 | content/tutorial/03-sveltekit/03-loading-data/01-page-data/app-a/src/routes/blog/data.js |
+| 466 | content/tutorial/03-sveltekit/03-loading-data/01-page-data/app-a/src/routes/blog/+page.svelte |
+| 467 | content/tutorial/03-sveltekit/03-loading-data/01-page-data/app-a/src/routes/blog/[slug]/+layout.svelte |
+| 468 | content/tutorial/03-sveltekit/03-loading-data/01-page-data/app-a/src/routes/blog/[slug]/+page.svelte |
+| 469 | content/tutorial/03-sveltekit/03-loading-data/01-page-data/app-a/src/routes/+layout.svelte |
+| 470 | content/tutorial/03-sveltekit/03-loading-data/01-page-data/app-a/src/routes/+page.svelte |
+| 471 | content/tutorial/03-sveltekit/03-loading-data/01-page-data/app-b/src/routes/blog/+page.server.js |
+| 472 | content/tutorial/03-sveltekit/03-loading-data/01-page-data/app-b/src/routes/blog/+page.svelte |
+| 473 | content/tutorial/03-sveltekit/03-loading-data/01-page-data/app-b/src/routes/blog/[slug]/+page.server.js |
+| 474 | content/tutorial/03-sveltekit/03-loading-data/01-page-data/app-b/src/routes/blog/[slug]/+page.svelte |
+| 475 | content/tutorial/03-sveltekit/03-loading-data/01-page-data/README.md |
+| 476 | content/tutorial/03-sveltekit/03-loading-data/02-layout-data/app-b/src/routes/blog/+layout.server.js |
+| 477 | content/tutorial/03-sveltekit/03-loading-data/02-layout-data/app-b/src/routes/blog/+page.server.js |
+| 478 | content/tutorial/03-sveltekit/03-loading-data/02-layout-data/app-b/src/routes/blog/[slug]/+layout.svelte |
+| 479 | content/tutorial/03-sveltekit/03-loading-data/02-layout-data/README.md |
+| 480 | content/tutorial/03-sveltekit/03-loading-data/meta.json |
+| 481 | content/tutorial/03-sveltekit/04-headers-and-cookies/01-headers/app-a/src/routes/+page.server.js |
+| 482 | content/tutorial/03-sveltekit/04-headers-and-cookies/01-headers/app-a/src/routes/+page.svelte |
+| 483 | content/tutorial/03-sveltekit/04-headers-and-cookies/01-headers/app-b/src/routes/+page.server.js |
+| 484 | content/tutorial/03-sveltekit/04-headers-and-cookies/01-headers/README.md |
+| 485 | content/tutorial/03-sveltekit/04-headers-and-cookies/02-cookies/app-a/src/routes/+page.server.js |
+| 486 | content/tutorial/03-sveltekit/04-headers-and-cookies/02-cookies/app-a/src/routes/+page.svelte |
+| 487 | content/tutorial/03-sveltekit/04-headers-and-cookies/02-cookies/app-b/src/routes/+page.server.js |
+| 488 | content/tutorial/03-sveltekit/04-headers-and-cookies/02-cookies/README.md |
+| 489 | content/tutorial/03-sveltekit/04-headers-and-cookies/meta.json |
+| 490 | content/tutorial/03-sveltekit/05-shared-modules/01-lib/app-a/src/lib/message.js |
+| 491 | content/tutorial/03-sveltekit/05-shared-modules/01-lib/app-a/src/routes/a/deeply/nested/route/+page.svelte |
+| 492 | content/tutorial/03-sveltekit/05-shared-modules/01-lib/app-a/src/routes/+layout.svelte |
+| 493 | content/tutorial/03-sveltekit/05-shared-modules/01-lib/app-a/src/routes/+page.svelte |
+| 494 | content/tutorial/03-sveltekit/05-shared-modules/01-lib/app-b/src/routes/a/deeply/nested/route/+page.svelte |
+| 495 | content/tutorial/03-sveltekit/05-shared-modules/01-lib/app-b/src/routes/+page.svelte |
+| 496 | content/tutorial/03-sveltekit/05-shared-modules/01-lib/README.md |
+| 497 | content/tutorial/03-sveltekit/05-shared-modules/meta.json |
+| 498 | content/tutorial/03-sveltekit/06-forms/01-the-form-element/app-a/src/lib/server/database.js |
+| 499 | content/tutorial/03-sveltekit/06-forms/01-the-form-element/app-a/src/routes/+page.server.js |
+| 500 | content/tutorial/03-sveltekit/06-forms/01-the-form-element/app-a/src/routes/+page.svelte |
+| 501 | content/tutorial/03-sveltekit/06-forms/01-the-form-element/app-b/src/routes/+page.server.js |
+| 502 | content/tutorial/03-sveltekit/06-forms/01-the-form-element/app-b/src/routes/+page.svelte |
+| 503 | content/tutorial/03-sveltekit/06-forms/01-the-form-element/README.md |
+| 504 | content/tutorial/03-sveltekit/06-forms/02-named-form-actions/app-b/src/routes/+page.server.js |
+| 505 | content/tutorial/03-sveltekit/06-forms/02-named-form-actions/app-b/src/routes/+page.svelte |
+| 506 | content/tutorial/03-sveltekit/06-forms/02-named-form-actions/README.md |
+| 507 | content/tutorial/03-sveltekit/06-forms/03-form-validation/app-b/src/lib/server/database.js |
+| 508 | content/tutorial/03-sveltekit/06-forms/03-form-validation/app-b/src/routes/+page.server.js |
+| 509 | content/tutorial/03-sveltekit/06-forms/03-form-validation/app-b/src/routes/+page.svelte |
+| 510 | content/tutorial/03-sveltekit/06-forms/03-form-validation/README.md |
+| 511 | content/tutorial/03-sveltekit/06-forms/04-progressive-enhancement/app-b/src/routes/+page.svelte |
+| 512 | content/tutorial/03-sveltekit/06-forms/04-progressive-enhancement/README.md |
+| 513 | content/tutorial/03-sveltekit/06-forms/05-customizing-use-enhance/app-b/src/routes/+page.server.js |
+| 514 | content/tutorial/03-sveltekit/06-forms/05-customizing-use-enhance/app-b/src/routes/+page.svelte |
+| 515 | content/tutorial/03-sveltekit/06-forms/05-customizing-use-enhance/README.md |
+| 516 | content/tutorial/03-sveltekit/06-forms/meta.json |
+| 517 | content/tutorial/03-sveltekit/07-api-routes/01-get-handlers/app-a/src/routes/+page.svelte |
+| 518 | content/tutorial/03-sveltekit/07-api-routes/01-get-handlers/app-b/src/routes/roll/+server.js |
+| 519 | content/tutorial/03-sveltekit/07-api-routes/01-get-handlers/README.md |
+| 520 | content/tutorial/03-sveltekit/07-api-routes/02-post-handlers/app-a/src/lib/server/database.js |
+| 521 | content/tutorial/03-sveltekit/07-api-routes/02-post-handlers/app-a/src/routes/+page.server.js |
+| 522 | content/tutorial/03-sveltekit/07-api-routes/02-post-handlers/app-a/src/routes/+page.svelte |
+| 523 | content/tutorial/03-sveltekit/07-api-routes/02-post-handlers/app-b/src/routes/+page.svelte |
+| 524 | content/tutorial/03-sveltekit/07-api-routes/02-post-handlers/app-b/src/routes/todo/+server.js |
+| 525 | content/tutorial/03-sveltekit/07-api-routes/02-post-handlers/README.md |
+| 526 | content/tutorial/03-sveltekit/07-api-routes/03-other-handlers/app-b/src/routes/+page.svelte |
+| 527 | content/tutorial/03-sveltekit/07-api-routes/03-other-handlers/app-b/src/routes/todo/[id]/+server.js |
+| 528 | content/tutorial/03-sveltekit/07-api-routes/03-other-handlers/README.md |
+| 529 | content/tutorial/03-sveltekit/07-api-routes/meta.json |
+| 530 | content/tutorial/03-sveltekit/08-stores/01-page-store/app-a/src/routes/about/+page.svelte |
+| 531 | content/tutorial/03-sveltekit/08-stores/01-page-store/app-a/src/routes/+layout.svelte |
+| 532 | content/tutorial/03-sveltekit/08-stores/01-page-store/app-a/src/routes/+page.svelte |
+| 533 | content/tutorial/03-sveltekit/08-stores/01-page-store/app-b/src/routes/+layout.svelte |
+| 534 | content/tutorial/03-sveltekit/08-stores/01-page-store/README.md |
+| 535 | content/tutorial/03-sveltekit/08-stores/02-navigating-store/app-a/src/routes/about/+page.server.js |
+| 536 | content/tutorial/03-sveltekit/08-stores/02-navigating-store/app-a/src/routes/about/+page.svelte |
+| 537 | content/tutorial/03-sveltekit/08-stores/02-navigating-store/app-a/src/routes/+layout.svelte |
+| 538 | content/tutorial/03-sveltekit/08-stores/02-navigating-store/app-a/src/routes/+page.server.js |
+| 539 | content/tutorial/03-sveltekit/08-stores/02-navigating-store/app-a/src/routes/+page.svelte |
+| 540 | content/tutorial/03-sveltekit/08-stores/02-navigating-store/app-b/src/routes/+layout.svelte |
+| 541 | content/tutorial/03-sveltekit/08-stores/02-navigating-store/README.md |
+| 542 | content/tutorial/03-sveltekit/08-stores/03-updated-store/app-a/src/routes/about/+page.server.js |
+| 543 | content/tutorial/03-sveltekit/08-stores/03-updated-store/app-a/src/routes/about/+page.svelte |
+| 544 | content/tutorial/03-sveltekit/08-stores/03-updated-store/app-a/src/routes/+layout.svelte |
+| 545 | content/tutorial/03-sveltekit/08-stores/03-updated-store/app-a/src/routes/+page.server.js |
+| 546 | content/tutorial/03-sveltekit/08-stores/03-updated-store/app-a/src/routes/+page.svelte |
+| 547 | content/tutorial/03-sveltekit/08-stores/03-updated-store/app-a/svelte.config.js |
+| 548 | content/tutorial/03-sveltekit/08-stores/03-updated-store/app-b/src/routes/+layout.svelte |
+| 549 | content/tutorial/03-sveltekit/08-stores/03-updated-store/README.md |
+| 550 | content/tutorial/03-sveltekit/08-stores/meta.json |
+| 551 | content/tutorial/03-sveltekit/09-errors-and-redirects/01-error-basics/app-a/src/routes/emojis.js |
+| 552 | content/tutorial/03-sveltekit/09-errors-and-redirects/01-error-basics/app-a/src/routes/expected/+page.server.js |
+| 553 | content/tutorial/03-sveltekit/09-errors-and-redirects/01-error-basics/app-a/src/routes/expected/+page.svelte |
+| 554 | content/tutorial/03-sveltekit/09-errors-and-redirects/01-error-basics/app-a/src/routes/+layout.svelte |
+| 555 | content/tutorial/03-sveltekit/09-errors-and-redirects/01-error-basics/app-a/src/routes/+page.svelte |
+| 556 | content/tutorial/03-sveltekit/09-errors-and-redirects/01-error-basics/app-a/src/routes/unexpected/+page.server.js |
+| 557 | content/tutorial/03-sveltekit/09-errors-and-redirects/01-error-basics/app-a/src/routes/unexpected/+page.svelte |
+| 558 | content/tutorial/03-sveltekit/09-errors-and-redirects/01-error-basics/README.md |
+| 559 | content/tutorial/03-sveltekit/09-errors-and-redirects/02-error-pages/app-b/src/routes/+error.svelte |
+| 560 | content/tutorial/03-sveltekit/09-errors-and-redirects/02-error-pages/app-b/src/routes/expected/+error.svelte |
+| 561 | content/tutorial/03-sveltekit/09-errors-and-redirects/02-error-pages/README.md |
+| 562 | content/tutorial/03-sveltekit/09-errors-and-redirects/03-fallback-errors/app-b/src/error.html |
+| 563 | content/tutorial/03-sveltekit/09-errors-and-redirects/03-fallback-errors/app-b/src/routes/+layout.server.js |
+| 564 | content/tutorial/03-sveltekit/09-errors-and-redirects/03-fallback-errors/README.md |
+| 565 | content/tutorial/03-sveltekit/09-errors-and-redirects/04-redirects/app-a/src/routes/a/+page.svelte |
+| 566 | content/tutorial/03-sveltekit/09-errors-and-redirects/04-redirects/app-a/src/routes/b/+page.svelte |
+| 567 | content/tutorial/03-sveltekit/09-errors-and-redirects/04-redirects/app-a/src/routes/+layout.svelte |
+| 568 | content/tutorial/03-sveltekit/09-errors-and-redirects/04-redirects/app-a/src/routes/+page.svelte |
+| 569 | content/tutorial/03-sveltekit/09-errors-and-redirects/04-redirects/app-b/src/routes/a/+page.server.js |
+| 570 | content/tutorial/03-sveltekit/09-errors-and-redirects/04-redirects/README.md |
+| 571 | content/tutorial/03-sveltekit/09-errors-and-redirects/meta.json |
+| 572 | content/tutorial/03-sveltekit/09-errors-and-redirects/xx-custom-error-messages/app-a/src/hooks.client.js |
+| 573 | content/tutorial/03-sveltekit/09-errors-and-redirects/xx-custom-error-messages/app-a/src/hooks.server.js |
+| 574 | content/tutorial/03-sveltekit/09-errors-and-redirects/xx-custom-error-messages/app-a/src/routes/about/+page.server.js |
+| 575 | content/tutorial/03-sveltekit/09-errors-and-redirects/xx-custom-error-messages/app-a/src/routes/about/+page.svelte |
+| 576 | content/tutorial/03-sveltekit/09-errors-and-redirects/xx-custom-error-messages/app-a/src/routes/+error.svelte |
+| 577 | content/tutorial/03-sveltekit/09-errors-and-redirects/xx-custom-error-messages/app-a/src/routes/+layout.svelte |
+| 578 | content/tutorial/03-sveltekit/09-errors-and-redirects/xx-custom-error-messages/app-a/src/routes/+page.svelte |
+| 579 | content/tutorial/03-sveltekit/09-errors-and-redirects/xx-custom-error-messages/app-b/src/hooks.client.js |
+| 580 | content/tutorial/03-sveltekit/09-errors-and-redirects/xx-custom-error-messages/app-b/src/hooks.server.js |
+| 581 | content/tutorial/03-sveltekit/09-errors-and-redirects/xx-custom-error-messages/app-b/src/routes/+error.svelte |
+| 582 | content/tutorial/03-sveltekit/09-errors-and-redirects/xx-custom-error-messages/README.md |
+| 583 | content/tutorial/03-sveltekit/meta.json |
+| 584 | content/tutorial/04-advanced-sveltekit/01-hooks/01-handle/app-a/src/hooks.server.js |
+| 585 | content/tutorial/04-advanced-sveltekit/01-hooks/01-handle/app-a/src/routes/+page.svelte |
+| 586 | content/tutorial/04-advanced-sveltekit/01-hooks/01-handle/app-b/src/hooks.server.js |
+| 587 | content/tutorial/04-advanced-sveltekit/01-hooks/01-handle/README.md |
+| 588 | content/tutorial/04-advanced-sveltekit/01-hooks/02-event/app-a/src/hooks.server.js |
+| 589 | content/tutorial/04-advanced-sveltekit/01-hooks/02-event/app-a/src/routes/+page.server.js |
+| 590 | content/tutorial/04-advanced-sveltekit/01-hooks/02-event/app-a/src/routes/+page.svelte |
+| 591 | content/tutorial/04-advanced-sveltekit/01-hooks/02-event/app-b/src/hooks.server.js |
+| 592 | content/tutorial/04-advanced-sveltekit/01-hooks/02-event/app-b/src/routes/+page.server.js |
+| 593 | content/tutorial/04-advanced-sveltekit/01-hooks/02-event/README.md |
+| 594 | content/tutorial/04-advanced-sveltekit/01-hooks/03-handlefetch/app-a/src/hooks.server.js |
+| 595 | content/tutorial/04-advanced-sveltekit/01-hooks/03-handlefetch/app-a/src/routes/a/+server.js |
+| 596 | content/tutorial/04-advanced-sveltekit/01-hooks/03-handlefetch/app-a/src/routes/b/+server.js |
+| 597 | content/tutorial/04-advanced-sveltekit/01-hooks/03-handlefetch/app-a/src/routes/+page.server.js |
+| 598 | content/tutorial/04-advanced-sveltekit/01-hooks/03-handlefetch/app-a/src/routes/+page.svelte |
+| 599 | content/tutorial/04-advanced-sveltekit/01-hooks/03-handlefetch/app-b/src/hooks.server.js |
+| 600 | content/tutorial/04-advanced-sveltekit/01-hooks/03-handlefetch/README.md |
+| 601 | content/tutorial/04-advanced-sveltekit/01-hooks/04-handleerror/app-a/src/hooks.server.js |
+| 602 | content/tutorial/04-advanced-sveltekit/01-hooks/04-handleerror/app-a/src/routes/+layout.svelte |
+| 603 | content/tutorial/04-advanced-sveltekit/01-hooks/04-handleerror/app-a/src/routes/+page.svelte |
+| 604 | content/tutorial/04-advanced-sveltekit/01-hooks/04-handleerror/app-a/src/routes/the-bad-place/+page.server.js |
+| 605 | content/tutorial/04-advanced-sveltekit/01-hooks/04-handleerror/app-a/src/routes/the-bad-place/+page.svelte |
+| 606 | content/tutorial/04-advanced-sveltekit/01-hooks/04-handleerror/app-a/src/routes/the-good-place/+page.svelte |
+| 607 | content/tutorial/04-advanced-sveltekit/01-hooks/04-handleerror/app-b/src/hooks.server.js |
+| 608 | content/tutorial/04-advanced-sveltekit/01-hooks/04-handleerror/app-b/src/routes/+error.svelte |
+| 609 | content/tutorial/04-advanced-sveltekit/01-hooks/04-handleerror/README.md |
+| 610 | content/tutorial/04-advanced-sveltekit/01-hooks/meta.json |
+| 611 | content/tutorial/04-advanced-sveltekit/02-page-options/01-page-options/app-a/src/routes/+page.svelte |
+| 612 | content/tutorial/04-advanced-sveltekit/02-page-options/01-page-options/README.md |
+| 613 | content/tutorial/04-advanced-sveltekit/02-page-options/02-ssr/app-a/src/routes/+page.svelte |
+| 614 | content/tutorial/04-advanced-sveltekit/02-page-options/02-ssr/app-b/src/routes/+page.server.js |
+| 615 | content/tutorial/04-advanced-sveltekit/02-page-options/02-ssr/README.md |
+| 616 | content/tutorial/04-advanced-sveltekit/02-page-options/03-csr/app-a/src/routes/+page.svelte |
+| 617 | content/tutorial/04-advanced-sveltekit/02-page-options/03-csr/app-b/src/routes/+page.server.js |
+| 618 | content/tutorial/04-advanced-sveltekit/02-page-options/03-csr/README.md |
+| 619 | content/tutorial/04-advanced-sveltekit/02-page-options/04-prerender/app-a/src/routes/+page.svelte |
+| 620 | content/tutorial/04-advanced-sveltekit/02-page-options/04-prerender/app-b/src/routes/+page.server.js |
+| 621 | content/tutorial/04-advanced-sveltekit/02-page-options/04-prerender/README.md |
+| 622 | content/tutorial/04-advanced-sveltekit/02-page-options/05-trailingslash/app-a/src/routes/always/+page.svelte |
+| 623 | content/tutorial/04-advanced-sveltekit/02-page-options/05-trailingslash/app-a/src/routes/ignore/+page.svelte |
+| 624 | content/tutorial/04-advanced-sveltekit/02-page-options/05-trailingslash/app-a/src/routes/+layout.svelte |
+| 625 | content/tutorial/04-advanced-sveltekit/02-page-options/05-trailingslash/app-a/src/routes/never/+page.svelte |
+| 626 | content/tutorial/04-advanced-sveltekit/02-page-options/05-trailingslash/app-a/src/routes/+page.svelte |
+| 627 | content/tutorial/04-advanced-sveltekit/02-page-options/05-trailingslash/app-b/src/routes/always/+page.server.js |
+| 628 | content/tutorial/04-advanced-sveltekit/02-page-options/05-trailingslash/app-b/src/routes/ignore/+page.server.js |
+| 629 | content/tutorial/04-advanced-sveltekit/02-page-options/05-trailingslash/README.md |
+| 630 | content/tutorial/04-advanced-sveltekit/02-page-options/meta.json |
+| 631 | content/tutorial/04-advanced-sveltekit/03-link-options/01-preload/app-a/src/routes/+layout.svelte |
+| 632 | content/tutorial/04-advanced-sveltekit/03-link-options/01-preload/app-a/src/routes/+page.svelte |
+| 633 | content/tutorial/04-advanced-sveltekit/03-link-options/01-preload/app-a/src/routes/slow-a/+page.server.js |
+| 634 | content/tutorial/04-advanced-sveltekit/03-link-options/01-preload/app-a/src/routes/slow-a/+page.svelte |
+| 635 | content/tutorial/04-advanced-sveltekit/03-link-options/01-preload/app-a/src/routes/slow-b/+page.server.js |
+| 636 | content/tutorial/04-advanced-sveltekit/03-link-options/01-preload/app-a/src/routes/slow-b/+page.svelte |
+| 637 | content/tutorial/04-advanced-sveltekit/03-link-options/01-preload/app-b/src/routes/+layout.svelte |
+| 638 | content/tutorial/04-advanced-sveltekit/03-link-options/01-preload/README.md |
+| 639 | content/tutorial/04-advanced-sveltekit/03-link-options/02-reload/app-a/src/routes/about/+page.svelte |
+| 640 | content/tutorial/04-advanced-sveltekit/03-link-options/02-reload/app-a/src/routes/+layout.svelte |
+| 641 | content/tutorial/04-advanced-sveltekit/03-link-options/02-reload/app-a/src/routes/+page.svelte |
+| 642 | content/tutorial/04-advanced-sveltekit/03-link-options/02-reload/app-b/src/routes/+layout.svelte |
+| 643 | content/tutorial/04-advanced-sveltekit/03-link-options/02-reload/README.md |
+| 644 | content/tutorial/04-advanced-sveltekit/03-link-options/meta.json |
+| 645 | content/tutorial/04-advanced-sveltekit/04-advanced-routing/01-optional-params/app-a/src/routes/[lang]/+page.server.js |
+| 646 | content/tutorial/04-advanced-sveltekit/04-advanced-routing/01-optional-params/app-a/src/routes/[lang]/+page.svelte |
+| 647 | content/tutorial/04-advanced-sveltekit/04-advanced-routing/01-optional-params/app-a/src/routes/+layout.svelte |
+| 648 | content/tutorial/04-advanced-sveltekit/04-advanced-routing/01-optional-params/app-a/src/routes/+page.svelte |
+| 649 | content/tutorial/04-advanced-sveltekit/04-advanced-routing/01-optional-params/app-b/src/routes/[lang]/__delete |
+| 650 | content/tutorial/04-advanced-sveltekit/04-advanced-routing/01-optional-params/app-b/src/routes/[[lang]]/+page.server.js |
+| 651 | content/tutorial/04-advanced-sveltekit/04-advanced-routing/01-optional-params/app-b/src/routes/[[lang]]/+page.svelte |
+| 652 | content/tutorial/04-advanced-sveltekit/04-advanced-routing/01-optional-params/app-b/src/routes/+page.svelte |
+| 653 | content/tutorial/04-advanced-sveltekit/04-advanced-routing/01-optional-params/README.md |
+| 654 | content/tutorial/04-advanced-sveltekit/04-advanced-routing/02-rest-params/app-a/src/routes/+page.svelte |
+| 655 | content/tutorial/04-advanced-sveltekit/04-advanced-routing/02-rest-params/app-a/src/routes/[path]/+page.svelte |
+| 656 | content/tutorial/04-advanced-sveltekit/04-advanced-routing/02-rest-params/app-b/src/routes/[path]/__delete |
+| 657 | content/tutorial/04-advanced-sveltekit/04-advanced-routing/02-rest-params/app-b/src/routes/[...path]/+page.svelte |
+| 658 | content/tutorial/04-advanced-sveltekit/04-advanced-routing/02-rest-params/README.md |
+| 659 | content/tutorial/04-advanced-sveltekit/04-advanced-routing/03-param-matchers/app-a/src/routes/colors/[color]/+page.svelte |
+| 660 | content/tutorial/04-advanced-sveltekit/04-advanced-routing/03-param-matchers/app-a/src/routes/+layout.svelte |
+| 661 | content/tutorial/04-advanced-sveltekit/04-advanced-routing/03-param-matchers/app-a/src/routes/+page.svelte |
+| 662 | content/tutorial/04-advanced-sveltekit/04-advanced-routing/03-param-matchers/app-b/src/params/hex.js |
+| 663 | content/tutorial/04-advanced-sveltekit/04-advanced-routing/03-param-matchers/app-b/src/routes/colors/[color]/__delete |
+| 664 | content/tutorial/04-advanced-sveltekit/04-advanced-routing/03-param-matchers/app-b/src/routes/colors/[color=hex]/+page.svelte |
+| 665 | content/tutorial/04-advanced-sveltekit/04-advanced-routing/03-param-matchers/README.md |
+| 666 | content/tutorial/04-advanced-sveltekit/04-advanced-routing/04-route-groups/app-a/src/routes/about/+page.svelte |
+| 667 | content/tutorial/04-advanced-sveltekit/04-advanced-routing/04-route-groups/app-a/src/routes/account/+page.svelte |
+| 668 | content/tutorial/04-advanced-sveltekit/04-advanced-routing/04-route-groups/app-a/src/routes/app/+page.svelte |
+| 669 | content/tutorial/04-advanced-sveltekit/04-advanced-routing/04-route-groups/app-a/src/routes/+layout.svelte |
+| 670 | content/tutorial/04-advanced-sveltekit/04-advanced-routing/04-route-groups/app-a/src/routes/login/+page.server.js |
+| 671 | content/tutorial/04-advanced-sveltekit/04-advanced-routing/04-route-groups/app-a/src/routes/login/+page.svelte |
+| 672 | content/tutorial/04-advanced-sveltekit/04-advanced-routing/04-route-groups/app-a/src/routes/logout/+page.server.js |
+| 673 | content/tutorial/04-advanced-sveltekit/04-advanced-routing/04-route-groups/app-a/src/routes/+page.svelte |
+| 674 | content/tutorial/04-advanced-sveltekit/04-advanced-routing/04-route-groups/app-b/src/routes/account/__delete |
+| 675 | content/tutorial/04-advanced-sveltekit/04-advanced-routing/04-route-groups/app-b/src/routes/app/__delete |
+| 676 | content/tutorial/04-advanced-sveltekit/04-advanced-routing/04-route-groups/app-b/src/routes/(authed)/account/+page.svelte |
+| 677 | content/tutorial/04-advanced-sveltekit/04-advanced-routing/04-route-groups/app-b/src/routes/(authed)/app/+page.svelte |
+| 678 | content/tutorial/04-advanced-sveltekit/04-advanced-routing/04-route-groups/app-b/src/routes/(authed)/+layout.server.js |
+| 679 | content/tutorial/04-advanced-sveltekit/04-advanced-routing/04-route-groups/app-b/src/routes/(authed)/+layout.svelte |
+| 680 | content/tutorial/04-advanced-sveltekit/04-advanced-routing/04-route-groups/README.md |
+| 681 | content/tutorial/04-advanced-sveltekit/04-advanced-routing/05-breaking-out-of-layouts/app-a/src/routes/a/b/c/+layout.svelte |
+| 682 | content/tutorial/04-advanced-sveltekit/04-advanced-routing/05-breaking-out-of-layouts/app-a/src/routes/a/b/c/+page.svelte |
+| 683 | content/tutorial/04-advanced-sveltekit/04-advanced-routing/05-breaking-out-of-layouts/app-a/src/routes/a/b/+layout.svelte |
+| 684 | content/tutorial/04-advanced-sveltekit/04-advanced-routing/05-breaking-out-of-layouts/app-a/src/routes/a/b/+page.svelte |
+| 685 | content/tutorial/04-advanced-sveltekit/04-advanced-routing/05-breaking-out-of-layouts/app-a/src/routes/a/+layout.svelte |
+| 686 | content/tutorial/04-advanced-sveltekit/04-advanced-routing/05-breaking-out-of-layouts/app-a/src/routes/a/+page.svelte |
+| 687 | content/tutorial/04-advanced-sveltekit/04-advanced-routing/05-breaking-out-of-layouts/app-a/src/routes/+layout.svelte |
+| 688 | content/tutorial/04-advanced-sveltekit/04-advanced-routing/05-breaking-out-of-layouts/app-a/src/routes/+page.svelte |
+| 689 | content/tutorial/04-advanced-sveltekit/04-advanced-routing/05-breaking-out-of-layouts/app-b/src/routes/a/b/c/+page.svelte |
+| 690 | content/tutorial/04-advanced-sveltekit/04-advanced-routing/05-breaking-out-of-layouts/app-b/src/routes/a/b/c/+page@.svelte |
+| 691 | content/tutorial/04-advanced-sveltekit/04-advanced-routing/05-breaking-out-of-layouts/meta.json |
+| 692 | content/tutorial/04-advanced-sveltekit/04-advanced-routing/05-breaking-out-of-layouts/README.md |
+| 693 | content/tutorial/04-advanced-sveltekit/04-advanced-routing/meta.json |
+| 694 | content/tutorial/04-advanced-sveltekit/05-advanced-loading/01-universal-load-functions/app-a/src/routes/blue/blue.svelte |
+| 695 | content/tutorial/04-advanced-sveltekit/05-advanced-loading/01-universal-load-functions/app-a/src/routes/blue/+page.server.js |
+| 696 | content/tutorial/04-advanced-sveltekit/05-advanced-loading/01-universal-load-functions/app-a/src/routes/blue/+page.svelte |
+| 697 | content/tutorial/04-advanced-sveltekit/05-advanced-loading/01-universal-load-functions/app-a/src/routes/green/green.svelte |
+| 698 | content/tutorial/04-advanced-sveltekit/05-advanced-loading/01-universal-load-functions/app-a/src/routes/green/+page.server.js |
+| 699 | content/tutorial/04-advanced-sveltekit/05-advanced-loading/01-universal-load-functions/app-a/src/routes/green/+page.svelte |
+| 700 | content/tutorial/04-advanced-sveltekit/05-advanced-loading/01-universal-load-functions/app-a/src/routes/+layout.svelte |
+| 701 | content/tutorial/04-advanced-sveltekit/05-advanced-loading/01-universal-load-functions/app-a/src/routes/+page.svelte |
+| 702 | content/tutorial/04-advanced-sveltekit/05-advanced-loading/01-universal-load-functions/app-a/src/routes/red/+page.server.js |
+| 703 | content/tutorial/04-advanced-sveltekit/05-advanced-loading/01-universal-load-functions/app-a/src/routes/red/+page.svelte |
+| 704 | content/tutorial/04-advanced-sveltekit/05-advanced-loading/01-universal-load-functions/app-a/src/routes/red/red.svelte |
+| 705 | content/tutorial/04-advanced-sveltekit/05-advanced-loading/01-universal-load-functions/app-b/src/routes/blue/+page.js |
+| 706 | content/tutorial/04-advanced-sveltekit/05-advanced-loading/01-universal-load-functions/app-b/src/routes/blue/+page.server.js |
+| 707 | content/tutorial/04-advanced-sveltekit/05-advanced-loading/01-universal-load-functions/app-b/src/routes/green/+page.js |
+| 708 | content/tutorial/04-advanced-sveltekit/05-advanced-loading/01-universal-load-functions/app-b/src/routes/green/+page.server.js |
+| 709 | content/tutorial/04-advanced-sveltekit/05-advanced-loading/01-universal-load-functions/app-b/src/routes/+layout.svelte |
+| 710 | content/tutorial/04-advanced-sveltekit/05-advanced-loading/01-universal-load-functions/app-b/src/routes/red/+page.js |
+| 711 | content/tutorial/04-advanced-sveltekit/05-advanced-loading/01-universal-load-functions/app-b/src/routes/red/+page.server.js |
+| 712 | content/tutorial/04-advanced-sveltekit/05-advanced-loading/01-universal-load-functions/README.md |
+| 713 | content/tutorial/04-advanced-sveltekit/05-advanced-loading/02-using-both-load-functions/app-a/src/routes/BoringComponent.svelte |
+| 714 | content/tutorial/04-advanced-sveltekit/05-advanced-loading/02-using-both-load-functions/app-a/src/routes/CoolComponent.svelte |
+| 715 | content/tutorial/04-advanced-sveltekit/05-advanced-loading/02-using-both-load-functions/app-a/src/routes/+page.js |
+| 716 | content/tutorial/04-advanced-sveltekit/05-advanced-loading/02-using-both-load-functions/app-a/src/routes/+page.server.js |
+| 717 | content/tutorial/04-advanced-sveltekit/05-advanced-loading/02-using-both-load-functions/app-a/src/routes/+page.svelte |
+| 718 | content/tutorial/04-advanced-sveltekit/05-advanced-loading/02-using-both-load-functions/app-b/src/routes/+page.js |
+| 719 | content/tutorial/04-advanced-sveltekit/05-advanced-loading/02-using-both-load-functions/README.md |
+| 720 | content/tutorial/04-advanced-sveltekit/05-advanced-loading/03-await-parent/app-a/src/routes/+layout.server.js |
+| 721 | content/tutorial/04-advanced-sveltekit/05-advanced-loading/03-await-parent/app-a/src/routes/+page.svelte |
+| 722 | content/tutorial/04-advanced-sveltekit/05-advanced-loading/03-await-parent/app-a/src/routes/sum/+layout.js |
+| 723 | content/tutorial/04-advanced-sveltekit/05-advanced-loading/03-await-parent/app-a/src/routes/sum/+page.js |
+| 724 | content/tutorial/04-advanced-sveltekit/05-advanced-loading/03-await-parent/app-a/src/routes/sum/+page.svelte |
+| 725 | content/tutorial/04-advanced-sveltekit/05-advanced-loading/03-await-parent/app-b/src/routes/+layout.server.js |
+| 726 | content/tutorial/04-advanced-sveltekit/05-advanced-loading/03-await-parent/app-b/src/routes/sum/+layout.js |
+| 727 | content/tutorial/04-advanced-sveltekit/05-advanced-loading/03-await-parent/app-b/src/routes/sum/+page.js |
+| 728 | content/tutorial/04-advanced-sveltekit/05-advanced-loading/03-await-parent/README.md |
+| 729 | content/tutorial/04-advanced-sveltekit/05-advanced-loading/04-invalidation/app-a/src/routes/api/now/+server.js |
+| 730 | content/tutorial/04-advanced-sveltekit/05-advanced-loading/04-invalidation/app-a/src/routes/+layout.js |
+| 731 | content/tutorial/04-advanced-sveltekit/05-advanced-loading/04-invalidation/app-a/src/routes/+layout.svelte |
+| 732 | content/tutorial/04-advanced-sveltekit/05-advanced-loading/04-invalidation/app-a/src/routes/[...timezone]/+page.js |
+| 733 | content/tutorial/04-advanced-sveltekit/05-advanced-loading/04-invalidation/app-a/src/routes/[...timezone]/+page.svelte |
+| 734 | content/tutorial/04-advanced-sveltekit/05-advanced-loading/04-invalidation/app-b/src/routes/[...timezone]/+page.svelte |
+| 735 | content/tutorial/04-advanced-sveltekit/05-advanced-loading/04-invalidation/README.md |
+| 736 | content/tutorial/04-advanced-sveltekit/05-advanced-loading/05-custom-dependencies/app-b/src/routes/+layout.js |
+| 737 | content/tutorial/04-advanced-sveltekit/05-advanced-loading/05-custom-dependencies/app-b/src/routes/[...timezone]/+page.svelte |
+| 738 | content/tutorial/04-advanced-sveltekit/05-advanced-loading/05-custom-dependencies/README.md |
+| 739 | content/tutorial/04-advanced-sveltekit/05-advanced-loading/06-invalidate-all/app-b/src/routes/+layout.js |
+| 740 | content/tutorial/04-advanced-sveltekit/05-advanced-loading/06-invalidate-all/app-b/src/routes/[...timezone]/+page.svelte |
+| 741 | content/tutorial/04-advanced-sveltekit/05-advanced-loading/06-invalidate-all/README.md |
+| 742 | content/tutorial/04-advanced-sveltekit/05-advanced-loading/meta.json |
+| 743 | content/tutorial/04-advanced-sveltekit/06-environment-variables/01-env-static-private/app-a/src/routes/+page.server.js |
+| 744 | content/tutorial/04-advanced-sveltekit/06-environment-variables/01-env-static-private/app-a/src/routes/+page.svelte |
+| 745 | content/tutorial/04-advanced-sveltekit/06-environment-variables/01-env-static-private/app-a/src/routes/welcome/+page.server.js |
+| 746 | content/tutorial/04-advanced-sveltekit/06-environment-variables/01-env-static-private/app-a/src/routes/welcome/+page.svelte |
+| 747 | content/tutorial/04-advanced-sveltekit/06-environment-variables/01-env-static-private/app-b/src/routes/+page.server.js |
+| 748 | content/tutorial/04-advanced-sveltekit/06-environment-variables/01-env-static-private/README.md |
+| 749 | content/tutorial/04-advanced-sveltekit/06-environment-variables/02-env-dynamic-private/app-b/src/routes/+page.server.js |
+| 750 | content/tutorial/04-advanced-sveltekit/06-environment-variables/02-env-dynamic-private/README.md |
+| 751 | content/tutorial/04-advanced-sveltekit/06-environment-variables/03-env-static-public/app-a/src/routes/+page.svelte |
+| 752 | content/tutorial/04-advanced-sveltekit/06-environment-variables/03-env-static-public/app-b/src/routes/+page.svelte |
+| 753 | content/tutorial/04-advanced-sveltekit/06-environment-variables/03-env-static-public/README.md |
+| 754 | content/tutorial/04-advanced-sveltekit/06-environment-variables/04-env-dynamic-public/app-b/src/routes/+page.svelte |
+| 755 | content/tutorial/04-advanced-sveltekit/06-environment-variables/04-env-dynamic-public/README.md |
+| 756 | content/tutorial/04-advanced-sveltekit/06-environment-variables/meta.json |
+| 757 | content/tutorial/04-advanced-sveltekit/07-conclusion/01-next-steps/app-a/src/routes/+page.svelte |
+| 758 | content/tutorial/04-advanced-sveltekit/07-conclusion/01-next-steps/README.md |
+| 759 | content/tutorial/04-advanced-sveltekit/07-conclusion/meta.json |
+| 760 | content/tutorial/04-advanced-sveltekit/meta.json |
+| 761 | content/tutorial/common/package.json |
+| 762 | content/tutorial/common/package-lock.json |
+| 763 | content/tutorial/common/src/app.html |
+| 764 | content/tutorial/common/src/__client.js |
+| 765 | content/tutorial/common/src/routes/+page.svelte |
+| 766 | content/tutorial/common/static/tutorial/dark-theme.css |
+| 767 | content/tutorial/common/svelte.config.js |
+| 768 | content/tutorial/common/vite.config.js |
+| 769 | jsconfig.json |
+| 770 | LICENSE.md |
+| 771 | middleware.js |
+| 772 | package.json |
+| 773 | playwright.config.ts |
+| 774 | pnpm-lock.yaml |
+| 775 | README.md |
+| 776 | scripts/create-common-bundle/index.js |
+| 777 | scripts/create-common-bundle/unzip.js |
+| 778 | script.sh |
+| 779 | src/app.css |
+| 780 | src/app.d.ts |
+| 781 | src/app.html |
+| 782 | src/hooks.server.js |
+| 783 | src/lib/client/adapters/common/index.js |
+| 784 | src/lib/client/adapters/webcontainer/index.js |
+| 785 | src/lib/components/Modal.svelte |
+| 786 | src/lib/server/content.js |
+| 787 | src/lib/server/markdown.js |
+| 788 | src/lib/types/index.d.ts |
+| 789 | src/lib/utils.js |
+| 790 | src/routes/assets/media/[...path]/+server.js |
+| 791 | src/routes/content.json/+server.js |
+| 792 | src/routes/+error.svelte |
+| 793 | src/routes/+layout.server.js |
+| 794 | src/routes/+layout.svelte |
+| 795 | src/routes/nav.json/+server.js |
+| 796 | src/routes/+page.server.js |
+| 797 | src/routes/tutorial/+page.js |
+| 798 | src/routes/tutorial/[slug]/adapter.js |
+| 799 | src/routes/tutorial/[slug]/autocompletionDataProvider.js |
+| 800 | src/routes/tutorial/[slug]/autocompletion.js |
+| 801 | src/routes/tutorial/[slug]/Chrome.svelte |
+| 802 | src/routes/tutorial/[slug]/codemirror.css |
+| 803 | src/routes/tutorial/[slug]/Editor.svelte |
+| 804 | src/routes/tutorial/[slug]/filetree/context.js |
+| 805 | src/routes/tutorial/[slug]/filetree/ContextMenu.svelte |
+| 806 | src/routes/tutorial/[slug]/filetree/File.svelte |
+| 807 | src/routes/tutorial/[slug]/filetree/Filetree.svelte |
+| 808 | src/routes/tutorial/[slug]/filetree/Folder.svelte |
+| 809 | src/routes/tutorial/[slug]/filetree/Item.svelte |
+| 810 | src/routes/tutorial/[slug]/ImageViewer.svelte |
+| 811 | src/routes/tutorial/[slug]/+layout.server.js |
+| 812 | src/routes/tutorial/[slug]/Loading.svelte |
+| 813 | src/routes/tutorial/[slug]/Menu.svelte |
+| 814 | src/routes/tutorial/[slug]/Output.svelte |
+| 815 | src/routes/tutorial/[slug]/+page.server.js |
+| 816 | src/routes/tutorial/[slug]/+page.svelte |
+| 817 | src/routes/tutorial/[slug]/ScreenToggle.svelte |
+| 818 | src/routes/tutorial/[slug]/Sidebar.svelte |
+| 819 | src/routes/tutorial/[slug]/state.js |
+| 820 | src/routes/tutorial/[slug]/ToggleButton.svelte |
+| 821 | static/manifest.json |
+| 822 | static/robots.txt |
+| 823 | static/tutorial/dark-theme.css |
+| 824 | svelte.config.js |
+| 825 | tests/env_file.spec.ts |
+| 826 | tests/focus_management.spec.ts |
+| 827 | vercel.json |
+| 828 | vite.config.js |
 
 ####### content/tutorial/01-svelte/01-introduction/01-welcome-to-svelte/app-a/src/lib/App.svelte #######
 
@@ -46192,7 +46194,15 @@ echo -e '\n```\n' >> README.md
 echo -e "\n########## File List ##########\n" >> README.md
 file_list=$(find . -not -path '*/\.*' -type f ! -name "*.jpg" ! -name "*.jpeg" ! -name "*.png" ! -name "*.gif" ! -name "*.bmp" ! -name "*.tif" ! -name "*.tiff" ! -name "*.ico" ! -name "*.svg" ! -name "*.webp" ! -name "*.raw" ! -name "*.indd" ! -name "*.ai" ! -name "*.eps" ! -name "*.pdf" ! -name "*.mp4" ! -name "*.mkv" ! -name "*.flv" ! -name "*.avi" ! -name "*.mov" ! -name "*.wmv" ! -name "*.rm" ! -name "*.rmvb" ! -name "*.m4v" ! -name "*.mpg" ! -name "*.mpeg" ! -name "*.vob" ! -name "*.3gp" ! -name "*.mp3" ! -name "*.wav" ! -name "*.ogg" ! -name "*.flac" ! -name "*.aac" ! -name "*.wma" ! -name "*.m4a" ! -name "*.amr" ! -name "*.aiff" ! -name "*.caf" ! -name "*.midi" ! -name "*.mid" ! -name "*.ttf" ! -name "*.otf" ! -name "*.woff" ! -name "*.woff2" ! -name "*.eot" ! -name "*.pfa" ! -name "*.pfb" ! -name "*.sfd" ! -name "*.fon" ! -name "*.dfont" ! -name "*.pt3" ! -name "*.cff" ! -name "*.std" ! -name "*.pro" ! -name "*.gai" -print | sed 's|./||' | sort)
 
-echo "$file_list" | nl -n ln >> README.md
+# Generate a table with the file list
+echo "| Index | File name |" >> README.md
+echo "|-------|-----------|" >> README.md
+index=1
+while IFS= read -r file
+do
+    echo "| $index | $file |" >> README.md
+    ((index++))
+done <<< "$file_list"
 
 # Loop through each file and append its content to README.md
 while IFS= read -r file
